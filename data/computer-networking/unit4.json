@@ -1,0 +1,1806 @@
+{
+  "subject": "Computer Networking",
+  "unit": "Unit 4",
+  "questions": [
+    {
+      "id": "CN-U4-001",
+      "question": "Spanning Tree Protocol (STP) is a:",
+      "options": {
+        "A": "Layer 3 routing protocol",
+        "B": "Layer 2 protocol that prevents loops in a switched network",
+        "C": "Layer 7 application protocol",
+        "D": "Wireless security protocol"
+      },
+      "correctAnswer": "B",
+      "explanation": "STP works at Layer 2 and blocks redundant paths so that a switched network does not form loops."
+    },
+    {
+      "id": "CN-U4-002",
+      "question": "The root bridge in STP is the switch with the:",
+      "options": {
+        "A": "Highest MAC address only",
+        "B": "Most ports",
+        "C": "Lowest Bridge ID",
+        "D": "Fastest CPU"
+      },
+      "correctAnswer": "C",
+      "explanation": "The switch with the lowest Bridge ID (priority plus MAC address) is elected as the root bridge."
+    },
+    {
+      "id": "CN-U4-003",
+      "question": "BPDU stands for:",
+      "options": {
+        "A": "Bridge Protocol Data Unit",
+        "B": "Border Packet Delivery Unit",
+        "C": "Basic Port Data Update",
+        "D": "Bridge Priority Distribution Unit"
+      },
+      "correctAnswer": "A",
+      "explanation": "Switches exchange Bridge Protocol Data Units (BPDUs) to run STP."
+    },
+    {
+      "id": "CN-U4-004",
+      "question": "PortFast allows a port to:",
+      "options": {
+        "A": "Block all traffic",
+        "B": "Send BPDUs only",
+        "C": "Change the root bridge",
+        "D": "Go to the forwarding state straight away"
+      },
+      "correctAnswer": "D",
+      "explanation": "PortFast skips the listening and learning states so the port goes to forwarding immediately."
+    },
+    {
+      "id": "CN-U4-005",
+      "question": "PortFast should be enabled only on ports connected to:",
+      "options": {
+        "A": "Other switches",
+        "B": "Routers only",
+        "C": "End devices such as PCs, servers and printers",
+        "D": "The root bridge"
+      },
+      "correctAnswer": "C",
+      "explanation": "End devices cannot create Layer 2 loops, so PortFast is safe only on ports facing them."
+    },
+    {
+      "id": "CN-U4-006",
+      "question": "BPDU Guard puts a PortFast port into the err-disabled state when it:",
+      "options": {
+        "A": "Receives a BPDU",
+        "B": "Receives no traffic",
+        "C": "Receives a broadcast",
+        "D": "Is connected to a PC"
+      },
+      "correctAnswer": "A",
+      "explanation": "A BPDU arriving on a PortFast port suggests a switch has been connected, so BPDU Guard shuts the port down."
+    },
+    {
+      "id": "CN-U4-007",
+      "question": "UplinkFast recovers from a link failure in about:",
+      "options": {
+        "A": "45 seconds",
+        "B": "20 seconds",
+        "C": "2 minutes",
+        "D": "5 seconds"
+      },
+      "correctAnswer": "D",
+      "explanation": "UplinkFast switches to the backup uplink in about 5 seconds, instead of the roughly 45 seconds normal STP needs."
+    },
+    {
+      "id": "CN-U4-008",
+      "question": "BackboneFast helps recovery from:",
+      "options": {
+        "A": "Power failure",
+        "B": "Indirect link failures",
+        "C": "DNS errors",
+        "D": "Cable colour mismatch"
+      },
+      "correctAnswer": "B",
+      "explanation": "BackboneFast speeds up STP convergence after an indirect link failure elsewhere in the network."
+    },
+    {
+      "id": "CN-U4-009",
+      "question": "The default Max Age timer in STP is:",
+      "options": {
+        "A": "20 seconds",
+        "B": "5 seconds",
+        "C": "60 seconds",
+        "D": "180 seconds"
+      },
+      "correctAnswer": "A",
+      "explanation": "The default Max Age timer is 20 seconds."
+    },
+    {
+      "id": "CN-U4-010",
+      "question": "RLQ in BackboneFast stands for:",
+      "options": {
+        "A": "Remote Link Queue",
+        "B": "Router Load Query",
+        "C": "Root Link Query",
+        "D": "Redundant Line Quota"
+      },
+      "correctAnswer": "C",
+      "explanation": "RLQ is the Root Link Query that a switch sends to check whether the path to the root is still available."
+    },
+    {
+      "id": "CN-U4-011",
+      "question": "Quality of Service (QoS) is used to:",
+      "options": {
+        "A": "Increase cable length",
+        "B": "Remove all traffic",
+        "C": "Encrypt all packets",
+        "D": "Give priority to important types of traffic"
+      },
+      "correctAnswer": "D",
+      "explanation": "QoS classifies traffic so that important traffic gets priority over less important traffic."
+    },
+    {
+      "id": "CN-U4-012",
+      "question": "The biggest reason for using QoS is:",
+      "options": {
+        "A": "Web browsing",
+        "B": "VoIP",
+        "C": "Email",
+        "D": "File backup"
+      },
+      "correctAnswer": "B",
+      "explanation": "VoIP is delay and jitter sensitive, so it is the main reason QoS is needed."
+    },
+    {
+      "id": "CN-U4-013",
+      "question": "The voice (RTP) stream of VoIP uses which transport protocol?",
+      "options": {
+        "A": "TCP",
+        "B": "ICMP",
+        "C": "UDP",
+        "D": "ARP"
+      },
+      "correctAnswer": "C",
+      "explanation": "The RTP voice stream runs over UDP to avoid the overhead and delay of TCP."
+    },
+    {
+      "id": "CN-U4-014",
+      "question": "HTTP is based on:",
+      "options": {
+        "A": "TCP",
+        "B": "UDP",
+        "C": "ICMP",
+        "D": "RTP"
+      },
+      "correctAnswer": "A",
+      "explanation": "HTTP runs over TCP, which provides reliable delivery."
+    },
+    {
+      "id": "CN-U4-015",
+      "question": "The TOS (Type of Service) field is part of the:",
+      "options": {
+        "A": "Ethernet trailer",
+        "B": "TCP header",
+        "C": "UDP header",
+        "D": "IP header"
+      },
+      "correctAnswer": "D",
+      "explanation": "The TOS field is an 8-bit field in the IP header."
+    },
+    {
+      "id": "CN-U4-016",
+      "question": "The first 3 bits of the 8-bit TOS field indicate the:",
+      "options": {
+        "A": "Checksum",
+        "B": "Precedence",
+        "C": "Source address",
+        "D": "Protocol number"
+      },
+      "correctAnswer": "B",
+      "explanation": "The first 3 bits of the TOS field carry the IP precedence value."
+    },
+    {
+      "id": "CN-U4-017",
+      "question": "Low Latency Queuing (LLQ) is a:",
+      "options": {
+        "A": "Strict priority queue",
+        "B": "Random queue",
+        "C": "Slowest queue",
+        "D": "Backup queue"
+      },
+      "correctAnswer": "A",
+      "explanation": "LLQ adds a strict priority queue, usually used for voice, that is always served first."
+    },
+    {
+      "id": "CN-U4-018",
+      "question": "WFQ stands for:",
+      "options": {
+        "A": "Wide Frame Queue",
+        "B": "Wireless Fast Queue",
+        "C": "Weighted Fair Queuing",
+        "D": "Web Filter Queue"
+      },
+      "correctAnswer": "C",
+      "explanation": "WFQ is Weighted Fair Queuing, which serves queues according to their weights."
+    },
+    {
+      "id": "CN-U4-019",
+      "question": "The Leaky Bucket algorithm gives:",
+      "options": {
+        "A": "A bursty output",
+        "B": "A constant (fixed) output rate",
+        "C": "No output",
+        "D": "A random output"
+      },
+      "correctAnswer": "B",
+      "explanation": "The leaky bucket releases packets at a fixed rate, which smooths bursty input into constant output."
+    },
+    {
+      "id": "CN-U4-020",
+      "question": "The Token Bucket algorithm allows:",
+      "options": {
+        "A": "No traffic",
+        "B": "Only fixed-rate traffic",
+        "C": "Only voice traffic",
+        "D": "Bursts of traffic"
+      },
+      "correctAnswer": "D",
+      "explanation": "Saved tokens let the token bucket send bursts of traffic."
+    },
+    {
+      "id": "CN-U4-021",
+      "question": "Jitter is:",
+      "options": {
+        "A": "The variation in packet delay",
+        "B": "The size of a packet",
+        "C": "The number of routers",
+        "D": "The speed of a cable"
+      },
+      "correctAnswer": "A",
+      "explanation": "Jitter is the variation in delay between packets."
+    },
+    {
+      "id": "CN-U4-022",
+      "question": "Latency (delay) is:",
+      "options": {
+        "A": "The number of lost packets",
+        "B": "The maximum bandwidth",
+        "C": "The time a packet takes to travel from source to destination",
+        "D": "The size of the buffer"
+      },
+      "correctAnswer": "C",
+      "explanation": "Latency is the time a packet takes to travel from source to destination."
+    },
+    {
+      "id": "CN-U4-023",
+      "question": "Bandwidth is a link's ability to:",
+      "options": {
+        "A": "Delay packets",
+        "B": "Drop packets",
+        "C": "Encrypt packets",
+        "D": "Transmit the maximum amount of data in a specific time"
+      },
+      "correctAnswer": "D",
+      "explanation": "Bandwidth is the maximum amount of data a link can transmit in a given time."
+    },
+    {
+      "id": "CN-U4-024",
+      "question": "A routing protocol is used by routers to:",
+      "options": {
+        "A": "Print documents",
+        "B": "Exchange information about the state of the network",
+        "C": "Store files",
+        "D": "Assign MAC addresses"
+      },
+      "correctAnswer": "B",
+      "explanation": "Routers use routing protocols to share network information and build their routing tables."
+    },
+    {
+      "id": "CN-U4-025",
+      "question": "A floating static route is used as a:",
+      "options": {
+        "A": "Backup static route",
+        "B": "Dynamic route",
+        "C": "Broadcast route",
+        "D": "Multicast route"
+      },
+      "correctAnswer": "A",
+      "explanation": "A floating static route has a higher administrative distance and is used only as a backup when the main route fails."
+    },
+    {
+      "id": "CN-U4-026",
+      "question": "The metric used by RIP is:",
+      "options": {
+        "A": "Bandwidth",
+        "B": "Cost",
+        "C": "Hop count",
+        "D": "Delay only"
+      },
+      "correctAnswer": "C",
+      "explanation": "RIP uses hop count as its metric."
+    },
+    {
+      "id": "CN-U4-027",
+      "question": "The metric used by OSPF is:",
+      "options": {
+        "A": "Hop count",
+        "B": "Cost based on bandwidth",
+        "C": "Delay only",
+        "D": "Load only"
+      },
+      "correctAnswer": "B",
+      "explanation": "OSPF calculates cost from the link bandwidth."
+    },
+    {
+      "id": "CN-U4-028",
+      "question": "The default metrics of EIGRP are:",
+      "options": {
+        "A": "Hop count and cost",
+        "B": "Cost and MTU",
+        "C": "Reliability and load",
+        "D": "Bandwidth and delay"
+      },
+      "correctAnswer": "D",
+      "explanation": "By default EIGRP uses bandwidth and delay to compute its metric."
+    },
+    {
+      "id": "CN-U4-029",
+      "question": "The administrative distance with the lower value is:",
+      "options": {
+        "A": "More trusted",
+        "B": "Less trusted",
+        "C": "Not used",
+        "D": "Always static"
+      },
+      "correctAnswer": "A",
+      "explanation": "A lower administrative distance means the route source is more trusted."
+    },
+    {
+      "id": "CN-U4-030",
+      "question": "The administrative distance of OSPF (as per notes) is:",
+      "options": {
+        "A": "90",
+        "B": "120",
+        "C": "110",
+        "D": "20"
+      },
+      "correctAnswer": "C",
+      "explanation": "The administrative distance of OSPF is 110."
+    },
+    {
+      "id": "CN-U4-031",
+      "question": "The administrative distance of RIP is:",
+      "options": {
+        "A": "1",
+        "B": "90",
+        "C": "110",
+        "D": "120"
+      },
+      "correctAnswer": "D",
+      "explanation": "The administrative distance of RIP is 120."
+    },
+    {
+      "id": "CN-U4-032",
+      "question": "Which are examples of IGPs?",
+      "options": {
+        "A": "BGP only",
+        "B": "RIP, EIGRP and OSPF",
+        "C": "GRE and MPLS",
+        "D": "VPN and QoS"
+      },
+      "correctAnswer": "B",
+      "explanation": "RIP, EIGRP and OSPF work inside an autonomous system, so they are IGPs."
+    },
+    {
+      "id": "CN-U4-033",
+      "question": "Which is an example of an EGP?",
+      "options": {
+        "A": "BGP",
+        "B": "RIP",
+        "C": "OSPF",
+        "D": "EIGRP"
+      },
+      "correctAnswer": "A",
+      "explanation": "BGP is the exterior gateway protocol used between autonomous systems."
+    },
+    {
+      "id": "CN-U4-034",
+      "question": "RIP broadcasts all its routes every:",
+      "options": {
+        "A": "5 seconds",
+        "B": "60 seconds",
+        "C": "30 seconds",
+        "D": "180 seconds"
+      },
+      "correctAnswer": "C",
+      "explanation": "RIP sends its full routing table every 30 seconds."
+    },
+    {
+      "id": "CN-U4-035",
+      "question": "EIGRP is described as a:",
+      "options": {
+        "A": "Pure distance vector protocol",
+        "B": "Hybrid protocol",
+        "C": "Exterior protocol",
+        "D": "Layer 2 protocol"
+      },
+      "correctAnswer": "B",
+      "explanation": "EIGRP combines distance vector and link state features, so it is called a hybrid protocol."
+    },
+    {
+      "id": "CN-U4-036",
+      "question": "OSPF is a:",
+      "options": {
+        "A": "Distance vector protocol",
+        "B": "Path vector protocol",
+        "C": "Static protocol",
+        "D": "Link state protocol"
+      },
+      "correctAnswer": "D",
+      "explanation": "OSPF routers share link states and build a topology map, which makes it a link state protocol."
+    },
+    {
+      "id": "CN-U4-037",
+      "question": "The OSPF backbone area is:",
+      "options": {
+        "A": "Area 0",
+        "B": "Area 1",
+        "C": "Area 10",
+        "D": "Area 100"
+      },
+      "correctAnswer": "A",
+      "explanation": "Area 0 is the OSPF backbone area."
+    },
+    {
+      "id": "CN-U4-038",
+      "question": "An Area Border Router (ABR) resides in:",
+      "options": {
+        "A": "No area",
+        "B": "Only Area 5",
+        "C": "More than one area",
+        "D": "Only a switch"
+      },
+      "correctAnswer": "C",
+      "explanation": "An ABR has interfaces in more than one area and connects them."
+    },
+    {
+      "id": "CN-U4-039",
+      "question": "The DR generates which LSA?",
+      "options": {
+        "A": "Type 1 Router LSA",
+        "B": "Type 2 Network LSA",
+        "C": "Type 3 Summary LSA",
+        "D": "Type 5 External LSA"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Designated Router generates the Type 2 Network LSA for the multiaccess segment."
+    },
+    {
+      "id": "CN-U4-040",
+      "question": "The multicast address for all OSPF routers is:",
+      "options": {
+        "A": "224.0.0.1",
+        "B": "224.0.0.6",
+        "C": "255.255.255.255",
+        "D": "224.0.0.5"
+      },
+      "correctAnswer": "D",
+      "explanation": "OSPF routers use 224.0.0.5 as the all-OSPF-routers multicast address."
+    },
+    {
+      "id": "CN-U4-041",
+      "question": "The BGP Autonomous System Number (ASN) range (as per notes) is:",
+      "options": {
+        "A": "0 to 255",
+        "B": "1 to 1024",
+        "C": "1 to 65535",
+        "D": "1 to 100"
+      },
+      "correctAnswer": "C",
+      "explanation": "As per the notes, the ASN range is 1 to 65535."
+    },
+    {
+      "id": "CN-U4-042",
+      "question": "The default BGP KEEPALIVE interval is:",
+      "options": {
+        "A": "60 seconds",
+        "B": "30 seconds",
+        "C": "180 seconds",
+        "D": "10 seconds"
+      },
+      "correctAnswer": "A",
+      "explanation": "The default BGP KEEPALIVE interval is 60 seconds."
+    },
+    {
+      "id": "CN-U4-043",
+      "question": "The final BGP session state, in which UPDATE messages are exchanged, is:",
+      "options": {
+        "A": "Idle",
+        "B": "Active",
+        "C": "Connect",
+        "D": "Established"
+      },
+      "correctAnswer": "D",
+      "explanation": "Established is the final state, where neighbours exchange UPDATE messages."
+    },
+    {
+      "id": "CN-U4-044",
+      "question": "iBGP neighbours are in:",
+      "options": {
+        "A": "Different autonomous systems",
+        "B": "The same autonomous system",
+        "C": "Different networks only",
+        "D": "Different VLANs"
+      },
+      "correctAnswer": "B",
+      "explanation": "iBGP runs between routers in the same autonomous system."
+    },
+    {
+      "id": "CN-U4-045",
+      "question": "Route redistribution means:",
+      "options": {
+        "A": "Passing routes from one routing protocol or process to another",
+        "B": "Deleting all routes",
+        "C": "Changing the IP address",
+        "D": "Resetting the router"
+      },
+      "correctAnswer": "A",
+      "explanation": "Redistribution injects routes learned from one routing protocol or process into another."
+    },
+    {
+      "id": "CN-U4-046",
+      "question": "Route filtering is used to:",
+      "options": {
+        "A": "Increase all metrics",
+        "B": "Create VLANs",
+        "C": "Prevent advertisement or acceptance of certain routes",
+        "D": "Replace OSPF"
+      },
+      "correctAnswer": "C",
+      "explanation": "Route filtering controls which routes are advertised or accepted."
+    },
+    {
+      "id": "CN-U4-047",
+      "question": "MPLS forwards packets using:",
+      "options": {
+        "A": "Port numbers",
+        "B": "Labels",
+        "C": "MAC addresses only",
+        "D": "Domain names"
+      },
+      "correctAnswer": "B",
+      "explanation": "MPLS forwards packets based on labels instead of looking up IP addresses at each hop."
+    },
+    {
+      "id": "CN-U4-048",
+      "question": "A VPN provides:",
+      "options": {
+        "A": "A public open network",
+        "B": "A slower cable",
+        "C": "A hardware switch",
+        "D": "An isolated, secure tunnel across a public network"
+      },
+      "correctAnswer": "D",
+      "explanation": "A VPN creates an isolated, secure tunnel across a public network."
+    },
+    {
+      "id": "CN-U4-049",
+      "question": "GRE is a:",
+      "options": {
+        "A": "Tunnelling protocol",
+        "B": "Routing metric",
+        "C": "Switching protocol",
+        "D": "Queuing method"
+      },
+      "correctAnswer": "A",
+      "explanation": "GRE is a tunnelling protocol that encapsulates packets inside other IP packets."
+    },
+    {
+      "id": "CN-U4-050",
+      "question": "Which WAN topology is the most fault-tolerant?",
+      "options": {
+        "A": "Point-to-point",
+        "B": "Hub-and-spoke",
+        "C": "Fully meshed",
+        "D": "Partially meshed"
+      },
+      "correctAnswer": "C",
+      "explanation": "A fully meshed topology has multiple paths between sites, so it is the most fault-tolerant."
+    },
+    {
+      "id": "CN-U4-051",
+      "question": "Why does PortFast help avoid DHCP failure for a PC?",
+      "options": {
+        "A": "It disables DHCP",
+        "B": "It gives the PC a static IP",
+        "C": "It blocks the PC",
+        "D": "The port does not wait for the listening and learning states"
+      },
+      "correctAnswer": "D",
+      "explanation": "Without PortFast the port waits through listening and learning, so the PC's DHCP request can time out; PortFast skips these states."
+    },
+    {
+      "id": "CN-U4-052",
+      "question": "What happens when a PortFast port with BPDU Guard receives a BPDU?",
+      "options": {
+        "A": "It forwards the BPDU",
+        "B": "It goes to err-disabled and stays down until manually re-enabled",
+        "C": "It becomes the root bridge",
+        "D": "It changes to a trunk"
+      },
+      "correctAnswer": "B",
+      "explanation": "BPDU Guard shuts the port into err-disabled, and it stays down until it is manually re-enabled."
+    },
+    {
+      "id": "CN-U4-053",
+      "question": "UplinkFast speeds up recovery by bypassing:",
+      "options": {
+        "A": "The listening and learning states",
+        "B": "The forwarding state",
+        "C": "The root bridge election",
+        "D": "The VLAN database"
+      },
+      "correctAnswer": "A",
+      "explanation": "UplinkFast moves the backup uplink straight to forwarding, skipping the listening and learning states."
+    },
+    {
+      "id": "CN-U4-054",
+      "question": "Without BackboneFast, switch D in the PPT example waits for:",
+      "options": {
+        "A": "5 seconds",
+        "B": "60 seconds",
+        "C": "The 20-second Max Age timer",
+        "D": "180 seconds"
+      },
+      "correctAnswer": "C",
+      "explanation": "Without BackboneFast, switch D must wait for the 20-second Max Age timer to expire before reacting."
+    },
+    {
+      "id": "CN-U4-055",
+      "question": "An inferior BPDU is a BPDU that:",
+      "options": {
+        "A": "Is larger than normal",
+        "B": "Is sent only by the root",
+        "C": "Contains a VLAN tag",
+        "D": "Carries worse information than what neighbours already know"
+      },
+      "correctAnswer": "D",
+      "explanation": "An inferior BPDU advertises worse root information than what the receiving switch already knows."
+    },
+    {
+      "id": "CN-U4-056",
+      "question": "Which command enables PortFast on an interface?",
+      "options": {
+        "A": "spanning-tree portfast",
+        "B": "spanning-tree bpduguard enable",
+        "C": "ip route 0.0.0.0",
+        "D": "router ospf 1"
+      },
+      "correctAnswer": "A",
+      "explanation": "The interface command spanning-tree portfast enables PortFast."
+    },
+    {
+      "id": "CN-U4-057",
+      "question": "Which command enables BPDU Guard?",
+      "options": {
+        "A": "spanning-tree portfast",
+        "B": "router bgp 100",
+        "C": "spanning-tree bpduguard enable",
+        "D": "redistribute static"
+      },
+      "correctAnswer": "C",
+      "explanation": "The interface command spanning-tree bpduguard enable turns on BPDU Guard."
+    },
+    {
+      "id": "CN-U4-058",
+      "question": "FTP is not time sensitive because:",
+      "options": {
+        "A": "It uses UDP",
+        "B": "Dropped packets can be resent as it uses TCP",
+        "C": "It never loses packets",
+        "D": "It has the highest priority"
+      },
+      "correctAnswer": "B",
+      "explanation": "FTP uses TCP, so lost packets are resent and small delays do not matter."
+    },
+    {
+      "id": "CN-U4-059",
+      "question": "Why is UDP used for the voice stream in VoIP?",
+      "options": {
+        "A": "UDP is more reliable",
+        "B": "UDP encrypts voice",
+        "C": "UDP resends lost packets",
+        "D": "To avoid the processing and bandwidth overhead of TCP"
+      },
+      "correctAnswer": "D",
+      "explanation": "UDP avoids the overhead of TCP, which suits real-time voice."
+    },
+    {
+      "id": "CN-U4-060",
+      "question": "In QoS, marking means:",
+      "options": {
+        "A": "Deciding which packet has priority and labelling it",
+        "B": "Dropping all packets",
+        "C": "Serving packets in order",
+        "D": "Buffering packets only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Marking labels each packet with its priority so later devices can treat it accordingly."
+    },
+    {
+      "id": "CN-U4-061",
+      "question": "In QoS, scheduling means:",
+      "options": {
+        "A": "Labelling packets",
+        "B": "Serving packets in the order decided by policing",
+        "C": "Deleting queues",
+        "D": "Encrypting packets"
+      },
+      "correctAnswer": "B",
+      "explanation": "Scheduling serves packets from the queues in the order decided by the policy."
+    },
+    {
+      "id": "CN-U4-062",
+      "question": "A drawback of traffic shaping is that:",
+      "options": {
+        "A": "It drops all packets",
+        "B": "It increases bandwidth",
+        "C": "Memory is required to buffer packets",
+        "D": "It removes priority"
+      },
+      "correctAnswer": "C",
+      "explanation": "Shaping delays excess packets in a buffer, so it needs memory."
+    },
+    {
+      "id": "CN-U4-063",
+      "question": "With WFQ weights of 3, 2 and 1, the router processes:",
+      "options": {
+        "A": "Three packets from queue 1, two from queue 2 and one from queue 3",
+        "B": "One packet from each queue",
+        "C": "All packets from queue 3 first",
+        "D": "Packets randomly"
+      },
+      "correctAnswer": "A",
+      "explanation": "The weights decide how many packets are served from each queue per round: 3, 2 and 1."
+    },
+    {
+      "id": "CN-U4-064",
+      "question": "In the Leaky Bucket algorithm, when the bucket is full:",
+      "options": {
+        "A": "The output rate doubles",
+        "B": "Tokens are added",
+        "C": "The bucket grows",
+        "D": "Extra packets overflow and are lost"
+      },
+      "correctAnswer": "D",
+      "explanation": "When the bucket is full, additional packets overflow and are discarded."
+    },
+    {
+      "id": "CN-U4-065",
+      "question": "In the Token Bucket algorithm, tokens saved during low traffic:",
+      "options": {
+        "A": "Are lost",
+        "B": "Allow a burst to be sent later",
+        "C": "Stop all traffic",
+        "D": "Reduce the rate permanently"
+      },
+      "correctAnswer": "B",
+      "explanation": "Saved tokens can be spent later to send a burst of traffic."
+    },
+    {
+      "id": "CN-U4-066",
+      "question": "Which is the correct difference between the two bucket algorithms?",
+      "options": {
+        "A": "Both give bursty output",
+        "B": "Both give fixed output",
+        "C": "Leaky bucket gives fixed output; token bucket allows bursts",
+        "D": "Token bucket gives fixed output; leaky bucket allows bursts"
+      },
+      "correctAnswer": "C",
+      "explanation": "The leaky bucket gives a constant output rate, whereas the token bucket allows bursts."
+    },
+    {
+      "id": "CN-U4-067",
+      "question": "In the floating static route example, the route to 192.168.1.1 with metric 1 is:",
+      "options": {
+        "A": "Installed first; the route via 10.0.0.1 takes over if the first becomes unavailable",
+        "B": "Ignored always",
+        "C": "Installed only after the second",
+        "D": "Used only for IPv6"
+      },
+      "correctAnswer": "A",
+      "explanation": "The route with the lower value is installed first, and the backup route takes over if it becomes unavailable."
+    },
+    {
+      "id": "CN-U4-068",
+      "question": "A floating static route protects only against:",
+      "options": {
+        "A": "Remote link failure",
+        "B": "Failure of a directly connected link",
+        "C": "Power failure",
+        "D": "Software bugs"
+      },
+      "correctAnswer": "B",
+      "explanation": "A floating static route reacts only when the directly connected link fails."
+    },
+    {
+      "id": "CN-U4-069",
+      "question": "Why was RIP's broadcast method troublesome for larger networks?",
+      "options": {
+        "A": "It used no metrics",
+        "B": "It encrypted updates",
+        "C": "It was too fast",
+        "D": "Updates consume a lot of bandwidth"
+      },
+      "correctAnswer": "D",
+      "explanation": "Periodic full-table broadcasts consume a lot of bandwidth in larger networks."
+    },
+    {
+      "id": "CN-U4-070",
+      "question": "The OSPF cost of a 10 Mbps link (reference 100,000,000) is:",
+      "options": {
+        "A": "1",
+        "B": "100",
+        "C": "10",
+        "D": "64"
+      },
+      "correctAnswer": "C",
+      "explanation": "Cost = 100,000,000 / 10,000,000 bps = 10."
+    },
+    {
+      "id": "CN-U4-071",
+      "question": "Why is administrative distance needed?",
+      "options": {
+        "A": "To assign IP addresses",
+        "B": "Because metrics of different protocols cannot be compared directly",
+        "C": "To create VLANs",
+        "D": "To encrypt routes"
+      },
+      "correctAnswer": "B",
+      "explanation": "Different protocols use different metrics, so administrative distance is used to choose between them."
+    },
+    {
+      "id": "CN-U4-072",
+      "question": "If a router learns two paths to a network from the same protocol (OSPF), it compares:",
+      "options": {
+        "A": "The metric",
+        "B": "The administrative distance",
+        "C": "The hostname",
+        "D": "The MAC address"
+      },
+      "correctAnswer": "A",
+      "explanation": "For paths from the same protocol the administrative distance is equal, so the metric decides."
+    },
+    {
+      "id": "CN-U4-073",
+      "question": "A router learns 20.0.0.0 from OSPF (AD 110) and RIP (AD 120). Which is installed?",
+      "options": {
+        "A": "RIP, because it has a higher AD",
+        "B": "Both",
+        "C": "Neither",
+        "D": "OSPF, because it has a lower AD"
+      },
+      "correctAnswer": "D",
+      "explanation": "The lower AD is preferred, so the OSPF route (110) is installed."
+    },
+    {
+      "id": "CN-U4-074",
+      "question": "In the OSPF cost example, the path via E, F and G (total cost 4) is chosen over the path via B and C (cost 66) because:",
+      "options": {
+        "A": "It has fewer hops",
+        "B": "It uses RIP",
+        "C": "It has the lower total cost",
+        "D": "It is longer"
+      },
+      "correctAnswer": "C",
+      "explanation": "OSPF picks the path with the lowest total cost."
+    },
+    {
+      "id": "CN-U4-075",
+      "question": "The main difference between IGP and EGP is that:",
+      "options": {
+        "A": "IGP is only for BGP",
+        "B": "IGP works within an AS; EGP connects different ASes",
+        "C": "EGP works within an AS only",
+        "D": "Both are the same"
+      },
+      "correctAnswer": "B",
+      "explanation": "An IGP runs inside one autonomous system, while an EGP connects different autonomous systems."
+    },
+    {
+      "id": "CN-U4-076",
+      "question": "EIGRP routers become neighbours when:",
+      "options": {
+        "A": "A hello contains an AS number matching the local EIGRP process",
+        "B": "They have the same hostname",
+        "C": "They are in the same room",
+        "D": "They use the same cable colour"
+      },
+      "correctAnswer": "A",
+      "explanation": "EIGRP neighbours form when a received hello carries an AS number matching the local process."
+    },
+    {
+      "id": "CN-U4-077",
+      "question": "After becoming neighbours, EIGRP sends update packets:",
+      "options": {
+        "A": "By broadcast to all hosts",
+        "B": "By multicast to the Internet",
+        "C": "In unicast mode to neighbours",
+        "D": "Never"
+      },
+      "correctAnswer": "C",
+      "explanation": "Once neighbours are formed, updates are sent in unicast mode to those neighbours."
+    },
+    {
+      "id": "CN-U4-078",
+      "question": "OSPF areas help large networks by:",
+      "options": {
+        "A": "Increasing routing table size",
+        "B": "Removing routers",
+        "C": "Removing Area 0",
+        "D": "Reducing routing table size and limiting changes to an area"
+      },
+      "correctAnswer": "D",
+      "explanation": "Areas keep routing tables smaller and confine topology changes to the area."
+    },
+    {
+      "id": "CN-U4-079",
+      "question": "In OSPF, traffic between different areas must pass through:",
+      "options": {
+        "A": "Area 0",
+        "B": "Area 1",
+        "C": "A VPN",
+        "D": "A switch"
+      },
+      "correctAnswer": "A",
+      "explanation": "Inter-area traffic must go through the backbone, Area 0."
+    },
+    {
+      "id": "CN-U4-080",
+      "question": "An ASBR connects:",
+      "options": {
+        "A": "Two switches",
+        "B": "An OSPF AS to other autonomous systems or routing protocols",
+        "C": "Two PCs",
+        "D": "Two VLANs"
+      },
+      "correctAnswer": "B",
+      "explanation": "An ASBR links the OSPF domain to other autonomous systems or routing protocols."
+    },
+    {
+      "id": "CN-U4-081",
+      "question": "The BDR:",
+      "options": {
+        "A": "Generates Type 5 LSAs",
+        "B": "Replaces Area 0",
+        "C": "Becomes the DR if the DR fails",
+        "D": "Blocks all hellos"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Backup Designated Router takes over as DR if the DR fails."
+    },
+    {
+      "id": "CN-U4-082",
+      "question": "Type 3 LSA (Summary LSA) is sent by an:",
+      "options": {
+        "A": "Internal router",
+        "B": "DR",
+        "C": "BDR",
+        "D": "ABR"
+      },
+      "correctAnswer": "D",
+      "explanation": "The ABR generates Type 3 Summary LSAs to describe networks of one area to another."
+    },
+    {
+      "id": "CN-U4-083",
+      "question": "A router with OSPF priority 0:",
+      "options": {
+        "A": "Always becomes DR",
+        "B": "Cannot become DR",
+        "C": "Becomes BDR only",
+        "D": "Is shut down"
+      },
+      "correctAnswer": "B",
+      "explanation": "A priority of 0 makes the router ineligible for DR or BDR election."
+    },
+    {
+      "id": "CN-U4-084",
+      "question": "In a Point-to-Point OSPF network:",
+      "options": {
+        "A": "No DR is chosen",
+        "B": "DR and BDR are elected",
+        "C": "Only BDR is elected",
+        "D": "Neighbours are configured manually"
+      },
+      "correctAnswer": "A",
+      "explanation": "Only two routers exist on a point-to-point link, so no DR is needed."
+    },
+    {
+      "id": "CN-U4-085",
+      "question": "In an NBMA OSPF network:",
+      "options": {
+        "A": "No DR is elected",
+        "B": "Neighbours are found with multicast hellos",
+        "C": "DR and BDR are elected and neighbours are configured manually",
+        "D": "Only point-to-point links exist"
+      },
+      "correctAnswer": "C",
+      "explanation": "NBMA does not support multicast, so neighbours are configured manually and a DR and BDR are elected."
+    },
+    {
+      "id": "CN-U4-086",
+      "question": "The OSPF network command includes:",
+      "options": {
+        "A": "Only the area",
+        "B": "Only the mask",
+        "C": "Only the AS number",
+        "D": "The network address, inverse mask and area"
+      },
+      "correctAnswer": "D",
+      "explanation": "The OSPF network command specifies the network address, the inverse (wildcard) mask and the area."
+    },
+    {
+      "id": "CN-U4-087",
+      "question": "The inverse (wildcard) mask for 255.255.255.0 is:",
+      "options": {
+        "A": "0.0.0.255",
+        "B": "255.0.0.0",
+        "C": "0.0.255.0",
+        "D": "255.255.255.255"
+      },
+      "correctAnswer": "A",
+      "explanation": "The wildcard mask is the inverse of the subnet mask: 0.0.0.255."
+    },
+    {
+      "id": "CN-U4-088",
+      "question": "BGP deals with:",
+      "options": {
+        "A": "Hops and links",
+        "B": "Autonomous systems",
+        "C": "MAC addresses",
+        "D": "VLAN IDs"
+      },
+      "correctAnswer": "B",
+      "explanation": "BGP exchanges routing information between autonomous systems."
+    },
+    {
+      "id": "CN-U4-089",
+      "question": "BGP neighbours are:",
+      "options": {
+        "A": "Discovered automatically by broadcasts",
+        "B": "Discovered by RIP",
+        "C": "Configured manually",
+        "D": "Not required"
+      },
+      "correctAnswer": "C",
+      "explanation": "BGP neighbours must be configured manually."
+    },
+    {
+      "id": "CN-U4-090",
+      "question": "In BGP, the best path is generally the one that:",
+      "options": {
+        "A": "Has the most hops",
+        "B": "Has the most ASes",
+        "C": "Has the biggest ASN",
+        "D": "Passes through the fewest autonomous systems"
+      },
+      "correctAnswer": "D",
+      "explanation": "BGP generally prefers the path with the shortest AS path."
+    },
+    {
+      "id": "CN-U4-091",
+      "question": "The BGP OPEN message contains:",
+      "options": {
+        "A": "Routes only",
+        "B": "BGP version, local AS number and BGP router ID",
+        "C": "Error codes only",
+        "D": "Nothing"
+      },
+      "correctAnswer": "B",
+      "explanation": "The OPEN message carries the BGP version, local AS number and BGP router ID."
+    },
+    {
+      "id": "CN-U4-092",
+      "question": "The default BGP hold time is:",
+      "options": {
+        "A": "180 seconds",
+        "B": "60 seconds",
+        "C": "20 seconds",
+        "D": "30 seconds"
+      },
+      "correctAnswer": "A",
+      "explanation": "The default BGP hold time is 180 seconds."
+    },
+    {
+      "id": "CN-U4-093",
+      "question": "A BGP NOTIFICATION message is sent when:",
+      "options": {
+        "A": "A route is added",
+        "B": "The session starts",
+        "C": "A KEEPALIVE arrives",
+        "D": "A fatal error occurs and the session is reset"
+      },
+      "correctAnswer": "D",
+      "explanation": "NOTIFICATION reports an error and the session is then reset."
+    },
+    {
+      "id": "CN-U4-094",
+      "question": "In the BGP Active state, BGP:",
+      "options": {
+        "A": "Exchanges UPDATE messages",
+        "B": "Has finished the session",
+        "C": "Tries to start a TCP connection",
+        "D": "Sends NOTIFICATION only"
+      },
+      "correctAnswer": "C",
+      "explanation": "In the Active state BGP tries to start a TCP connection with the neighbour."
+    },
+    {
+      "id": "CN-U4-095",
+      "question": "By default, iBGP peers within an AS must be:",
+      "options": {
+        "A": "Fully meshed",
+        "B": "Unconnected",
+        "C": "In different ASes",
+        "D": "Only two"
+      },
+      "correctAnswer": "A",
+      "explanation": "By default, iBGP peers within an AS must form a full mesh."
+    },
+    {
+      "id": "CN-U4-096",
+      "question": "By default, eBGP neighbours are assumed to be at most:",
+      "options": {
+        "A": "Five hops away",
+        "B": "One hop away",
+        "C": "Ten hops away",
+        "D": "Unlimited hops away"
+      },
+      "correctAnswer": "B",
+      "explanation": "By default eBGP neighbours are expected to be directly connected, one hop away."
+    },
+    {
+      "id": "CN-U4-097",
+      "question": "Protocols do not redistribute routes automatically because:",
+      "options": {
+        "A": "They use the same metric",
+        "B": "They are on the same router",
+        "C": "They use no metrics",
+        "D": "Each protocol uses a different metric"
+      },
+      "correctAnswer": "D",
+      "explanation": "Each protocol uses its own metric, so routes cannot be shared without conversion."
+    },
+    {
+      "id": "CN-U4-098",
+      "question": "Which is a valid source of route redistribution?",
+      "options": {
+        "A": "MAC address table",
+        "B": "ARP cache",
+        "C": "Static routes, connected routes and other routing protocols",
+        "D": "Switch VLAN database"
+      },
+      "correctAnswer": "C",
+      "explanation": "Routes can be redistributed from static routes, connected routes and other routing protocols."
+    },
+    {
+      "id": "CN-U4-099",
+      "question": "In \"redistribute ospf 2 subnets\", the keyword subnets:",
+      "options": {
+        "A": "Deletes subnets",
+        "B": "Includes classless subnets, not only classful networks",
+        "C": "Hides subnets",
+        "D": "Changes the AS"
+      },
+      "correctAnswer": "B",
+      "explanation": "The subnets keyword redistributes classless subnets as well as classful networks."
+    },
+    {
+      "id": "CN-U4-100",
+      "question": "Route filtering during redistribution is mainly used to:",
+      "options": {
+        "A": "Prevent routing loops and suboptimal routing at multiple redistribution points",
+        "B": "Increase the metric",
+        "C": "Create tunnels",
+        "D": "Remove all routes"
+      },
+      "correctAnswer": "A",
+      "explanation": "Filtering controls which routes are redistributed, preventing loops and suboptimal routing at multiple redistribution points."
+    },
+    {
+      "id": "CN-U4-101",
+      "question": "Which statement about the MPLS header is correct?",
+      "options": {
+        "A": "It is placed before Layer 1 and holds an IP address",
+        "B": "It is placed after Layer 3 and holds a MAC address",
+        "C": "It is placed between Layer 2 and Layer 3 and holds a label, 3 experimental bits, an S bit and TTL",
+        "D": "It replaces the Layer 2 header"
+      },
+      "correctAnswer": "C",
+      "explanation": "The MPLS header sits between the Layer 2 and Layer 3 headers and carries a label, 3 experimental bits, an S bit and a TTL."
+    },
+    {
+      "id": "CN-U4-102",
+      "question": "In the MPLS example from the notes, what advantage is shown?",
+      "options": {
+        "A": "R4 gets two paths to destination A, whereas normal IP forwarding gives only one least-cost path",
+        "B": "MPLS routers must read IP addresses at each hop",
+        "C": "MPLS removes all labels",
+        "D": "MPLS works only with RIP"
+      },
+      "correctAnswer": "A",
+      "explanation": "MPLS allows traffic engineering over more than one path, while normal IP forwarding uses only the least-cost path."
+    },
+    {
+      "id": "CN-U4-103",
+      "question": "Which is a disadvantage of MPLS?",
+      "options": {
+        "A": "Native security",
+        "B": "Guaranteed bandwidth",
+        "C": "Quality of service support",
+        "D": "High cost and poor integration with Internet and SaaS traffic"
+      },
+      "correctAnswer": "D",
+      "explanation": "Native security, guaranteed bandwidth and QoS are advantages; high cost and poor Internet/SaaS integration are the disadvantages."
+    },
+    {
+      "id": "CN-U4-104",
+      "question": "How does an ISP use MPLS to implement a VPN?",
+      "options": {
+        "A": "By removing all customer traffic",
+        "B": "By isolating the customer's resources and addressing and guaranteeing bandwidth/QoS",
+        "C": "By using only dial-up lines",
+        "D": "By disabling labels"
+      },
+      "correctAnswer": "B",
+      "explanation": "The ISP isolates each customer's resources and addressing and can guarantee bandwidth and QoS."
+    },
+    {
+      "id": "CN-U4-105",
+      "question": "Why is a VPN called an overlay network?",
+      "options": {
+        "A": "Because tunnels are laid over the base network",
+        "B": "Because it overlays two switches",
+        "C": "Because it uses no tunnels",
+        "D": "Because it uses only Wi-Fi"
+      },
+      "correctAnswer": "A",
+      "explanation": "VPN tunnels are laid over an existing base network, which makes it an overlay."
+    },
+    {
+      "id": "CN-U4-106",
+      "question": "What is special about a packet in a VPN, as per the notes?",
+      "options": {
+        "A": "It has no IP header",
+        "B": "It has an MPLS label only",
+        "C": "It is an ordinary packet with an IPsec header after the IP header",
+        "D": "It has two Ethernet headers"
+      },
+      "correctAnswer": "C",
+      "explanation": "A VPN packet is an ordinary packet with an IPsec header placed after the IP header."
+    },
+    {
+      "id": "CN-U4-107",
+      "question": "Which statement about the hub-and-spoke topology is correct?",
+      "options": {
+        "A": "Spokes talk directly to each other",
+        "B": "Spokes talk only through the hub, which is a single point of failure",
+        "C": "It has no hub",
+        "D": "It is the most fault-tolerant topology"
+      },
+      "correctAnswer": "B",
+      "explanation": "In hub-and-spoke, spokes communicate only via the hub, which is a single point of failure."
+    },
+    {
+      "id": "CN-U4-108",
+      "question": "Which is a drawback of the dual-homed topology?",
+      "options": {
+        "A": "No redundancy",
+        "B": "No load balancing",
+        "C": "It uses only one router",
+        "D": "It is more expensive and more difficult to implement"
+      },
+      "correctAnswer": "D",
+      "explanation": "Dual-homing provides redundancy and load balancing but costs more and is harder to implement."
+    },
+    {
+      "id": "CN-U4-109",
+      "question": "Which statement about a fully meshed WAN is correct?",
+      "options": {
+        "A": "It connects all sites using multiple virtual circuits and is the most fault-tolerant",
+        "B": "It connects only two sites",
+        "C": "It has a single hub",
+        "D": "It is the cheapest topology"
+      },
+      "correctAnswer": "A",
+      "explanation": "A full mesh connects all sites with multiple virtual circuits and is the most fault-tolerant."
+    },
+    {
+      "id": "CN-U4-110",
+      "question": "With MTU 1500, MSS 1460 plus 20 (TCP) + 20 (IP) + 24 (GRE + IP) bytes gives:",
+      "options": {
+        "A": "1500 bytes, which fits",
+        "B": "1480 bytes, which fits",
+        "C": "1524 bytes, which exceeds the MTU and causes fragmentation",
+        "D": "1436 bytes"
+      },
+      "correctAnswer": "C",
+      "explanation": "1460 + 20 + 20 + 24 = 1524 bytes, which exceeds the 1500-byte MTU and causes fragmentation."
+    },
+    {
+      "id": "CN-U4-111",
+      "question": "With GRE, reducing MSS to 1436 makes the total packet size:",
+      "options": {
+        "A": "1524 bytes",
+        "B": "1500 bytes",
+        "C": "1460 bytes",
+        "D": "1400 bytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "1436 + 20 + 20 + 24 = 1500 bytes, which fits the MTU."
+    },
+    {
+      "id": "CN-U4-112",
+      "question": "For 150,000 bytes of data, the number of packets with GRE (MSS 1436) compared with without GRE (MSS 1460) is:",
+      "options": {
+        "A": "103 with GRE and 105 without",
+        "B": "103 with GRE and 103 without",
+        "C": "105 with GRE and 105 without",
+        "D": "105 with GRE and 103 without"
+      },
+      "correctAnswer": "D",
+      "explanation": "150000/1436 is about 104.5, so 105 packets with GRE; 150000/1460 is about 102.7, so 103 packets without GRE."
+    },
+    {
+      "id": "CN-U4-113",
+      "question": "GRE adds which two headers?",
+      "options": {
+        "A": "A GRE header and an outer IP header",
+        "B": "A TCP header and a UDP header",
+        "C": "An MPLS header and a VLAN tag",
+        "D": "An Ethernet header and a TOS field"
+      },
+      "correctAnswer": "A",
+      "explanation": "GRE encapsulation adds a GRE header and a new outer IP header."
+    },
+    {
+      "id": "CN-U4-114",
+      "question": "DMVPN combines:",
+      "options": {
+        "A": "VLAN, STP and QoS",
+        "B": "RIP, OSPF and BGP",
+        "C": "GRE tunnels, IPsec encryption and NHRP",
+        "D": "MPLS, LLQ and WFQ"
+      },
+      "correctAnswer": "C",
+      "explanation": "DMVPN combines GRE tunnels, IPsec encryption and NHRP."
+    },
+    {
+      "id": "CN-U4-115",
+      "question": "A multilayer (Layer 3) switch works at:",
+      "options": {
+        "A": "Layer 1 only",
+        "B": "Layer 2 and Layer 3",
+        "C": "Layer 7 only",
+        "D": "Layer 4 only"
+      },
+      "correctAnswer": "B",
+      "explanation": "A multilayer switch performs both Layer 2 switching and Layer 3 routing."
+    },
+    {
+      "id": "CN-U4-116",
+      "question": "In the BackboneFast example, link A-B fails. What does switch D do?",
+      "options": {
+        "A": "Waits 180 seconds",
+        "B": "Becomes the root bridge",
+        "C": "Shuts down its ports",
+        "D": "Sends an RLQ to A and quickly switches to C as the alternate path"
+      },
+      "correctAnswer": "D",
+      "explanation": "Switch D sends an RLQ towards the root and quickly moves to the alternate path through C."
+    },
+    {
+      "id": "CN-U4-117",
+      "question": "Which statement about recovery times is correct as per the notes?",
+      "options": {
+        "A": "UplinkFast takes about 45 seconds and normal STP about 5 seconds",
+        "B": "UplinkFast and normal STP both take 5 seconds",
+        "C": "UplinkFast takes about 5 seconds and normal recovery about 45 seconds",
+        "D": "UplinkFast takes 20 seconds"
+      },
+      "correctAnswer": "C",
+      "explanation": "UplinkFast recovers in about 5 seconds, while normal STP recovery takes about 45 seconds."
+    },
+    {
+      "id": "CN-U4-118",
+      "question": "Which statement about PortFast and BPDU Guard is correct?",
+      "options": {
+        "A": "BPDU Guard is normally enabled on PortFast ports to prevent loops from accidental switch connections",
+        "B": "PortFast must be enabled on switch-to-switch links",
+        "C": "BPDU Guard allows BPDUs on PortFast ports",
+        "D": "PortFast blocks all traffic"
+      },
+      "correctAnswer": "A",
+      "explanation": "BPDU Guard protects PortFast edge ports from loops caused by switches connected by mistake."
+    },
+    {
+      "id": "CN-U4-119",
+      "question": "VoIP uses which protocols as per the notes?",
+      "options": {
+        "A": "TCP for voice and UDP for control",
+        "B": "UDP for the RTP voice stream and TCP for the control stream",
+        "C": "UDP for both",
+        "D": "TCP for both"
+      },
+      "correctAnswer": "B",
+      "explanation": "The RTP voice stream uses UDP, while the control stream uses TCP."
+    },
+    {
+      "id": "CN-U4-120",
+      "question": "An example of policing from the notes is:",
+      "options": {
+        "A": "Labelling all packets red",
+        "B": "Buffering all packets",
+        "C": "Dropping all FTP",
+        "D": "A higher-priority marked packet is allowed to use 10% of the overall bandwidth"
+      },
+      "correctAnswer": "D",
+      "explanation": "Policing sets limits, such as allowing a higher-priority marked packet to use 10% of the overall bandwidth."
+    },
+    {
+      "id": "CN-U4-121",
+      "question": "How do the two bucket algorithms treat idle time?",
+      "options": {
+        "A": "Token bucket saves tokens for later; leaky bucket loses unused capacity",
+        "B": "Both save tokens",
+        "C": "Leaky bucket saves tokens; token bucket loses them",
+        "D": "Neither is affected"
+      },
+      "correctAnswer": "A",
+      "explanation": "The token bucket accumulates tokens during idle time, while the leaky bucket gives no credit for unused capacity."
+    },
+    {
+      "id": "CN-U4-122",
+      "question": "Lack of \"reliability\" in a flow means:",
+      "options": {
+        "A": "More bandwidth",
+        "B": "Lower jitter",
+        "C": "Loss of a packet or acknowledgement, leading to retransmission",
+        "D": "Faster delivery"
+      },
+      "correctAnswer": "C",
+      "explanation": "Lack of reliability means a packet or acknowledgement is lost, causing retransmission."
+    },
+    {
+      "id": "CN-U4-123",
+      "question": "According to the Daily Quiz, retransmission must NOT be done when the:",
+      "options": {
+        "A": "Packet is lost",
+        "B": "Packet is corrupted",
+        "C": "Acknowledgement is missing",
+        "D": "Packet is error-free"
+      },
+      "correctAnswer": "D",
+      "explanation": "Retransmission is needed for lost, corrupted or unacknowledged packets, not for an error-free packet."
+    },
+    {
+      "id": "CN-U4-124",
+      "question": "According to the Daily Quiz, when the load reaches the network capacity, the delay:",
+      "options": {
+        "A": "Is at a minimum",
+        "B": "Increases sharply",
+        "C": "Becomes zero",
+        "D": "Stays constant"
+      },
+      "correctAnswer": "B",
+      "explanation": "As the load approaches the network capacity, queues build up and the delay increases sharply."
+    },
+    {
+      "id": "CN-U4-125",
+      "question": "In TCP, the congestion window increases exponentially until a threshold in the:",
+      "options": {
+        "A": "Fast recovery algorithm",
+        "B": "Congestion avoidance algorithm",
+        "C": "Slow-start algorithm",
+        "D": "Timeout algorithm"
+      },
+      "correctAnswer": "C",
+      "explanation": "In slow start, the congestion window grows exponentially until it reaches the threshold."
+    },
+    {
+      "id": "CN-U4-126",
+      "question": "The switch that becomes the STP root bridge for a VLAN is determined by:",
+      "options": {
+        "A": "The lowest bridge ID",
+        "B": "The highest bridge ID",
+        "C": "The most ports",
+        "D": "The newest hardware"
+      },
+      "correctAnswer": "A",
+      "explanation": "The switch with the lowest bridge ID becomes the root bridge."
+    },
+    {
+      "id": "CN-U4-127",
+      "question": "Which Cisco feature ensures edge ports do not create Layer 2 loops if mistakenly connected to another switch?",
+      "options": {
+        "A": "UplinkFast",
+        "B": "BackboneFast",
+        "C": "QoS",
+        "D": "BPDU Guard"
+      },
+      "correctAnswer": "D",
+      "explanation": "BPDU Guard disables an edge port that receives a BPDU, preventing loops."
+    },
+    {
+      "id": "CN-U4-128",
+      "question": "Which is TRUE about RIP?",
+      "options": {
+        "A": "It advertises subnet masks",
+        "B": "It does not advertise subnet masks and converges slowly",
+        "C": "It converges in seconds on large networks",
+        "D": "It is a link state protocol"
+      },
+      "correctAnswer": "B",
+      "explanation": "RIP (version 1) does not advertise subnet masks and converges slowly."
+    },
+    {
+      "id": "CN-U4-129",
+      "question": "How does EIGRP convergence compare with RIP?",
+      "options": {
+        "A": "EIGRP converges in seconds where RIP can take minutes",
+        "B": "EIGRP is slower than RIP",
+        "C": "Both take minutes",
+        "D": "EIGRP does not converge"
+      },
+      "correctAnswer": "A",
+      "explanation": "EIGRP converges in seconds, whereas RIP can take minutes."
+    },
+    {
+      "id": "CN-U4-130",
+      "question": "Which route source has the LOWEST administrative distance among these?",
+      "options": {
+        "A": "OSPF",
+        "B": "RIP",
+        "C": "Static route",
+        "D": "EIGRP (internal)"
+      },
+      "correctAnswer": "C",
+      "explanation": "A static route has an administrative distance of 1, lower than the other options."
+    },
+    {
+      "id": "CN-U4-131",
+      "question": "Which statement about OSPF cost is correct?",
+      "options": {
+        "A": "Cost = bandwidth x 100,000,000",
+        "B": "Cost = 100,000,000 / bandwidth in bps, so a 1.5 Mbps link has cost 64",
+        "C": "Cost equals hop count",
+        "D": "Cost equals delay only"
+      },
+      "correctAnswer": "B",
+      "explanation": "OSPF cost is the reference bandwidth divided by the link bandwidth; 100,000,000 / 1,500,000 is about 64."
+    },
+    {
+      "id": "CN-U4-132",
+      "question": "Which LSA type pairing is WRONG?",
+      "options": {
+        "A": "Type 2 - Network LSA (sent by DR)",
+        "B": "Type 3 - Summary LSA (sent by ABR)",
+        "C": "Type 4 - Summary LSA about ASBR location",
+        "D": "Type 5 - Router LSA"
+      },
+      "correctAnswer": "D",
+      "explanation": "Type 5 is the External LSA, not the Router LSA (which is Type 1)."
+    },
+    {
+      "id": "CN-U4-133",
+      "question": "Which OSPF network type uses multicast hellos (224.0.0.5) and elects a DR and BDR?",
+      "options": {
+        "A": "Broadcast multiaccess",
+        "B": "Point-to-point",
+        "C": "Point-to-multipoint",
+        "D": "None of these"
+      },
+      "correctAnswer": "A",
+      "explanation": "Broadcast multiaccess networks use multicast hellos and elect a DR and BDR."
+    },
+    {
+      "id": "CN-U4-134",
+      "question": "The DR and BDR listen on which multicast address?",
+      "options": {
+        "A": "224.0.0.5",
+        "B": "224.0.0.1",
+        "C": "224.0.0.6",
+        "D": "255.255.255.255"
+      },
+      "correctAnswer": "C",
+      "explanation": "The DR and BDR listen on 224.0.0.6."
+    },
+    {
+      "id": "CN-U4-135",
+      "question": "Why does OSPF elect a DR on broadcast networks?",
+      "options": {
+        "A": "To increase the flooding of advertisements",
+        "B": "To avoid flooding the network when every router advertises to every other router",
+        "C": "To remove Area 0",
+        "D": "To disable LSAs"
+      },
+      "correctAnswer": "B",
+      "explanation": "The DR reduces flooding by acting as a central point for LSA exchange."
+    },
+    {
+      "id": "CN-U4-136",
+      "question": "Which is the correct order of BGP session states?",
+      "options": {
+        "A": "Idle, Connect, Active, OpenSent, OpenConfirm, Established",
+        "B": "Idle, Active, Connect, OpenConfirm, OpenSent, Established",
+        "C": "Connect, Idle, Active, Established, OpenSent, OpenConfirm",
+        "D": "Established, Idle, Connect, Active, OpenSent, OpenConfirm"
+      },
+      "correctAnswer": "A",
+      "explanation": "The BGP session states progress as Idle, Connect, Active, OpenSent, OpenConfirm and Established."
+    },
+    {
+      "id": "CN-U4-137",
+      "question": "In which BGP state is the TCP connection established and an OPEN message sent, awaiting a reply OPEN?",
+      "options": {
+        "A": "Idle",
+        "B": "Connect",
+        "C": "OpenConfirm",
+        "D": "OpenSent"
+      },
+      "correctAnswer": "D",
+      "explanation": "In OpenSent the TCP connection is up and an OPEN message has been sent, awaiting the neighbour's OPEN."
+    },
+    {
+      "id": "CN-U4-138",
+      "question": "In the BGP path example, AS102 prefers AS1, AS2, AS105 because:",
+      "options": {
+        "A": "It has more ASes",
+        "B": "It has the largest ASN",
+        "C": "It passes through fewer autonomous systems",
+        "D": "It is the oldest path"
+      },
+      "correctAnswer": "C",
+      "explanation": "BGP prefers the path through fewer autonomous systems."
+    },
+    {
+      "id": "CN-U4-139",
+      "question": "In the iBGP configuration \"neighbor 2.2.2.2 remote-as 100\" on a router in AS 100, why is the remote AS the same?",
+      "options": {
+        "A": "The neighbour is in a different AS",
+        "B": "iBGP peers are in the same AS",
+        "C": "eBGP needs the same AS",
+        "D": "AS numbers are not used"
+      },
+      "correctAnswer": "B",
+      "explanation": "iBGP peers belong to the same AS, so remote-as equals the local AS."
+    },
+    {
+      "id": "CN-U4-140",
+      "question": "In an eBGP configuration, the remote-as value of the neighbour is:",
+      "options": {
+        "A": "Different from the local AS",
+        "B": "Always the same as the local AS",
+        "C": "Always 0",
+        "D": "Not needed"
+      },
+      "correctAnswer": "A",
+      "explanation": "eBGP neighbours are in different autonomous systems, so remote-as differs from the local AS."
+    },
+    {
+      "id": "CN-U4-141",
+      "question": "How many autonomous systems can a single BGP router be associated with?",
+      "options": {
+        "A": "Two",
+        "B": "Many",
+        "C": "None",
+        "D": "Only one"
+      },
+      "correctAnswer": "D",
+      "explanation": "A BGP router belongs to only one autonomous system."
+    },
+    {
+      "id": "CN-U4-142",
+      "question": "When redistributing a static route into RIP, why is \"metric 1\" used?",
+      "options": {
+        "A": "Because RIP uses bandwidth",
+        "B": "Because RIP uses hop count as its metric",
+        "C": "Because RIP uses cost",
+        "D": "Because RIP has no metric"
+      },
+      "correctAnswer": "B",
+      "explanation": "RIP uses hop count, so a hop-count value such as 1 is assigned to the redistributed route."
+    },
+    {
+      "id": "CN-U4-143",
+      "question": "In \"redistribute ospf 1 metric 1 1 1 1 1\" under EIGRP, the five values are:",
+      "options": {
+        "A": "Hop, cost, area, priority, ASN",
+        "B": "Cost, TOS, TTL, MSS, MTU",
+        "C": "Bandwidth, delay, reliability, load and MTU",
+        "D": "IP, mask, area, AS, ID"
+      },
+      "correctAnswer": "C",
+      "explanation": "The five EIGRP metric values are bandwidth, delay, reliability, load and MTU."
+    },
+    {
+      "id": "CN-U4-144",
+      "question": "Why must OSPF routes be given a metric when redistributed into EIGRP?",
+      "options": {
+        "A": "EIGRP cannot understand OSPF's cost metric",
+        "B": "OSPF has no routes",
+        "C": "EIGRP has no metric",
+        "D": "To disable OSPF"
+      },
+      "correctAnswer": "A",
+      "explanation": "EIGRP cannot interpret OSPF's cost, so a metric must be supplied."
+    },
+    {
+      "id": "CN-U4-145",
+      "question": "Which is NOT a valid source for redistribution?",
+      "options": {
+        "A": "Static routes",
+        "B": "Connected routes",
+        "C": "EIGRP 100 into EIGRP 200",
+        "D": "A switch's MAC address table"
+      },
+      "correctAnswer": "D",
+      "explanation": "A MAC address table holds Layer 2 information, not routes, so it cannot be redistributed."
+    },
+    {
+      "id": "CN-U4-146",
+      "question": "Routes learned in EIGRP 100 are shared with EIGRP 200 only if:",
+      "options": {
+        "A": "They are on different days",
+        "B": "They are in the same VLAN",
+        "C": "A router participates in both processes and redistributes",
+        "D": "They share no routers"
+      },
+      "correctAnswer": "C",
+      "explanation": "A router must run both processes and redistribute between them."
+    },
+    {
+      "id": "CN-U4-147",
+      "question": "Which classification is correct?",
+      "options": {
+        "A": "RIP - link state; OSPF - distance vector; EIGRP - path vector",
+        "B": "RIP - distance vector; OSPF - link state; EIGRP - hybrid",
+        "C": "RIP - hybrid; OSPF - distance vector; EIGRP - link state",
+        "D": "All three are link state"
+      },
+      "correctAnswer": "B",
+      "explanation": "RIP is distance vector, OSPF is link state and EIGRP is hybrid."
+    },
+    {
+      "id": "CN-U4-148",
+      "question": "Why is BGP essential for Internet routing?",
+      "options": {
+        "A": "The Internet is a collection of interconnected autonomous systems and BGP connects them",
+        "B": "The Internet uses only RIP",
+        "C": "The Internet needs no routing",
+        "D": "BGP is used only inside a LAN"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Internet consists of interconnected autonomous systems, and BGP exchanges routes between them."
+    },
+    {
+      "id": "CN-U4-149",
+      "question": "Which WAN topology becomes expensive when many circuits are needed?",
+      "options": {
+        "A": "Hub-and-spoke",
+        "B": "Partially meshed",
+        "C": "Point-to-point",
+        "D": "Full mesh only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Point-to-point links need a separate circuit per connection, which becomes expensive as circuits multiply."
+    },
+    {
+      "id": "CN-U4-150",
+      "question": "Which statement about QoS is correct?",
+      "options": {
+        "A": "QoS increases the physical bandwidth of the link",
+        "B": "QoS removes all lower-priority traffic permanently",
+        "C": "QoS works only for UDP",
+        "D": "Once traffic is classified, the highest priority traffic is sent first while lower priority traffic waits in a queue"
+      },
+      "correctAnswer": "D",
+      "explanation": "QoS does not add bandwidth; it sends high-priority traffic first while lower-priority traffic waits in a queue."
+    }
+  ]
+}

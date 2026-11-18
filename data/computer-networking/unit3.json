@@ -1,0 +1,126 @@
+{
+  "subject": "Computer Networking",
+  "unit": "Unit 3",
+  "questions": [
+    {
+      "id": "CN-U3-001",
+      "question": "What is a computer network?",
+      "options": {
+        "A": "A collection of connected computers",
+        "B": "A programming language",
+        "C": "An operating system",
+        "D": "A database"
+      },
+      "correctAnswer": "A",
+      "explanation": "A computer network is a collection of interconnected devices that communicate and share resources."
+    },
+    {
+      "id": "CN-U3-002",
+      "question": "Which layer of the OSI model is responsible for routing packets between different networks?",
+      "options": {
+        "A": "Data Link layer",
+        "B": "Network layer",
+        "C": "Transport layer",
+        "D": "Session layer"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Network layer (Layer 3) handles logical addressing and routing of packets across networks."
+    },
+    {
+      "id": "CN-U3-003",
+      "question": "Which protocol translates domain names into IP addresses?",
+      "options": {
+        "A": "HTTP",
+        "B": "DNS",
+        "C": "FTP",
+        "D": "SMTP"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Domain Name System (DNS) maps human-readable domain names to IP addresses."
+    },
+    {
+      "id": "CN-U3-004",
+      "question": "How many bits are there in an IPv4 address?",
+      "options": {
+        "A": "16",
+        "B": "24",
+        "C": "32",
+        "D": "128"
+      },
+      "correctAnswer": "C",
+      "explanation": "An IPv4 address is 32 bits long, usually written as four decimal octets. IPv6 addresses are 128 bits."
+    },
+    {
+      "id": "CN-U3-005",
+      "question": "Which device forwards Ethernet frames using MAC addresses and operates mainly at the Data Link layer?",
+      "options": {
+        "A": "Hub",
+        "B": "Repeater",
+        "C": "Switch",
+        "D": "Modem"
+      },
+      "correctAnswer": "C",
+      "explanation": "A switch learns MAC addresses and forwards frames only to the port where the destination lives. A hub simply repeats signals to every port."
+    },
+    {
+      "id": "CN-U3-006",
+      "question": "Which transport-layer protocol provides reliable, connection-oriented delivery?",
+      "options": {
+        "A": "UDP",
+        "B": "ICMP",
+        "C": "ARP",
+        "D": "TCP"
+      },
+      "correctAnswer": "D",
+      "explanation": "TCP establishes a connection, acknowledges data and retransmits lost segments. UDP is connectionless and does not guarantee delivery."
+    },
+    {
+      "id": "CN-U3-007",
+      "question": "What is the default port number used by HTTPS?",
+      "options": {
+        "A": "21",
+        "B": "80",
+        "C": "443",
+        "D": "8080"
+      },
+      "correctAnswer": "C",
+      "explanation": "HTTPS uses TCP port 443 by default. Port 80 is used for plain HTTP and port 21 for FTP control."
+    },
+    {
+      "id": "CN-U3-008",
+      "question": "In which network topology is every device connected to a central hub or switch?",
+      "options": {
+        "A": "Bus",
+        "B": "Ring",
+        "C": "Mesh",
+        "D": "Star"
+      },
+      "correctAnswer": "D",
+      "explanation": "In a star topology each node has its own link to a central device, so one failed cable affects only one node."
+    },
+    {
+      "id": "CN-U3-009",
+      "question": "Which protocol automatically assigns IP addresses to hosts on a network?",
+      "options": {
+        "A": "DHCP",
+        "B": "DNS",
+        "C": "ARP",
+        "D": "SNMP"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Dynamic Host Configuration Protocol (DHCP) leases IP addresses and related settings such as gateway and DNS servers."
+    },
+    {
+      "id": "CN-U3-010",
+      "question": "The subnet mask 255.255.255.0 corresponds to which CIDR prefix length?",
+      "options": {
+        "A": "/8",
+        "B": "/16",
+        "C": "/24",
+        "D": "/32"
+      },
+      "correctAnswer": "C",
+      "explanation": "255.255.255.0 has 24 leading one-bits (three full octets), so the prefix length is /24."
+    }
+  ]
+}

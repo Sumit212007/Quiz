@@ -1,0 +1,1806 @@
+{
+  "subject": "Computer Networking",
+  "unit": "Unit 5",
+  "questions": [
+    {
+      "id": "CN-U5-001",
+      "question": "A small network has up to about:",
+      "options": {
+        "A": "200 devices",
+        "B": "1,000 devices",
+        "C": "5,000 devices",
+        "D": "50,000 devices"
+      },
+      "correctAnswer": "A",
+      "explanation": "A small network serves up to about 200 devices."
+    },
+    {
+      "id": "CN-U5-002",
+      "question": "A large network has:",
+      "options": {
+        "A": "Up to 200 devices",
+        "B": "200 to 500 devices",
+        "C": "More than 1,000 devices",
+        "D": "Exactly 1,000 devices"
+      },
+      "correctAnswer": "C",
+      "explanation": "A large network has more than 1,000 devices."
+    },
+    {
+      "id": "CN-U5-003",
+      "question": "Which design principle breaks the complex network design problem into smaller, manageable areas?",
+      "options": {
+        "A": "Resiliency",
+        "B": "Hierarchy",
+        "C": "Flexibility",
+        "D": "Speed"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hierarchy divides the design into layers, so each area is smaller and easier to manage."
+    },
+    {
+      "id": "CN-U5-004",
+      "question": "Which layer is the backbone of the hierarchical network?",
+      "options": {
+        "A": "Access",
+        "B": "Distribution",
+        "C": "Workgroup",
+        "D": "Core"
+      },
+      "correctAnswer": "D",
+      "explanation": "The core layer is the high-speed backbone of the hierarchical network."
+    },
+    {
+      "id": "CN-U5-005",
+      "question": "The access layer is where:",
+      "options": {
+        "A": "End devices and local servers connect to the network",
+        "B": "The Internet connects",
+        "C": "Only routers connect",
+        "D": "Only the core connects"
+      },
+      "correctAnswer": "A",
+      "explanation": "The access layer is the point where end devices and local servers attach to the network."
+    },
+    {
+      "id": "CN-U5-006",
+      "question": "The distribution layer is also called the:",
+      "options": {
+        "A": "Workstation layer",
+        "B": "Backbone layer",
+        "C": "Workgroup layer",
+        "D": "Physical layer"
+      },
+      "correctAnswer": "C",
+      "explanation": "The distribution layer is also known as the workgroup layer."
+    },
+    {
+      "id": "CN-U5-007",
+      "question": "The access layer is also called the:",
+      "options": {
+        "A": "Workgroup layer",
+        "B": "Workstation layer",
+        "C": "Backbone layer",
+        "D": "Transport layer"
+      },
+      "correctAnswer": "B",
+      "explanation": "The access layer is also known as the workstation layer."
+    },
+    {
+      "id": "CN-U5-008",
+      "question": "Which layer is the boundary between Layer 2 and Layer 3?",
+      "options": {
+        "A": "Access",
+        "B": "Core",
+        "C": "Physical",
+        "D": "Distribution"
+      },
+      "correctAnswer": "D",
+      "explanation": "The distribution layer marks the boundary between the Layer 2 access network and the Layer 3 core."
+    },
+    {
+      "id": "CN-U5-009",
+      "question": "Power over Ethernet (PoE) supplies power to devices through the:",
+      "options": {
+        "A": "Wi-Fi signal",
+        "B": "Power socket only",
+        "C": "Network cable",
+        "D": "Battery"
+      },
+      "correctAnswer": "C",
+      "explanation": "PoE delivers power to devices over the same network cable that carries data."
+    },
+    {
+      "id": "CN-U5-010",
+      "question": "Port security controls:",
+      "options": {
+        "A": "Which devices can use a port",
+        "B": "The colour of a cable",
+        "C": "The speed of the CPU",
+        "D": "The size of a packet"
+      },
+      "correctAnswer": "A",
+      "explanation": "Port security restricts which devices are allowed to use a switch port."
+    },
+    {
+      "id": "CN-U5-011",
+      "question": "The main purpose of the core layer is:",
+      "options": {
+        "A": "Connecting printers",
+        "B": "Giving Wi-Fi passwords",
+        "C": "Filtering email",
+        "D": "High-speed switching of packets"
+      },
+      "correctAnswer": "D",
+      "explanation": "The core layer exists to switch packets at high speed."
+    },
+    {
+      "id": "CN-U5-012",
+      "question": "A flat network design is mainly used today for:",
+      "options": {
+        "A": "Large enterprises",
+        "B": "Very small networks",
+        "C": "Data centers",
+        "D": "ISPs"
+      },
+      "correctAnswer": "B",
+      "explanation": "A flat design suits only very small networks."
+    },
+    {
+      "id": "CN-U5-013",
+      "question": "An enterprise network is the IT infrastructure that:",
+      "options": {
+        "A": "Connects users, devices and applications in midsize and large organizations",
+        "B": "Connects only two PCs",
+        "C": "Is used only at home",
+        "D": "Works only with Bluetooth"
+      },
+      "correctAnswer": "A",
+      "explanation": "An enterprise network connects users, devices and applications across midsize and large organizations."
+    },
+    {
+      "id": "CN-U5-014",
+      "question": "In a two-tier design, the core is collapsed into the:",
+      "options": {
+        "A": "Access layer",
+        "B": "WAN edge",
+        "C": "Distribution layer",
+        "D": "Internet"
+      },
+      "correctAnswer": "C",
+      "explanation": "In a two-tier design, the core and distribution functions are combined in the distribution layer."
+    },
+    {
+      "id": "CN-U5-015",
+      "question": "A three-tier design is recommended when:",
+      "options": {
+        "A": "There is only one switch",
+        "B": "The network is a single room",
+        "C": "No routers exist",
+        "D": "More than two pairs of distribution switches are required"
+      },
+      "correctAnswer": "D",
+      "explanation": "A separate core is justified when more than two pairs of distribution switches must be connected."
+    },
+    {
+      "id": "CN-U5-016",
+      "question": "Traffic between servers within a data center is called:",
+      "options": {
+        "A": "North-south traffic",
+        "B": "East-west traffic",
+        "C": "Up-down traffic",
+        "D": "Broadcast traffic only"
+      },
+      "correctAnswer": "B",
+      "explanation": "Server-to-server traffic inside a data center is called east-west traffic."
+    },
+    {
+      "id": "CN-U5-017",
+      "question": "Traffic between endpoints and the WAN edge, Internet or data center is called:",
+      "options": {
+        "A": "East-west traffic",
+        "B": "Side-to-side traffic",
+        "C": "North-south traffic",
+        "D": "Local traffic only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Traffic between endpoints and the WAN edge, Internet or data center is north-south traffic."
+    },
+    {
+      "id": "CN-U5-018",
+      "question": "The Internet of Things (IoT) is a combination of:",
+      "options": {
+        "A": "Sensors and actuators",
+        "B": "Only printers",
+        "C": "Only routers",
+        "D": "Only monitors"
+      },
+      "correctAnswer": "A",
+      "explanation": "IoT combines sensors that collect data with actuators that act on it."
+    },
+    {
+      "id": "CN-U5-019",
+      "question": "High availability means a system can operate:",
+      "options": {
+        "A": "Only during office hours",
+        "B": "Only once a day",
+        "C": "With long downtime",
+        "D": "Continuously, with minimal downtime"
+      },
+      "correctAnswer": "D",
+      "explanation": "High availability means the system keeps running continuously with minimal downtime."
+    },
+    {
+      "id": "CN-U5-020",
+      "question": "The IoT architecture is divided into how many layers?",
+      "options": {
+        "A": "Three",
+        "B": "Four",
+        "C": "Five",
+        "D": "Seven"
+      },
+      "correctAnswer": "B",
+      "explanation": "The IoT architecture has four layers."
+    },
+    {
+      "id": "CN-U5-021",
+      "question": "High-availability clusters are also known as:",
+      "options": {
+        "A": "Failover clusters",
+        "B": "Backbone clusters",
+        "C": "Wireless clusters",
+        "D": "Static clusters"
+      },
+      "correctAnswer": "A",
+      "explanation": "HA clusters are also called failover clusters."
+    },
+    {
+      "id": "CN-U5-022",
+      "question": "Failover means:",
+      "options": {
+        "A": "Deleting the primary system",
+        "B": "Shutting down the network",
+        "C": "Adding more users",
+        "D": "A failed primary component's work moves to a backup component"
+      },
+      "correctAnswer": "D",
+      "explanation": "Failover transfers the work of a failed primary component to a backup component."
+    },
+    {
+      "id": "CN-U5-023",
+      "question": "A heartbeat program is used to:",
+      "options": {
+        "A": "Measure heart rate",
+        "B": "Encrypt data",
+        "C": "Send packets to confirm each cluster node is working",
+        "D": "Assign IP addresses"
+      },
+      "correctAnswer": "C",
+      "explanation": "A heartbeat program sends packets to confirm that each cluster node is still working."
+    },
+    {
+      "id": "CN-U5-024",
+      "question": "Cloud networking uses:",
+      "options": {
+        "A": "Only physical cables",
+        "B": "Cloud-based services to deploy a corporate network",
+        "C": "Only leased lines",
+        "D": "Only Bluetooth"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cloud networking uses cloud-based services to deploy a corporate network."
+    },
+    {
+      "id": "CN-U5-025",
+      "question": "Fault tolerance aims for:",
+      "options": {
+        "A": "Some downtime",
+        "B": "Slow recovery",
+        "C": "Reduced cost only",
+        "D": "Zero downtime"
+      },
+      "correctAnswer": "D",
+      "explanation": "Fault tolerance aims for zero downtime."
+    },
+    {
+      "id": "CN-U5-026",
+      "question": "Which is more expensive?",
+      "options": {
+        "A": "Fault tolerance",
+        "B": "High availability",
+        "C": "Both are free",
+        "D": "Neither has cost"
+      },
+      "correctAnswer": "A",
+      "explanation": "Fault tolerance needs duplicate physical components, so it is more expensive than high availability."
+    },
+    {
+      "id": "CN-U5-027",
+      "question": "In Cisco's troubleshooting method, which layer should you check first?",
+      "options": {
+        "A": "Application layer",
+        "B": "Network layer",
+        "C": "Physical layer",
+        "D": "Session layer"
+      },
+      "correctAnswer": "C",
+      "explanation": "Cisco's method starts at the physical layer, since cables and ports are the most basic cause of faults."
+    },
+    {
+      "id": "CN-U5-028",
+      "question": "The top-down approach starts from the:",
+      "options": {
+        "A": "Physical layer",
+        "B": "Application layer",
+        "C": "Transport layer",
+        "D": "Network layer"
+      },
+      "correctAnswer": "B",
+      "explanation": "The top-down approach begins at the application layer and works downwards."
+    },
+    {
+      "id": "CN-U5-029",
+      "question": "The bottom-up approach starts from the:",
+      "options": {
+        "A": "Physical layer",
+        "B": "Application layer",
+        "C": "Transport layer",
+        "D": "Session layer"
+      },
+      "correctAnswer": "A",
+      "explanation": "The bottom-up approach begins at the physical layer and works upwards."
+    },
+    {
+      "id": "CN-U5-030",
+      "question": "The divide and conquer approach usually starts at the:",
+      "options": {
+        "A": "Physical layer",
+        "B": "Application layer",
+        "C": "Data link layer",
+        "D": "Transport layer"
+      },
+      "correctAnswer": "D",
+      "explanation": "Divide and conquer usually starts at the transport layer and moves up or down depending on the result."
+    },
+    {
+      "id": "CN-U5-031",
+      "question": "The ping command uses which protocol?",
+      "options": {
+        "A": "TCP",
+        "B": "UDP",
+        "C": "ICMP",
+        "D": "HTTP"
+      },
+      "correctAnswer": "C",
+      "explanation": "Ping uses ICMP echo request and echo reply messages."
+    },
+    {
+      "id": "CN-U5-032",
+      "question": "ARP links:",
+      "options": {
+        "A": "An IP address to a MAC address",
+        "B": "A domain name to an IP",
+        "C": "A port to a VLAN",
+        "D": "A MAC to a domain"
+      },
+      "correctAnswer": "A",
+      "explanation": "ARP resolves an IP address to a MAC address."
+    },
+    {
+      "id": "CN-U5-033",
+      "question": "Traceroute shows:",
+      "options": {
+        "A": "Only the MAC address",
+        "B": "The path and where the packet stops",
+        "C": "The DNS server only",
+        "D": "The CPU load"
+      },
+      "correctAnswer": "B",
+      "explanation": "Traceroute lists each hop on the path, showing where the packet stops."
+    },
+    {
+      "id": "CN-U5-034",
+      "question": "The route command is used to:",
+      "options": {
+        "A": "Check the weather",
+        "B": "Encrypt traffic",
+        "C": "Create VLANs",
+        "D": "Manually update the routing table"
+      },
+      "correctAnswer": "D",
+      "explanation": "The route command lets you view and manually update the routing table."
+    },
+    {
+      "id": "CN-U5-035",
+      "question": "Telnet provides:",
+      "options": {
+        "A": "A graphical game",
+        "B": "File compression",
+        "C": "A command-line interface to a remote device",
+        "D": "Wi-Fi security"
+      },
+      "correctAnswer": "C",
+      "explanation": "Telnet gives a command-line interface to a remote device."
+    },
+    {
+      "id": "CN-U5-036",
+      "question": "A duplicate IP address problem can be fixed in Windows using:",
+      "options": {
+        "A": "ipconfig /flushdns only",
+        "B": "ipconfig /release and ipconfig /renew",
+        "C": "ping 8.8.8.8",
+        "D": "route add"
+      },
+      "correctAnswer": "B",
+      "explanation": "Releasing and renewing the lease with ipconfig /release and /renew obtains a fresh address."
+    },
+    {
+      "id": "CN-U5-037",
+      "question": "nslookup shows the:",
+      "options": {
+        "A": "Domain name to IP address mapping",
+        "B": "MAC address table",
+        "C": "Wi-Fi password",
+        "D": "Router temperature"
+      },
+      "correctAnswer": "A",
+      "explanation": "nslookup queries DNS and shows the domain name to IP address mapping."
+    },
+    {
+      "id": "CN-U5-038",
+      "question": "Cloud networking lets a third-party provider:",
+      "options": {
+        "A": "Delete your data",
+        "B": "Make the network slower",
+        "C": "Remove all security",
+        "D": "Manage and maintain the networking hardware and infrastructure"
+      },
+      "correctAnswer": "D",
+      "explanation": "With cloud networking, the provider manages and maintains the networking hardware and infrastructure."
+    },
+    {
+      "id": "CN-U5-039",
+      "question": "Network virtualization is the:",
+      "options": {
+        "A": "Replacement of all software with hardware",
+        "B": "Software-based implementation of networking services",
+        "C": "Removal of VLANs",
+        "D": "Use of only Bluetooth"
+      },
+      "correctAnswer": "B",
+      "explanation": "Network virtualization implements networking services in software."
+    },
+    {
+      "id": "CN-U5-040",
+      "question": "A Bluetooth network is an example of an:",
+      "options": {
+        "A": "Infrastructure WLAN",
+        "B": "Wired LAN",
+        "C": "Ad hoc network",
+        "D": "WAN"
+      },
+      "correctAnswer": "C",
+      "explanation": "Bluetooth devices connect directly without an access point, which is an ad hoc network."
+    },
+    {
+      "id": "CN-U5-041",
+      "question": "NFV replaces physical network devices with:",
+      "options": {
+        "A": "Virtual services that perform the same functions",
+        "B": "Bigger cables",
+        "C": "More switches",
+        "D": "Printers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Network Functions Virtualization replaces physical devices with virtual services doing the same job."
+    },
+    {
+      "id": "CN-U5-042",
+      "question": "How many channels does Bluetooth hop among?",
+      "options": {
+        "A": "11",
+        "B": "40",
+        "C": "79",
+        "D": "100"
+      },
+      "correctAnswer": "C",
+      "explanation": "Bluetooth hops among 79 channels."
+    },
+    {
+      "id": "CN-U5-043",
+      "question": "Bluetooth uses which spread spectrum technique?",
+      "options": {
+        "A": "CDMA",
+        "B": "OFDM",
+        "C": "DSSS only",
+        "D": "FHSS"
+      },
+      "correctAnswer": "D",
+      "explanation": "Bluetooth uses frequency hopping spread spectrum (FHSS)."
+    },
+    {
+      "id": "CN-U5-044",
+      "question": "802.11a works in which frequency band?",
+      "options": {
+        "A": "2.4 GHz",
+        "B": "5 GHz",
+        "C": "900 MHz",
+        "D": "60 GHz"
+      },
+      "correctAnswer": "B",
+      "explanation": "802.11a operates in the 5 GHz band."
+    },
+    {
+      "id": "CN-U5-045",
+      "question": "802.11n supports:",
+      "options": {
+        "A": "MIMO",
+        "B": "Only 1 antenna",
+        "C": "No multiplexing",
+        "D": "Only 900 MHz"
+      },
+      "correctAnswer": "A",
+      "explanation": "802.11n introduced MIMO, using multiple antennas."
+    },
+    {
+      "id": "CN-U5-046",
+      "question": "The multiple access technique used by 802.11 is:",
+      "options": {
+        "A": "CSMA/CD",
+        "B": "TDMA only",
+        "C": "FDMA only",
+        "D": "CSMA/CA"
+      },
+      "correctAnswer": "D",
+      "explanation": "Wi-Fi uses CSMA/CA, because wireless stations cannot reliably detect collisions."
+    },
+    {
+      "id": "CN-U5-047",
+      "question": "A vNIC allows a virtual machine to:",
+      "options": {
+        "A": "Print documents",
+        "B": "Access a network",
+        "C": "Change the CPU",
+        "D": "Format the disk"
+      },
+      "correctAnswer": "B",
+      "explanation": "A virtual NIC gives a virtual machine access to a network."
+    },
+    {
+      "id": "CN-U5-048",
+      "question": "WEP uses which stream cipher?",
+      "options": {
+        "A": "AES",
+        "B": "TKIP",
+        "C": "RC4",
+        "D": "DES only"
+      },
+      "correctAnswer": "C",
+      "explanation": "WEP encrypts with the RC4 stream cipher."
+    },
+    {
+      "id": "CN-U5-049",
+      "question": "WPA2 uses which cipher?",
+      "options": {
+        "A": "AES-CCMP",
+        "B": "TKIP only",
+        "C": "RC4 only",
+        "D": "None"
+      },
+      "correctAnswer": "A",
+      "explanation": "WPA2 uses the AES-CCMP cipher."
+    },
+    {
+      "id": "CN-U5-050",
+      "question": "Which is the newest Wi-Fi security protocol among these?",
+      "options": {
+        "A": "WEP",
+        "B": "WPA",
+        "C": "WPA2",
+        "D": "WPA3"
+      },
+      "correctAnswer": "D",
+      "explanation": "WPA3 is the newest of the four."
+    },
+    {
+      "id": "CN-U5-051",
+      "question": "Resiliency in network design means the network:",
+      "options": {
+        "A": "Never changes",
+        "B": "Uses only one link",
+        "C": "Remains available under normal and abnormal conditions such as failures and DoS events",
+        "D": "Has no users"
+      },
+      "correctAnswer": "C",
+      "explanation": "A resilient network stays available under normal and abnormal conditions, including failures and DoS events."
+    },
+    {
+      "id": "CN-U5-052",
+      "question": "Flexibility in network design means the ability to:",
+      "options": {
+        "A": "Change parts of the network, add services or increase capacity without major changes",
+        "B": "Remove all layers",
+        "C": "Use only one vendor",
+        "D": "Avoid documentation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Flexibility means the network can be modified, extended or scaled without major redesign."
+    },
+    {
+      "id": "CN-U5-053",
+      "question": "What is a drawback of a flat network as it grows?",
+      "options": {
+        "A": "It becomes cheaper",
+        "B": "It becomes more secure",
+        "C": "It gets more layers",
+        "D": "Response time becomes slow and management becomes difficult"
+      },
+      "correctAnswer": "D",
+      "explanation": "As a flat network grows, response time slows and management becomes difficult."
+    },
+    {
+      "id": "CN-U5-054",
+      "question": "Which is a benefit of hierarchical design?",
+      "options": {
+        "A": "All traffic goes to the core",
+        "B": "Local traffic stays local",
+        "C": "Broadcast domains get bigger",
+        "D": "Layers are removed"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hierarchical design keeps local traffic local instead of sending everything to the core."
+    },
+    {
+      "id": "CN-U5-055",
+      "question": "Which is a function of the access layer?",
+      "options": {
+        "A": "Aggregating WAN links",
+        "B": "Routing between routing domains",
+        "C": "Acting as the backbone",
+        "D": "Port security, PoE, QoS classification and ARP inspection"
+      },
+      "correctAnswer": "D",
+      "explanation": "The access layer provides port security, PoE, QoS classification and ARP inspection."
+    },
+    {
+      "id": "CN-U5-056",
+      "question": "What is the purpose of an auxiliary VLAN in the access layer?",
+      "options": {
+        "A": "Guest Wi-Fi",
+        "B": "Management of switches",
+        "C": "A separate VLAN for voice (VoIP) traffic",
+        "D": "Backup of data"
+      },
+      "correctAnswer": "C",
+      "explanation": "An auxiliary VLAN carries voice (VoIP) traffic separately from data traffic."
+    },
+    {
+      "id": "CN-U5-057",
+      "question": "The distribution layer acts as the demarcation point between:",
+      "options": {
+        "A": "Broadcast domains",
+        "B": "Physical cables",
+        "C": "Wi-Fi channels",
+        "D": "Two ISPs"
+      },
+      "correctAnswer": "A",
+      "explanation": "The distribution layer separates broadcast domains, forming the boundary between the access and core layers."
+    },
+    {
+      "id": "CN-U5-058",
+      "question": "Routing between routing domains, such as EIGRP to OSPF, is a function of the:",
+      "options": {
+        "A": "Access layer",
+        "B": "Distribution layer",
+        "C": "Physical layer",
+        "D": "Application layer"
+      },
+      "correctAnswer": "B",
+      "explanation": "The distribution layer handles routing between different routing domains."
+    },
+    {
+      "id": "CN-U5-059",
+      "question": "The core layer scales by:",
+      "options": {
+        "A": "Adding complex equipment",
+        "B": "Adding more VLANs",
+        "C": "Using faster devices",
+        "D": "Removing redundancy"
+      },
+      "correctAnswer": "C",
+      "explanation": "The core is kept simple and scales by using faster devices."
+    },
+    {
+      "id": "CN-U5-060",
+      "question": "A collapsed core (two-tier) design is cost-effective because:",
+      "options": {
+        "A": "There are no separate core layer devices",
+        "B": "It uses no switches",
+        "C": "It uses no routers",
+        "D": "It needs no cables"
+      },
+      "correctAnswer": "A",
+      "explanation": "In a collapsed core design, the distribution layer also acts as the core, so no separate core devices are needed."
+    },
+    {
+      "id": "CN-U5-061",
+      "question": "Which block is used for regular Internet access, e-commerce and remote VPN access?",
+      "options": {
+        "A": "WAN Edge block",
+        "B": "Network Services block",
+        "C": "Data Center block",
+        "D": "Internet Edge block"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Internet Edge block provides Internet access, e-commerce and remote VPN access."
+    },
+    {
+      "id": "CN-U5-062",
+      "question": "The WAN Edge block connects to:",
+      "options": {
+        "A": "Only printers",
+        "B": "Remote data centers, remote branches, other campuses or cloud providers",
+        "C": "Only the access layer",
+        "D": "Only wireless clients"
+      },
+      "correctAnswer": "B",
+      "explanation": "The WAN Edge block connects the enterprise to remote data centers, branches, other campuses and cloud providers."
+    },
+    {
+      "id": "CN-U5-063",
+      "question": "Why might a large campus choose a three-tier design?",
+      "options": {
+        "A": "To use fewer switches",
+        "B": "Multiple buildings need a dedicated distribution layer",
+        "C": "To remove the core",
+        "D": "To avoid fibre cables"
+      },
+      "correctAnswer": "B",
+      "explanation": "Multiple buildings need a dedicated distribution layer and a core to interconnect them."
+    },
+    {
+      "id": "CN-U5-064",
+      "question": "Which design is more suitable for east-west traffic in a data center?",
+      "options": {
+        "A": "Flat design",
+        "B": "Two-tier access design",
+        "C": "Hub design",
+        "D": "Leaf-spine design"
+      },
+      "correctAnswer": "D",
+      "explanation": "A leaf-spine design gives short, predictable paths between servers, which suits east-west traffic."
+    },
+    {
+      "id": "CN-U5-065",
+      "question": "HA cluster nodes typically share the same:",
+      "options": {
+        "A": "Storage",
+        "B": "Operating system licence only",
+        "C": "Wi-Fi password",
+        "D": "Printer"
+      },
+      "correctAnswer": "A",
+      "explanation": "The nodes of an HA cluster typically share the same storage."
+    },
+    {
+      "id": "CN-U5-066",
+      "question": "At the application layer, which software is critical for application availability?",
+      "options": {
+        "A": "Antivirus",
+        "B": "Word processor",
+        "C": "Load-balancing software",
+        "D": "Media player"
+      },
+      "correctAnswer": "C",
+      "explanation": "Load-balancing software spreads requests across servers and keeps the application available."
+    },
+    {
+      "id": "CN-U5-067",
+      "question": "Replication in HA means:",
+      "options": {
+        "A": "Data is replicated and shared so any node can step in when another fails",
+        "B": "Data is deleted",
+        "C": "Data is encrypted only",
+        "D": "Data is printed"
+      },
+      "correctAnswer": "A",
+      "explanation": "Replication copies and shares data so another node can take over when one fails."
+    },
+    {
+      "id": "CN-U5-068",
+      "question": "A best practice for failover systems is to locate them:",
+      "options": {
+        "A": "Next to the primary",
+        "B": "In the same rack",
+        "C": "On the same server",
+        "D": "Off-premises"
+      },
+      "correctAnswer": "D",
+      "explanation": "Placing failover systems off-premises protects them from a site-wide failure that affects the primary."
+    },
+    {
+      "id": "CN-U5-069",
+      "question": "Compared with fault tolerance, high availability is:",
+      "options": {
+        "A": "More expensive",
+        "B": "Impossible to use",
+        "C": "Less expensive, as it does not need duplicate physical components",
+        "D": "The same cost"
+      },
+      "correctAnswer": "C",
+      "explanation": "High availability does not need duplicate physical components, so it costs less."
+    },
+    {
+      "id": "CN-U5-070",
+      "question": "Fault tolerance mainly focuses on:",
+      "options": {
+        "A": "Performance only",
+        "B": "Preventing mission-critical applications from experiencing downtime",
+        "C": "Reducing cost",
+        "D": "Reducing users"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fault tolerance is about preventing mission-critical applications from experiencing downtime."
+    },
+    {
+      "id": "CN-U5-071",
+      "question": "\"Make no assumptions\" in Cisco's methodology means you should:",
+      "options": {
+        "A": "Guess the cause",
+        "B": "See for yourself what the cause is",
+        "C": "Ignore errors",
+        "D": "Skip documentation"
+      },
+      "correctAnswer": "B",
+      "explanation": "It means verifying the cause yourself instead of assuming."
+    },
+    {
+      "id": "CN-U5-072",
+      "question": "Documenting troubleshooting steps helps to:",
+      "options": {
+        "A": "Avoid repeating work and allow rollback of changes",
+        "B": "Delete logs",
+        "C": "Hide mistakes",
+        "D": "Slow down the work"
+      },
+      "correctAnswer": "A",
+      "explanation": "Documented steps avoid repeated work and allow changes to be rolled back."
+    },
+    {
+      "id": "CN-U5-073",
+      "question": "The top-down method is best when:",
+      "options": {
+        "A": "A cable is cut",
+        "B": "A port light is off",
+        "C": "A switch has no power",
+        "D": "The problem seems related to an application"
+      },
+      "correctAnswer": "D",
+      "explanation": "Top-down suits problems that appear to involve an application."
+    },
+    {
+      "id": "CN-U5-074",
+      "question": "The divide and conquer method is useful when:",
+      "options": {
+        "A": "The cause is a cut cable",
+        "B": "The cause is clearly an application bug",
+        "C": "You have no clear idea of the cause",
+        "D": "You already know the root cause"
+      },
+      "correctAnswer": "C",
+      "explanation": "Divide and conquer helps when you have no clear idea of the cause, since you start in the middle and narrow it down."
+    },
+    {
+      "id": "CN-U5-075",
+      "question": "In cloud networking, a third-party provider manages the networking hardware so administrators can focus on:",
+      "options": {
+        "A": "Cable laying",
+        "B": "Replacing routers",
+        "C": "Efficiency and optimizing configuration",
+        "D": "Buying leased lines"
+      },
+      "correctAnswer": "C",
+      "explanation": "With hardware handled by the provider, administrators can focus on efficiency and optimizing configuration."
+    },
+    {
+      "id": "CN-U5-076",
+      "question": "In a traceroute output, the first column shows the:",
+      "options": {
+        "A": "Packet size",
+        "B": "Hop number",
+        "C": "MAC address",
+        "D": "TTL value only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The first column of traceroute output is the hop number."
+    },
+    {
+      "id": "CN-U5-077",
+      "question": "In traceroute, the same routers appearing again and again indicates a:",
+      "options": {
+        "A": "Routing loop",
+        "B": "Fast network",
+        "C": "DNS error",
+        "D": "Wi-Fi problem"
+      },
+      "correctAnswer": "A",
+      "explanation": "Repeating routers show packets circulating between routers, which is a routing loop."
+    },
+    {
+      "id": "CN-U5-078",
+      "question": "A successful ping shows:",
+      "options": {
+        "A": "\"Request timed out\"",
+        "B": "\"Destination host unreachable\"",
+        "C": "100% loss",
+        "D": "Replies with round-trip time and 0% loss"
+      },
+      "correctAnswer": "D",
+      "explanation": "A successful ping returns replies with round-trip times and 0% packet loss."
+    },
+    {
+      "id": "CN-U5-079",
+      "question": "IP address exhaustion means:",
+      "options": {
+        "A": "The IP address is too long",
+        "B": "DNS is down",
+        "C": "The cable is cut",
+        "D": "The DHCP server is out of addresses or the request never reached it"
+      },
+      "correctAnswer": "D",
+      "explanation": "IP exhaustion occurs when the DHCP server has no addresses left, or the request never reaches it."
+    },
+    {
+      "id": "CN-U5-080",
+      "question": "Common causes of Wi-Fi problems include:",
+      "options": {
+        "A": "Only a wrong cable",
+        "B": "Only DNS",
+        "C": "Congestion, distance and interference",
+        "D": "Only IP exhaustion"
+      },
+      "correctAnswer": "C",
+      "explanation": "Wi-Fi problems commonly come from congestion, distance and interference."
+    },
+    {
+      "id": "CN-U5-081",
+      "question": "To fix a \"DNS Name Does Not Exist\" error, you can:",
+      "options": {
+        "A": "Disable the NIC permanently",
+        "B": "Obtain DNS automatically, flush the DNS cache or change the DNS server",
+        "C": "Change the cable colour",
+        "D": "Format the PC"
+      },
+      "correctAnswer": "B",
+      "explanation": "The error is addressed by obtaining DNS automatically, flushing the DNS cache or changing the DNS server."
+    },
+    {
+      "id": "CN-U5-082",
+      "question": "\"Non-authoritative answer\" in nslookup means the data:",
+      "options": {
+        "A": "Came from a cache or another DNS server, not the authoritative source",
+        "B": "Is always wrong",
+        "C": "Came from the user",
+        "D": "Came from DHCP"
+      },
+      "correctAnswer": "A",
+      "explanation": "A non-authoritative answer comes from a cache or another DNS server instead of the authoritative source."
+    },
+    {
+      "id": "CN-U5-083",
+      "question": "In an infrastructure WLAN, a client:",
+      "options": {
+        "A": "Connects without any WAP",
+        "B": "Associates with all WAPs at once",
+        "C": "Authenticates and then associates with only one WAP at a time",
+        "D": "Needs no authentication"
+      },
+      "correctAnswer": "C",
+      "explanation": "A client authenticates and then associates with only one WAP at a time."
+    },
+    {
+      "id": "CN-U5-084",
+      "question": "Roaming happens when:",
+      "options": {
+        "A": "The router is restarted",
+        "B": "The password changes",
+        "C": "A cable is unplugged",
+        "D": "A client goes out of range of one WAP and associates with another"
+      },
+      "correctAnswer": "D",
+      "explanation": "Roaming is a client moving out of range of one WAP and associating with another."
+    },
+    {
+      "id": "CN-U5-085",
+      "question": "Bluetooth uses time slots of:",
+      "options": {
+        "A": "625 microseconds",
+        "B": "625 milliseconds",
+        "C": "79 microseconds",
+        "D": "2.4 seconds"
+      },
+      "correctAnswer": "A",
+      "explanation": "Bluetooth time slots are 625 microseconds long."
+    },
+    {
+      "id": "CN-U5-086",
+      "question": "Which is the correct difference between Bluetooth and Ethernet?",
+      "options": {
+        "A": "Both are wired",
+        "B": "Bluetooth is wireless (PAN); Ethernet is wired (LAN)",
+        "C": "Ethernet is wireless; Bluetooth is wired",
+        "D": "Both are WANs"
+      },
+      "correctAnswer": "B",
+      "explanation": "Bluetooth is a wireless personal area network, while Ethernet is a wired LAN."
+    },
+    {
+      "id": "CN-U5-087",
+      "question": "802.11g uses OFDM and has a maximum rate of:",
+      "options": {
+        "A": "11 Mbps",
+        "B": "600 Mbps",
+        "C": "3.47 Gbps",
+        "D": "54 Mbps"
+      },
+      "correctAnswer": "D",
+      "explanation": "802.11g uses OFDM with a maximum rate of 54 Mbps."
+    },
+    {
+      "id": "CN-U5-088",
+      "question": "802.11b operates at 2.4 GHz and has a maximum rate of:",
+      "options": {
+        "A": "11 Mbps",
+        "B": "54 Mbps",
+        "C": "600 Mbps",
+        "D": "14 Gbps"
+      },
+      "correctAnswer": "A",
+      "explanation": "802.11b reaches a maximum of 11 Mbps."
+    },
+    {
+      "id": "CN-U5-089",
+      "question": "802.11ac (Wi-Fi 5) operates in:",
+      "options": {
+        "A": "2.4 GHz only",
+        "B": "5 GHz with up to 3.47 Gbps",
+        "C": "900 MHz",
+        "D": "Unused TV bands"
+      },
+      "correctAnswer": "B",
+      "explanation": "802.11ac works in the 5 GHz band with up to 3.47 Gbps."
+    },
+    {
+      "id": "CN-U5-090",
+      "question": "802.11ax is also known as:",
+      "options": {
+        "A": "Wi-Fi 4",
+        "B": "Wi-Fi 5",
+        "C": "Wi-Fi 6",
+        "D": "Wi-Fi 3"
+      },
+      "correctAnswer": "C",
+      "explanation": "802.11ax is marketed as Wi-Fi 6."
+    },
+    {
+      "id": "CN-U5-091",
+      "question": "MAC ID filtering allows access only to:",
+      "options": {
+        "A": "All devices",
+        "B": "Devices with no MAC",
+        "C": "Devices whose MAC address is in the approved list",
+        "D": "Devices with a strong signal"
+      },
+      "correctAnswer": "C",
+      "explanation": "MAC filtering admits only devices whose MAC addresses are on the approved list."
+    },
+    {
+      "id": "CN-U5-092",
+      "question": "WEP is insecure because it:",
+      "options": {
+        "A": "Uses AES",
+        "B": "Uses dynamic keys",
+        "C": "Needs no key",
+        "D": "Uses a small static key with the RC4 cipher"
+      },
+      "correctAnswer": "D",
+      "explanation": "WEP's small static key and RC4 cipher make it easy to break."
+    },
+    {
+      "id": "CN-U5-093",
+      "question": "TKIP improves WEP by:",
+      "options": {
+        "A": "Sending a different key with each packet",
+        "B": "Using one key forever",
+        "C": "Removing encryption",
+        "D": "Using no keys"
+      },
+      "correctAnswer": "A",
+      "explanation": "TKIP uses a different key for each packet."
+    },
+    {
+      "id": "CN-U5-094",
+      "question": "EAP-TLS is used with:",
+      "options": {
+        "A": "WEP",
+        "B": "WPA2-Enterprise",
+        "C": "MAC filtering",
+        "D": "Bluetooth"
+      },
+      "correctAnswer": "B",
+      "explanation": "EAP-TLS is an authentication method used with WPA2-Enterprise."
+    },
+    {
+      "id": "CN-U5-095",
+      "question": "WPA and WPA2 are based on which IEEE standard?",
+      "options": {
+        "A": "802.3",
+        "B": "802.11i",
+        "C": "802.1Q",
+        "D": "802.15"
+      },
+      "correctAnswer": "B",
+      "explanation": "WPA and WPA2 are based on the IEEE 802.11i standard."
+    },
+    {
+      "id": "CN-U5-096",
+      "question": "WPA uses TKIP while WPA2 uses:",
+      "options": {
+        "A": "RC4",
+        "B": "DES",
+        "C": "AES-CCMP",
+        "D": "None"
+      },
+      "correctAnswer": "C",
+      "explanation": "WPA2 replaces TKIP with AES-CCMP."
+    },
+    {
+      "id": "CN-U5-097",
+      "question": "WPA3 was released in:",
+      "options": {
+        "A": "1997",
+        "B": "2003",
+        "C": "2004",
+        "D": "2018"
+      },
+      "correctAnswer": "D",
+      "explanation": "WPA3 was released in 2018."
+    },
+    {
+      "id": "CN-U5-098",
+      "question": "In the IoT architecture, the object sensing layer:",
+      "options": {
+        "A": "Collects data using sensors attached to objects",
+        "B": "Provides content services",
+        "C": "Handles all transactions",
+        "D": "Stores backups"
+      },
+      "correctAnswer": "A",
+      "explanation": "The object sensing layer collects data through sensors attached to objects."
+    },
+    {
+      "id": "CN-U5-099",
+      "question": "In cloud networking, virtualization lets you define:",
+      "options": {
+        "A": "Virtual routers, virtual firewalls and virtual load balancers in software",
+        "B": "Only physical cables",
+        "C": "Only hardware switches",
+        "D": "Nothing"
+      },
+      "correctAnswer": "A",
+      "explanation": "Virtualization allows routers, firewalls and load balancers to be defined in software."
+    },
+    {
+      "id": "CN-U5-100",
+      "question": "A virtual switch (vSwitch) in VMware:",
+      "options": {
+        "A": "Powers the VM",
+        "B": "Sends traffic between its attached port groups and other network ports",
+        "C": "Stores VM disks",
+        "D": "Encrypts VM memory"
+      },
+      "correctAnswer": "B",
+      "explanation": "A vSwitch forwards traffic between its attached port groups and other network ports."
+    },
+    {
+      "id": "CN-U5-101",
+      "question": "Which statement correctly compares high availability (HA) and fault tolerance (FT)?",
+      "options": {
+        "A": "HA aims for zero downtime and is costlier; FT aims for minimal downtime and is cheaper",
+        "B": "HA aims for minimal downtime and is cheaper; FT aims for zero downtime and is costlier",
+        "C": "Both always cost the same",
+        "D": "HA needs fully duplicate systems; FT needs none"
+      },
+      "correctAnswer": "B",
+      "explanation": "HA targets minimal downtime at lower cost, while FT targets zero downtime at higher cost."
+    },
+    {
+      "id": "CN-U5-102",
+      "question": "Which function is NOT performed by the access layer?",
+      "options": {
+        "A": "Port security",
+        "B": "Power over Ethernet",
+        "C": "Auxiliary VLAN for voice",
+        "D": "Routing between routing domains such as EIGRP to OSPF"
+      },
+      "correctAnswer": "D",
+      "explanation": "Routing between routing domains is a distribution layer function, not an access layer one."
+    },
+    {
+      "id": "CN-U5-103",
+      "question": "Which functions belong to the distribution layer?",
+      "options": {
+        "A": "Aggregation of LAN/WAN links and policy-based security using ACLs",
+        "B": "PoE and port security only",
+        "C": "Only high-speed switching",
+        "D": "Only connecting end devices"
+      },
+      "correctAnswer": "A",
+      "explanation": "The distribution layer aggregates LAN/WAN links and applies policy-based security such as ACLs."
+    },
+    {
+      "id": "CN-U5-104",
+      "question": "Which is NOT a function of the core layer?",
+      "options": {
+        "A": "High-speed switching",
+        "B": "Reliability and fault tolerance",
+        "C": "Port security for end devices",
+        "D": "Interconnecting campus modules"
+      },
+      "correctAnswer": "C",
+      "explanation": "Port security for end devices belongs to the access layer, not the core."
+    },
+    {
+      "id": "CN-U5-105",
+      "question": "A network serving about 700 devices is classified as a:",
+      "options": {
+        "A": "Small network",
+        "B": "Large network",
+        "C": "Personal network",
+        "D": "Medium-size network"
+      },
+      "correctAnswer": "D",
+      "explanation": "A network with 200 to 1,000 devices is medium-size, so 700 devices fits that class."
+    },
+    {
+      "id": "CN-U5-106",
+      "question": "Why must future scale, expansion and manageability be considered before choosing a two-tier design?",
+      "options": {
+        "A": "The collapsed core may limit growth later",
+        "B": "Two-tier designs cannot use switches",
+        "C": "Two-tier designs are always more expensive",
+        "D": "They have no distribution layer"
+      },
+      "correctAnswer": "A",
+      "explanation": "The collapsed core can become a limit as the network grows."
+    },
+    {
+      "id": "CN-U5-107",
+      "question": "Which is a reason to choose a three-tier design?",
+      "options": {
+        "A": "The network has a single floor",
+        "B": "The network has fewer than 10 users",
+        "C": "Geographic dispersion of access switches needs more fibre than one collapsed core can support",
+        "D": "The network needs no redundancy"
+      },
+      "correctAnswer": "C",
+      "explanation": "When access switches are widely dispersed and need more fibre than a collapsed core can support, a separate core is needed."
+    },
+    {
+      "id": "CN-U5-108",
+      "question": "Why does the data center block in the PPT use a leaf-spine design?",
+      "options": {
+        "A": "To handle north-south traffic only",
+        "B": "To handle east-west traffic between servers",
+        "C": "To remove all switches",
+        "D": "To reduce Wi-Fi interference"
+      },
+      "correctAnswer": "B",
+      "explanation": "Leaf-spine suits the heavy east-west traffic between servers in a data center."
+    },
+    {
+      "id": "CN-U5-109",
+      "question": "Which statement about north-south traffic is correct?",
+      "options": {
+        "A": "It flows only between servers in a data center",
+        "B": "It flows only between two switches",
+        "C": "It never leaves the access layer",
+        "D": "It flows between endpoints and the WAN edge, data center, Internet or network services blocks"
+      },
+      "correctAnswer": "D",
+      "explanation": "North-south traffic flows between endpoints and the WAN edge, data center, Internet or network services blocks."
+    },
+    {
+      "id": "CN-U5-110",
+      "question": "In an HA cluster, if one node fails:",
+      "options": {
+        "A": "Another node takes over immediately, so there is no single point of failure",
+        "B": "The whole cluster stops",
+        "C": "Users must restart the cluster",
+        "D": "Data is lost"
+      },
+      "correctAnswer": "A",
+      "explanation": "Another node takes over, so the cluster has no single point of failure."
+    },
+    {
+      "id": "CN-U5-111",
+      "question": "Which set lists the usual features of HA software?",
+      "options": {
+        "A": "Printing, scanning, copying and faxing",
+        "B": "Load balancing and redirecting, automatic failover, real-time file replication and automatic failback",
+        "C": "Web design and animation",
+        "D": "Antivirus only"
+      },
+      "correctAnswer": "B",
+      "explanation": "HA software typically offers load balancing and redirecting, automatic failover, real-time file replication and automatic failback."
+    },
+    {
+      "id": "CN-U5-112",
+      "question": "Which HA element means data is shared among nodes so any one can step in?",
+      "options": {
+        "A": "Failover",
+        "B": "Fault tolerance",
+        "C": "Replication",
+        "D": "Encryption"
+      },
+      "correctAnswer": "C",
+      "explanation": "Replication shares data among nodes so any of them can take over."
+    },
+    {
+      "id": "CN-U5-113",
+      "question": "Fault tolerance is best defined as a system's ability to:",
+      "options": {
+        "A": "Keep operating without interruption even if multiple components fail",
+        "B": "Restart after a failure",
+        "C": "Reduce cost",
+        "D": "Reduce users"
+      },
+      "correctAnswer": "A",
+      "explanation": "Fault tolerance means continuing to operate without interruption even when components fail."
+    },
+    {
+      "id": "CN-U5-114",
+      "question": "Which troubleshooting approach is best if a physical or connectivity problem is suspected?",
+      "options": {
+        "A": "Top-down",
+        "B": "Divide and conquer",
+        "C": "Random",
+        "D": "Bottom-up"
+      },
+      "correctAnswer": "D",
+      "explanation": "Bottom-up starts at the physical layer, so it fits suspected physical or connectivity problems."
+    },
+    {
+      "id": "CN-U5-115",
+      "question": "Divide and conquer typically uses which tools starting at the Transport layer?",
+      "options": {
+        "A": "Wireshark only",
+        "B": "Nslookup only",
+        "C": "Ping and traceroute",
+        "D": "Telnet only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Divide and conquer typically uses ping and traceroute to test connectivity from the Transport layer."
+    },
+    {
+      "id": "CN-U5-116",
+      "question": "Ping reports \"Request timed out\" and traceroute stops after hop 3 with * * *. What does this suggest?",
+      "options": {
+        "A": "The DNS cache is full",
+        "B": "The problem is at or after the last working hop",
+        "C": "The destination is working perfectly",
+        "D": "The NIC is disabled on hop 1"
+      },
+      "correctAnswer": "B",
+      "explanation": "Traceroute stopping after hop 3 means the problem is at or after the last working hop."
+    },
+    {
+      "id": "CN-U5-117",
+      "question": "Which statement is correct?",
+      "options": {
+        "A": "Ping tests reachability and gives round-trip time; traceroute shows where the path breaks",
+        "B": "Ping shows the path; traceroute shows only the RTT",
+        "C": "Both only show MAC addresses",
+        "D": "Neither uses ICMP"
+      },
+      "correctAnswer": "A",
+      "explanation": "Ping checks reachability and RTT, and traceroute shows the path and where it breaks."
+    },
+    {
+      "id": "CN-U5-118",
+      "question": "Two devices on the same network have the same IP address. The best fix is to:",
+      "options": {
+        "A": "Change the cable",
+        "B": "Increase the bandwidth",
+        "C": "Restart the DNS server",
+        "D": "Release and renew the IP address"
+      },
+      "correctAnswer": "D",
+      "explanation": "Releasing and renewing the address gets a unique address from DHCP."
+    },
+    {
+      "id": "CN-U5-119",
+      "question": "When a PC cannot get an IP address, which step helps find if DHCP requests reach the server?",
+      "options": {
+        "A": "Change the monitor",
+        "B": "Check the VLAN of the port and whether other devices in that VLAN can get an IP",
+        "C": "Flush the DNS cache",
+        "D": "Run nslookup"
+      },
+      "correctAnswer": "B",
+      "explanation": "Checking the port's VLAN and whether other devices in it get an IP shows if DHCP requests are reaching the server."
+    },
+    {
+      "id": "CN-U5-120",
+      "question": "In nslookup output, \"Server: dns.google, Address: 8.8.8.8\" tells you:",
+      "options": {
+        "A": "The web server's address",
+        "B": "The user's own IP",
+        "C": "Which DNS server performed the lookup",
+        "D": "The router's MAC"
+      },
+      "correctAnswer": "C",
+      "explanation": "This line identifies the DNS server that answered the query."
+    },
+    {
+      "id": "CN-U5-121",
+      "question": "Which statement about an infrastructure WLAN is correct?",
+      "options": {
+        "A": "It needs no access point",
+        "B": "A client associates with all WAPs together",
+        "C": "It is the same as Bluetooth",
+        "D": "A client associates with only one WAP at a time"
+      },
+      "correctAnswer": "D",
+      "explanation": "In an infrastructure WLAN a client associates with only one WAP at a time."
+    },
+    {
+      "id": "CN-U5-122",
+      "question": "Which pair correctly matches wireless types?",
+      "options": {
+        "A": "Infrastructure - uses WAPs; Ad hoc - no WAP (for example, Bluetooth)",
+        "B": "Infrastructure - no WAP; Ad hoc - uses WAPs",
+        "C": "Both need WAPs",
+        "D": "Neither is wireless"
+      },
+      "correctAnswer": "A",
+      "explanation": "Infrastructure networks use WAPs, while ad hoc networks such as Bluetooth do not."
+    },
+    {
+      "id": "CN-U5-123",
+      "question": "Bluetooth resists interference because:",
+      "options": {
+        "A": "It uses only one channel",
+        "B": "It uses wired links",
+        "C": "It hops among 79 channels in a pseudo-random manner (FHSS)",
+        "D": "It operates at 60 GHz"
+      },
+      "correctAnswer": "C",
+      "explanation": "Frequency hopping across 79 channels helps Bluetooth avoid interference."
+    },
+    {
+      "id": "CN-U5-124",
+      "question": "Which describes 802.11a?",
+      "options": {
+        "A": "2.4 GHz, 11 Mbps",
+        "B": "5 GHz, 54 Mbps maximum, about 20 Mbps usable, short range",
+        "C": "900 MHz, 347 Mbps",
+        "D": "2.4 GHz, 600 Mbps"
+      },
+      "correctAnswer": "B",
+      "explanation": "802.11a uses 5 GHz, has a 54 Mbps maximum with about 20 Mbps usable, and has short range."
+    },
+    {
+      "id": "CN-U5-125",
+      "question": "The usable speed of 802.11g (54 Mbps maximum) is about:",
+      "options": {
+        "A": "22 Mbps",
+        "B": "54 Mbps",
+        "C": "11 Mbps",
+        "D": "100 Mbps"
+      },
+      "correctAnswer": "A",
+      "explanation": "The usable speed of 802.11g is about 22 Mbps."
+    },
+    {
+      "id": "CN-U5-126",
+      "question": "Which describes 802.11n?",
+      "options": {
+        "A": "5 GHz only with OFDM and 54 Mbps",
+        "B": "900 MHz with 1 km range",
+        "C": "2.4 GHz with 11 Mbps",
+        "D": "40 MHz bandwidth with MIMO and 600 Mbps theoretical speed"
+      },
+      "correctAnswer": "D",
+      "explanation": "802.11n uses 40 MHz channels with MIMO for a theoretical speed of 600 Mbps."
+    },
+    {
+      "id": "CN-U5-127",
+      "question": "802.11af operates in:",
+      "options": {
+        "A": "5 GHz",
+        "B": "Unused TV bands with about 1 km range",
+        "C": "2.4 GHz only",
+        "D": "60 GHz"
+      },
+      "correctAnswer": "B",
+      "explanation": "802.11af uses unused TV bands and has a range of about 1 km."
+    },
+    {
+      "id": "CN-U5-128",
+      "question": "802.11ah operates at:",
+      "options": {
+        "A": "5 GHz with 3.47 Gbps",
+        "B": "2.4 GHz with 11 Mbps",
+        "C": "900 MHz with about 1 km range",
+        "D": "Unused TV bands with 35 Mbps"
+      },
+      "correctAnswer": "C",
+      "explanation": "802.11ah operates at 900 MHz with a range of about 1 km."
+    },
+    {
+      "id": "CN-U5-129",
+      "question": "Why is WEP considered very insecure?",
+      "options": {
+        "A": "It uses a small static key with the RC4 cipher",
+        "B": "It uses AES-CCMP",
+        "C": "It uses 256-bit dynamic keys",
+        "D": "It sends a new key per packet"
+      },
+      "correctAnswer": "A",
+      "explanation": "WEP's small static key with RC4 is easily cracked."
+    },
+    {
+      "id": "CN-U5-130",
+      "question": "EAP is a framework that mainly offers:",
+      "options": {
+        "A": "Static WEP keys only",
+        "B": "No authentication",
+        "C": "Bluetooth pairing",
+        "D": "Dynamic keys and stronger authentication"
+      },
+      "correctAnswer": "D",
+      "explanation": "EAP provides dynamic keys and stronger authentication."
+    },
+    {
+      "id": "CN-U5-131",
+      "question": "How does TKIP differ from WEP?",
+      "options": {
+        "A": "Both use one key",
+        "B": "TKIP uses one key; WEP uses many",
+        "C": "WEP uses a single key for all encryption; TKIP sends a different key with each packet",
+        "D": "Neither uses keys"
+      },
+      "correctAnswer": "C",
+      "explanation": "WEP uses one key for everything, while TKIP sends a different key with each packet."
+    },
+    {
+      "id": "CN-U5-132",
+      "question": "AES-CCMP is required with:",
+      "options": {
+        "A": "WEP",
+        "B": "WPA2",
+        "C": "MAC filtering",
+        "D": "Bluetooth"
+      },
+      "correctAnswer": "B",
+      "explanation": "WPA2 requires AES-CCMP."
+    },
+    {
+      "id": "CN-U5-133",
+      "question": "Which is the correct order from weakest to strongest?",
+      "options": {
+        "A": "MAC filter < WEP < WPA < WPA2 < WPA3",
+        "B": "WPA3 < WPA2 < WPA < WEP",
+        "C": "WEP < MAC filter < WPA3 < WPA",
+        "D": "WPA2 < WEP < WPA3 < WPA"
+      },
+      "correctAnswer": "A",
+      "explanation": "Security improves in the order MAC filter, WEP, WPA, WPA2 and WPA3."
+    },
+    {
+      "id": "CN-U5-134",
+      "question": "WPA3 supports key sizes of:",
+      "options": {
+        "A": "40 and 64 bit",
+        "B": "64 bit only",
+        "C": "128 bit only",
+        "D": "128 and 256 bit"
+      },
+      "correctAnswer": "D",
+      "explanation": "WPA3 supports 128-bit and 256-bit keys."
+    },
+    {
+      "id": "CN-U5-135",
+      "question": "Which release years are correct for WPA and WPA2?",
+      "options": {
+        "A": "1997 and 2003",
+        "B": "2003 and 2004",
+        "C": "2004 and 2018",
+        "D": "2018 and 2020"
+      },
+      "correctAnswer": "B",
+      "explanation": "WPA was released in 2003 and WPA2 in 2004."
+    },
+    {
+      "id": "CN-U5-136",
+      "question": "A stream cipher such as RC4 works by:",
+      "options": {
+        "A": "Encrypting fixed blocks of 64 bits only",
+        "B": "Not using a key",
+        "C": "Generating a key stream and combining (XOR) it with the message",
+        "D": "Sending the message in plain text"
+      },
+      "correctAnswer": "C",
+      "explanation": "A stream cipher generates a key stream and XORs it with the message."
+    },
+    {
+      "id": "CN-U5-137",
+      "question": "In IoT, which statement is correct?",
+      "options": {
+        "A": "Sensors collect data; actuators take actions such as switching a device on or off",
+        "B": "Actuators collect data; sensors switch devices",
+        "C": "Both only store data",
+        "D": "Neither uses the network"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sensors collect data, and actuators perform actions such as switching a device on or off."
+    },
+    {
+      "id": "CN-U5-138",
+      "question": "Which IoT layer is responsible for the transmission of data?",
+      "options": {
+        "A": "Object sensing layer",
+        "B": "Data exchange layer",
+        "C": "Information integration layer",
+        "D": "Application service layer"
+      },
+      "correctAnswer": "B",
+      "explanation": "The data exchange layer transmits data in the IoT architecture."
+    },
+    {
+      "id": "CN-U5-139",
+      "question": "In cloud networking, how are office sites typically connected?",
+      "options": {
+        "A": "Only by leased lines",
+        "B": "Only by Bluetooth",
+        "C": "Only by dial-up",
+        "D": "Using a cloud-based VPN and gateway"
+      },
+      "correctAnswer": "D",
+      "explanation": "Office sites are typically connected through a cloud-based VPN and gateway."
+    },
+    {
+      "id": "CN-U5-140",
+      "question": "\"Improved monitoring and maintenance\" as a cloud networking benefit means:",
+      "options": {
+        "A": "More physical maintenance is needed",
+        "B": "Less visibility of traffic",
+        "C": "No need for physical management and full visibility of traffic data",
+        "D": "Monitoring is impossible"
+      },
+      "correctAnswer": "C",
+      "explanation": "It means no physical management is needed and traffic data is fully visible."
+    },
+    {
+      "id": "CN-U5-141",
+      "question": "The role of virtualization in cloud networking includes:",
+      "options": {
+        "A": "Removing all network links",
+        "B": "Multiplexing a large-capacity cable into several virtual private network links",
+        "C": "Using only hardware firewalls",
+        "D": "Disabling virtual routers"
+      },
+      "correctAnswer": "B",
+      "explanation": "Virtualization multiplexes a large-capacity cable into several virtual private network links."
+    },
+    {
+      "id": "CN-U5-142",
+      "question": "A disadvantage of virtual networks is:",
+      "options": {
+        "A": "Possible performance limits in latency and bandwidth compared with physical networks",
+        "B": "They cannot be isolated",
+        "C": "They cost more hardware",
+        "D": "They cannot scale"
+      },
+      "correctAnswer": "A",
+      "explanation": "Virtual networks may have performance limits in latency and bandwidth compared with physical networks."
+    },
+    {
+      "id": "CN-U5-143",
+      "question": "In NFV, which statement is correct?",
+      "options": {
+        "A": "Physical devices are added for every function",
+        "B": "NFV cannot replace firewalls",
+        "C": "NFV works only without hypervisors",
+        "D": "Virtual services replace physical devices and a VMM can manage them from the hypervisor"
+      },
+      "correctAnswer": "D",
+      "explanation": "NFV replaces physical devices with virtual services that a VMM can manage from the hypervisor."
+    },
+    {
+      "id": "CN-U5-144",
+      "question": "If a port group has no mapping to an uplink, the VMs in it can:",
+      "options": {
+        "A": "Reach the external network",
+        "B": "Reach only the Internet",
+        "C": "Communicate only with each other",
+        "D": "Not communicate at all, even internally"
+      },
+      "correctAnswer": "C",
+      "explanation": "Without an uplink, the VMs can talk only to each other inside the host."
+    },
+    {
+      "id": "CN-U5-145",
+      "question": "In VMware networking, uplinks are:",
+      "options": {
+        "A": "The physical network adapter ports of the hypervisor host",
+        "B": "Virtual disks",
+        "C": "Virtual CPUs",
+        "D": "Port groups"
+      },
+      "correctAnswer": "A",
+      "explanation": "Uplinks are the physical network adapter ports of the hypervisor host."
+    },
+    {
+      "id": "CN-U5-146",
+      "question": "Which is the correct flow of traffic in VMware virtual networking?",
+      "options": {
+        "A": "vSwitch → VM → uplink → vNIC",
+        "B": "VM → vNIC → port group → vSwitch → uplink → physical network",
+        "C": "Uplink → VM → port group → vNIC",
+        "D": "Port group → uplink → vNIC → VM"
+      },
+      "correctAnswer": "B",
+      "explanation": "Traffic goes from the VM through its vNIC, port group, vSwitch and uplink to the physical network."
+    },
+    {
+      "id": "CN-U5-147",
+      "question": "The mapping between port groups and uplinks is done at the:",
+      "options": {
+        "A": "VM level",
+        "B": "vNIC level",
+        "C": "Physical NIC level",
+        "D": "vSwitch level"
+      },
+      "correctAnswer": "D",
+      "explanation": "The vSwitch maps port groups to uplinks."
+    },
+    {
+      "id": "CN-U5-148",
+      "question": "Uplinks can be grouped for redundancy or teaming using:",
+      "options": {
+        "A": "Link Aggregation Groups (LAGs)",
+        "B": "Leaky bucket",
+        "C": "Token ring",
+        "D": "Port security"
+      },
+      "correctAnswer": "A",
+      "explanation": "Uplinks are grouped for redundancy or teaming using Link Aggregation Groups."
+    },
+    {
+      "id": "CN-U5-149",
+      "question": "In an enterprise design, wireless LAN controllers (WLCs) are placed in the:",
+      "options": {
+        "A": "Access layer only",
+        "B": "Data center block only",
+        "C": "Network Services block",
+        "D": "WAN edge only"
+      },
+      "correctAnswer": "C",
+      "explanation": "WLCs are placed in the Network Services block."
+    },
+    {
+      "id": "CN-U5-150",
+      "question": "How does virtualization support sustainable (green) computing?",
+      "options": {
+        "A": "By increasing the number of physical servers",
+        "B": "By reducing the number of physical servers and energy use",
+        "C": "By removing the need for data centers",
+        "D": "By increasing e-waste"
+      },
+      "correctAnswer": "B",
+      "explanation": "Virtualization reduces the number of physical servers and the energy they use."
+    }
+  ]
+}

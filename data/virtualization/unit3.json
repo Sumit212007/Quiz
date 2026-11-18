@@ -1,0 +1,1806 @@
+{
+  "subject": "POVualization",
+  "unit": "Unit 3",
+  "questions": [
+    {
+      "id": "POV-U3-001",
+      "question": "A scalable enterprise network is one that:",
+      "options": {
+        "A": "Works only for small offices",
+        "B": "Handles more users, devices and traffic without losing performance",
+        "C": "Never needs any hardware",
+        "D": "Has no security"
+      },
+      "correctAnswer": "B",
+      "explanation": "A scalable network handles more users, devices and traffic without losing performance."
+    },
+    {
+      "id": "POV-U3-002",
+      "question": "Which is NOT one of the 3 objectives (H-S-S) of a scalable enterprise network?",
+      "options": {
+        "A": "High Availability",
+        "B": "Security",
+        "C": "Scalability",
+        "D": "Low Bandwidth"
+      },
+      "correctAnswer": "D",
+      "explanation": "The three objectives are High Availability, Security and Scalability; low bandwidth is not an objective."
+    },
+    {
+      "id": "POV-U3-003",
+      "question": "Which layer of the hierarchical design is the main backbone?",
+      "options": {
+        "A": "Access",
+        "B": "Distribution",
+        "C": "Core",
+        "D": "Edge"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Core layer is the main backbone of the hierarchical design."
+    },
+    {
+      "id": "POV-U3-004",
+      "question": "Which layer connects user devices like PCs, printers and phones?",
+      "options": {
+        "A": "Access",
+        "B": "Core",
+        "C": "Distribution",
+        "D": "Fabric"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Access layer connects user devices such as PCs, printers and phones."
+    },
+    {
+      "id": "POV-U3-005",
+      "question": "Dividing a network into small parts like HR, Finance and IT is called:",
+      "options": {
+        "A": "Hierarchical design",
+        "B": "Modular design",
+        "C": "Static design",
+        "D": "Flat design"
+      },
+      "correctAnswer": "B",
+      "explanation": "Dividing a network into separate small parts such as HR, Finance and IT is modular design."
+    },
+    {
+      "id": "POV-U3-006",
+      "question": "Load balancing means:",
+      "options": {
+        "A": "Blocking all traffic",
+        "B": "Using only one path",
+        "C": "Encrypting traffic",
+        "D": "Spreading traffic across many paths or devices"
+      },
+      "correctAnswer": "D",
+      "explanation": "Load balancing spreads traffic across many paths or devices."
+    },
+    {
+      "id": "POV-U3-007",
+      "question": "POVualizing the campus WAN design creates:",
+      "options": {
+        "A": "Many POVual networks on one shared physical network",
+        "B": "One POVual network on many physical networks",
+        "C": "Only physical networks",
+        "D": "No networks"
+      },
+      "correctAnswer": "A",
+      "explanation": "Network POVualization creates many POVual networks on one shared physical network."
+    },
+    {
+      "id": "POV-U3-008",
+      "question": "A VLAN splits one physical network into groups at which layer?",
+      "options": {
+        "A": "Layer 1",
+        "B": "Layer 2",
+        "C": "Layer 3",
+        "D": "Layer 7"
+      },
+      "correctAnswer": "B",
+      "explanation": "A VLAN works at Layer 2 (the data link layer)."
+    },
+    {
+      "id": "POV-U3-009",
+      "question": "Border nodes in a fabric:",
+      "options": {
+        "A": "Let users enter the fabric",
+        "B": "Store the MAC table",
+        "C": "Connect the fabric to outside networks",
+        "D": "Encrypt data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Border nodes connect the fabric to outside networks."
+    },
+    {
+      "id": "POV-U3-010",
+      "question": "Edge nodes in a fabric:",
+      "options": {
+        "A": "Let user traffic enter the fabric",
+        "B": "Connect to outside networks",
+        "C": "Replace the core",
+        "D": "Act as ISPs"
+      },
+      "correctAnswer": "A",
+      "explanation": "Edge nodes let user traffic enter the fabric."
+    },
+    {
+      "id": "POV-U3-011",
+      "question": "A WAN is used to connect:",
+      "options": {
+        "A": "Devices on one desk",
+        "B": "Only two computers",
+        "C": "Only wireless phones",
+        "D": "LANs across cities, states or countries"
+      },
+      "correctAnswer": "D",
+      "explanation": "A WAN connects LANs across cities, states or countries."
+    },
+    {
+      "id": "POV-U3-012",
+      "question": "MPLS forwards data using:",
+      "options": {
+        "A": "MAC addresses",
+        "B": "Labels",
+        "C": "Colors",
+        "D": "Port numbers only"
+      },
+      "correctAnswer": "B",
+      "explanation": "MPLS (Multiprotocol Label Switching) forwards data using labels."
+    },
+    {
+      "id": "POV-U3-013",
+      "question": "The Customer Edge (CE) router is:",
+      "options": {
+        "A": "The ISP's main server",
+        "B": "A type of switch in the core",
+        "C": "The gateway of each branch",
+        "D": "A firewall only"
+      },
+      "correctAnswer": "C",
+      "explanation": "The CE router is the gateway of each branch."
+    },
+    {
+      "id": "POV-U3-014",
+      "question": "SD-WAN means:",
+      "options": {
+        "A": "Software control of the WAN",
+        "B": "Hardware-only WAN",
+        "C": "Secure Data WAN",
+        "D": "Slow Data WAN"
+      },
+      "correctAnswer": "A",
+      "explanation": "SD-WAN is software-defined control of the WAN."
+    },
+    {
+      "id": "POV-U3-015",
+      "question": "VPLS connects distant LANs so that they work:",
+      "options": {
+        "A": "As separate WANs",
+        "B": "Only on Wi-Fi",
+        "C": "Only through ISPs",
+        "D": "Like one LAN"
+      },
+      "correctAnswer": "D",
+      "explanation": "VPLS connects distant LANs so that they work like one LAN."
+    },
+    {
+      "id": "POV-U3-016",
+      "question": "The control plane:",
+      "options": {
+        "A": "Actually sends traffic",
+        "B": "Decides where traffic goes",
+        "C": "Stores user files",
+        "D": "Prints packets"
+      },
+      "correctAnswer": "B",
+      "explanation": "The control plane decides where traffic goes."
+    },
+    {
+      "id": "POV-U3-017",
+      "question": "The forwarding plane:",
+      "options": {
+        "A": "Actually sends the traffic",
+        "B": "Decides the topology",
+        "C": "Runs spanning tree only",
+        "D": "Creates VLAN IDs"
+      },
+      "correctAnswer": "A",
+      "explanation": "The forwarding plane actually sends the traffic."
+    },
+    {
+      "id": "POV-U3-018",
+      "question": "VRF stands for:",
+      "options": {
+        "A": "POVual Router Failure",
+        "B": "Variable Routing Frame",
+        "C": "POVual Routing and Forwarding",
+        "D": "POVual Remote Firewall"
+      },
+      "correctAnswer": "C",
+      "explanation": "VRF stands for POVual Routing and Forwarding."
+    },
+    {
+      "id": "POV-U3-019",
+      "question": "The RIB (Routing Information Base) stores:",
+      "options": {
+        "A": "MAC addresses",
+        "B": "VLAN tags",
+        "C": "Passwords",
+        "D": "Routes"
+      },
+      "correctAnswer": "D",
+      "explanation": "The RIB stores routes."
+    },
+    {
+      "id": "POV-U3-020",
+      "question": "The FIB (Forwarding Information Base) is used to:",
+      "options": {
+        "A": "Store passwords",
+        "B": "Forward packets",
+        "C": "Create tunnels",
+        "D": "Encrypt traffic"
+      },
+      "correctAnswer": "B",
+      "explanation": "The FIB is used to forward packets."
+    },
+    {
+      "id": "POV-U3-021",
+      "question": "A POVual Network (VN) is:",
+      "options": {
+        "A": "A group of interconnected VRFs",
+        "B": "A single cable",
+        "C": "A type of firewall",
+        "D": "A wireless router"
+      },
+      "correctAnswer": "A",
+      "explanation": "A POVual Network is a group of interconnected VRFs."
+    },
+    {
+      "id": "POV-U3-022",
+      "question": "802.1Q adds what to an Ethernet frame?",
+      "options": {
+        "A": "A password",
+        "B": "A new IP address",
+        "C": "A tag",
+        "D": "A second cable"
+      },
+      "correctAnswer": "C",
+      "explanation": "802.1Q adds a tag to the Ethernet frame."
+    },
+    {
+      "id": "POV-U3-023",
+      "question": "The 802.1Q tag contains the:",
+      "options": {
+        "A": "Router name",
+        "B": "VLAN ID",
+        "C": "User's name",
+        "D": "Tunnel key"
+      },
+      "correctAnswer": "B",
+      "explanation": "The 802.1Q tag contains the VLAN ID."
+    },
+    {
+      "id": "POV-U3-024",
+      "question": "GRE was developed by:",
+      "options": {
+        "A": "Microsoft",
+        "B": "Intel",
+        "C": "IBM",
+        "D": "Cisco"
+      },
+      "correctAnswer": "D",
+      "explanation": "GRE (Generic Routing Encapsulation) was developed by Cisco."
+    },
+    {
+      "id": "POV-U3-025",
+      "question": "Does GRE provide encryption by itself?",
+      "options": {
+        "A": "No",
+        "B": "Yes, always",
+        "C": "Only on VLANs",
+        "D": "Only with VRF"
+      },
+      "correctAnswer": "A",
+      "explanation": "GRE does not provide encryption by itself."
+    },
+    {
+      "id": "POV-U3-026",
+      "question": "L2TP creates the tunnel but:",
+      "options": {
+        "A": "Gives 512-bit encryption",
+        "B": "Is only for wireless",
+        "C": "Gives no encryption by itself",
+        "D": "Replaces IPsec"
+      },
+      "correctAnswer": "C",
+      "explanation": "L2TP only creates the tunnel and gives no encryption by itself."
+    },
+    {
+      "id": "POV-U3-027",
+      "question": "IPsec gives:",
+      "options": {
+        "A": "Encryption and security",
+        "B": "VLAN tagging",
+        "C": "Spanning tree",
+        "D": "Load balancing"
+      },
+      "correctAnswer": "A",
+      "explanation": "IPsec provides encryption and security."
+    },
+    {
+      "id": "POV-U3-028",
+      "question": "Simple meaning: L2TP = tunnel, IPsec = ?",
+      "options": {
+        "A": "Wire",
+        "B": "Switch",
+        "C": "Router",
+        "D": "Lock"
+      },
+      "correctAnswer": "D",
+      "explanation": "L2TP is the tunnel and IPsec is the lock, because it secures the traffic."
+    },
+    {
+      "id": "POV-U3-029",
+      "question": "PPTP uses how many bits for keys (as per notes)?",
+      "options": {
+        "A": "64-bit",
+        "B": "128-bit",
+        "C": "256-bit",
+        "D": "512-bit"
+      },
+      "correctAnswer": "B",
+      "explanation": "As per the notes, PPTP uses 128-bit keys."
+    },
+    {
+      "id": "POV-U3-030",
+      "question": "L2TP uses how many bits for keys (as per notes)?",
+      "options": {
+        "A": "64-bit",
+        "B": "128-bit",
+        "C": "256-bit",
+        "D": "1024-bit"
+      },
+      "correctAnswer": "C",
+      "explanation": "As per the notes, L2TP uses 256-bit keys."
+    },
+    {
+      "id": "POV-U3-031",
+      "question": "L2TPv3 can carry:",
+      "options": {
+        "A": "Ethernet frames and more Layer 2 protocols",
+        "B": "Only PPP frames",
+        "C": "Only voice",
+        "D": "Only email"
+      },
+      "correctAnswer": "A",
+      "explanation": "L2TPv3 can carry Ethernet frames and other Layer 2 protocols."
+    },
+    {
+      "id": "POV-U3-032",
+      "question": "In dynamic routing, the routing table:",
+      "options": {
+        "A": "Never changes",
+        "B": "Is typed manually",
+        "C": "Is printed on paper",
+        "D": "Updates automatically"
+      },
+      "correctAnswer": "D",
+      "explanation": "In dynamic routing, the routing table updates automatically."
+    },
+    {
+      "id": "POV-U3-033",
+      "question": "In static routing, routes are entered:",
+      "options": {
+        "A": "Automatically",
+        "B": "Manually by the administrator",
+        "C": "By the ISP only",
+        "D": "By VLANs"
+      },
+      "correctAnswer": "B",
+      "explanation": "In static routing, routes are entered manually by the administrator."
+    },
+    {
+      "id": "POV-U3-034",
+      "question": "EIGRP and RIP are examples of which routing protocol type?",
+      "options": {
+        "A": "Link State",
+        "B": "Path Vector",
+        "C": "Distance Vector",
+        "D": "Static"
+      },
+      "correctAnswer": "C",
+      "explanation": "EIGRP and RIP are Distance Vector protocols."
+    },
+    {
+      "id": "POV-U3-035",
+      "question": "BGP stands for:",
+      "options": {
+        "A": "Border Gateway Protocol",
+        "B": "Basic Group Protocol",
+        "C": "Broadcast Gateway Packet",
+        "D": "Backup Gateway Path"
+      },
+      "correctAnswer": "A",
+      "explanation": "BGP stands for Border Gateway Protocol."
+    },
+    {
+      "id": "POV-U3-036",
+      "question": "VRRP stands for:",
+      "options": {
+        "A": "POVual Route Reply Packet",
+        "B": "POVual Router Redundancy Protocol",
+        "C": "VLAN Routing Resource Protocol",
+        "D": "Variable Router Relay Path"
+      },
+      "correctAnswer": "B",
+      "explanation": "VRRP stands for POVual Router Redundancy Protocol."
+    },
+    {
+      "id": "POV-U3-037",
+      "question": "Topology-Aware Routing (TAR) keeps traffic:",
+      "options": {
+        "A": "In a random zone",
+        "B": "Only in Zone B",
+        "C": "Away from all zones",
+        "D": "In the zone where it started"
+      },
+      "correctAnswer": "D",
+      "explanation": "TAR keeps traffic in the zone where it started."
+    },
+    {
+      "id": "POV-U3-038",
+      "question": "TAR is mainly discussed in which platform?",
+      "options": {
+        "A": "Windows",
+        "B": "Excel",
+        "C": "Kubernetes",
+        "D": "PowerPoint"
+      },
+      "correctAnswer": "C",
+      "explanation": "Topology-Aware Routing is mainly discussed in Kubernetes."
+    },
+    {
+      "id": "POV-U3-039",
+      "question": "Multi-Topology Routing (MTR) lets you configure:",
+      "options": {
+        "A": "Different forwarding topologies for different traffic types",
+        "B": "Only one topology",
+        "C": "Only static routes",
+        "D": "Only VLANs"
+      },
+      "correctAnswer": "A",
+      "explanation": "MTR lets you configure different forwarding topologies for different traffic types."
+    },
+    {
+      "id": "POV-U3-040",
+      "question": "Which traffic types are given as examples for MTR?",
+      "options": {
+        "A": "Only email",
+        "B": "Voice, video and data",
+        "C": "Only images",
+        "D": "Only text"
+      },
+      "correctAnswer": "B",
+      "explanation": "Voice, video and data are the example traffic types for MTR."
+    },
+    {
+      "id": "POV-U3-041",
+      "question": "Which is a problem of large Layer 2 domains?",
+      "options": {
+        "A": "Too few broadcasts",
+        "B": "Perfect load balancing",
+        "C": "Easy management",
+        "D": "Loops and increased broadcast traffic"
+      },
+      "correctAnswer": "D",
+      "explanation": "Large Layer 2 domains suffer from loops and increased broadcast traffic."
+    },
+    {
+      "id": "POV-U3-042",
+      "question": "Is an end-to-end VLAN desirable for large networks?",
+      "options": {
+        "A": "Yes, always",
+        "B": "Only for Wi-Fi",
+        "C": "No, it creates a big Layer 2 domain",
+        "D": "Only for the core"
+      },
+      "correctAnswer": "C",
+      "explanation": "An end-to-end VLAN creates a big Layer 2 domain, so it is not desirable for large networks."
+    },
+    {
+      "id": "POV-U3-043",
+      "question": "A POVual Firewall (VFW) filters traffic between:",
+      "options": {
+        "A": "POVual machines",
+        "B": "Printers",
+        "C": "ISPs",
+        "D": "Keyboards"
+      },
+      "correctAnswer": "A",
+      "explanation": "A POVual Firewall filters traffic between POVual machines."
+    },
+    {
+      "id": "POV-U3-044",
+      "question": "SDN splits a switch into:",
+      "options": {
+        "A": "Two cables",
+        "B": "Control plane and data plane",
+        "C": "Two VLANs",
+        "D": "Two firewalls"
+      },
+      "correctAnswer": "B",
+      "explanation": "SDN splits a switch into a control plane and a data plane."
+    },
+    {
+      "id": "POV-U3-045",
+      "question": "NFV runs network functions:",
+      "options": {
+        "A": "Only on paper",
+        "B": "In dedicated hardware only",
+        "C": "In software",
+        "D": "Never"
+      },
+      "correctAnswer": "C",
+      "explanation": "NFV (Network Functions POVualization) runs network functions in software."
+    },
+    {
+      "id": "POV-U3-046",
+      "question": "OTV (Overlay Transport POVualization) extends:",
+      "options": {
+        "A": "Layer 7 connectivity",
+        "B": "Layer 4 ports",
+        "C": "Wi-Fi range",
+        "D": "Layer 2 connectivity across locations"
+      },
+      "correctAnswer": "D",
+      "explanation": "OTV extends Layer 2 connectivity across locations."
+    },
+    {
+      "id": "POV-U3-047",
+      "question": "A single-hop data path example is:",
+      "options": {
+        "A": "Ethernet link using 802.1Q VLAN tags",
+        "B": "IP cloud using GRE",
+        "C": "Internet routing",
+        "D": "MPLS cloud"
+      },
+      "correctAnswer": "A",
+      "explanation": "An Ethernet link using 802.1Q VLAN tags is a single-hop data path."
+    },
+    {
+      "id": "POV-U3-048",
+      "question": "A multiple-hop data path example is:",
+      "options": {
+        "A": "A single Ethernet cable",
+        "B": "A USB link",
+        "C": "IP cloud using GRE tunnels",
+        "D": "A VLAN tag only"
+      },
+      "correctAnswer": "C",
+      "explanation": "An IP cloud using GRE tunnels spans multiple hops."
+    },
+    {
+      "id": "POV-U3-049",
+      "question": "The Fabric in campus POVualization is:",
+      "options": {
+        "A": "A type of cloth",
+        "B": "A shared pool of network resources used to build VNs",
+        "C": "A single router",
+        "D": "A firewall only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Fabric is a shared pool of network resources used to build POVual Networks."
+    },
+    {
+      "id": "POV-U3-050",
+      "question": "Services POVualization means:",
+      "options": {
+        "A": "Each group has its own DNS",
+        "B": "Removing all services",
+        "C": "Using only one user",
+        "D": "Different groups share services like DNS and security"
+      },
+      "correctAnswer": "D",
+      "explanation": "Services POVualization lets different groups share services such as DNS and security."
+    },
+    {
+      "id": "POV-U3-051",
+      "question": "A company grows from 50 to 500 employees and the same network supports them without being rebuilt. Which objective is this?",
+      "options": {
+        "A": "Security",
+        "B": "High Availability",
+        "C": "Scalability",
+        "D": "Encapsulation"
+      },
+      "correctAnswer": "C",
+      "explanation": "A network that supports growth without being rebuilt achieves scalability."
+    },
+    {
+      "id": "POV-U3-052",
+      "question": "If one link fails and another link keeps services running, the objective achieved is:",
+      "options": {
+        "A": "High Availability",
+        "B": "Scalability",
+        "C": "Security",
+        "D": "Segmentation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Services continuing after a link failure is High Availability."
+    },
+    {
+      "id": "POV-U3-053",
+      "question": "A sale website automatically gets more resources when visitors rise from 1,000 to 10,000. This is an example of:",
+      "options": {
+        "A": "Scalable Wi-Fi",
+        "B": "Cloud-based services",
+        "C": "Static routing",
+        "D": "VPLS"
+      },
+      "correctAnswer": "B",
+      "explanation": "Automatically gaining resources as demand rises is an example of cloud-based services."
+    },
+    {
+      "id": "POV-U3-054",
+      "question": "Which layer connects the access layer to the core and manages traffic?",
+      "options": {
+        "A": "Access",
+        "B": "Core",
+        "C": "Edge",
+        "D": "Distribution"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Distribution layer connects the access layer to the core and manages traffic."
+    },
+    {
+      "id": "POV-U3-055",
+      "question": "Why are VTEPs used in a campus fabric?",
+      "options": {
+        "A": "To print VLAN IDs",
+        "B": "To handle VXLAN traffic",
+        "C": "To replace ISPs",
+        "D": "To store backups"
+      },
+      "correctAnswer": "B",
+      "explanation": "VTEPs (VXLAN Tunnel Endpoints) handle VXLAN traffic in the campus fabric."
+    },
+    {
+      "id": "POV-U3-056",
+      "question": "Where does the physical-to-logical mapping happen?",
+      "options": {
+        "A": "Edge Control",
+        "B": "Core router",
+        "C": "ISP cloud",
+        "D": "Printer"
+      },
+      "correctAnswer": "A",
+      "explanation": "The physical-to-logical mapping happens in Edge Control."
+    },
+    {
+      "id": "POV-U3-057",
+      "question": "Transport POVualization is used to:",
+      "options": {
+        "A": "Remove the physical network",
+        "B": "Replace all routers",
+        "C": "Carry many POVual networks over one physical network",
+        "D": "Block all VPNs"
+      },
+      "correctAnswer": "C",
+      "explanation": "Transport POVualization carries many POVual networks over one physical network."
+    },
+    {
+      "id": "POV-U3-058",
+      "question": "Which WAN technique is reliable, secure and good for strict SLAs?",
+      "options": {
+        "A": "VPLS",
+        "B": "SD-WAN",
+        "C": "GRE",
+        "D": "MPLS"
+      },
+      "correctAnswer": "D",
+      "explanation": "MPLS is reliable and secure and suits strict SLAs."
+    },
+    {
+      "id": "POV-U3-059",
+      "question": "WAN POVualization can combine which links into one POVual network?",
+      "options": {
+        "A": "Only MPLS",
+        "B": "MPLS, broadband and cellular",
+        "C": "Only cellular",
+        "D": "Only USB"
+      },
+      "correctAnswer": "B",
+      "explanation": "WAN POVualization can combine MPLS, broadband and cellular links into one POVual network."
+    },
+    {
+      "id": "POV-U3-060",
+      "question": "Automatic failover (a backup path if one fails) is a benefit under:",
+      "options": {
+        "A": "Performance and reliability",
+        "B": "Cloud connectivity",
+        "C": "Multi-site connectivity",
+        "D": "Hardware dependency"
+      },
+      "correctAnswer": "A",
+      "explanation": "Automatic failover is a performance and reliability benefit."
+    },
+    {
+      "id": "POV-U3-061",
+      "question": "Offices in Delhi, Mumbai and Bengaluru connected together form a:",
+      "options": {
+        "A": "LAN",
+        "B": "VLAN",
+        "C": "WAN",
+        "D": "PAN"
+      },
+      "correctAnswer": "C",
+      "explanation": "Offices in different cities connected together form a WAN."
+    },
+    {
+      "id": "POV-U3-062",
+      "question": "Which is the correct flow in WAN architecture?",
+      "options": {
+        "A": "CE Router → ISP → Devices → MPLS",
+        "B": "Devices → MPLS → ISP → CE Router",
+        "C": "MPLS → Devices → CE Router → ISP",
+        "D": "ISP → MPLS Cloud → CE Router → Branch LAN → Devices"
+      },
+      "correctAnswer": "D",
+      "explanation": "The flow is ISP → MPLS Cloud → CE Router → Branch LAN → Devices."
+    },
+    {
+      "id": "POV-U3-063",
+      "question": "Device POVualization POVualizes:",
+      "options": {
+        "A": "Processes, databases, tables and interfaces",
+        "B": "Only cables",
+        "C": "Only the keyboard",
+        "D": "Only IP addresses"
+      },
+      "correctAnswer": "A",
+      "explanation": "Device POVualization POVualizes processes, databases, tables and interfaces inside a device."
+    },
+    {
+      "id": "POV-U3-064",
+      "question": "\"Each VN has its own forwarding table\" is a property of the:",
+      "options": {
+        "A": "Control plane",
+        "B": "Forwarding plane",
+        "C": "Access layer",
+        "D": "Border node"
+      },
+      "correctAnswer": "B",
+      "explanation": "As per the key, a separate forwarding table for each VN is a property of the forwarding plane."
+    },
+    {
+      "id": "POV-U3-065",
+      "question": "Keeping Layer 2 domains small:",
+      "options": {
+        "A": "Reduces scalability",
+        "B": "Increases loops",
+        "C": "Improves scalability",
+        "D": "Increases broadcasts"
+      },
+      "correctAnswer": "C",
+      "explanation": "Small Layer 2 domains improve scalability."
+    },
+    {
+      "id": "POV-U3-066",
+      "question": "Which is a reason large Layer 2 domains are a problem?",
+      "options": {
+        "A": "Spanning Tree becomes complex",
+        "B": "Too much load balancing",
+        "C": "Management becomes easier",
+        "D": "Broadcasts disappear"
+      },
+      "correctAnswer": "A",
+      "explanation": "In large Layer 2 domains Spanning Tree becomes complex."
+    },
+    {
+      "id": "POV-U3-067",
+      "question": "As per the notes, VLANs should be used only between:",
+      "options": {
+        "A": "Core and ISP",
+        "B": "Core and core",
+        "C": "WAN and Internet",
+        "D": "Access and distribution layers"
+      },
+      "correctAnswer": "D",
+      "explanation": "VLANs should be used only between the access and distribution layers."
+    },
+    {
+      "id": "POV-U3-068",
+      "question": "In campus networks, a VLAN ends at the routed core and then:",
+      "options": {
+        "A": "Disappears forever",
+        "B": "Maps to a segment in the core",
+        "C": "Becomes a firewall",
+        "D": "Becomes a LAN"
+      },
+      "correctAnswer": "B",
+      "explanation": "A VLAN ends at the routed core and maps to a segment there."
+    },
+    {
+      "id": "POV-U3-069",
+      "question": "Control-plane-based POVualization means:",
+      "options": {
+        "A": "Removing the control plane",
+        "B": "Using only static routes",
+        "C": "Restricting routing information so each VN has only its own subnets",
+        "D": "Using only one routing table"
+      },
+      "correctAnswer": "C",
+      "explanation": "Control-plane-based POVualization restricts routing information so each VN has only its own subnets."
+    },
+    {
+      "id": "POV-U3-070",
+      "question": "Which method of connecting VRFs is costly and inefficient?",
+      "options": {
+        "A": "Dedicated physical links",
+        "B": "Tunnelling",
+        "C": "Link POVualization",
+        "D": "Circuit POVualization"
+      },
+      "correctAnswer": "A",
+      "explanation": "Using dedicated physical links to connect VRFs is costly and inefficient."
+    },
+    {
+      "id": "POV-U3-071",
+      "question": "Multiple-hop data-path POVualization over IP is done by:",
+      "options": {
+        "A": "Cables",
+        "B": "Link POVualization",
+        "C": "VLAN tags",
+        "D": "Tunnelling"
+      },
+      "correctAnswer": "D",
+      "explanation": "Multiple-hop data-path POVualization over IP is done by tunnelling."
+    },
+    {
+      "id": "POV-U3-072",
+      "question": "Each VLAN has its own:",
+      "options": {
+        "A": "Router",
+        "B": "MAC table and Spanning Tree instance",
+        "C": "ISP",
+        "D": "Firewall only"
+      },
+      "correctAnswer": "B",
+      "explanation": "Each VLAN has its own MAC table and Spanning Tree instance."
+    },
+    {
+      "id": "POV-U3-073",
+      "question": "Which statement is correct?",
+      "options": {
+        "A": "VRF is like VLAN but at Layer 3",
+        "B": "VRF works only at Layer 1",
+        "C": "VLAN works only at Layer 3",
+        "D": "VRF and VLAN are the same thing"
+      },
+      "correctAnswer": "A",
+      "explanation": "VRF is like a VLAN but works at Layer 3."
+    },
+    {
+      "id": "POV-U3-074",
+      "question": "Network POVualization uses:",
+      "options": {
+        "A": "Only hardware cables",
+        "B": "A paper plan",
+        "C": "A network hypervisor and controller software",
+        "D": "Only a printer"
+      },
+      "correctAnswer": "C",
+      "explanation": "Network POVualization uses a network hypervisor and controller software."
+    },
+    {
+      "id": "POV-U3-075",
+      "question": "At the GRE receiver, the headers are:",
+      "options": {
+        "A": "Added again",
+        "B": "Removed in reverse order",
+        "C": "Encrypted",
+        "D": "Ignored"
+      },
+      "correctAnswer": "B",
+      "explanation": "The receiver removes the headers in reverse order."
+    },
+    {
+      "id": "POV-U3-076",
+      "question": "Limitations of GRE include:",
+      "options": {
+        "A": "Built-in strong encryption",
+        "B": "Works only on Wi-Fi",
+        "C": "Needs no configuration",
+        "D": "No encryption and difficulty in scaling"
+      },
+      "correctAnswer": "D",
+      "explanation": "GRE has no encryption and is difficult to scale."
+    },
+    {
+      "id": "POV-U3-077",
+      "question": "In L2TP + IPsec, \"authenticated twice\" means:",
+      "options": {
+        "A": "More secure but slower",
+        "B": "Less secure but faster",
+        "C": "No security",
+        "D": "Only faster"
+      },
+      "correctAnswer": "A",
+      "explanation": "Authenticating twice makes it more secure but slower."
+    },
+    {
+      "id": "POV-U3-078",
+      "question": "Which is slightly faster and easier to set up?",
+      "options": {
+        "A": "L2TP",
+        "B": "L2TPv3",
+        "C": "PPTP",
+        "D": "IPsec"
+      },
+      "correctAnswer": "C",
+      "explanation": "PPTP is slightly faster and easier to set up."
+    },
+    {
+      "id": "POV-U3-079",
+      "question": "L2TPv2 can carry only:",
+      "options": {
+        "A": "Ethernet frames",
+        "B": "PPP frames",
+        "C": "IPv6 frames",
+        "D": "ATM frames only"
+      },
+      "correctAnswer": "B",
+      "explanation": "L2TPv2 can carry only PPP frames."
+    },
+    {
+      "id": "POV-U3-080",
+      "question": "Which statement about L2TPv3 is true?",
+      "options": {
+        "A": "It carries only PPP",
+        "B": "It cannot carry Ethernet",
+        "C": "It works only inside one LAN",
+        "D": "It can carry IPv6 over IPv4"
+      },
+      "correctAnswer": "D",
+      "explanation": "L2TPv3 can carry IPv6 over IPv4."
+    },
+    {
+      "id": "POV-U3-081",
+      "question": "The Best Path Selection Algorithm is used by:",
+      "options": {
+        "A": "BGP",
+        "B": "RIP",
+        "C": "VRRP",
+        "D": "802.1Q"
+      },
+      "correctAnswer": "A",
+      "explanation": "BGP uses the Best Path Selection Algorithm."
+    },
+    {
+      "id": "POV-U3-082",
+      "question": "VRF allows:",
+      "options": {
+        "A": "Only one routing table",
+        "B": "No routing tables",
+        "C": "Multiple routing tables in one router",
+        "D": "Only VLAN tags"
+      },
+      "correctAnswer": "C",
+      "explanation": "VRF allows multiple routing tables in one router."
+    },
+    {
+      "id": "POV-U3-083",
+      "question": "VRF is often used with:",
+      "options": {
+        "A": "Only VLAN trunking",
+        "B": "MPLS VPNs",
+        "C": "Only Wi-Fi",
+        "D": "Only printers"
+      },
+      "correctAnswer": "B",
+      "explanation": "VRF is often used with MPLS VPNs."
+    },
+    {
+      "id": "POV-U3-084",
+      "question": "TAR works best when:",
+      "options": {
+        "A": "Traffic is very uneven",
+        "B": "There is only one endpoint",
+        "C": "There are no zones",
+        "D": "Traffic is evenly distributed and there are 3 or more endpoints per zone"
+      },
+      "correctAnswer": "D",
+      "explanation": "TAR works best when traffic is evenly distributed and each zone has 3 or more endpoints."
+    },
+    {
+      "id": "POV-U3-085",
+      "question": "In TAR, a request from Zone A goes to:",
+      "options": {
+        "A": "An endpoint in Zone A",
+        "B": "An endpoint in Zone B",
+        "C": "An endpoint in Zone C",
+        "D": "Any random zone"
+      },
+      "correctAnswer": "A",
+      "explanation": "In TAR, a request from Zone A goes to an endpoint in Zone A."
+    },
+    {
+      "id": "POV-U3-086",
+      "question": "A main benefit of TAR is:",
+      "options": {
+        "A": "More cross-zone cost",
+        "B": "More latency",
+        "C": "Reduced cross-zone cost and latency",
+        "D": "Removing all endpoints"
+      },
+      "correctAnswer": "C",
+      "explanation": "TAR reduces cross-zone cost and latency."
+    },
+    {
+      "id": "POV-U3-087",
+      "question": "MTR supports which protocols/routes (as per notes)?",
+      "options": {
+        "A": "Only RIP",
+        "B": "OSPFv2, static routes and BGP",
+        "C": "Only EIGRP",
+        "D": "Only VRRP"
+      },
+      "correctAnswer": "B",
+      "explanation": "As per the notes, MTR supports OSPFv2, static routes and BGP."
+    },
+    {
+      "id": "POV-U3-088",
+      "question": "Class-based forwarding in MTR is used to:",
+      "options": {
+        "A": "Block all traffic",
+        "B": "Encrypt packets",
+        "C": "Create VLANs",
+        "D": "Differentiate services"
+      },
+      "correctAnswer": "D",
+      "explanation": "Class-based forwarding in MTR is used to differentiate services."
+    },
+    {
+      "id": "POV-U3-089",
+      "question": "Which statement correctly separates TAR from MTR?",
+      "options": {
+        "A": "MTR routes by traffic type; TAR routes by zone/location",
+        "B": "TAR routes by traffic type; MTR routes by zone",
+        "C": "Both route only by zone",
+        "D": "Neither uses topology"
+      },
+      "correctAnswer": "A",
+      "explanation": "MTR routes by traffic type, while TAR routes by zone or location."
+    },
+    {
+      "id": "POV-U3-090",
+      "question": "Metro Ethernet providers use 802.1Q as a:",
+      "options": {
+        "A": "Layer 3 firewall",
+        "B": "Layer 1 cable",
+        "C": "Layer 2 VPN",
+        "D": "DNS server"
+      },
+      "correctAnswer": "C",
+      "explanation": "Metro Ethernet providers use 802.1Q as a Layer 2 VPN."
+    },
+    {
+      "id": "POV-U3-091",
+      "question": "Besides the VLAN ID, the 802.1Q tag also has a:",
+      "options": {
+        "A": "Router ID",
+        "B": "Priority field",
+        "C": "Password field",
+        "D": "GRE key"
+      },
+      "correctAnswer": "B",
+      "explanation": "The 802.1Q tag also has a priority field."
+    },
+    {
+      "id": "POV-U3-092",
+      "question": "In GRE, the GRE packet is wrapped inside:",
+      "options": {
+        "A": "A VLAN tag",
+        "B": "A MAC address",
+        "C": "A DNS reply",
+        "D": "An IP packet (transport protocol)"
+      },
+      "correctAnswer": "D",
+      "explanation": "The GRE packet is wrapped inside an IP packet, the transport protocol."
+    },
+    {
+      "id": "POV-U3-093",
+      "question": "Which tunnelling protocol, developed by Cisco, makes a POVual point-to-point tunnel?",
+      "options": {
+        "A": "GRE",
+        "B": "802.1Q",
+        "C": "VRRP",
+        "D": "RIP"
+      },
+      "correctAnswer": "A",
+      "explanation": "GRE, developed by Cisco, makes a POVual point-to-point tunnel."
+    },
+    {
+      "id": "POV-U3-094",
+      "question": "Two VMs on the same server, and a VFW decides if they may talk. This is an example of:",
+      "options": {
+        "A": "NFV only",
+        "B": "VLAN trunking",
+        "C": "POVual Firewall filtering VM-to-VM traffic",
+        "D": "Static routing"
+      },
+      "correctAnswer": "C",
+      "explanation": "A VFW deciding whether two VMs may talk is POVual Firewall filtering of VM-to-VM traffic."
+    },
+    {
+      "id": "POV-U3-095",
+      "question": "In SDN, the data plane:",
+      "options": {
+        "A": "Decides policy",
+        "B": "Moves frames",
+        "C": "Stores the topology only",
+        "D": "Is removed"
+      },
+      "correctAnswer": "B",
+      "explanation": "In SDN, the data plane moves the frames."
+    },
+    {
+      "id": "POV-U3-096",
+      "question": "In the 3-layer hierarchical design, printers and PCs connect at the:",
+      "options": {
+        "A": "Core",
+        "B": "Distribution",
+        "C": "Fabric",
+        "D": "Access layer"
+      },
+      "correctAnswer": "D",
+      "explanation": "Printers and PCs connect at the Access layer."
+    },
+    {
+      "id": "POV-U3-097",
+      "question": "Which memory point is correct?",
+      "options": {
+        "A": "Edge = entry, Border = exit to outside",
+        "B": "Edge = exit, Border = entry",
+        "C": "Both mean core",
+        "D": "Both mean ISP"
+      },
+      "correctAnswer": "A",
+      "explanation": "Edge nodes are the entry into the fabric, and Border nodes are the exit to outside networks."
+    },
+    {
+      "id": "POV-U3-098",
+      "question": "\"Control everything from one central interface\" is the benefit of:",
+      "options": {
+        "A": "Cloud connectivity",
+        "B": "Multi-site connectivity",
+        "C": "Simplified management",
+        "D": "Failover"
+      },
+      "correctAnswer": "C",
+      "explanation": "Controlling everything from one central interface is the Simplified management benefit."
+    },
+    {
+      "id": "POV-U3-099",
+      "question": "The first step in implementing WAN POVualization is:",
+      "options": {
+        "A": "Buying cables",
+        "B": "Assessing the existing network",
+        "C": "Deleting the WAN",
+        "D": "Removing VLANs"
+      },
+      "correctAnswer": "B",
+      "explanation": "The first step is assessing the existing network."
+    },
+    {
+      "id": "POV-U3-100",
+      "question": "Why use a routed infrastructure for large networks?",
+      "options": {
+        "A": "To increase loops",
+        "B": "To increase broadcasts",
+        "C": "To remove all routers",
+        "D": "To avoid the problems of large Layer 2 domains"
+      },
+      "correctAnswer": "D",
+      "explanation": "A routed infrastructure avoids the problems of large Layer 2 domains."
+    },
+    {
+      "id": "POV-U3-101",
+      "question": "Which statement about GRE is TRUE?",
+      "options": {
+        "A": "It encrypts all data by default",
+        "B": "It builds a point-to-point tunnel but adds no encryption",
+        "C": "It works only at Layer 2",
+        "D": "It can carry only IP traffic"
+      },
+      "correctAnswer": "B",
+      "explanation": "GRE builds a point-to-point tunnel but adds no encryption."
+    },
+    {
+      "id": "POV-U3-102",
+      "question": "An ISP offers an L2TP VPN, but the customer needs the data to be confidential. What should be added?",
+      "options": {
+        "A": "VLAN",
+        "B": "GRE",
+        "C": "IPsec",
+        "D": "VRRP"
+      },
+      "correctAnswer": "C",
+      "explanation": "L2TP gives no encryption by itself, so IPsec should be added for confidentiality."
+    },
+    {
+      "id": "POV-U3-103",
+      "question": "Why is load balancing limited in large Layer 2 domains?",
+      "options": {
+        "A": "Loop prevention blocks redundant links",
+        "B": "There are too few switches",
+        "C": "VLAN IDs run out",
+        "D": "Routers refuse to forward"
+      },
+      "correctAnswer": "A",
+      "explanation": "Loop prevention (Spanning Tree) blocks redundant links, which limits load balancing."
+    },
+    {
+      "id": "POV-U3-104",
+      "question": "Which pair is correctly matched?",
+      "options": {
+        "A": "VRF – Layer 2 separation",
+        "B": "VLAN – Layer 3 separation",
+        "C": "SDN – splits control plane (software) and data plane",
+        "D": "NFV – dedicated hardware appliance"
+      },
+      "correctAnswer": "C",
+      "explanation": "SDN splits the control plane (software) from the data plane; the other pairs are wrong."
+    },
+    {
+      "id": "POV-U3-105",
+      "question": "Two customers share one physical router, and each needs a separate routing table and forwarding table. Which feature is used?",
+      "options": {
+        "A": "802.1Q",
+        "B": "GRE",
+        "C": "VPLS",
+        "D": "VRF"
+      },
+      "correctAnswer": "D",
+      "explanation": "VRF gives each customer a separate routing table and forwarding table on one router."
+    },
+    {
+      "id": "POV-U3-106",
+      "question": "Which is NOT a part of a VRF instance?",
+      "options": {
+        "A": "RIB",
+        "B": "FIB",
+        "C": "Interfaces",
+        "D": "802.1Q priority field"
+      },
+      "correctAnswer": "D",
+      "explanation": "A VRF instance consists of a RIB, a FIB and interfaces; the 802.1Q priority field is not part of it."
+    },
+    {
+      "id": "POV-U3-107",
+      "question": "Which statement about the control plane is INCORRECT?",
+      "options": {
+        "A": "It maintains topology and avoids loops",
+        "B": "It physically sends the traffic out of the interface",
+        "C": "It uses protocols, databases and tables",
+        "D": "Each VN has its own topology view in it"
+      },
+      "correctAnswer": "B",
+      "explanation": "Physically sending traffic is the job of the forwarding plane, so this statement is incorrect."
+    },
+    {
+      "id": "POV-U3-108",
+      "question": "\"Each POVual Network has its own topology view\" refers to the:",
+      "options": {
+        "A": "Control plane",
+        "B": "Forwarding plane",
+        "C": "Access layer",
+        "D": "Border node"
+      },
+      "correctAnswer": "A",
+      "explanation": "Having its own topology view is a property of the control plane."
+    },
+    {
+      "id": "POV-U3-109",
+      "question": "Which statement correctly separates Edge nodes from Border nodes?",
+      "options": {
+        "A": "Edge nodes connect to outside networks; Border nodes let users in",
+        "B": "Both only connect to outside networks",
+        "C": "Edge nodes let user traffic enter the fabric; Border nodes connect the fabric to outside networks",
+        "D": "Both are the same device"
+      },
+      "correctAnswer": "C",
+      "explanation": "Edge nodes let user traffic enter the fabric, while Border nodes connect the fabric to outside networks."
+    },
+    {
+      "id": "POV-U3-110",
+      "question": "Which statement about PPTP vs L2TP is INCORRECT?",
+      "options": {
+        "A": "L2TP uses 256-bit keys",
+        "B": "PPTP is slightly faster",
+        "C": "L2TP is more secure",
+        "D": "PPTP uses 256-bit keys and is more secure than L2TP"
+      },
+      "correctAnswer": "D",
+      "explanation": "PPTP uses 128-bit keys and is less secure than L2TP, so this statement is incorrect."
+    },
+    {
+      "id": "POV-U3-111",
+      "question": "Because L2TP over IPsec authenticates data twice, the result is:",
+      "options": {
+        "A": "More security but slightly slower speed",
+        "B": "Less security but higher speed",
+        "C": "No change in security",
+        "D": "Only faster speed"
+      },
+      "correctAnswer": "A",
+      "explanation": "Double authentication gives more security but slightly slower speed."
+    },
+    {
+      "id": "POV-U3-112",
+      "question": "Which is the main improvement of L2TPv3 over L2TPv2?",
+      "options": {
+        "A": "It removes tunnels",
+        "B": "It works only for PPP",
+        "C": "It carries Ethernet frames and other Layer 2 protocols across an IP backbone",
+        "D": "It works only inside one LAN"
+      },
+      "correctAnswer": "C",
+      "explanation": "L2TPv3 can carry Ethernet frames and other Layer 2 protocols across an IP backbone."
+    },
+    {
+      "id": "POV-U3-113",
+      "question": "Which is NOT a listed feature of MTR?",
+      "options": {
+        "A": "Class-based forwarding",
+        "B": "Built-in encryption of all traffic",
+        "C": "Separate multicast topology",
+        "D": "Support for OSPFv2, static routes and BGP"
+      },
+      "correctAnswer": "B",
+      "explanation": "Built-in encryption of all traffic is not a listed MTR feature."
+    },
+    {
+      "id": "POV-U3-114",
+      "question": "Why does MTR create separate topologies for voice, video and data?",
+      "options": {
+        "A": "To remove all routers",
+        "B": "To stop using BGP",
+        "C": "To increase the broadcast domain",
+        "D": "So each traffic type can have its own forwarding path"
+      },
+      "correctAnswer": "D",
+      "explanation": "Separate topologies let each traffic type have its own forwarding path."
+    },
+    {
+      "id": "POV-U3-115",
+      "question": "TAR may NOT work well if:",
+      "options": {
+        "A": "Incoming traffic is unevenly distributed or a zone has too few endpoints",
+        "B": "Traffic is evenly distributed",
+        "C": "Each zone has 3 or more endpoints",
+        "D": "The node location is known"
+      },
+      "correctAnswer": "A",
+      "explanation": "TAR may not work well when traffic is uneven or a zone has too few endpoints."
+    },
+    {
+      "id": "POV-U3-116",
+      "question": "Which statement is correct?",
+      "options": {
+        "A": "TAR separates voice from video traffic",
+        "B": "TAR routes by location/zone; MTR routes by traffic type",
+        "C": "MTR keeps traffic inside a Kubernetes zone",
+        "D": "TAR and MTR are the same"
+      },
+      "correctAnswer": "B",
+      "explanation": "TAR routes by location or zone, while MTR routes by traffic type."
+    },
+    {
+      "id": "POV-U3-117",
+      "question": "Which feature mainly aims to reduce cross-zone cost?",
+      "options": {
+        "A": "MTR",
+        "B": "VRF",
+        "C": "TAR",
+        "D": "802.1Q"
+      },
+      "correctAnswer": "C",
+      "explanation": "TAR mainly aims to reduce cross-zone cost."
+    },
+    {
+      "id": "POV-U3-118",
+      "question": "Which is the correct function of the Distribution layer?",
+      "options": {
+        "A": "Connects PCs directly",
+        "B": "Acts as the main backbone",
+        "C": "Provides Internet to ISPs",
+        "D": "Connects access to core and manages traffic"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Distribution layer connects the access layer to the core and manages traffic."
+    },
+    {
+      "id": "POV-U3-119",
+      "question": "A Wi-Fi network grows from 200 students to 1,000 during an event and still works well. Which techniques help?",
+      "options": {
+        "A": "Load balancing and SDN",
+        "B": "Static routing only",
+        "C": "A single access point",
+        "D": "Removing VLANs"
+      },
+      "correctAnswer": "A",
+      "explanation": "Load balancing and SDN help the network scale to many more users."
+    },
+    {
+      "id": "POV-U3-120",
+      "question": "Dividing a network into HR, Finance and IT sections for easier management and growth is:",
+      "options": {
+        "A": "Hierarchical design",
+        "B": "Modular design",
+        "C": "Flat design",
+        "D": "Static routing"
+      },
+      "correctAnswer": "B",
+      "explanation": "Dividing a network into sections such as HR, Finance and IT is modular design."
+    },
+    {
+      "id": "POV-U3-121",
+      "question": "What is the relationship between Fabric and POVual Networks?",
+      "options": {
+        "A": "VNs are used to build the fabric",
+        "B": "Fabric is a type of VLAN tag",
+        "C": "Fabric is the shared pool of resources used to build VNs",
+        "D": "They are unrelated"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Fabric is the shared pool of resources used to build the VNs."
+    },
+    {
+      "id": "POV-U3-122",
+      "question": "Which pair is correct?",
+      "options": {
+        "A": "Transport POVualization – sharing DNS",
+        "B": "Services POVualization – carrying VNs over cables",
+        "C": "Edge Control – sharing security services",
+        "D": "Services POVualization – groups share DNS and security services"
+      },
+      "correctAnswer": "D",
+      "explanation": "Services POVualization lets groups share services such as DNS and security."
+    },
+    {
+      "id": "POV-U3-123",
+      "question": "In a campus network, a VLAN in the wiring closet acts as:",
+      "options": {
+        "A": "The entry point into a VN",
+        "B": "The exit to the ISP",
+        "C": "The core backbone",
+        "D": "A GRE tunnel"
+      },
+      "correctAnswer": "A",
+      "explanation": "A VLAN in the wiring closet acts as the entry point into a VN."
+    },
+    {
+      "id": "POV-U3-124",
+      "question": "Why does a VLAN end at the routed core and map to a segment there?",
+      "options": {
+        "A": "To make the core slower",
+        "B": "To avoid an end-to-end Layer 2 domain",
+        "C": "To remove all VLANs",
+        "D": "To disable routing"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ending the VLAN at the routed core avoids an end-to-end Layer 2 domain."
+    },
+    {
+      "id": "POV-U3-125",
+      "question": "An end-to-end VPN across switched and routed parts of a campus is formed by:",
+      "options": {
+        "A": "Removing the core",
+        "B": "Using only static routes",
+        "C": "Mapping VLANs to segments in the routed core",
+        "D": "Using only Wi-Fi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mapping VLANs to segments in the routed core forms an end-to-end VPN."
+    },
+    {
+      "id": "POV-U3-126",
+      "question": "Why are dedicated physical links per VN a poor choice for connecting VRFs?",
+      "options": {
+        "A": "They are not possible",
+        "B": "They carry no data",
+        "C": "They lack IP support",
+        "D": "They are costly and inefficient"
+      },
+      "correctAnswer": "D",
+      "explanation": "Dedicated physical links per VN are costly and inefficient."
+    },
+    {
+      "id": "POV-U3-127",
+      "question": "Which is NOT one of the 4 components of WAN architecture in the notes?",
+      "options": {
+        "A": "Internet Source",
+        "B": "MPLS Cloud",
+        "C": "Customer Edge Routers",
+        "D": "VTEPs"
+      },
+      "correctAnswer": "D",
+      "explanation": "VTEPs belong to the campus fabric, not to the WAN architecture components."
+    },
+    {
+      "id": "POV-U3-128",
+      "question": "The MPLS cloud is best described as:",
+      "options": {
+        "A": "A packet-switching network that uses labels to forward data between branches",
+        "B": "A Wi-Fi network",
+        "C": "A Layer 2 switch",
+        "D": "A firewall"
+      },
+      "correctAnswer": "A",
+      "explanation": "The MPLS cloud is a packet-switching network that uses labels to forward data between branches."
+    },
+    {
+      "id": "POV-U3-129",
+      "question": "Which WAN POVualization benefit is shown by \"giving priority to cloud traffic\"?",
+      "options": {
+        "A": "Simplified management",
+        "B": "Cloud connectivity",
+        "C": "Multi-site connectivity",
+        "D": "Hardware dependency"
+      },
+      "correctAnswer": "B",
+      "explanation": "Giving priority to cloud traffic is the Cloud connectivity benefit."
+    },
+    {
+      "id": "POV-U3-130",
+      "question": "Which feature is a key strength of SD-WAN compared with plain MPLS?",
+      "options": {
+        "A": "Using labels only",
+        "B": "Using only dedicated cables",
+        "C": "Dynamic path selection with software control",
+        "D": "Working only at Layer 1"
+      },
+      "correctAnswer": "C",
+      "explanation": "SD-WAN offers dynamic path selection with software control."
+    },
+    {
+      "id": "POV-U3-131",
+      "question": "A POVual bridge that makes distant LANs behave like one LAN describes:",
+      "options": {
+        "A": "MPLS",
+        "B": "SD-WAN",
+        "C": "GRE",
+        "D": "VPLS"
+      },
+      "correctAnswer": "D",
+      "explanation": "VPLS acts as a POVual bridge that makes distant LANs behave like one LAN."
+    },
+    {
+      "id": "POV-U3-132",
+      "question": "Which technique can combine MPLS, broadband and cellular into one POVual network?",
+      "options": {
+        "A": "WAN POVualization",
+        "B": "VLAN trunking",
+        "C": "Static routing",
+        "D": "Spanning tree"
+      },
+      "correctAnswer": "A",
+      "explanation": "WAN POVualization can combine MPLS, broadband and cellular links into one POVual network."
+    },
+    {
+      "id": "POV-U3-133",
+      "question": "In GRE, what is the order of events?",
+      "options": {
+        "A": "Receiver encrypts; sender decrypts; packet is dropped",
+        "B": "Packet is dropped; GRE is removed; IP is added",
+        "C": "Payload is wrapped in GRE, then in IP; receiver removes headers in reverse order",
+        "D": "IP is removed first; GRE is added later"
+      },
+      "correctAnswer": "C",
+      "explanation": "The payload is wrapped in GRE and then in IP, and the receiver removes the headers in reverse order."
+    },
+    {
+      "id": "POV-U3-134",
+      "question": "What does \"transparently\" mean for 802.1Q across a provider network?",
+      "options": {
+        "A": "The provider can read all customer data",
+        "B": "Customer traffic crosses the provider network without being changed by it",
+        "C": "VLANs are removed",
+        "D": "Frames are encrypted"
+      },
+      "correctAnswer": "B",
+      "explanation": "Transparently means customer traffic crosses the provider network without being changed by it."
+    },
+    {
+      "id": "POV-U3-135",
+      "question": "Which is a Layer 2 protocol used to carry VLAN traffic between switches?",
+      "options": {
+        "A": "802.1Q",
+        "B": "GRE",
+        "C": "BGP",
+        "D": "VRRP"
+      },
+      "correctAnswer": "A",
+      "explanation": "802.1Q is the Layer 2 protocol used to carry VLAN traffic between switches."
+    },
+    {
+      "id": "POV-U3-136",
+      "question": "Which statement is correct about device POVualization and data-path POVualization?",
+      "options": {
+        "A": "Both mean cabling",
+        "B": "Data-path POVualization creates logical devices inside a box",
+        "C": "Data-path POVualization POVualizes the connection between devices",
+        "D": "Device POVualization POVualizes only the links"
+      },
+      "correctAnswer": "C",
+      "explanation": "Data-path POVualization POVualizes the connection between devices, while device POVualization creates logical devices inside a box."
+    },
+    {
+      "id": "POV-U3-137",
+      "question": "Which statement about dynamic vs static routing is WRONG?",
+      "options": {
+        "A": "Dynamic routing uses routing protocols",
+        "B": "Static routes are entered by the administrator",
+        "C": "Dynamic routing adapts to route changes",
+        "D": "Static routing adapts automatically to route changes"
+      },
+      "correctAnswer": "D",
+      "explanation": "Static routing does not adapt automatically to route changes, so this statement is wrong."
+    },
+    {
+      "id": "POV-U3-138",
+      "question": "BGP is classified as which type of routing protocol?",
+      "options": {
+        "A": "Path Vector",
+        "B": "Distance Vector",
+        "C": "Static",
+        "D": "Layer 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "BGP is a Path Vector routing protocol."
+    },
+    {
+      "id": "POV-U3-139",
+      "question": "Which pair of protocols belong to the Distance Vector type?",
+      "options": {
+        "A": "BGP and VRRP",
+        "B": "EIGRP and RIP",
+        "C": "VRRP and GRE",
+        "D": "BGP and OTV"
+      },
+      "correctAnswer": "B",
+      "explanation": "EIGRP and RIP are Distance Vector protocols."
+    },
+    {
+      "id": "POV-U3-140",
+      "question": "Which protocol automatically assigns an available IP router to hosts?",
+      "options": {
+        "A": "BGP",
+        "B": "RIP",
+        "C": "VRRP",
+        "D": "GRE"
+      },
+      "correctAnswer": "C",
+      "explanation": "VRRP automatically assigns an available IP router to hosts."
+    },
+    {
+      "id": "POV-U3-141",
+      "question": "VRF on routers is most similar to which concept on switches?",
+      "options": {
+        "A": "NFV",
+        "B": "Spanning tree only",
+        "C": "Port mirroring only",
+        "D": "VLANs"
+      },
+      "correctAnswer": "D",
+      "explanation": "VRF on routers is similar to VLANs on switches."
+    },
+    {
+      "id": "POV-U3-142",
+      "question": "VRF combined with MPLS is useful because it:",
+      "options": {
+        "A": "Can create separate VPNs for different customers",
+        "B": "Removes all routing",
+        "C": "Works only on Wi-Fi",
+        "D": "Needs one global table only"
+      },
+      "correctAnswer": "A",
+      "explanation": "VRF with MPLS can create separate VPNs for different customers."
+    },
+    {
+      "id": "POV-U3-143",
+      "question": "A POVual Firewall is most useful for:",
+      "options": {
+        "A": "Printing documents",
+        "B": "Inspecting and blocking unapproved traffic between VMs",
+        "C": "Cabling",
+        "D": "Creating GRE keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "A POVual Firewall inspects and blocks unapproved traffic between VMs."
+    },
+    {
+      "id": "POV-U3-144",
+      "question": "Network POVualization moves networks from static to:",
+      "options": {
+        "A": "Slow and manual",
+        "B": "Fixed and rigid",
+        "C": "Dynamic, agile and optimized",
+        "D": "Hardware-only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Network POVualization makes networks dynamic, agile and optimized."
+    },
+    {
+      "id": "POV-U3-145",
+      "question": "Which is a role of VLANs in scalability?",
+      "options": {
+        "A": "Increase the broadcast domain",
+        "B": "Remove all switches",
+        "C": "Create large loops",
+        "D": "Reduce the size of the broadcast domain"
+      },
+      "correctAnswer": "D",
+      "explanation": "VLANs help scalability by reducing the size of the broadcast domain."
+    },
+    {
+      "id": "POV-U3-146",
+      "question": "L2TP was originally described as an extension of:",
+      "options": {
+        "A": "PPTP",
+        "B": "GRE",
+        "C": "BGP",
+        "D": "VRRP"
+      },
+      "correctAnswer": "A",
+      "explanation": "L2TP was originally described as an extension of PPTP."
+    },
+    {
+      "id": "POV-U3-147",
+      "question": "Which is a GRE limitation (as per notes)?",
+      "options": {
+        "A": "It cannot make point-to-point links",
+        "B": "It needs other security protocols like IPsec for protection",
+        "C": "It cannot encapsulate packets",
+        "D": "It works only for voice"
+      },
+      "correctAnswer": "B",
+      "explanation": "GRE needs other security protocols such as IPsec for protection."
+    },
+    {
+      "id": "POV-U3-148",
+      "question": "For TAR to work well, each zone should have at least how many endpoints?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "10"
+      },
+      "correctAnswer": "C",
+      "explanation": "Each zone should have at least 3 endpoints."
+    },
+    {
+      "id": "POV-U3-149",
+      "question": "Which statement best describes MTR's multicast handling?",
+      "options": {
+        "A": "Multicast is not allowed",
+        "B": "Multicast uses the unicast topology only",
+        "C": "Multicast is blocked in voice",
+        "D": "A separate multicast topology can be used"
+      },
+      "correctAnswer": "D",
+      "explanation": "MTR can use a separate multicast topology."
+    },
+    {
+      "id": "POV-U3-150",
+      "question": "A college's Computer Science, Management and Administration departments share the same cables and switches but each has its own POVual network. This is an example of:",
+      "options": {
+        "A": "Campus WAN POVualization",
+        "B": "Static routing",
+        "C": "A flat Layer 2 network",
+        "D": "Dedicated physical links"
+      },
+      "correctAnswer": "A",
+      "explanation": "Departments with separate POVual networks on shared cables and switches are an example of campus WAN POVualization."
+    }
+  ]
+}

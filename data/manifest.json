@@ -1,0 +1,49 @@
+{
+  "title": "MCQ Practice Studio",
+  "subjects": [
+    {
+      "id": "computer-networking",
+      "name": "Computer Networking",
+      "icon": "network",
+      "description": "Protocols, layers, addressing and network devices.",
+      "units": [
+        { "id": "unit3", "name": "Unit 3", "file": "computer-networking/unit3.json" },
+        { "id": "unit4", "name": "Unit 4", "file": "computer-networking/unit4.json" },
+        { "id": "unit5", "name": "Unit 5", "file": "computer-networking/unit5.json" }
+      ]
+    },
+    {
+      "id": "virtualization",
+      "name": "Virtualization",
+      "icon": "layers",
+      "description": "Hypervisors, virtual machines, containers and cloud platforms.",
+      "units": [
+        { "id": "unit3", "name": "Unit 3", "file": "virtualization/unit3.json" },
+        { "id": "unit4", "name": "Unit 4", "file": "virtualization/unit4.json" },
+        { "id": "unit5", "name": "Unit 5", "file": "virtualization/unit5.json" }
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "icon": "cpu",
+      "description": "Search, knowledge representation, learning and intelligent agents.",
+      "units": [
+        { "id": "unit3", "name": "Unit 3", "file": "artificial-intelligence/unit3.json" },
+        { "id": "unit4", "name": "Unit 4", "file": "artificial-intelligence/unit4.json" },
+        { "id": "unit5", "name": "Unit 5", "file": "artificial-intelligence/unit5.json" }
+      ]
+    },
+    {
+      "id": "operating-system",
+      "name": "Operating System",
+      "icon": "terminal",
+      "description": "Processes, scheduling, memory management and file systems.",
+      "units": [
+        { "id": "unit3", "name": "Unit 3", "file": "operating-system/unit3.json" },
+        { "id": "unit4", "name": "Unit 4", "file": "operating-system/unit4.json" },
+        { "id": "unit5", "name": "Unit 5", "file": "operating-system/unit5.json" }
+      ]
+    }
+  ]
+}

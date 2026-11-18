@@ -1,0 +1,1806 @@
+{
+  "subject": "Virtualization",
+  "unit": "Unit 4",
+  "questions": [
+    {
+      "id": "POV-U4-001",
+      "question": "SCSI stands for:",
+      "options": {
+        "A": "Simple Computer Storage Interface",
+        "B": "Secure Computer System Integration",
+        "C": "Small Computer System Interface",
+        "D": "Shared Cloud Storage Interface"
+      },
+      "correctAnswer": "C",
+      "explanation": "SCSI stands for Small Computer System Interface."
+    },
+    {
+      "id": "POV-U4-002",
+      "question": "Power BI is mainly used to:",
+      "options": {
+        "A": "Visualize and analyze data",
+        "B": "Install operating systems",
+        "C": "Build hardware",
+        "D": "Create physical networks"
+      },
+      "correctAnswer": "A",
+      "explanation": "Power BI is a tool for visualizing and analyzing data."
+    },
+    {
+      "id": "POV-U4-003",
+      "question": "Virtualized storage abstracts physical storage into:",
+      "options": {
+        "A": "Cables",
+        "B": "Printers",
+        "C": "Monitors",
+        "D": "Logical units"
+      },
+      "correctAnswer": "D",
+      "explanation": "Storage virtualization abstracts physical storage into logical units."
+    },
+    {
+      "id": "POV-U4-004",
+      "question": "LUN stands for:",
+      "options": {
+        "A": "Local User Network",
+        "B": "Logical Unit Number",
+        "C": "Linked Unit Node",
+        "D": "Large Unified Namespace"
+      },
+      "correctAnswer": "B",
+      "explanation": "LUN stands for Logical Unit Number."
+    },
+    {
+      "id": "POV-U4-005",
+      "question": "Which of these is a SCSI storage metric shown in Power BI?",
+      "options": {
+        "A": "Capacity usage (total, used, free space)",
+        "B": "Keyboard layout",
+        "C": "Screen brightness",
+        "D": "Mouse speed"
+      },
+      "correctAnswer": "A",
+      "explanation": "Capacity usage (total, used and free space) is a SCSI storage metric; the other options are unrelated to storage."
+    },
+    {
+      "id": "POV-U4-006",
+      "question": "IOPS is a:",
+      "options": {
+        "A": "Colour setting",
+        "B": "Border style",
+        "C": "Font type",
+        "D": "Performance metric"
+      },
+      "correctAnswer": "D",
+      "explanation": "IOPS (input/output operations per second) is a storage performance metric."
+    },
+    {
+      "id": "POV-U4-007",
+      "question": "Which device types are mentioned for SCSI storage data?",
+      "options": {
+        "A": "CD, DVD, Floppy",
+        "B": "RAM, ROM, Cache",
+        "C": "SSD, HDD, NVMe",
+        "D": "USB, HDMI, VGA"
+      },
+      "correctAnswer": "C",
+      "explanation": "The SCSI storage data covers device types such as SSD, HDD and NVMe."
+    },
+    {
+      "id": "POV-U4-008",
+      "question": "Power BI can connect to a hypervisor such as:",
+      "options": {
+        "A": "Notepad",
+        "B": "Hyper-V or VMware",
+        "C": "Paint",
+        "D": "Calculator"
+      },
+      "correctAnswer": "B",
+      "explanation": "Power BI can use a hypervisor such as Hyper-V or VMware as a data source."
+    },
+    {
+      "id": "POV-U4-009",
+      "question": "Data modeling in Power BI means:",
+      "options": {
+        "A": "Printing reports",
+        "B": "Deleting tables",
+        "C": "Changing monitor size",
+        "D": "Creating relationships between tables"
+      },
+      "correctAnswer": "D",
+      "explanation": "Data modeling means creating relationships between tables."
+    },
+    {
+      "id": "POV-U4-010",
+      "question": "One benefit of virtualizing SCSI storage with Power BI is:",
+      "options": {
+        "A": "Centralized monitoring in a single view",
+        "B": "Slower reports",
+        "C": "Less visibility",
+        "D": "More complex management"
+      },
+      "correctAnswer": "A",
+      "explanation": "A key benefit is centralized monitoring in a single view."
+    },
+    {
+      "id": "POV-U4-011",
+      "question": "The purpose of General Properties is to:",
+      "options": {
+        "A": "Delete visuals",
+        "B": "Define the foundational setup of visualizations",
+        "C": "Create hardware",
+        "D": "Install drivers"
+      },
+      "correctAnswer": "B",
+      "explanation": "General Properties define the foundational setup of visualizations."
+    },
+    {
+      "id": "POV-U4-012",
+      "question": "Which General Properties feature lets you add a name like \"SCSI Storage Metrics Dashboard\"?",
+      "options": {
+        "A": "Totals",
+        "B": "Borders",
+        "C": "Titles and labels",
+        "D": "Gridlines"
+      },
+      "correctAnswer": "C",
+      "explanation": "Titles and labels let you give a visual or dashboard a name."
+    },
+    {
+      "id": "POV-U4-013",
+      "question": "Data binding means:",
+      "options": {
+        "A": "Linking visual fields to metrics such as device names, capacity or latency",
+        "B": "Tying cables together",
+        "C": "Binding a book",
+        "D": "Locking the report"
+      },
+      "correctAnswer": "A",
+      "explanation": "Data binding links the fields of a visual to metrics such as device names, capacity or latency."
+    },
+    {
+      "id": "POV-U4-014",
+      "question": "Hover effects and tooltips come under:",
+      "options": {
+        "A": "Borders",
+        "B": "Totals",
+        "C": "Backgrounds",
+        "D": "Interactivity"
+      },
+      "correctAnswer": "D",
+      "explanation": "Hover effects and tooltips are part of the Interactivity feature."
+    },
+    {
+      "id": "POV-U4-015",
+      "question": "Where do you set a visual's height and width manually?",
+      "options": {
+        "A": "Format Pane > Totals",
+        "B": "Format Pane > General > Size",
+        "C": "Format Pane > Grid > Borders",
+        "D": "File > Print"
+      },
+      "correctAnswer": "B",
+      "explanation": "Height and width are set manually under Format Pane > General > Size."
+    },
+    {
+      "id": "POV-U4-016",
+      "question": "Precise alignment of visuals uses:",
+      "options": {
+        "A": "Voice commands",
+        "B": "Printer settings",
+        "C": "X/Y coordinates in Position",
+        "D": "Mouse clicks only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Precise alignment uses X/Y coordinates in the Position setting."
+    },
+    {
+      "id": "POV-U4-017",
+      "question": "KPIs like \"Total Capacity\" are usually placed:",
+      "options": {
+        "A": "At the bottom",
+        "B": "Outside the report",
+        "C": "In the footer",
+        "D": "At the top"
+      },
+      "correctAnswer": "D",
+      "explanation": "KPIs are usually placed at the top so the key summary is seen first."
+    },
+    {
+      "id": "POV-U4-018",
+      "question": "Alternate text is used to add:",
+      "options": {
+        "A": "Descriptions for accessibility or loading issues",
+        "B": "Background music",
+        "C": "Borders",
+        "D": "Totals"
+      },
+      "correctAnswer": "A",
+      "explanation": "Alternate text adds descriptions of a visual for accessibility or loading issues."
+    },
+    {
+      "id": "POV-U4-019",
+      "question": "Tiles in Power BI are used to:",
+      "options": {
+        "A": "Delete rows",
+        "B": "Rename tables",
+        "C": "Group visuals neatly using grid-based layouts",
+        "D": "Encrypt data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Tiles group visuals neatly using grid-based layouts."
+    },
+    {
+      "id": "POV-U4-020",
+      "question": "Freezing headers:",
+      "options": {
+        "A": "Deletes the header",
+        "B": "Keeps headers visible while scrolling a table",
+        "C": "Hides all data",
+        "D": "Changes the font"
+      },
+      "correctAnswer": "B",
+      "explanation": "Freezing headers keeps them visible while scrolling a table."
+    },
+    {
+      "id": "POV-U4-021",
+      "question": "Tooltips provide:",
+      "options": {
+        "A": "Extra information on hover",
+        "B": "Extra borders",
+        "C": "Extra totals",
+        "D": "Extra columns"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tooltips show extra information when the user hovers."
+    },
+    {
+      "id": "POV-U4-022",
+      "question": "Vertical/horizontal gridlines are toggled for better:",
+      "options": {
+        "A": "Security",
+        "B": "Speed",
+        "C": "Storage",
+        "D": "Readability"
+      },
+      "correctAnswer": "D",
+      "explanation": "Gridlines are toggled on or off to improve readability."
+    },
+    {
+      "id": "POV-U4-023",
+      "question": "Cell padding adjusts:",
+      "options": {
+        "A": "The data source",
+        "B": "The spacing inside table cells",
+        "C": "The report name",
+        "D": "The user login"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cell padding adjusts the spacing inside table cells."
+    },
+    {
+      "id": "POV-U4-024",
+      "question": "Static colors in a table are used to:",
+      "options": {
+        "A": "Change colors by threshold",
+        "B": "Delete rows",
+        "C": "Set fixed alternating row colors for contrast",
+        "D": "Hide gridlines"
+      },
+      "correctAnswer": "C",
+      "explanation": "Static colors set fixed colors, such as alternating rows, for contrast."
+    },
+    {
+      "id": "POV-U4-025",
+      "question": "Dynamic colors use:",
+      "options": {
+        "A": "Conditional formatting",
+        "B": "A fixed color only",
+        "C": "No formatting",
+        "D": "Printer settings"
+      },
+      "correctAnswer": "A",
+      "explanation": "Dynamic colors change according to conditions, using conditional formatting."
+    },
+    {
+      "id": "POV-U4-026",
+      "question": "Sparse rows mean:",
+      "options": {
+        "A": "Rows with no data",
+        "B": "Rows with more white space between them",
+        "C": "Rows with the smallest font",
+        "D": "Deleted rows"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sparse rows have more white space between them."
+    },
+    {
+      "id": "POV-U4-027",
+      "question": "Flashy rows:",
+      "options": {
+        "A": "Hide critical devices",
+        "B": "Use only gray",
+        "C": "Remove borders",
+        "D": "Use bold colors to highlight specific rows"
+      },
+      "correctAnswer": "D",
+      "explanation": "Flashy rows use bold colors to highlight specific rows."
+    },
+    {
+      "id": "POV-U4-028",
+      "question": "Condensed tables:",
+      "options": {
+        "A": "Increase padding",
+        "B": "Add extra white space",
+        "C": "Reduce padding and font size for denser data",
+        "D": "Hide all headers"
+      },
+      "correctAnswer": "C",
+      "explanation": "Condensed tables reduce padding and font size to show denser data."
+    },
+    {
+      "id": "POV-U4-029",
+      "question": "Which is an example of renaming a column header for clarity?",
+      "options": {
+        "A": "\"ID\" to \"Device ID\"",
+        "B": "\"Device ID\" to \"X\"",
+        "C": "\"Capacity\" to \"123\"",
+        "D": "\"IOPS\" to \"Blank\""
+      },
+      "correctAnswer": "A",
+      "explanation": "Changing \"ID\" to \"Device ID\" makes the header clearer."
+    },
+    {
+      "id": "POV-U4-030",
+      "question": "Row headers can be aligned:",
+      "options": {
+        "A": "Only upward",
+        "B": "Only diagonally",
+        "C": "Only downward",
+        "D": "Left, center or right"
+      },
+      "correctAnswer": "D",
+      "explanation": "Row headers can be aligned left, center or right."
+    },
+    {
+      "id": "POV-U4-031",
+      "question": "Focus mode gives:",
+      "options": {
+        "A": "A blank page",
+        "B": "A full-screen view of a visual or table",
+        "C": "A new data source",
+        "D": "A new hypervisor"
+      },
+      "correctAnswer": "B",
+      "explanation": "Focus mode gives a full-screen view of a visual or table."
+    },
+    {
+      "id": "POV-U4-032",
+      "question": "Row/column totals can calculate:",
+      "options": {
+        "A": "Sums or averages",
+        "B": "Only colors",
+        "C": "Only fonts",
+        "D": "Only images"
+      },
+      "correctAnswer": "A",
+      "explanation": "Row and column totals can calculate sums or averages."
+    },
+    {
+      "id": "POV-U4-033",
+      "question": "Custom totals can be created using:",
+      "options": {
+        "A": "HTML",
+        "B": "Paint",
+        "C": "DAX formulas",
+        "D": "Notepad"
+      },
+      "correctAnswer": "C",
+      "explanation": "Custom totals are created using DAX formulas."
+    },
+    {
+      "id": "POV-U4-034",
+      "question": "Static backgrounds use:",
+      "options": {
+        "A": "Only red color",
+        "B": "Only black color",
+        "C": "No color",
+        "D": "Solid colors, subtle gradients or images"
+      },
+      "correctAnswer": "D",
+      "explanation": "Static backgrounds use solid colors, subtle gradients or images."
+    },
+    {
+      "id": "POV-U4-035",
+      "question": "An example of a dynamic background is:",
+      "options": {
+        "A": "A fixed white background",
+        "B": "Red for high storage usage",
+        "C": "A logo only",
+        "D": "A border"
+      },
+      "correctAnswer": "B",
+      "explanation": "A background that turns red for high storage usage changes with the data, so it is dynamic."
+    },
+    {
+      "id": "POV-U4-036",
+      "question": "The purpose of borders is to:",
+      "options": {
+        "A": "Delete visuals",
+        "B": "Add new data",
+        "C": "Define boundaries to improve layout clarity",
+        "D": "Create DAX"
+      },
+      "correctAnswer": "C",
+      "explanation": "Borders define boundaries and improve layout clarity."
+    },
+    {
+      "id": "POV-U4-037",
+      "question": "Rounded corners give:",
+      "options": {
+        "A": "A polished look",
+        "B": "More data",
+        "C": "Faster loading",
+        "D": "More security"
+      },
+      "correctAnswer": "A",
+      "explanation": "Rounded corners give visuals a polished look."
+    },
+    {
+      "id": "POV-U4-038",
+      "question": "Vertical gridlines:",
+      "options": {
+        "A": "Separate rows only",
+        "B": "Hide columns",
+        "C": "Delete borders",
+        "D": "Separate columns to improve readability"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vertical gridlines separate columns, which improves readability."
+    },
+    {
+      "id": "POV-U4-039",
+      "question": "Horizontal gridlines:",
+      "options": {
+        "A": "Separate columns",
+        "B": "Make rows distinct, especially in dense tables",
+        "C": "Remove totals",
+        "D": "Hide headers"
+      },
+      "correctAnswer": "B",
+      "explanation": "Horizontal gridlines make rows distinct, especially in dense tables."
+    },
+    {
+      "id": "POV-U4-040",
+      "question": "The Default grid style is:",
+      "options": {
+        "A": "Heavy and bold",
+        "B": "Fully hidden",
+        "C": "Simple with subtle gridlines",
+        "D": "Always red"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Default grid style is simple, with subtle gridlines."
+    },
+    {
+      "id": "POV-U4-041",
+      "question": "The Outline grid style:",
+      "options": {
+        "A": "Adds emphasis with thicker borders around cells",
+        "B": "Removes all borders",
+        "C": "Hides rows",
+        "D": "Hides headers"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Outline style adds emphasis with thicker borders around cells."
+    },
+    {
+      "id": "POV-U4-042",
+      "question": "Totals are enabled from:",
+      "options": {
+        "A": "Format Pane > Position",
+        "B": "Format Pane > Totals",
+        "C": "File > Save",
+        "D": "View > Zoom"
+      },
+      "correctAnswer": "B",
+      "explanation": "Totals are enabled from Format Pane > Totals."
+    },
+    {
+      "id": "POV-U4-043",
+      "question": "Subtotals are useful for:",
+      "options": {
+        "A": "Deleting data",
+        "B": "Renaming visuals",
+        "C": "Changing fonts",
+        "D": "Grouped data, such as total capacity by storage tier"
+      },
+      "correctAnswer": "D",
+      "explanation": "Subtotals summarize grouped data, such as total capacity by storage tier."
+    },
+    {
+      "id": "POV-U4-044",
+      "question": "An example of static row colors is:",
+      "options": {
+        "A": "Light gray for even rows and white for odd rows",
+        "B": "Red when usage exceeds 90%",
+        "C": "Random colors every second",
+        "D": "No colors"
+      },
+      "correctAnswer": "A",
+      "explanation": "Light gray for even rows and white for odd rows is a fixed alternating scheme, so it is static."
+    },
+    {
+      "id": "POV-U4-045",
+      "question": "Coloring rows red if storage usage exceeds 90% is an example of:",
+      "options": {
+        "A": "Static row colors",
+        "B": "Sparse rows",
+        "C": "Dynamic row colors",
+        "D": "Rounded corners"
+      },
+      "correctAnswer": "C",
+      "explanation": "The row color changes based on a threshold, so it is a dynamic row color."
+    },
+    {
+      "id": "POV-U4-046",
+      "question": "Slicers are used to:",
+      "options": {
+        "A": "Delete data",
+        "B": "Filter data, e.g., by device type",
+        "C": "Print reports",
+        "D": "Install software"
+      },
+      "correctAnswer": "B",
+      "explanation": "Slicers filter data, for example by device type."
+    },
+    {
+      "id": "POV-U4-047",
+      "question": "Under Allocation, data can be grouped by:",
+      "options": {
+        "A": "Colors only",
+        "B": "Fonts only",
+        "C": "Borders only",
+        "D": "Storage pools, servers or virtual machines"
+      },
+      "correctAnswer": "D",
+      "explanation": "Under Allocation, data can be grouped by storage pools, servers or virtual machines."
+    },
+    {
+      "id": "POV-U4-048",
+      "question": "Dynamic sizing means visuals:",
+      "options": {
+        "A": "Never change size",
+        "B": "Are always tiny",
+        "C": "Adapt to screen resolutions or layouts",
+        "D": "Are deleted on resize"
+      },
+      "correctAnswer": "C",
+      "explanation": "With dynamic sizing, visuals adapt to different screen resolutions or layouts."
+    },
+    {
+      "id": "POV-U4-049",
+      "question": "Keeping related visuals uniform in size helps:",
+      "options": {
+        "A": "Consistency in the report",
+        "B": "Increase file size",
+        "C": "Hide data",
+        "D": "Delete tables"
+      },
+      "correctAnswer": "A",
+      "explanation": "Uniform sizes of related visuals give consistency in the report."
+    },
+    {
+      "id": "POV-U4-050",
+      "question": "\"Virtualisation with Power BI\" is Unit 4 of which subject?",
+      "options": {
+        "A": "Data Structures",
+        "B": "Principles of Virtualization",
+        "C": "Operating Systems",
+        "D": "Web Design"
+      },
+      "correctAnswer": "B",
+      "explanation": "The unit belongs to the subject Principles of Virtualization."
+    },
+    {
+      "id": "POV-U4-051",
+      "question": "Virtualized SCSI storage helps VMs mainly by:",
+      "options": {
+        "A": "Removing all disks",
+        "B": "Increasing hardware cost",
+        "C": "Blocking storage access",
+        "D": "Enabling flexible storage configuration and efficient allocation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Virtualized SCSI storage gives VMs flexible storage configuration and efficient allocation."
+    },
+    {
+      "id": "POV-U4-052",
+      "question": "Power BI lets you analyze virtual SCSI storage without:",
+      "options": {
+        "A": "Using any data",
+        "B": "Directly accessing the physical storage hardware",
+        "C": "Creating visuals",
+        "D": "Connecting to any source"
+      },
+      "correctAnswer": "B",
+      "explanation": "Power BI analyzes data supplied by a source, so it does not need direct access to the physical storage hardware."
+    },
+    {
+      "id": "POV-U4-053",
+      "question": "Which data source can provide virtual disk and LUN information to Power BI?",
+      "options": {
+        "A": "A SAN management tool, a hypervisor or a custom API",
+        "B": "A word processor",
+        "C": "A media player",
+        "D": "A calculator"
+      },
+      "correctAnswer": "A",
+      "explanation": "A SAN management tool, a hypervisor or a custom API can supply virtual disk and LUN information."
+    },
+    {
+      "id": "POV-U4-054",
+      "question": "Relationships are created between tables of VMs, SCSI controllers and LUNs to:",
+      "options": {
+        "A": "Reduce the number of tables",
+        "B": "Delete unused data",
+        "C": "Enable comprehensive analysis",
+        "D": "Hide metrics"
+      },
+      "correctAnswer": "C",
+      "explanation": "Relationships between these tables enable comprehensive analysis."
+    },
+    {
+      "id": "POV-U4-055",
+      "question": "Visualizations of IOPS and disk usage help to identify:",
+      "options": {
+        "A": "Printer errors",
+        "B": "Potential bottlenecks and storage management issues",
+        "C": "Keyboard faults",
+        "D": "Screen resolution"
+      },
+      "correctAnswer": "B",
+      "explanation": "IOPS and disk usage visuals help identify potential bottlenecks and storage management issues."
+    },
+    {
+      "id": "POV-U4-056",
+      "question": "Proactive capacity planning is made possible mainly by:",
+      "options": {
+        "A": "Improved visibility into storage utilization and performance issues",
+        "B": "Deleting reports",
+        "C": "Hiding totals",
+        "D": "Disabling tooltips"
+      },
+      "correctAnswer": "A",
+      "explanation": "Improved visibility into utilization and performance issues allows proactive capacity planning."
+    },
+    {
+      "id": "POV-U4-057",
+      "question": "\"Simplified management\" in Power BI storage reports means administrators can:",
+      "options": {
+        "A": "Stop monitoring",
+        "B": "Avoid all reports",
+        "C": "Use only command lines",
+        "D": "Quickly find and fix storage problems without accessing multiple management tools"
+      },
+      "correctAnswer": "D",
+      "explanation": "Administrators can quickly find and fix storage problems without using multiple management tools."
+    },
+    {
+      "id": "POV-U4-058",
+      "question": "Which is NOT a key feature listed under General Properties?",
+      "options": {
+        "A": "Titles and labels",
+        "B": "Data binding",
+        "C": "Creating SCSI hardware drivers",
+        "D": "Interactivity"
+      },
+      "correctAnswer": "C",
+      "explanation": "Creating SCSI hardware drivers is not a General Properties feature; the others are."
+    },
+    {
+      "id": "POV-U4-059",
+      "question": "Which of these are \"Metrics Dimensions\" for SCSI data?",
+      "options": {
+        "A": "Font and color",
+        "B": "Capacity, latency, IOPS and free space",
+        "C": "Border and padding",
+        "D": "Header and footer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Capacity, latency, IOPS and free space are the metrics dimensions for SCSI data."
+    },
+    {
+      "id": "POV-U4-060",
+      "question": "Slicers added for interactive dimensions can be used for:",
+      "options": {
+        "A": "Printing",
+        "B": "Deleting columns",
+        "C": "Changing the theme",
+        "D": "Filtering by device type (NVMe or SSD) and drilling into specific servers or VMs"
+      },
+      "correctAnswer": "D",
+      "explanation": "Slicers filter by device type (such as NVMe or SSD) and allow drilling into specific servers or VMs."
+    },
+    {
+      "id": "POV-U4-061",
+      "question": "Which example best shows good use of sizing?",
+      "options": {
+        "A": "A compact table for capacity and a larger bar chart for IOPS trends",
+        "B": "All visuals tiny",
+        "C": "All visuals overlapping",
+        "D": "No visuals"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sizing each visual to suit its content, a compact table and a larger bar chart, is good use of sizing."
+    },
+    {
+      "id": "POV-U4-062",
+      "question": "Responsive (dynamic) sizing helps because visuals:",
+      "options": {
+        "A": "Never move",
+        "B": "Are removed on small screens",
+        "C": "Adapt to different screen resolutions or layouts",
+        "D": "Lose their data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Responsive sizing lets visuals adapt to different screen resolutions or layouts."
+    },
+    {
+      "id": "POV-U4-063",
+      "question": "Where would you set exact X/Y placement of a visual?",
+      "options": {
+        "A": "Format Pane > Totals",
+        "B": "Format Pane > Backgrounds",
+        "C": "File > Export",
+        "D": "Format Pane > General > Position"
+      },
+      "correctAnswer": "D",
+      "explanation": "Exact X/Y placement is set under Format Pane > General > Position."
+    },
+    {
+      "id": "POV-U4-064",
+      "question": "Alternate text is mainly intended for:",
+      "options": {
+        "A": "Accessibility or loading issues",
+        "B": "Changing colors",
+        "C": "Computing totals",
+        "D": "Adding borders"
+      },
+      "correctAnswer": "A",
+      "explanation": "Alternate text is mainly for accessibility or loading issues."
+    },
+    {
+      "id": "POV-U4-065",
+      "question": "Column and row header styling is set in:",
+      "options": {
+        "A": "Format Pane > Grid",
+        "B": "Format Pane > Position",
+        "C": "File > Open",
+        "D": "Home > Paste"
+      },
+      "correctAnswer": "A",
+      "explanation": "Header styling is set in Format Pane > Grid."
+    },
+    {
+      "id": "POV-U4-066",
+      "question": "Toggling header visibility off gives:",
+      "options": {
+        "A": "More data",
+        "B": "Faster hardware",
+        "C": "A cleaner, minimalistic design",
+        "D": "More gridlines"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hiding headers gives a cleaner, more minimalistic design."
+    },
+    {
+      "id": "POV-U4-067",
+      "question": "Grid properties include:",
+      "options": {
+        "A": "Only DAX measures",
+        "B": "Gridline toggles and cell padding",
+        "C": "Only data sources",
+        "D": "Only slicers"
+      },
+      "correctAnswer": "B",
+      "explanation": "Grid properties include gridline toggles and cell padding."
+    },
+    {
+      "id": "POV-U4-068",
+      "question": "The difference between static and dynamic row colors is:",
+      "options": {
+        "A": "Both are the same",
+        "B": "Static uses conditional formatting; dynamic is fixed",
+        "C": "Static applies only to columns",
+        "D": "Static is a fixed color scheme; dynamic changes by conditional formatting"
+      },
+      "correctAnswer": "D",
+      "explanation": "Static colors are a fixed scheme, while dynamic colors change through conditional formatting."
+    },
+    {
+      "id": "POV-U4-069",
+      "question": "Which is an example of dynamic row coloring?",
+      "options": {
+        "A": "Coloring rows red when latency or usage crosses a threshold",
+        "B": "Light gray for every even row",
+        "C": "White for every row",
+        "D": "Removing all colors"
+      },
+      "correctAnswer": "A",
+      "explanation": "Coloring rows red when latency or usage crosses a threshold changes with the data, so it is dynamic."
+    },
+    {
+      "id": "POV-U4-070",
+      "question": "How do sparse rows differ from condensed rows?",
+      "options": {
+        "A": "Both reduce padding",
+        "B": "Both add white space",
+        "C": "Sparse rows add white space; condensed rows reduce padding for denser layouts",
+        "D": "Sparse rows hide data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Sparse rows add white space, while condensed rows reduce padding for denser layouts."
+    },
+    {
+      "id": "POV-U4-071",
+      "question": "A key benefit of Focus mode for large tables is:",
+      "options": {
+        "A": "Hiding the data",
+        "B": "Deleting rows",
+        "C": "Changing the data source",
+        "D": "Zooming into a visual or table for detailed analysis"
+      },
+      "correctAnswer": "D",
+      "explanation": "Focus mode lets you zoom into a visual or table for detailed analysis."
+    },
+    {
+      "id": "POV-U4-072",
+      "question": "Enabling row/column totals together with custom DAX measures allows:",
+      "options": {
+        "A": "Sums, averages and advanced aggregations",
+        "B": "Only color changes",
+        "C": "Only image insertion",
+        "D": "Only border changes"
+      },
+      "correctAnswer": "A",
+      "explanation": "Totals combined with custom DAX measures allow sums, averages and advanced aggregations."
+    },
+    {
+      "id": "POV-U4-073",
+      "question": "Which is an example of a custom total using DAX?",
+      "options": {
+        "A": "Changing the font",
+        "B": "Maximum latency or a weighted average",
+        "C": "Adding a logo",
+        "D": "Rounding corners"
+      },
+      "correctAnswer": "B",
+      "explanation": "Maximum latency or a weighted average can be calculated as a custom total with DAX."
+    },
+    {
+      "id": "POV-U4-074",
+      "question": "Images as backgrounds can be used for:",
+      "options": {
+        "A": "Deleting data",
+        "B": "Calculating totals",
+        "C": "Branding, such as company logos",
+        "D": "Renaming columns"
+      },
+      "correctAnswer": "C",
+      "explanation": "Background images can be used for branding, such as company logos."
+    },
+    {
+      "id": "POV-U4-075",
+      "question": "Which border tip is correct?",
+      "options": {
+        "A": "Use light, thin borders for subtlety and heavier ones for emphasis",
+        "B": "Use heavy borders for every visual",
+        "C": "Borders cannot be changed",
+        "D": "Borders hide data"
+      },
+      "correctAnswer": "A",
+      "explanation": "Light, thin borders give subtlety, and heavier borders give emphasis."
+    },
+    {
+      "id": "POV-U4-076",
+      "question": "Borders can group visuals into sections such as:",
+      "options": {
+        "A": "Fonts vs Colors",
+        "B": "Rows vs Cells",
+        "C": "Titles vs Totals",
+        "D": "Performance Metrics vs Capacity Metrics"
+      },
+      "correctAnswer": "D",
+      "explanation": "Borders can group visuals into sections such as Performance Metrics and Capacity Metrics."
+    },
+    {
+      "id": "POV-U4-077",
+      "question": "Placing KPIs at the top and detailed tables below is an example of:",
+      "options": {
+        "A": "Random placement",
+        "B": "Logical arrangement/alignment of visuals",
+        "C": "Hiding visuals",
+        "D": "Deleting visuals"
+      },
+      "correctAnswer": "B",
+      "explanation": "Placing summary KPIs on top and details below is a logical arrangement of visuals."
+    },
+    {
+      "id": "POV-U4-078",
+      "question": "Gridline customization options include:",
+      "options": {
+        "A": "Only deleting gridlines",
+        "B": "Only changing data",
+        "C": "Adjusting thickness and color, and using dashed or solid lines",
+        "D": "Only encrypting gridlines"
+      },
+      "correctAnswer": "C",
+      "explanation": "Gridlines can be customized by thickness, color and dashed or solid style."
+    },
+    {
+      "id": "POV-U4-079",
+      "question": "How does the Outline style differ from the Default style?",
+      "options": {
+        "A": "Outline adds emphasis with thicker borders around cells",
+        "B": "Outline removes borders",
+        "C": "Default has thicker borders",
+        "D": "They are identical"
+      },
+      "correctAnswer": "A",
+      "explanation": "Outline adds emphasis with thicker borders around cells, while Default is simple with subtle gridlines."
+    },
+    {
+      "id": "POV-U4-080",
+      "question": "A light blue background for a \"Capacity Utilization\" chart is an example of a:",
+      "options": {
+        "A": "Dynamic background",
+        "B": "Static background",
+        "C": "Border",
+        "D": "Total"
+      },
+      "correctAnswer": "B",
+      "explanation": "A fixed light blue color does not change with the data, so it is a static background."
+    },
+    {
+      "id": "POV-U4-081",
+      "question": "\"Capacity usage\" in SCSI metrics covers:",
+      "options": {
+        "A": "Only free space",
+        "B": "Only used space",
+        "C": "Only color",
+        "D": "Total, used and free space"
+      },
+      "correctAnswer": "D",
+      "explanation": "Capacity usage covers total, used and free space."
+    },
+    {
+      "id": "POV-U4-082",
+      "question": "\"Performance data\" in SCSI metrics covers:",
+      "options": {
+        "A": "Font, size, color",
+        "B": "Name, ID, type",
+        "C": "IOPS, latency and throughput",
+        "D": "Rows, columns, cells"
+      },
+      "correctAnswer": "C",
+      "explanation": "Performance data covers IOPS, latency and throughput."
+    },
+    {
+      "id": "POV-U4-083",
+      "question": "Which item is listed among the SCSI storage metrics visualized in Power BI?",
+      "options": {
+        "A": "Printer queue",
+        "B": "VM allocation and storage efficiency",
+        "C": "Screen refresh rate",
+        "D": "Keyboard usage"
+      },
+      "correctAnswer": "B",
+      "explanation": "VM allocation and storage efficiency are among the SCSI storage metrics visualized."
+    },
+    {
+      "id": "POV-U4-084",
+      "question": "Tooltips on column headers are useful to:",
+      "options": {
+        "A": "Explain complex terms",
+        "B": "Hide the column",
+        "C": "Delete the column",
+        "D": "Freeze the column"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tooltips on column headers can explain complex terms."
+    },
+    {
+      "id": "POV-U4-085",
+      "question": "Why format column headers with larger, bold fonts?",
+      "options": {
+        "A": "To hide them",
+        "B": "To delete them",
+        "C": "To reduce size",
+        "D": "For emphasis"
+      },
+      "correctAnswer": "D",
+      "explanation": "Larger, bold fonts give the column headers emphasis."
+    },
+    {
+      "id": "POV-U4-086",
+      "question": "Why freeze row headers in a large table?",
+      "options": {
+        "A": "To delete rows",
+        "B": "To change data",
+        "C": "For easy scrolling while keeping headers visible",
+        "D": "To add borders"
+      },
+      "correctAnswer": "C",
+      "explanation": "Frozen headers stay visible, which makes scrolling a large table easier."
+    },
+    {
+      "id": "POV-U4-087",
+      "question": "Using tiles with grid layouts helps to:",
+      "options": {
+        "A": "Arrange and group visuals neatly",
+        "B": "Delete visuals",
+        "C": "Compute totals",
+        "D": "Encrypt data"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tiles with grid layouts arrange and group visuals neatly."
+    },
+    {
+      "id": "POV-U4-088",
+      "question": "Which is a static background option?",
+      "options": {
+        "A": "Red when usage is critical",
+        "B": "Solid colors or subtle gradients",
+        "C": "Threshold-based color change",
+        "D": "Conditional formatting"
+      },
+      "correctAnswer": "B",
+      "explanation": "Solid colors or subtle gradients are fixed, so they are static background options."
+    },
+    {
+      "id": "POV-U4-089",
+      "question": "Which setting do you toggle on to show totals?",
+      "options": {
+        "A": "Format Pane > Size",
+        "B": "Format Pane > Position",
+        "C": "View > Zoom",
+        "D": "Format Pane > Totals"
+      },
+      "correctAnswer": "D",
+      "explanation": "Totals are toggled on under Format Pane > Totals."
+    },
+    {
+      "id": "POV-U4-090",
+      "question": "Subtotals are useful, for example, to show:",
+      "options": {
+        "A": "Total capacity by storage tier",
+        "B": "The report title",
+        "C": "The page number",
+        "D": "The font name"
+      },
+      "correctAnswer": "A",
+      "explanation": "Subtotals can show, for example, total capacity by storage tier."
+    },
+    {
+      "id": "POV-U4-091",
+      "question": "Tooltips and hover effects are important because they:",
+      "options": {
+        "A": "Slow reports",
+        "B": "Remove data",
+        "C": "Give detailed insight when the user hovers over data",
+        "D": "Delete visuals"
+      },
+      "correctAnswer": "C",
+      "explanation": "They give detailed insight when the user hovers over data."
+    },
+    {
+      "id": "POV-U4-092",
+      "question": "Hover effects and tooltips belong to which General Properties feature?",
+      "options": {
+        "A": "Data binding",
+        "B": "Interactivity",
+        "C": "Formatting options",
+        "D": "Titles and labels"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hover effects and tooltips belong to Interactivity."
+    },
+    {
+      "id": "POV-U4-093",
+      "question": "Keeping related visuals uniform in size is recommended for:",
+      "options": {
+        "A": "Hiding data",
+        "B": "Increasing file size",
+        "C": "Slower loading",
+        "D": "Consistency and a balanced report page"
+      },
+      "correctAnswer": "D",
+      "explanation": "Uniform sizes give consistency and a balanced report page."
+    },
+    {
+      "id": "POV-U4-094",
+      "question": "Which hypervisors are mentioned as data sources?",
+      "options": {
+        "A": "Hyper-V and VMware",
+        "B": "Word and Excel",
+        "C": "Chrome and Edge",
+        "D": "Paint and Notepad"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hyper-V and VMware are the hypervisors mentioned as data sources."
+    },
+    {
+      "id": "POV-U4-095",
+      "question": "Balancing visuals on a report page is done by:",
+      "options": {
+        "A": "Deleting data",
+        "B": "Changing the data source",
+        "C": "Adjusting their dimensions (height and width)",
+        "D": "Hiding the headers"
+      },
+      "correctAnswer": "C",
+      "explanation": "Balancing visuals is done by adjusting their height and width."
+    },
+    {
+      "id": "POV-U4-096",
+      "question": "Which is an example for flashy rows?",
+      "options": {
+        "A": "Rows in plain white",
+        "B": "Devices with critical alerts highlighted in bright colors",
+        "C": "Rows with no data",
+        "D": "Hidden rows"
+      },
+      "correctAnswer": "B",
+      "explanation": "Highlighting devices with critical alerts in bright colors is an example of flashy rows."
+    },
+    {
+      "id": "POV-U4-097",
+      "question": "Condensed tables are used when:",
+      "options": {
+        "A": "You want denser data by reducing padding and font size",
+        "B": "You want extra white space",
+        "C": "You want to hide all data",
+        "D": "You want larger fonts"
+      },
+      "correctAnswer": "A",
+      "explanation": "Condensed tables show denser data by reducing padding and font size."
+    },
+    {
+      "id": "POV-U4-098",
+      "question": "Field parameters in Power BI are used to:",
+      "options": {
+        "A": "Print reports",
+        "B": "Delete visuals",
+        "C": "Add borders",
+        "D": "Dynamically switch between dimensions or measures in a visual"
+      },
+      "correctAnswer": "D",
+      "explanation": "Field parameters let users dynamically switch between dimensions or measures in a visual."
+    },
+    {
+      "id": "POV-U4-099",
+      "question": "What is the difference between grouping by dimensions and drilling down?",
+      "options": {
+        "A": "They are exactly the same",
+        "B": "Grouping hides data; drilling adds data",
+        "C": "Grouping organizes data by a dimension; drilling down moves to a more detailed level",
+        "D": "Drilling down deletes data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Grouping organizes data by a dimension, while drilling down moves to a more detailed level."
+    },
+    {
+      "id": "POV-U4-100",
+      "question": "Using X/Y position settings ensures:",
+      "options": {
+        "A": "Random layout",
+        "B": "Precise alignment of visuals on the canvas",
+        "C": "Deleted visuals",
+        "D": "Hidden gridlines"
+      },
+      "correctAnswer": "B",
+      "explanation": "X/Y position settings ensure precise alignment of visuals on the canvas."
+    },
+    {
+      "id": "POV-U4-101",
+      "question": "An admin wants one view showing storage performance of all VMs in the environment. Which benefit does this describe?",
+      "options": {
+        "A": "Simplified licensing",
+        "B": "Centralized monitoring",
+        "C": "Hardware replacement",
+        "D": "Manual reporting"
+      },
+      "correctAnswer": "B",
+      "explanation": "One view of storage performance across all VMs is centralized monitoring."
+    },
+    {
+      "id": "POV-U4-102",
+      "question": "Which statement about virtualizing SCSI storage with Power BI is correct?",
+      "options": {
+        "A": "Power BI replaces the hypervisor",
+        "B": "Power BI physically formats the SCSI disks",
+        "C": "Power BI must be installed inside every VM",
+        "D": "Power BI connects to a data source that provides virtual SCSI storage information"
+      },
+      "correctAnswer": "D",
+      "explanation": "Power BI connects to a data source that provides virtual SCSI storage information and visualizes it."
+    },
+    {
+      "id": "POV-U4-103",
+      "question": "Which is NOT a benefit of visualizing SCSI storage in Power BI?",
+      "options": {
+        "A": "Directly modifying the physical SCSI hardware settings",
+        "B": "Centralized monitoring",
+        "C": "Improved visibility for capacity planning",
+        "D": "Quickly identifying storage problems"
+      },
+      "correctAnswer": "A",
+      "explanation": "Power BI visualizes data and does not directly modify physical SCSI hardware settings, so this is not a benefit."
+    },
+    {
+      "id": "POV-U4-104",
+      "question": "Which sequence correctly describes the workflow?",
+      "options": {
+        "A": "Create visuals → connect source → build relationships",
+        "B": "Format visuals → delete data → connect source",
+        "C": "Connect to a data source → model relationships between tables → create visualizations",
+        "D": "Create borders → connect source → delete tables"
+      },
+      "correctAnswer": "C",
+      "explanation": "The workflow is to connect to a data source, model relationships between tables, then create visualizations."
+    },
+    {
+      "id": "POV-U4-105",
+      "question": "Which of these is a device type rather than a performance metric?",
+      "options": {
+        "A": "NVMe",
+        "B": "IOPS",
+        "C": "Latency",
+        "D": "Throughput"
+      },
+      "correctAnswer": "A",
+      "explanation": "NVMe is a type of storage device, while IOPS, latency and throughput are performance metrics."
+    },
+    {
+      "id": "POV-U4-106",
+      "question": "Which of these belongs to \"SCSI Device Details\" rather than \"Metrics Dimensions\"?",
+      "options": {
+        "A": "Latency",
+        "B": "Device type (SSD/HDD)",
+        "C": "IOPS",
+        "D": "Free space"
+      },
+      "correctAnswer": "B",
+      "explanation": "Device type (SSD/HDD) is a device detail, while latency, IOPS and free space are metrics dimensions."
+    },
+    {
+      "id": "POV-U4-107",
+      "question": "Drilling down into a specific server or VM from a summary visual is an example of:",
+      "options": {
+        "A": "A static background",
+        "B": "A border style",
+        "C": "Cell padding",
+        "D": "An interactive dimension"
+      },
+      "correctAnswer": "D",
+      "explanation": "Drilling down into a specific server or VM is an interactive dimension."
+    },
+    {
+      "id": "POV-U4-108",
+      "question": "What is the difference between alternate text and tooltips?",
+      "options": {
+        "A": "Alternate text appears only on hover; tooltips are for screen readers",
+        "B": "Both are identical",
+        "C": "Alternate text describes a visual for accessibility or loading issues; tooltips show extra info on hover",
+        "D": "Tooltips are used only for totals"
+      },
+      "correctAnswer": "C",
+      "explanation": "Alternate text describes a visual for accessibility or loading issues, while tooltips show extra information on hover."
+    },
+    {
+      "id": "POV-U4-109",
+      "question": "Which is a good use case of alternate text in a storage virtualization report?",
+      "options": {
+        "A": "Adding a decorative border",
+        "B": "Describing a capacity chart so that screen-reader users understand it",
+        "C": "Changing the row color",
+        "D": "Computing a subtotal"
+      },
+      "correctAnswer": "B",
+      "explanation": "Alternate text can describe a capacity chart so that screen-reader users understand it."
+    },
+    {
+      "id": "POV-U4-110",
+      "question": "Why would you freeze headers in a large table?",
+      "options": {
+        "A": "So headers stay visible while the user scrolls through many rows",
+        "B": "To hide headers",
+        "C": "To delete headers",
+        "D": "To change data types"
+      },
+      "correctAnswer": "A",
+      "explanation": "Frozen headers stay visible while the user scrolls through many rows."
+    },
+    {
+      "id": "POV-U4-111",
+      "question": "What is a benefit of hiding headers in a specific visual?",
+      "options": {
+        "A": "More data is stored",
+        "B": "Totals are removed",
+        "C": "Faster hardware",
+        "D": "A cleaner, more minimalistic design"
+      },
+      "correctAnswer": "D",
+      "explanation": "Hiding headers gives a cleaner, more minimalistic design."
+    },
+    {
+      "id": "POV-U4-112",
+      "question": "Which statement about static and dynamic row colors is correct?",
+      "options": {
+        "A": "Static colors depend on thresholds",
+        "B": "Dynamic colors never change",
+        "C": "Static colors are fixed for contrast, while dynamic colors respond to conditions such as performance thresholds",
+        "D": "Both are identical"
+      },
+      "correctAnswer": "C",
+      "explanation": "Static colors are fixed for contrast, while dynamic colors respond to conditions such as performance thresholds."
+    },
+    {
+      "id": "POV-U4-113",
+      "question": "A table should highlight any row where storage usage is above 90%. Which approach is best?",
+      "options": {
+        "A": "Dynamic row colors using conditional formatting",
+        "B": "Static alternating row colors",
+        "C": "Deleting other rows",
+        "D": "Sparse rows"
+      },
+      "correctAnswer": "A",
+      "explanation": "Highlighting rows above a threshold needs conditional formatting, which is dynamic row coloring."
+    },
+    {
+      "id": "POV-U4-114",
+      "question": "Which of these is NOT a row style mentioned for tables?",
+      "options": {
+        "A": "Sparse rows",
+        "B": "Encrypted rows",
+        "C": "Flashy rows",
+        "D": "Condensed rows"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sparse, flashy and condensed rows are mentioned row styles; encrypted rows are not."
+    },
+    {
+      "id": "POV-U4-115",
+      "question": "Which combination helps display a very detailed table with many rows in a small area?",
+      "options": {
+        "A": "Sparse rows with large padding",
+        "B": "Hidden gridlines with no data",
+        "C": "Condensed rows with reduced padding and font size",
+        "D": "Rounded corners only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Condensed rows with reduced padding and font size fit many rows in a small area."
+    },
+    {
+      "id": "POV-U4-116",
+      "question": "How can you give a table a minimalistic look by removing gridlines?",
+      "options": {
+        "A": "Increase the border thickness",
+        "B": "Enable focus mode",
+        "C": "Add more totals",
+        "D": "Toggle the vertical/horizontal gridlines off"
+      },
+      "correctAnswer": "D",
+      "explanation": "Toggling the vertical and horizontal gridlines off removes them and gives a minimalistic look."
+    },
+    {
+      "id": "POV-U4-117",
+      "question": "Which statement about Outline style is correct?",
+      "options": {
+        "A": "It removes all borders",
+        "B": "It adds emphasis with thicker borders around cells",
+        "C": "It is the same as the Default style",
+        "D": "It hides column headers"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Outline style adds emphasis with thicker borders around cells."
+    },
+    {
+      "id": "POV-U4-118",
+      "question": "For a weighted average total in a table, which is the best option?",
+      "options": {
+        "A": "A custom DAX measure",
+        "B": "A background image",
+        "C": "A rounded corner",
+        "D": "A tooltip"
+      },
+      "correctAnswer": "A",
+      "explanation": "A weighted average total is calculated with a custom DAX measure."
+    },
+    {
+      "id": "POV-U4-119",
+      "question": "What is the difference between subtotals and grand totals?",
+      "options": {
+        "A": "Both mean the same",
+        "B": "Subtotals cover the whole table; grand totals cover only one row",
+        "C": "Subtotals are only for colors",
+        "D": "Subtotals summarize groups (like a storage tier), while a grand total summarizes the whole column or table"
+      },
+      "correctAnswer": "D",
+      "explanation": "Subtotals summarize groups such as a storage tier, while a grand total summarizes the whole column or table."
+    },
+    {
+      "id": "POV-U4-120",
+      "question": "Why are totals important in SCSI storage reports?",
+      "options": {
+        "A": "They hide details",
+        "B": "They add borders",
+        "C": "They summarize values such as total, used and free capacity at a glance",
+        "D": "They remove the need for visuals"
+      },
+      "correctAnswer": "C",
+      "explanation": "Totals summarize values such as total, used and free capacity at a glance."
+    },
+    {
+      "id": "POV-U4-121",
+      "question": "What is the purpose of Focus mode?",
+      "options": {
+        "A": "To delete a visual",
+        "B": "To expand a visual or table to full-screen view for detailed analysis",
+        "C": "To change the data source",
+        "D": "To add borders"
+      },
+      "correctAnswer": "B",
+      "explanation": "Focus mode expands a visual or table to full screen for detailed analysis."
+    },
+    {
+      "id": "POV-U4-122",
+      "question": "How does Focus mode help during presentations?",
+      "options": {
+        "A": "It lets the audience see a single visual in detail",
+        "B": "It hides all the data",
+        "C": "It closes the report",
+        "D": "It changes the theme"
+      },
+      "correctAnswer": "A",
+      "explanation": "Focus mode lets the audience see a single visual in detail."
+    },
+    {
+      "id": "POV-U4-123",
+      "question": "Which is an example of a dynamic background?",
+      "options": {
+        "A": "A solid white page",
+        "B": "A fixed logo",
+        "C": "A red background that appears for visuals showing critical issues",
+        "D": "A thin border"
+      },
+      "correctAnswer": "C",
+      "explanation": "A red background that appears for critical issues changes with the data, so it is dynamic."
+    },
+    {
+      "id": "POV-U4-124",
+      "question": "Which statement about backgrounds is correct?",
+      "options": {
+        "A": "Static backgrounds change by thresholds",
+        "B": "Dynamic backgrounds are fixed colors",
+        "C": "Images cannot be used",
+        "D": "Static backgrounds use fixed colors or images; dynamic backgrounds change based on thresholds"
+      },
+      "correctAnswer": "D",
+      "explanation": "Static backgrounds use fixed colors or images, while dynamic backgrounds change based on thresholds."
+    },
+    {
+      "id": "POV-U4-125",
+      "question": "Why use borders to group visuals?",
+      "options": {
+        "A": "To separate sections such as Performance Metrics and Capacity Metrics",
+        "B": "To hide data",
+        "C": "To compute totals",
+        "D": "To rename headers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Borders separate sections such as Performance Metrics and Capacity Metrics."
+    },
+    {
+      "id": "POV-U4-126",
+      "question": "Which statement about border usage is correct?",
+      "options": {
+        "A": "Heavy borders should be used for everything",
+        "B": "Light, thin borders suit subtlety, and heavier borders suit emphasis",
+        "C": "Borders cannot have rounded corners",
+        "D": "Borders always hide gridlines"
+      },
+      "correctAnswer": "B",
+      "explanation": "Light, thin borders suit subtlety, and heavier borders suit emphasis."
+    },
+    {
+      "id": "POV-U4-127",
+      "question": "Which statement about sizing is correct?",
+      "options": {
+        "A": "Size can be changed only in the data model",
+        "B": "Size cannot be changed manually",
+        "C": "Height and width can be set manually in Format Pane > General > Size",
+        "D": "Size is changed under Totals"
+      },
+      "correctAnswer": "C",
+      "explanation": "Height and width can be set manually in Format Pane > General > Size."
+    },
+    {
+      "id": "POV-U4-128",
+      "question": "Why is proper sizing important for dashboard layouts?",
+      "options": {
+        "A": "It changes the data",
+        "B": "It deletes visuals",
+        "C": "It speeds up the hypervisor",
+        "D": "It keeps visuals balanced and readable on the page"
+      },
+      "correctAnswer": "D",
+      "explanation": "Proper sizing keeps visuals balanced and readable on the page."
+    },
+    {
+      "id": "POV-U4-129",
+      "question": "Why are KPIs such as \"Total Capacity\" placed at the top of a dashboard?",
+      "options": {
+        "A": "To hide them",
+        "B": "So the most important summary is seen first, with detailed tables below",
+        "C": "To make the dashboard slower",
+        "D": "Because they cannot be placed elsewhere"
+      },
+      "correctAnswer": "B",
+      "explanation": "Placing KPIs at the top shows the most important summary first, with detailed tables below."
+    },
+    {
+      "id": "POV-U4-130",
+      "question": "Which mapping of Format Pane areas is correct?",
+      "options": {
+        "A": "Size/Position under General; header styling under Grid; totals under Totals",
+        "B": "Size under Totals; header styling under Position",
+        "C": "Totals under General; Size under Grid",
+        "D": "Position under Totals; header styling under Size"
+      },
+      "correctAnswer": "A",
+      "explanation": "Size and Position are under General, header styling is under Grid, and totals are under Totals."
+    },
+    {
+      "id": "POV-U4-131",
+      "question": "Which header customization is NOT mentioned in the slides?",
+      "options": {
+        "A": "Custom text for headers",
+        "B": "Font size, alignment and colors",
+        "C": "Encrypting header values",
+        "D": "Freeze headers"
+      },
+      "correctAnswer": "C",
+      "explanation": "Encrypting header values is not a header customization mentioned in the slides."
+    },
+    {
+      "id": "POV-U4-132",
+      "question": "Which pairing is WRONG?",
+      "options": {
+        "A": "Flashy rows – highlight devices with critical alerts",
+        "B": "Condensed rows – denser tables",
+        "C": "Static colors – alternating row colors",
+        "D": "Sparse rows – very dense layouts with no spacing"
+      },
+      "correctAnswer": "D",
+      "explanation": "Sparse rows add white space, so describing them as very dense layouts with no spacing is wrong."
+    },
+    {
+      "id": "POV-U4-133",
+      "question": "Tooltips can be added to:",
+      "options": {
+        "A": "Visuals and table headers for extra information",
+        "B": "Only the hypervisor",
+        "C": "Only the data source",
+        "D": "Only borders"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tooltips can be added to visuals and table headers to give extra information."
+    },
+    {
+      "id": "POV-U4-134",
+      "question": "Which is NOT an example of data binding?",
+      "options": {
+        "A": "Linking a visual to the device name field",
+        "B": "Changing the border color of a visual",
+        "C": "Linking a visual to the capacity field",
+        "D": "Linking a visual to the latency field"
+      },
+      "correctAnswer": "B",
+      "explanation": "Changing a border color is formatting, not linking a visual to a data field."
+    },
+    {
+      "id": "POV-U4-135",
+      "question": "Which statement about dimensions is correct?",
+      "options": {
+        "A": "Dimensions are hardware cables",
+        "B": "Dimensions are fonts",
+        "C": "Dimensions are borders",
+        "D": "Dimensions such as device type, storage pool or VM are used to group and filter data"
+      },
+      "correctAnswer": "D",
+      "explanation": "Dimensions such as device type, storage pool or VM are used to group and filter data."
+    },
+    {
+      "id": "POV-U4-136",
+      "question": "Under \"Allocation\", data is grouped by:",
+      "options": {
+        "A": "Colors and fonts",
+        "B": "Headers and footers",
+        "C": "Storage pools, servers or virtual machines",
+        "D": "Borders and tiles"
+      },
+      "correctAnswer": "C",
+      "explanation": "Under Allocation, data is grouped by storage pools, servers or virtual machines."
+    },
+    {
+      "id": "POV-U4-137",
+      "question": "Field parameters are most useful when you want to:",
+      "options": {
+        "A": "Let users dynamically switch between dimensions shown in a visual",
+        "B": "Delete a visual",
+        "C": "Add a border",
+        "D": "Freeze a header"
+      },
+      "correctAnswer": "A",
+      "explanation": "Field parameters let users dynamically switch between dimensions shown in a visual."
+    },
+    {
+      "id": "POV-U4-138",
+      "question": "Grouping by dimensions differs from drilling down because grouping:",
+      "options": {
+        "A": "Moves to deeper levels of detail",
+        "B": "Organizes data by a dimension, while drilling goes deeper within that hierarchy",
+        "C": "Deletes the lower levels",
+        "D": "Hides the dimension"
+      },
+      "correctAnswer": "B",
+      "explanation": "Grouping organizes data by a dimension, while drilling goes deeper within that hierarchy."
+    },
+    {
+      "id": "POV-U4-139",
+      "question": "Which data source is MOST suitable for obtaining virtual disk and LUN information?",
+      "options": {
+        "A": "A text editor",
+        "B": "A music player",
+        "C": "A web browser history",
+        "D": "A SAN management tool or hypervisor such as Hyper-V or VMware"
+      },
+      "correctAnswer": "D",
+      "explanation": "A SAN management tool or a hypervisor such as Hyper-V or VMware provides virtual disk and LUN information."
+    },
+    {
+      "id": "POV-U4-140",
+      "question": "Which is the BEST reason to keep related visuals uniform in size and placed close together?",
+      "options": {
+        "A": "It increases file size",
+        "B": "It reduces data accuracy",
+        "C": "It makes the dashboard consistent and easier to read",
+        "D": "It deletes extra visuals"
+      },
+      "correctAnswer": "C",
+      "explanation": "Uniform, nearby visuals make the dashboard consistent and easier to read."
+    },
+    {
+      "id": "POV-U4-141",
+      "question": "Which statement is INCORRECT?",
+      "options": {
+        "A": "Power BI can show IOPS and latency from storage data",
+        "B": "Power BI stores the physical SCSI disks of the VMs",
+        "C": "Power BI can show device types like SSD and HDD",
+        "D": "Power BI can show VM allocation and storage efficiency"
+      },
+      "correctAnswer": "B",
+      "explanation": "Power BI is a visualization tool and does not store the physical SCSI disks of VMs, so this statement is incorrect."
+    },
+    {
+      "id": "POV-U4-142",
+      "question": "Which feature is both a general property and an accessibility aid?",
+      "options": {
+        "A": "Alternate text",
+        "B": "Cell padding",
+        "C": "Rounded corners",
+        "D": "Subtotals"
+      },
+      "correctAnswer": "A",
+      "explanation": "Alternate text is a general property and also helps accessibility."
+    },
+    {
+      "id": "POV-U4-143",
+      "question": "What is the difference in purpose between tiles and borders?",
+      "options": {
+        "A": "Both only change colors",
+        "B": "Tiles compute totals; borders compute averages",
+        "C": "Tiles arrange visuals in grid layouts; borders define boundaries and group sections visually",
+        "D": "Both are used only for sizing"
+      },
+      "correctAnswer": "C",
+      "explanation": "Tiles arrange visuals in grid layouts, while borders define boundaries and group sections visually."
+    },
+    {
+      "id": "POV-U4-144",
+      "question": "Hover effects and tooltips most directly improve:",
+      "options": {
+        "A": "Data storage",
+        "B": "Hardware speed",
+        "C": "File size",
+        "D": "Interactivity and detailed insights"
+      },
+      "correctAnswer": "D",
+      "explanation": "Hover effects and tooltips improve interactivity and give detailed insights."
+    },
+    {
+      "id": "POV-U4-145",
+      "question": "Which combination best draws attention to devices with critical alerts?",
+      "options": {
+        "A": "Flashy rows with dynamic (conditional) colors",
+        "B": "Sparse rows with no color",
+        "C": "Condensed rows with hidden headers",
+        "D": "Static gray rows only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Flashy rows with dynamic colors highlight critical devices in bold colors when conditions are met."
+    },
+    {
+      "id": "POV-U4-146",
+      "question": "Increasing cell padding makes a table look:",
+      "options": {
+        "A": "More compact",
+        "B": "More spacious",
+        "C": "Smaller in font only",
+        "D": "Without any data"
+      },
+      "correctAnswer": "B",
+      "explanation": "More padding adds space inside cells, so the table looks more spacious."
+    },
+    {
+      "id": "POV-U4-147",
+      "question": "Gridline styles can be customized by:",
+      "options": {
+        "A": "Deleting the table",
+        "B": "Changing the data source",
+        "C": "Encrypting rows",
+        "D": "Using dashed or solid lines and adjusting thickness and color"
+      },
+      "correctAnswer": "D",
+      "explanation": "Gridlines can use dashed or solid lines, with adjustable thickness and color."
+    },
+    {
+      "id": "POV-U4-148",
+      "question": "Which is NOT a customization option for gridlines?",
+      "options": {
+        "A": "Thickness",
+        "B": "Color",
+        "C": "Data compression",
+        "D": "Dashed or solid style"
+      },
+      "correctAnswer": "C",
+      "explanation": "Thickness, color and dashed or solid style are gridline options; data compression is not."
+    },
+    {
+      "id": "POV-U4-149",
+      "question": "Which topic is NOT part of the Unit 4 content list?",
+      "options": {
+        "A": "Hypervisor hardening with CIS Benchmarks",
+        "B": "Virtualizing Storage SCSI with Power BI Editor",
+        "C": "Alternate Text and Tiles",
+        "D": "Totals Computations"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hypervisor hardening with CIS Benchmarks is not part of the Unit 4 content list."
+    },
+    {
+      "id": "POV-U4-150",
+      "question": "Which statement best summarizes the benefits of virtualizing SCSI storage with Power BI?",
+      "options": {
+        "A": "It removes the need for monitoring",
+        "B": "It gives centralized monitoring, improved visibility and simplified management",
+        "C": "It makes storage slower but cheaper",
+        "D": "It replaces all physical storage devices"
+      },
+      "correctAnswer": "B",
+      "explanation": "The benefits are centralized monitoring, improved visibility and simplified management."
+    }
+  ]
+}

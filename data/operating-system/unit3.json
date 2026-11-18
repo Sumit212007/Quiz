@@ -1,0 +1,66 @@
+{
+  "subject": "Operating System",
+  "unit": "Unit 3",
+  "questions": [
+    {
+      "id": "OS-U3-001",
+      "question": "Which CPU scheduling algorithm selects the process with the smallest next CPU burst?",
+      "options": {
+        "A": "First Come First Served (FCFS)",
+        "B": "Round Robin",
+        "C": "Shortest Job First (SJF)",
+        "D": "Priority scheduling with aging"
+      },
+      "correctAnswer": "C",
+      "explanation": "SJF always picks the ready process with the shortest next CPU burst, which minimises average waiting time."
+    },
+    {
+      "id": "OS-U3-002",
+      "question": "A situation in which two or more processes wait indefinitely for resources held by each other is called:",
+      "options": {
+        "A": "Starvation",
+        "B": "Deadlock",
+        "C": "Thrashing",
+        "D": "Context switching"
+      },
+      "correctAnswer": "B",
+      "explanation": "In a deadlock every process in the set is waiting for a resource that another process in the set holds."
+    },
+    {
+      "id": "OS-U3-003",
+      "question": "Which of the following is NOT one of the four necessary conditions for deadlock?",
+      "options": {
+        "A": "Mutual exclusion",
+        "B": "Hold and wait",
+        "C": "Resources can be preempted",
+        "D": "Circular wait"
+      },
+      "correctAnswer": "C",
+      "explanation": "Deadlock requires mutual exclusion, hold and wait, no preemption and circular wait. Being able to preempt resources would break the no-preemption condition."
+    },
+    {
+      "id": "OS-U3-004",
+      "question": "What is the main purpose of virtual memory?",
+      "options": {
+        "A": "To make the CPU run faster",
+        "B": "To let programs use more memory than is physically installed by using disk as an extension",
+        "C": "To encrypt data stored in RAM",
+        "D": "To increase the size of the CPU cache"
+      },
+      "correctAnswer": "B",
+      "explanation": "Virtual memory gives each process a large address space and keeps only the needed pages in RAM, swapping the rest to disk."
+    },
+    {
+      "id": "OS-U3-005",
+      "question": "Which page replacement algorithm replaces the page that has not been used for the longest period of time?",
+      "options": {
+        "A": "FIFO",
+        "B": "Optimal",
+        "C": "Random",
+        "D": "LRU (Least Recently Used)"
+      },
+      "correctAnswer": "D",
+      "explanation": "LRU evicts the page whose last use is furthest in the past, assuming recent history predicts near-future use."
+    }
+  ]
+}

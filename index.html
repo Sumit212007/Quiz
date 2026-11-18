@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MCQ Practice Studio</title>
+  <meta name="description" content="A JSON-driven MCQ practice app with progress tracking.">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    /* Apply the saved theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('mcq.settings.v1') || '{}');
+        if (s.theme === 'light' || s.theme === 'dark') document.documentElement.setAttribute('data-theme', s.theme);
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <div class="app" id="app">
+    <header class="topbar glass" id="topbar"></header>
+    <div class="scrim" id="scrim"></div>
+    <aside class="sidebar glass" id="sidebar" aria-label="Sidebar"></aside>
+    <main class="main" id="main">
+      <div id="boot" class="boot"><span class="spinner" aria-hidden="true"></span> Loading questions…</div>
+      <div id="view" tabindex="-1"></div>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+
+  <noscript><p class="boot">This app needs JavaScript. Please enable it and reload.</p></noscript>
+  <script>
+    /* ES modules and fetch() are blocked on file:// — tell the user what to do instead of failing silently. */
+    if (location.protocol === 'file:') {
+      document.getElementById('boot').innerHTML =
+        '<div class="file-warning"><strong>Open this app through a local server</strong>' +
+        'Browsers block loading JSON files and modules when index.html is opened directly from disk.<br>' +
+        'In VS Code: install “Live Server”, right-click <code>index.html</code> → <em>Open with Live Server</em>.<br>' +
+        'Or run <code>python -m http.server 8000</code> in this folder and visit <code>http://localhost:8000</code>.</div>';
+    }
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

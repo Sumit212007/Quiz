@@ -1,0 +1,1806 @@
+{
+  "subject": "Virtualization",
+  "unit": "Unit 5",
+  "questions": [
+    {
+      "id": "POV-U5-001",
+      "question": "A hypervisor is:",
+      "options": {
+        "A": "A physical server",
+        "B": "Software that creates, runs and manages virtual machines",
+        "C": "A type of firewall",
+        "D": "A network cable"
+      },
+      "correctAnswer": "B",
+      "explanation": "A hypervisor is software that creates, runs and manages virtual machines."
+    },
+    {
+      "id": "POV-U5-002",
+      "question": "In a virtual environment, many VMs share:",
+      "options": {
+        "A": "Different physical servers",
+        "B": "Separate networks only",
+        "C": "No resources",
+        "D": "The same physical hardware"
+      },
+      "correctAnswer": "D",
+      "explanation": "Virtualization lets many VMs run on, and share, the same physical hardware."
+    },
+    {
+      "id": "POV-U5-003",
+      "question": "VM escape means:",
+      "options": {
+        "A": "An attacker breaks out of a VM and reaches the host system",
+        "B": "A VM is deleted by mistake",
+        "C": "A VM is moved to another host",
+        "D": "A VM is turned off"
+      },
+      "correctAnswer": "A",
+      "explanation": "In a VM escape, an attacker breaks out of the VM's isolation and reaches the host system."
+    },
+    {
+      "id": "POV-U5-004",
+      "question": "A zero-day vulnerability is:",
+      "options": {
+        "A": "A weakness fixed on the first day",
+        "B": "A weakness found only in old software",
+        "C": "An unknown weakness for which no patch is available yet",
+        "D": "A weakness that cannot be exploited"
+      },
+      "correctAnswer": "C",
+      "explanation": "A zero-day is a weakness that is not yet known to the vendor, so no patch exists yet."
+    },
+    {
+      "id": "POV-U5-005",
+      "question": "VM isolation means:",
+      "options": {
+        "A": "Deleting unused VMs",
+        "B": "Giving all VMs the same data",
+        "C": "Connecting every VM to every other VM",
+        "D": "Keeping each VM separate so it cannot see or change another VM's data"
+      },
+      "correctAnswer": "D",
+      "explanation": "Isolation keeps each VM separate so that it cannot see or change the data of other VMs."
+    },
+    {
+      "id": "POV-U5-006",
+      "question": "A side-channel attack learns secrets by:",
+      "options": {
+        "A": "Observing how shared resources are used",
+        "B": "Guessing the admin password only",
+        "C": "Stealing the physical server",
+        "D": "Deleting the hypervisor"
+      },
+      "correctAnswer": "A",
+      "explanation": "A side-channel attack infers secrets by observing how shared resources (such as CPU or cache) are used."
+    },
+    {
+      "id": "POV-U5-007",
+      "question": "Data at rest means data:",
+      "options": {
+        "A": "Moving across the network",
+        "B": "Stored on disks, virtual disk files and backups",
+        "C": "Inside the CPU only",
+        "D": "Being deleted"
+      },
+      "correctAnswer": "B",
+      "explanation": "Data at rest is data that is stored, for example on disks, virtual disk files and backups."
+    },
+    {
+      "id": "POV-U5-008",
+      "question": "Data in transit means data:",
+      "options": {
+        "A": "Stored in backups",
+        "B": "Stored on a USB drive",
+        "C": "Moving across the network, for example during VM migration",
+        "D": "Deleted from storage"
+      },
+      "correctAnswer": "C",
+      "explanation": "Data in transit is data moving across the network, such as during VM migration."
+    },
+    {
+      "id": "POV-U5-009",
+      "question": "Encryption converts readable data into:",
+      "options": {
+        "A": "An unreadable coded form",
+        "B": "A larger file only",
+        "C": "A backup copy",
+        "D": "A VM template"
+      },
+      "correctAnswer": "A",
+      "explanation": "Encryption turns readable data into an unreadable coded form that needs a key to read."
+    },
+    {
+      "id": "POV-U5-010",
+      "question": "An insider threat comes from:",
+      "options": {
+        "A": "An outside hacker only",
+        "B": "A virus only",
+        "C": "A power failure",
+        "D": "A person inside the organization who misuses their access"
+      },
+      "correctAnswer": "D",
+      "explanation": "An insider threat comes from someone inside the organization who misuses their access."
+    },
+    {
+      "id": "POV-U5-011",
+      "question": "Sandboxing runs a program or VM in:",
+      "options": {
+        "A": "An open and shared area",
+        "B": "The hypervisor itself",
+        "C": "A restricted and isolated environment",
+        "D": "A public network"
+      },
+      "correctAnswer": "C",
+      "explanation": "Sandboxing runs a program or VM in a restricted, isolated environment so it cannot harm the rest of the system."
+    },
+    {
+      "id": "POV-U5-012",
+      "question": "VLAN stands for:",
+      "options": {
+        "A": "Variable Local Area Node",
+        "B": "Virtual Local Area Network",
+        "C": "Virtual Long Area Network",
+        "D": "Verified LAN"
+      },
+      "correctAnswer": "B",
+      "explanation": "VLAN stands for Virtual Local Area Network."
+    },
+    {
+      "id": "POV-U5-013",
+      "question": "Containers share the host operating system's:",
+      "options": {
+        "A": "BIOS",
+        "B": "Keyboard",
+        "C": "Kernel",
+        "D": "Monitor"
+      },
+      "correctAnswer": "C",
+      "explanation": "Containers share the host operating system's kernel instead of having their own guest OS."
+    },
+    {
+      "id": "POV-U5-014",
+      "question": "SELinux and AppArmor are used to improve the security of:",
+      "options": {
+        "A": "Containers",
+        "B": "Printers",
+        "C": "Cables",
+        "D": "BIOS"
+      },
+      "correctAnswer": "A",
+      "explanation": "SELinux and AppArmor are Linux security modules that restrict and secure containers."
+    },
+    {
+      "id": "POV-U5-015",
+      "question": "Micro-segmentation divides the network into:",
+      "options": {
+        "A": "Only two zones",
+        "B": "One large zone",
+        "C": "Physical rooms",
+        "D": "Very small secure zones, down to a single VM or workload"
+      },
+      "correctAnswer": "D",
+      "explanation": "Micro-segmentation creates very small secure zones, down to a single VM or workload."
+    },
+    {
+      "id": "POV-U5-016",
+      "question": "Which tool provides micro-segmentation and firewalling in VMware?",
+      "options": {
+        "A": "Tripwire",
+        "B": "VMware NSX",
+        "C": "Qualys",
+        "D": "Cockpit"
+      },
+      "correctAnswer": "B",
+      "explanation": "VMware NSX provides micro-segmentation and firewalling in VMware environments."
+    },
+    {
+      "id": "POV-U5-017",
+      "question": "Least privilege access means users get:",
+      "options": {
+        "A": "Only the permissions required for their role",
+        "B": "Full admin rights",
+        "C": "No rights at all",
+        "D": "Rights of all other users"
+      },
+      "correctAnswer": "A",
+      "explanation": "Least privilege gives users only the permissions required for their role."
+    },
+    {
+      "id": "POV-U5-018",
+      "question": "Separation of duties means:",
+      "options": {
+        "A": "One admin does every task",
+        "B": "All admins share one password",
+        "C": "Dividing responsibilities among different administrators",
+        "D": "Removing all admins"
+      },
+      "correctAnswer": "C",
+      "explanation": "Separation of duties divides responsibilities among different administrators so no one person has full control."
+    },
+    {
+      "id": "POV-U5-019",
+      "question": "CIS Benchmarks are used for:",
+      "options": {
+        "A": "Creating VMs",
+        "B": "Copying disks",
+        "C": "Printing logs",
+        "D": "Hypervisor hardening"
+      },
+      "correctAnswer": "D",
+      "explanation": "CIS Benchmarks give recommended secure configurations used for hypervisor hardening."
+    },
+    {
+      "id": "POV-U5-020",
+      "question": "An Intrusion Detection System (IDS):",
+      "options": {
+        "A": "Creates VMs",
+        "B": "Detects suspicious or unauthorized activity and raises an alert",
+        "C": "Encrypts disks",
+        "D": "Allocates CPU"
+      },
+      "correctAnswer": "B",
+      "explanation": "An IDS detects suspicious or unauthorized activity and raises an alert."
+    },
+    {
+      "id": "POV-U5-021",
+      "question": "Multi-factor authentication (MFA) needs:",
+      "options": {
+        "A": "No password",
+        "B": "Only one password",
+        "C": "Only a username",
+        "D": "More than one proof of identity"
+      },
+      "correctAnswer": "D",
+      "explanation": "MFA requires more than one proof of identity, such as a password plus a code."
+    },
+    {
+      "id": "POV-U5-022",
+      "question": "A VM template is:",
+      "options": {
+        "A": "A virus",
+        "B": "A master copy used to create new VMs",
+        "C": "A network cable",
+        "D": "A snapshot of the host"
+      },
+      "correctAnswer": "B",
+      "explanation": "A VM template is a master copy used to create new VMs."
+    },
+    {
+      "id": "POV-U5-023",
+      "question": "Logging is:",
+      "options": {
+        "A": "The recording of events and activities such as logins and VM creation",
+        "B": "Deleting old data",
+        "C": "Encrypting VMs",
+        "D": "Moving VMs"
+      },
+      "correctAnswer": "A",
+      "explanation": "Logging records events and activities such as logins and VM creation."
+    },
+    {
+      "id": "POV-U5-024",
+      "question": "Qualys VMDR is used to:",
+      "options": {
+        "A": "Create VMs",
+        "B": "Encrypt data",
+        "C": "Scan for vulnerabilities in virtual environments",
+        "D": "Balance load"
+      },
+      "correctAnswer": "C",
+      "explanation": "Qualys VMDR scans virtual environments for vulnerabilities."
+    },
+    {
+      "id": "POV-U5-025",
+      "question": "Tripwire Enterprise detects:",
+      "options": {
+        "A": "Memory ballooning",
+        "B": "Unauthorized changes to configurations",
+        "C": "Network speed",
+        "D": "Disk size"
+      },
+      "correctAnswer": "B",
+      "explanation": "Tripwire Enterprise detects unauthorized changes to configurations."
+    },
+    {
+      "id": "POV-U5-026",
+      "question": "CrowdStrike offers:",
+      "options": {
+        "A": "Storage optimization",
+        "B": "VM migration",
+        "C": "Load balancing",
+        "D": "Endpoint security for virtualized systems"
+      },
+      "correctAnswer": "D",
+      "explanation": "CrowdStrike offers endpoint security for virtualized systems."
+    },
+    {
+      "id": "POV-U5-027",
+      "question": "Microsoft Defender for Cloud protects workloads running on:",
+      "options": {
+        "A": "Microsoft Hyper-V",
+        "B": "VMware ESXi only",
+        "C": "Xen only",
+        "D": "KVM only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Microsoft Defender for Cloud protects workloads running on Microsoft Hyper-V."
+    },
+    {
+      "id": "POV-U5-028",
+      "question": "The key performance metrics (C-M-D-N-H) are:",
+      "options": {
+        "A": "Cache, Memory, Data, Node, Host",
+        "B": "CPU, Mouse, Disk, Network, Hub",
+        "C": "CPU, Memory, Disk I/O, Network, Hypervisor",
+        "D": "Cost, Memory, Disk, Node, Hypervisor"
+      },
+      "correctAnswer": "C",
+      "explanation": "C-M-D-N-H stands for CPU, Memory, Disk I/O, Network and Hypervisor."
+    },
+    {
+      "id": "POV-U5-029",
+      "question": "Memory ballooning is used to:",
+      "options": {
+        "A": "Reclaim unused memory from a VM for other VMs",
+        "B": "Increase disk size",
+        "C": "Delete VMs",
+        "D": "Encrypt memory"
+      },
+      "correctAnswer": "A",
+      "explanation": "Memory ballooning reclaims unused memory from one VM so other VMs can use it."
+    },
+    {
+      "id": "POV-U5-030",
+      "question": "Resource over-commitment means:",
+      "options": {
+        "A": "Giving VMs fewer resources than needed",
+        "B": "Giving VMs exactly what the host has",
+        "C": "Turning off all VMs",
+        "D": "Allocating more resources to VMs than the host actually has"
+      },
+      "correctAnswer": "D",
+      "explanation": "Over-commitment allocates more resources to VMs than the host physically has."
+    },
+    {
+      "id": "POV-U5-031",
+      "question": "A reservation is:",
+      "options": {
+        "A": "The maximum amount of a resource",
+        "B": "The priority of a VM",
+        "C": "The minimum amount of a resource guaranteed to a VM",
+        "D": "A backup copy"
+      },
+      "correctAnswer": "C",
+      "explanation": "A reservation is the minimum amount of a resource guaranteed to a VM."
+    },
+    {
+      "id": "POV-U5-032",
+      "question": "A limit is:",
+      "options": {
+        "A": "The minimum guaranteed resource",
+        "B": "The maximum amount of a resource a VM can use",
+        "C": "The priority of a VM",
+        "D": "A type of snapshot"
+      },
+      "correctAnswer": "B",
+      "explanation": "A limit is the maximum amount of a resource a VM can use."
+    },
+    {
+      "id": "POV-U5-033",
+      "question": "Shares decide:",
+      "options": {
+        "A": "The maximum disk size",
+        "B": "The network speed",
+        "C": "The priority of a VM when resources are short",
+        "D": "The VM name"
+      },
+      "correctAnswer": "C",
+      "explanation": "Shares decide a VM's priority when resources are short."
+    },
+    {
+      "id": "POV-U5-034",
+      "question": "Thin provisioning allocates storage:",
+      "options": {
+        "A": "On demand, when data is actually written",
+        "B": "Fully at the start",
+        "C": "Only on tape",
+        "D": "Never"
+      },
+      "correctAnswer": "A",
+      "explanation": "Thin provisioning allocates storage on demand, only when data is actually written."
+    },
+    {
+      "id": "POV-U5-035",
+      "question": "Deduplication means:",
+      "options": {
+        "A": "Copying data many times",
+        "B": "Removing duplicate copies of data and keeping only one",
+        "C": "Encrypting data",
+        "D": "Moving data to the cloud"
+      },
+      "correctAnswer": "B",
+      "explanation": "Deduplication removes duplicate copies of data and keeps only one."
+    },
+    {
+      "id": "POV-U5-036",
+      "question": "Caching means:",
+      "options": {
+        "A": "Deleting frequently used data",
+        "B": "Compressing VMs",
+        "C": "Encrypting VMs",
+        "D": "Keeping frequently used data in fast memory or fast storage"
+      },
+      "correctAnswer": "D",
+      "explanation": "Caching keeps frequently used data in fast memory or fast storage for quicker access."
+    },
+    {
+      "id": "POV-U5-037",
+      "question": "Jumbo frames are Ethernet frames up to about:",
+      "options": {
+        "A": "100 bytes",
+        "B": "9000 bytes",
+        "C": "500 bytes",
+        "D": "1500 bytes only"
+      },
+      "correctAnswer": "B",
+      "explanation": "Jumbo frames are larger than the standard 1500 bytes and go up to about 9000 bytes."
+    },
+    {
+      "id": "POV-U5-038",
+      "question": "SDN manages the network through:",
+      "options": {
+        "A": "Only cables",
+        "B": "Manual wiring",
+        "C": "Software",
+        "D": "Paper records"
+      },
+      "correctAnswer": "C",
+      "explanation": "Software Defined Networking (SDN) manages the network through software."
+    },
+    {
+      "id": "POV-U5-039",
+      "question": "Right-sizing means giving each VM:",
+      "options": {
+        "A": "Exactly the resources its workload needs",
+        "B": "The maximum resources always",
+        "C": "The minimum resources always",
+        "D": "Random resources"
+      },
+      "correctAnswer": "A",
+      "explanation": "Right-sizing gives each VM exactly the resources its workload needs."
+    },
+    {
+      "id": "POV-U5-040",
+      "question": "A snapshot saves:",
+      "options": {
+        "A": "Only the VM name",
+        "B": "The physical server",
+        "C": "The state of a VM at a particular time",
+        "D": "The network cable"
+      },
+      "correctAnswer": "C",
+      "explanation": "A snapshot saves the state of a VM at a particular point in time."
+    },
+    {
+      "id": "POV-U5-041",
+      "question": "Load balancing means:",
+      "options": {
+        "A": "Putting all work on one host",
+        "B": "Turning off hosts",
+        "C": "Deleting VMs",
+        "D": "Distributing workloads evenly across available resources"
+      },
+      "correctAnswer": "D",
+      "explanation": "Load balancing distributes workloads evenly across the available resources."
+    },
+    {
+      "id": "POV-U5-042",
+      "question": "vSphere DRS stands for:",
+      "options": {
+        "A": "Dynamic Reserve System",
+        "B": "Distributed Resource Scheduler",
+        "C": "Data Recovery Service",
+        "D": "Disk Replication Setup"
+      },
+      "correctAnswer": "B",
+      "explanation": "DRS stands for Distributed Resource Scheduler."
+    },
+    {
+      "id": "POV-U5-043",
+      "question": "High availability (HA) aims for:",
+      "options": {
+        "A": "Minimum downtime even if hardware or software fails",
+        "B": "Maximum downtime",
+        "C": "Lower security",
+        "D": "More hardware cost only"
+      },
+      "correctAnswer": "A",
+      "explanation": "HA aims for minimum downtime even when hardware or software fails."
+    },
+    {
+      "id": "POV-U5-044",
+      "question": "The name of live migration in VMware is:",
+      "options": {
+        "A": "Live Migration",
+        "B": "XenMotion only",
+        "C": "vMotion",
+        "D": "vCenter"
+      },
+      "correctAnswer": "C",
+      "explanation": "In VMware, live migration is called vMotion."
+    },
+    {
+      "id": "POV-U5-045",
+      "question": "The name of live migration in Hyper-V is:",
+      "options": {
+        "A": "vMotion",
+        "B": "Live Migration",
+        "C": "DRS",
+        "D": "Cockpit"
+      },
+      "correctAnswer": "B",
+      "explanation": "In Hyper-V, live migration is simply called Live Migration."
+    },
+    {
+      "id": "POV-U5-046",
+      "question": "ESXi is:",
+      "options": {
+        "A": "The VMware hypervisor",
+        "B": "The Hyper-V manager",
+        "C": "A KVM tool",
+        "D": "A Xen tool"
+      },
+      "correctAnswer": "A",
+      "explanation": "ESXi is the VMware hypervisor."
+    },
+    {
+      "id": "POV-U5-047",
+      "question": "vCenter is the:",
+      "options": {
+        "A": "VMware hypervisor",
+        "B": "VMware firewall",
+        "C": "Central management tool of VMware vSphere",
+        "D": "VMware disk format"
+      },
+      "correctAnswer": "C",
+      "explanation": "vCenter is the central management tool of VMware vSphere."
+    },
+    {
+      "id": "POV-U5-048",
+      "question": "KVM is:",
+      "options": {
+        "A": "A commercial Windows hypervisor",
+        "B": "A VMware product",
+        "C": "A Microsoft tool",
+        "D": "An open-source virtualization solution for Linux"
+      },
+      "correctAnswer": "D",
+      "explanation": "KVM is an open-source virtualization solution for Linux."
+    },
+    {
+      "id": "POV-U5-049",
+      "question": "Xen is widely used in cloud environments such as:",
+      "options": {
+        "A": "Only private PCs",
+        "B": "AWS",
+        "C": "Only Hyper-V",
+        "D": "Only mobile phones"
+      },
+      "correctAnswer": "B",
+      "explanation": "Xen is widely used in cloud environments such as AWS."
+    },
+    {
+      "id": "POV-U5-050",
+      "question": "Microsoft Hyper-V is the native hypervisor in:",
+      "options": {
+        "A": "Linux",
+        "B": "macOS",
+        "C": "Windows Server",
+        "D": "Android"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hyper-V is Microsoft's native hypervisor built into Windows Server."
+    },
+    {
+      "id": "POV-U5-051",
+      "question": "Why is a hypervisor compromise so serious?",
+      "options": {
+        "A": "It can affect all the VMs hosted on it",
+        "B": "It affects only one file",
+        "C": "It affects only the network cable",
+        "D": "It affects only the user's browser"
+      },
+      "correctAnswer": "A",
+      "explanation": "The hypervisor controls all the VMs on the host, so compromising it can affect all of them."
+    },
+    {
+      "id": "POV-U5-052",
+      "question": "A weakness in a test VM should never give access to a bank VM on the same host. Which security aim is this?",
+      "options": {
+        "A": "Load balancing",
+        "B": "Thin provisioning",
+        "C": "Isolation",
+        "D": "Caching"
+      },
+      "correctAnswer": "C",
+      "explanation": "Keeping one VM's weakness from reaching another VM on the same host is the goal of isolation."
+    },
+    {
+      "id": "POV-U5-053",
+      "question": "Which is a challenge of dynamic environments?",
+      "options": {
+        "A": "VMs never move",
+        "B": "Logs are always complete",
+        "C": "Resources never change",
+        "D": "It is difficult to track, secure and audit VMs that keep moving and changing"
+      },
+      "correctAnswer": "D",
+      "explanation": "In dynamic environments VMs keep moving and changing, which makes them hard to track, secure and audit."
+    },
+    {
+      "id": "POV-U5-054",
+      "question": "Data may be exposed during VM migration if it is not:",
+      "options": {
+        "A": "Compressed",
+        "B": "Encrypted",
+        "C": "Deleted",
+        "D": "Cached"
+      },
+      "correctAnswer": "B",
+      "explanation": "Data in transit during migration can be exposed if it is not encrypted."
+    },
+    {
+      "id": "POV-U5-055",
+      "question": "Which two practices together reduce the risk from insider threats?",
+      "options": {
+        "A": "Least privilege and separation of duties",
+        "B": "Overcommitment and snapshots",
+        "C": "Thin provisioning and caching",
+        "D": "Jumbo frames and SDN"
+      },
+      "correctAnswer": "A",
+      "explanation": "Least privilege limits what each person can do, and separation of duties prevents one person having complete control; together they reduce insider risk."
+    },
+    {
+      "id": "POV-U5-056",
+      "question": "Which is NOT a technique used for VM isolation?",
+      "options": {
+        "A": "Sandboxing",
+        "B": "VLANs",
+        "C": "Firewalls",
+        "D": "Thin provisioning"
+      },
+      "correctAnswer": "D",
+      "explanation": "Thin provisioning is a storage technique; sandboxing, VLANs and firewalls are isolation techniques."
+    },
+    {
+      "id": "POV-U5-057",
+      "question": "A major benefit of network segmentation is that:",
+      "options": {
+        "A": "All VMs can talk to each other",
+        "B": "Broadcast traffic increases",
+        "C": "An attack is limited to one part of the network",
+        "D": "Firewalls are not needed"
+      },
+      "correctAnswer": "C",
+      "explanation": "Segmentation limits an attack to one part of the network."
+    },
+    {
+      "id": "POV-U5-058",
+      "question": "Container isolation is generally weaker than VM isolation because containers:",
+      "options": {
+        "A": "Have their own guest OS",
+        "B": "Share the host kernel",
+        "C": "Run on tape",
+        "D": "Do not use memory"
+      },
+      "correctAnswer": "B",
+      "explanation": "Containers share the host kernel, so isolation is weaker than for VMs, which each have their own guest OS."
+    },
+    {
+      "id": "POV-U5-059",
+      "question": "Micro-segmentation mainly stops:",
+      "options": {
+        "A": "Disk writes",
+        "B": "VM creation",
+        "C": "Memory ballooning",
+        "D": "Lateral (sideways) movement of attackers between VMs"
+      },
+      "correctAnswer": "D",
+      "explanation": "Micro-segmentation mainly stops attackers from moving sideways between VMs."
+    },
+    {
+      "id": "POV-U5-060",
+      "question": "Hypervisor hardening includes:",
+      "options": {
+        "A": "Regular patches, disabling unused services, limiting admin access and following CIS Benchmarks",
+        "B": "Enabling all services",
+        "C": "Giving everyone admin rights",
+        "D": "Disabling all logging"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hardening includes regular patches, disabling unused services, limiting admin access and following CIS Benchmarks."
+    },
+    {
+      "id": "POV-U5-061",
+      "question": "Why must both the hypervisor and the VMs be monitored?",
+      "options": {
+        "A": "Only VMs can be attacked",
+        "B": "Monitoring only one of them misses attacks at the other level",
+        "C": "Only the hypervisor can be attacked",
+        "D": "Monitoring is not needed"
+      },
+      "correctAnswer": "B",
+      "explanation": "Attacks can happen at both levels, so monitoring only one would miss attacks at the other."
+    },
+    {
+      "id": "POV-U5-062",
+      "question": "Why are secure VM templates important?",
+      "options": {
+        "A": "They reduce CPU speed",
+        "B": "They delete old VMs",
+        "C": "Every new VM created from the template inherits its strengths or weaknesses",
+        "D": "They remove the need for patching"
+      },
+      "correctAnswer": "C",
+      "explanation": "Every VM created from a template inherits its strengths or weaknesses, so the template must be secure."
+    },
+    {
+      "id": "POV-U5-063",
+      "question": "Auditing is best described as:",
+      "options": {
+        "A": "Reviewing logs to confirm rules are followed and to find problems",
+        "B": "Creating new VMs",
+        "C": "Moving VMs between hosts",
+        "D": "Encrypting disks"
+      },
+      "correctAnswer": "A",
+      "explanation": "Auditing reviews logs to confirm rules are followed and to find problems."
+    },
+    {
+      "id": "POV-U5-064",
+      "question": "Which tool detects unauthorized changes to configurations?",
+      "options": {
+        "A": "VMware NSX",
+        "B": "Qualys VMDR",
+        "C": "CrowdStrike",
+        "D": "Tripwire Enterprise"
+      },
+      "correctAnswer": "D",
+      "explanation": "Tripwire Enterprise detects unauthorized changes to configurations."
+    },
+    {
+      "id": "POV-U5-065",
+      "question": "Memory ballooning works with the help of:",
+      "options": {
+        "A": "A router",
+        "B": "A balloon driver installed inside the guest VM",
+        "C": "A USB device",
+        "D": "A firewall rule"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ballooning relies on a balloon driver installed inside the guest VM."
+    },
+    {
+      "id": "POV-U5-066",
+      "question": "Scheduler latency is:",
+      "options": {
+        "A": "The time taken to write to disk",
+        "B": "The time taken to boot a VM",
+        "C": "The time a VM waits for its turn on the physical CPU",
+        "D": "The time taken to encrypt data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Scheduler latency is the time a VM waits for its turn on the physical CPU."
+    },
+    {
+      "id": "POV-U5-067",
+      "question": "High VM swap activity shows:",
+      "options": {
+        "A": "CPU is idle",
+        "B": "Network is fast",
+        "C": "Disk is empty",
+        "D": "Memory shortage"
+      },
+      "correctAnswer": "D",
+      "explanation": "High swap activity means physical memory is short, so VM memory is being moved to disk."
+    },
+    {
+      "id": "POV-U5-068",
+      "question": "A host has 64 GB RAM, but VMs are given a total of 100 GB. This is an example of:",
+      "options": {
+        "A": "Over-commitment",
+        "B": "Right-sizing",
+        "C": "Thin provisioning",
+        "D": "Deduplication"
+      },
+      "correctAnswer": "A",
+      "explanation": "Allocating 100 GB to VMs on a host with 64 GB RAM is over-commitment."
+    },
+    {
+      "id": "POV-U5-069",
+      "question": "Which is a risk of excessive over-commitment?",
+      "options": {
+        "A": "Lower cost of storage",
+        "B": "Faster network",
+        "C": "Resource contention and heavy swapping",
+        "D": "Better isolation"
+      },
+      "correctAnswer": "C",
+      "explanation": "Excessive over-commitment causes resource contention and heavy swapping."
+    },
+    {
+      "id": "POV-U5-070",
+      "question": "A production VM should get priority over a test VM when resources are short. Which setting is used?",
+      "options": {
+        "A": "Limit",
+        "B": "Shares",
+        "C": "Snapshot",
+        "D": "Template"
+      },
+      "correctAnswer": "B",
+      "explanation": "Shares set a VM's priority when resources are short."
+    },
+    {
+      "id": "POV-U5-071",
+      "question": "A VM has a 100 GB virtual disk but only 20 GB of data and uses only 20 GB of physical storage. Which technique is used?",
+      "options": {
+        "A": "Thin provisioning",
+        "B": "Over-provisioning",
+        "C": "Deduplication",
+        "D": "Jumbo frames"
+      },
+      "correctAnswer": "A",
+      "explanation": "Using only 20 GB of physical storage for a 100 GB virtual disk with 20 GB of data is thin provisioning."
+    },
+    {
+      "id": "POV-U5-072",
+      "question": "Deduplication is very useful in virtualization because:",
+      "options": {
+        "A": "VMs never share data",
+        "B": "It increases disk writes",
+        "C": "It encrypts data",
+        "D": "Many VMs have the same operating system files"
+      },
+      "correctAnswer": "D",
+      "explanation": "Many VMs hold identical operating system files, so deduplication saves a lot of space."
+    },
+    {
+      "id": "POV-U5-073",
+      "question": "A requirement for using jumbo frames is that:",
+      "options": {
+        "A": "Only one device supports them",
+        "B": "All devices in the network path must support them",
+        "C": "The network must be wireless",
+        "D": "VMs must be turned off"
+      },
+      "correctAnswer": "B",
+      "explanation": "Every device in the network path must support jumbo frames for them to work."
+    },
+    {
+      "id": "POV-U5-074",
+      "question": "A benefit of SDN is that:",
+      "options": {
+        "A": "Physical devices must be replaced for each change",
+        "B": "It removes all VMs",
+        "C": "Network settings can be changed quickly without changing physical devices",
+        "D": "It reduces automation"
+      },
+      "correctAnswer": "C",
+      "explanation": "With SDN, network settings can be changed quickly through software without changing physical devices."
+    },
+    {
+      "id": "POV-U5-075",
+      "question": "Under-provisioning a VM results in:",
+      "options": {
+        "A": "Wasted hardware",
+        "B": "More VMs per host",
+        "C": "Lower security risk",
+        "D": "A slow VM"
+      },
+      "correctAnswer": "D",
+      "explanation": "Giving a VM too few resources results in a slow VM."
+    },
+    {
+      "id": "POV-U5-076",
+      "question": "Which problem is caused by stale snapshots?",
+      "options": {
+        "A": "They waste storage and slow down disks",
+        "B": "They speed up backups",
+        "C": "They reduce storage use",
+        "D": "They encrypt data"
+      },
+      "correctAnswer": "A",
+      "explanation": "Old snapshots waste storage and slow down disks."
+    },
+    {
+      "id": "POV-U5-077",
+      "question": "vSphere DRS moves VMs between hosts using:",
+      "options": {
+        "A": "Hyper-V Manager",
+        "B": "vMotion",
+        "C": "XenCenter",
+        "D": "PerfMon"
+      },
+      "correctAnswer": "B",
+      "explanation": "DRS uses vMotion to move running VMs between hosts."
+    },
+    {
+      "id": "POV-U5-078",
+      "question": "Which HA technique restarts the VMs of a failed host on healthy hosts?",
+      "options": {
+        "A": "Snapshots",
+        "B": "Thin provisioning",
+        "C": "Clustered hosts",
+        "D": "Jumbo frames"
+      },
+      "correctAnswer": "C",
+      "explanation": "Clustered hosts allow the VMs of a failed host to be restarted on healthy hosts."
+    },
+    {
+      "id": "POV-U5-079",
+      "question": "Replication protects mainly against:",
+      "options": {
+        "A": "Site failure or disaster",
+        "B": "Slow disks",
+        "C": "Weak passwords",
+        "D": "Packet loss"
+      },
+      "correctAnswer": "A",
+      "explanation": "Replication keeps a copy at another site, protecting mainly against site failure or disaster."
+    },
+    {
+      "id": "POV-U5-080",
+      "question": "How does live migration improve availability?",
+      "options": {
+        "A": "It shuts down all VMs",
+        "B": "It deletes old hosts",
+        "C": "It increases downtime",
+        "D": "Hosts can be maintained with no downtime because VMs are moved away first"
+      },
+      "correctAnswer": "D",
+      "explanation": "VMs are moved away first, so hosts can be maintained with no downtime."
+    },
+    {
+      "id": "POV-U5-081",
+      "question": "Microsoft Hyper-V integrates with which cloud for hybrid deployments?",
+      "options": {
+        "A": "AWS",
+        "B": "Azure",
+        "C": "Google Drive",
+        "D": "Xen Cloud"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hyper-V integrates with Microsoft Azure for hybrid deployments."
+    },
+    {
+      "id": "POV-U5-082",
+      "question": "Xen supports:",
+      "options": {
+        "A": "Only full virtualization",
+        "B": "Only containers",
+        "C": "Both para-virtualization and full virtualization",
+        "D": "Only hardware emulation"
+      },
+      "correctAnswer": "C",
+      "explanation": "Xen supports both para-virtualization and full virtualization."
+    },
+    {
+      "id": "POV-U5-083",
+      "question": "Hyper-V Manager simplifies VM management because:",
+      "options": {
+        "A": "It works only by command line",
+        "B": "It cannot create VMs",
+        "C": "It works only on Linux",
+        "D": "It is a graphical console to create, configure and manage VMs and virtual switches"
+      },
+      "correctAnswer": "D",
+      "explanation": "Hyper-V Manager is a graphical console for creating, configuring and managing VMs and virtual switches."
+    },
+    {
+      "id": "POV-U5-084",
+      "question": "KVM turns:",
+      "options": {
+        "A": "The Linux kernel into a hypervisor",
+        "B": "Windows into a container",
+        "C": "A firewall into a router",
+        "D": "A disk into a VM"
+      },
+      "correctAnswer": "A",
+      "explanation": "KVM turns the Linux kernel into a hypervisor."
+    },
+    {
+      "id": "POV-U5-085",
+      "question": "An advantage of open-source hypervisors like KVM and Xen is:",
+      "options": {
+        "A": "High licence cost",
+        "B": "Vendor lock-in",
+        "C": "No licence cost",
+        "D": "No community support"
+      },
+      "correctAnswer": "C",
+      "explanation": "Open-source hypervisors like KVM and Xen have no licence cost."
+    },
+    {
+      "id": "POV-U5-086",
+      "question": "Which VMware tool provides micro-segmentation and firewalling for vSphere?",
+      "options": {
+        "A": "vCenter",
+        "B": "NSX",
+        "C": "ESXi",
+        "D": "esxtop"
+      },
+      "correctAnswer": "B",
+      "explanation": "NSX provides micro-segmentation and firewalling for vSphere."
+    },
+    {
+      "id": "POV-U5-087",
+      "question": "In the Hyper-V lab, which step is done after setting up the Hyper-V role?",
+      "options": {
+        "A": "Create VMs and configure virtual switches",
+        "B": "Install ESXi",
+        "C": "Install XenCenter",
+        "D": "Delete all VMs"
+      },
+      "correctAnswer": "A",
+      "explanation": "After setting up the Hyper-V role, the next step is to create VMs and configure virtual switches."
+    },
+    {
+      "id": "POV-U5-088",
+      "question": "In the vSphere lab, which features are tested?",
+      "options": {
+        "A": "Only jumbo frames",
+        "B": "Only thin provisioning",
+        "C": "Only sandboxing",
+        "D": "vMotion, High Availability and DRS"
+      },
+      "correctAnswer": "D",
+      "explanation": "The vSphere lab tests vMotion, High Availability and DRS."
+    },
+    {
+      "id": "POV-U5-089",
+      "question": "What is the first general step when setting up VM replication in Hyper-V?",
+      "options": {
+        "A": "Delete the VM",
+        "B": "Shut down the network",
+        "C": "Prepare two Hyper-V servers: primary and replica",
+        "D": "Install KVM"
+      },
+      "correctAnswer": "C",
+      "explanation": "Replication first needs two Hyper-V servers: a primary server and a replica server."
+    },
+    {
+      "id": "POV-U5-090",
+      "question": "In Hyper-V replication, \"Enable Replication\" is selected on the:",
+      "options": {
+        "A": "Replica server",
+        "B": "Primary server",
+        "C": "Firewall",
+        "D": "vCenter"
+      },
+      "correctAnswer": "B",
+      "explanation": "\"Enable Replication\" is selected for the VM on the primary server."
+    },
+    {
+      "id": "POV-U5-091",
+      "question": "What is the scalability of Microsoft Hyper-V in the comparison table?",
+      "options": {
+        "A": "High",
+        "B": "Very high",
+        "C": "Low",
+        "D": "Medium"
+      },
+      "correctAnswer": "D",
+      "explanation": "In the comparison table, Hyper-V's scalability is Medium."
+    },
+    {
+      "id": "POV-U5-092",
+      "question": "What is the licensing of KVM?",
+      "options": {
+        "A": "Open-source",
+        "B": "Commercial",
+        "C": "Included in Windows Server",
+        "D": "Rental only"
+      },
+      "correctAnswer": "A",
+      "explanation": "KVM is open-source."
+    },
+    {
+      "id": "POV-U5-093",
+      "question": "Which is the management interface of Xen?",
+      "options": {
+        "A": "vCenter",
+        "B": "Cockpit",
+        "C": "XenCenter",
+        "D": "SCVMM"
+      },
+      "correctAnswer": "C",
+      "explanation": "XenCenter is the management interface of Xen."
+    },
+    {
+      "id": "POV-U5-094",
+      "question": "xentop is a command-line monitoring tool for:",
+      "options": {
+        "A": "KVM",
+        "B": "Xen",
+        "C": "Hyper-V",
+        "D": "vSphere"
+      },
+      "correctAnswer": "B",
+      "explanation": "xentop is a command-line monitoring tool for Xen."
+    },
+    {
+      "id": "POV-U5-095",
+      "question": "esxtop is a command-line tool on:",
+      "options": {
+        "A": "ESXi",
+        "B": "Hyper-V",
+        "C": "Xen",
+        "D": "KVM"
+      },
+      "correctAnswer": "A",
+      "explanation": "esxtop is a command-line monitoring tool on ESXi."
+    },
+    {
+      "id": "POV-U5-096",
+      "question": "Which tool is used to monitor performance on Microsoft Hyper-V?",
+      "options": {
+        "A": "virt-manager",
+        "B": "xentop",
+        "C": "esxtop",
+        "D": "Performance Monitor (PerfMon)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Performance Monitor (PerfMon) is used to monitor performance on Hyper-V."
+    },
+    {
+      "id": "POV-U5-097",
+      "question": "Which tools are commonly used with KVM?",
+      "options": {
+        "A": "vCenter and esxtop",
+        "B": "virt-manager and virsh",
+        "C": "XenCenter and xentop",
+        "D": "SCVMM and PerfMon"
+      },
+      "correctAnswer": "B",
+      "explanation": "virt-manager and virsh are commonly used with KVM."
+    },
+    {
+      "id": "POV-U5-098",
+      "question": "Which is a way to reduce side-channel attacks?",
+      "options": {
+        "A": "Placing sensitive VMs beside untrusted VMs",
+        "B": "Disabling all patching",
+        "C": "Avoiding placing sensitive VMs on the same host as untrusted VMs",
+        "D": "Removing all logs"
+      },
+      "correctAnswer": "C",
+      "explanation": "Side-channel attacks need shared hardware, so keeping sensitive VMs off hosts shared with untrusted VMs reduces the risk."
+    },
+    {
+      "id": "POV-U5-099",
+      "question": "Which is a key difference between VM isolation and container isolation?",
+      "options": {
+        "A": "Each VM has its own guest OS, while containers share the host kernel",
+        "B": "VMs share the kernel, containers have own OS",
+        "C": "Both share one guest OS",
+        "D": "Neither uses isolation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Each VM has its own guest OS, whereas containers share the host kernel."
+    },
+    {
+      "id": "POV-U5-100",
+      "question": "Which is an example of separation of duties?",
+      "options": {
+        "A": "One admin creates VMs, manages the network and reviews logs",
+        "B": "All admins use the same account",
+        "C": "Nobody reviews logs",
+        "D": "One admin creates VMs, another manages the network, a third reviews the logs"
+      },
+      "correctAnswer": "D",
+      "explanation": "Splitting VM creation, network management and log review among three different admins is separation of duties."
+    },
+    {
+      "id": "POV-U5-101",
+      "question": "Which statement correctly separates VM escape from a side-channel attack?",
+      "options": {
+        "A": "Both break out of the VM to reach the host",
+        "B": "Both only observe resource usage",
+        "C": "VM escape reaches the host from inside a VM, while a side-channel attack infers secrets by observing shared resource use",
+        "D": "Both are the same attack"
+      },
+      "correctAnswer": "C",
+      "explanation": "VM escape breaks out of a VM to reach the host, while a side-channel attack only infers secrets by observing shared resource use."
+    },
+    {
+      "id": "POV-U5-102",
+      "question": "Why can patching alone NOT stop a zero-day attack on a hypervisor?",
+      "options": {
+        "A": "No patch exists yet for an unknown weakness, so hardening, limited admin access and monitoring are also needed",
+        "B": "Patches always cause VM escape",
+        "C": "Zero-day attacks affect only guest VMs",
+        "D": "Hypervisors cannot be patched"
+      },
+      "correctAnswer": "A",
+      "explanation": "A zero-day has no patch yet, so hardening, limited admin access and monitoring are also needed."
+    },
+    {
+      "id": "POV-U5-103",
+      "question": "Which statement about container isolation is INCORRECT?",
+      "options": {
+        "A": "Containers share the host kernel",
+        "B": "SELinux and AppArmor can restrict containers",
+        "C": "A kernel vulnerability can become a risk for all containers",
+        "D": "Each container has its own full guest operating system"
+      },
+      "correctAnswer": "D",
+      "explanation": "Containers do not have their own full guest OS; they share the host kernel, so this statement is incorrect."
+    },
+    {
+      "id": "POV-U5-104",
+      "question": "How does micro-segmentation differ from normal segmentation?",
+      "options": {
+        "A": "It uses one large zone for all VMs",
+        "B": "It can apply separate security policies down to a single VM or workload",
+        "C": "It removes firewalls",
+        "D": "It works only on physical servers"
+      },
+      "correctAnswer": "B",
+      "explanation": "Micro-segmentation can apply separate security policies down to a single VM or workload."
+    },
+    {
+      "id": "POV-U5-105",
+      "question": "Which feature allows security rules to follow a VM when it moves to another host?",
+      "options": {
+        "A": "Thin provisioning",
+        "B": "Caching",
+        "C": "Micro-segmentation",
+        "D": "Jumbo frames"
+      },
+      "correctAnswer": "C",
+      "explanation": "Micro-segmentation policies are tied to the VM or workload, so they follow it when it moves."
+    },
+    {
+      "id": "POV-U5-106",
+      "question": "Which tool-purpose pair is WRONG?",
+      "options": {
+        "A": "VMware NSX – micro-segmentation and firewalling",
+        "B": "Qualys VMDR – vulnerability scanning",
+        "C": "Tripwire Enterprise – detecting unauthorized configuration changes",
+        "D": "CrowdStrike – protecting Hyper-V workloads as its main role"
+      },
+      "correctAnswer": "D",
+      "explanation": "CrowdStrike's role is endpoint security for virtualized systems, and protecting Hyper-V workloads is the role of Microsoft Defender for Cloud, so this pair is wrong."
+    },
+    {
+      "id": "POV-U5-107",
+      "question": "Why is IDS at the hypervisor/platform level important?",
+      "options": {
+        "A": "Traffic between VMs on the same host is not visible to traditional physical network tools",
+        "B": "VMs never generate traffic",
+        "C": "Physical firewalls see all VM-to-VM traffic",
+        "D": "It replaces all patching"
+      },
+      "correctAnswer": "A",
+      "explanation": "Traffic between VMs on the same host does not leave the host, so traditional physical network tools cannot see it."
+    },
+    {
+      "id": "POV-U5-108",
+      "question": "Which statement about monitoring is correct?",
+      "options": {
+        "A": "An attack on a VM affects all VMs on the host",
+        "B": "An attack on the hypervisor affects all VMs, while an attack on a VM affects only that VM and its data",
+        "C": "Monitoring only VMs is enough",
+        "D": "Hypervisor attacks never need monitoring"
+      },
+      "correctAnswer": "B",
+      "explanation": "A hypervisor attack can affect all VMs, while a VM attack affects only that VM and its data, so both levels need monitoring."
+    },
+    {
+      "id": "POV-U5-109",
+      "question": "A VM template has an unpatched weakness. What is the result?",
+      "options": {
+        "A": "Only the template is affected",
+        "B": "Old VMs are fixed",
+        "C": "Nothing happens",
+        "D": "Every VM created from it will also have that weakness"
+      },
+      "correctAnswer": "D",
+      "explanation": "Every VM created from the template inherits its weakness."
+    },
+    {
+      "id": "POV-U5-110",
+      "question": "Which is NOT one of the security best practices (E-A-P-L-S) listed in the notes?",
+      "options": {
+        "A": "Encryption",
+        "B": "Patch management",
+        "C": "Over-committing resources",
+        "D": "Secure VM templates"
+      },
+      "correctAnswer": "C",
+      "explanation": "Over-committing resources is a performance topic, not one of the E-A-P-L-S security best practices."
+    },
+    {
+      "id": "POV-U5-111",
+      "question": "Which statement correctly compares least privilege and separation of duties?",
+      "options": {
+        "A": "Both give every admin full rights",
+        "B": "Least privilege limits rights to the role's needs; separation of duties divides work so no one person has complete control",
+        "C": "Least privilege divides tasks; separation of duties limits rights",
+        "D": "They are the same"
+      },
+      "correctAnswer": "B",
+      "explanation": "Least privilege limits rights to what a role needs, while separation of duties divides work so no one person has complete control."
+    },
+    {
+      "id": "POV-U5-112",
+      "question": "CPU usage looks normal, but applications feel slow. Which metric may reveal hidden delays?",
+      "options": {
+        "A": "Scheduler latency",
+        "B": "Jumbo frame size",
+        "C": "Template count",
+        "D": "Snapshot name"
+      },
+      "correctAnswer": "A",
+      "explanation": "Scheduler latency shows how long VMs wait for the physical CPU, which can cause slowness even when CPU usage looks normal."
+    },
+    {
+      "id": "POV-U5-113",
+      "question": "Why might VM swap activity suddenly increase?",
+      "options": {
+        "A": "The network is too fast",
+        "B": "The CPU is idle",
+        "C": "Physical memory is short, so the hypervisor moves VM memory to disk",
+        "D": "Disks are empty"
+      },
+      "correctAnswer": "C",
+      "explanation": "When physical memory is short, the hypervisor moves VM memory to disk, which increases swap activity."
+    },
+    {
+      "id": "POV-U5-114",
+      "question": "Which statement about memory ballooning is correct?",
+      "options": {
+        "A": "The balloon driver is installed on the physical switch",
+        "B": "The balloon inflates only when memory is plentiful",
+        "C": "It permanently deletes VM memory",
+        "D": "The balloon inflates when the host is short of memory and deflates when memory is available again"
+      },
+      "correctAnswer": "D",
+      "explanation": "The balloon inflates to reclaim memory when the host is short and deflates when memory is available again."
+    },
+    {
+      "id": "POV-U5-115",
+      "question": "Which caution applies to thin provisioning?",
+      "options": {
+        "A": "The administrator must monitor storage so that it does not become full",
+        "B": "It needs no monitoring",
+        "C": "It allocates full space at the start",
+        "D": "It increases storage cost"
+      },
+      "correctAnswer": "A",
+      "explanation": "Because thin provisioning allocates space on demand, storage must be monitored so it does not run out."
+    },
+    {
+      "id": "POV-U5-116",
+      "question": "\"A test VM cannot use more than 2 CPUs.\" This describes a:",
+      "options": {
+        "A": "Reservation",
+        "B": "Limit",
+        "C": "Share",
+        "D": "Snapshot"
+      },
+      "correctAnswer": "B",
+      "explanation": "A cap on the maximum resource a VM can use is a limit."
+    },
+    {
+      "id": "POV-U5-117",
+      "question": "\"A database VM always gets at least 8 GB RAM.\" This describes a:",
+      "options": {
+        "A": "Limit",
+        "B": "Share",
+        "C": "Template",
+        "D": "Reservation"
+      },
+      "correctAnswer": "D",
+      "explanation": "A guaranteed minimum amount of a resource is a reservation."
+    },
+    {
+      "id": "POV-U5-118",
+      "question": "Which statement about jumbo frames is WRONG?",
+      "options": {
+        "A": "They are larger than the standard 1500-byte frame",
+        "B": "They reduce the number of frames needed for large transfers",
+        "C": "They are smaller than standard frames",
+        "D": "They can lower CPU overhead"
+      },
+      "correctAnswer": "C",
+      "explanation": "Jumbo frames are larger, not smaller, than standard frames, so this statement is wrong."
+    },
+    {
+      "id": "POV-U5-119",
+      "question": "Which statement is correct?",
+      "options": {
+        "A": "Caching keeps frequently used data in fast storage, and deduplication removes duplicate copies; both reduce disk I/O overhead",
+        "B": "Caching removes duplicate data",
+        "C": "Deduplication keeps hot data in memory",
+        "D": "Neither affects disk I/O"
+      },
+      "correctAnswer": "A",
+      "explanation": "Caching keeps frequently used data in fast storage and deduplication removes duplicate copies, and both reduce disk I/O overhead."
+    },
+    {
+      "id": "POV-U5-120",
+      "question": "Why can stale snapshots also be a security problem?",
+      "options": {
+        "A": "They encrypt the VM",
+        "B": "They may hold outdated and unpatched data",
+        "C": "They block all logins",
+        "D": "They disable the firewall"
+      },
+      "correctAnswer": "B",
+      "explanation": "Old snapshots may hold outdated and unpatched data."
+    },
+    {
+      "id": "POV-U5-121",
+      "question": "What is the main difference between load balancing and high availability?",
+      "options": {
+        "A": "Both aim for lower performance",
+        "B": "Load balancing aims for no downtime; HA aims for even load",
+        "C": "Load balancing aims at performance by spreading work; HA aims at minimum downtime after failure",
+        "D": "They are exactly the same"
+      },
+      "correctAnswer": "C",
+      "explanation": "Load balancing spreads work to improve performance, while HA aims at minimum downtime after a failure."
+    },
+    {
+      "id": "POV-U5-122",
+      "question": "Host A fails at night and its VMs restart automatically on Host B. Which feature made this possible?",
+      "options": {
+        "A": "Thin provisioning",
+        "B": "Deduplication",
+        "C": "Jumbo frames",
+        "D": "HA with clustered hosts"
+      },
+      "correctAnswer": "D",
+      "explanation": "HA with clustered hosts restarts the VMs of a failed host on a healthy host automatically."
+    },
+    {
+      "id": "POV-U5-123",
+      "question": "Which technique mainly protects against site failure or disaster?",
+      "options": {
+        "A": "Clustered hosts",
+        "B": "Replication",
+        "C": "Caching",
+        "D": "Right-sizing"
+      },
+      "correctAnswer": "B",
+      "explanation": "Replication keeps a copy at another site, protecting against site failure or disaster."
+    },
+    {
+      "id": "POV-U5-124",
+      "question": "What is the relationship between DRS and vMotion?",
+      "options": {
+        "A": "DRS decides and balances load, using vMotion to move running VMs",
+        "B": "vMotion decides, DRS replicates",
+        "C": "DRS is a hypervisor, vMotion is a firewall",
+        "D": "They are unrelated"
+      },
+      "correctAnswer": "A",
+      "explanation": "DRS decides and balances load, and it uses vMotion to move running VMs between hosts."
+    },
+    {
+      "id": "POV-U5-125",
+      "question": "Which platform supports both para-virtualization and full virtualization?",
+      "options": {
+        "A": "VMware vSphere",
+        "B": "Hyper-V",
+        "C": "KVM",
+        "D": "Xen"
+      },
+      "correctAnswer": "D",
+      "explanation": "Xen supports both para-virtualization and full virtualization."
+    },
+    {
+      "id": "POV-U5-126",
+      "question": "Which platform has Medium scalability and a Limited ecosystem in the comparison table?",
+      "options": {
+        "A": "VMware vSphere",
+        "B": "KVM",
+        "C": "Microsoft Hyper-V",
+        "D": "Xen"
+      },
+      "correctAnswer": "C",
+      "explanation": "In the comparison table, Microsoft Hyper-V has Medium scalability and a Limited ecosystem."
+    },
+    {
+      "id": "POV-U5-127",
+      "question": "Which row of the comparison table is correct?",
+      "options": {
+        "A": "VMware vSphere – Commercial – vCenter – vMotion",
+        "B": "Hyper-V – Open-source – Cockpit – vMotion",
+        "C": "KVM – Commercial – vCenter – Live Migration",
+        "D": "Xen – Included in Windows Server – SCVMM – Not supported"
+      },
+      "correctAnswer": "A",
+      "explanation": "VMware vSphere is commercial, managed with vCenter and uses vMotion; the other rows contain wrong details."
+    },
+    {
+      "id": "POV-U5-128",
+      "question": "Which management pairing is INCORRECT?",
+      "options": {
+        "A": "KVM – virt-manager",
+        "B": "Xen – Cockpit",
+        "C": "Hyper-V – SCVMM",
+        "D": "VMware – vCenter"
+      },
+      "correctAnswer": "B",
+      "explanation": "Xen is managed with XenCenter, not Cockpit, so this pairing is incorrect."
+    },
+    {
+      "id": "POV-U5-129",
+      "question": "Which platform is described as purely commercial?",
+      "options": {
+        "A": "KVM",
+        "B": "Xen",
+        "C": "Hyper-V (included in Windows Server)",
+        "D": "VMware vSphere"
+      },
+      "correctAnswer": "D",
+      "explanation": "VMware vSphere is the purely commercial platform; KVM and Xen are open-source and Hyper-V is included in Windows Server."
+    },
+    {
+      "id": "POV-U5-130",
+      "question": "What does VMware NSX integrated with vSphere provide?",
+      "options": {
+        "A": "Virtual networks, micro-segmentation and firewalling",
+        "B": "Only disk compression",
+        "C": "Only CPU scheduling",
+        "D": "Only backup"
+      },
+      "correctAnswer": "A",
+      "explanation": "NSX integrated with vSphere provides virtual networks, micro-segmentation and firewalling."
+    },
+    {
+      "id": "POV-U5-131",
+      "question": "Which is the correct sequence for the Hyper-V lab?",
+      "options": {
+        "A": "Test migration → create VMs → install role",
+        "B": "Set up Hyper-V role → create VMs and virtual switches → test live migration and replication",
+        "C": "Test replication → set up role → delete VMs",
+        "D": "Create switches → remove the role"
+      },
+      "correctAnswer": "B",
+      "explanation": "The lab sets up the Hyper-V role first, then creates VMs and virtual switches, then tests live migration and replication."
+    },
+    {
+      "id": "POV-U5-132",
+      "question": "Which is NOT a step of Hyper-V replication setup?",
+      "options": {
+        "A": "Enable the replica server to receive replication",
+        "B": "Select the VM and choose Enable Replication",
+        "C": "Test the failover",
+        "D": "Delete the primary VM before replication starts"
+      },
+      "correctAnswer": "D",
+      "explanation": "Deleting the primary VM is not a replication step, because the VM must exist to be replicated."
+    },
+    {
+      "id": "POV-U5-133",
+      "question": "Which action reduces the risk of over-commitment?",
+      "options": {
+        "A": "Allocating even more memory to all VMs",
+        "B": "Disabling monitoring",
+        "C": "Using reservations for critical VMs and monitoring usage",
+        "D": "Removing all limits and shares"
+      },
+      "correctAnswer": "C",
+      "explanation": "Reservations guarantee resources for critical VMs, and monitoring catches problems early."
+    },
+    {
+      "id": "POV-U5-134",
+      "question": "A suspicious file is opened inside a special VM so the main system stays safe. This is an example of:",
+      "options": {
+        "A": "Sandboxing",
+        "B": "Thin provisioning",
+        "C": "Caching",
+        "D": "Live migration"
+      },
+      "correctAnswer": "A",
+      "explanation": "Running something suspicious in a restricted, isolated VM to protect the main system is sandboxing."
+    },
+    {
+      "id": "POV-U5-135",
+      "question": "Right-sizing is important because:",
+      "options": {
+        "A": "It gives every VM the maximum resources",
+        "B": "It avoids both over-provisioning (waste) and under-provisioning (slowness)",
+        "C": "It removes the hypervisor",
+        "D": "It stops all monitoring"
+      },
+      "correctAnswer": "B",
+      "explanation": "Right-sizing avoids both waste from over-provisioning and slowness from under-provisioning."
+    },
+    {
+      "id": "POV-U5-136",
+      "question": "Which of the following are hypervisor-level metrics?",
+      "options": {
+        "A": "Typing speed and screen size",
+        "B": "Cable length and colour",
+        "C": "Scheduler latency, VM swap activity and resource contention",
+        "D": "Printer count only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Scheduler latency, VM swap activity and resource contention are hypervisor-level metrics."
+    },
+    {
+      "id": "POV-U5-137",
+      "question": "Periodic auditing also improves security because:",
+      "options": {
+        "A": "It disables firewalls",
+        "B": "It adds more VMs",
+        "C": "It encrypts disks automatically",
+        "D": "Forgotten VMs that may be unpatched are found and removed"
+      },
+      "correctAnswer": "D",
+      "explanation": "Auditing finds forgotten VMs that may be unpatched, so they can be removed."
+    },
+    {
+      "id": "POV-U5-138",
+      "question": "Network bandwidth monitoring may also reveal:",
+      "options": {
+        "A": "Unusual traffic that may be a security attack",
+        "B": "Disk size",
+        "C": "CPU temperature only",
+        "D": "VM names only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Monitoring bandwidth can reveal unusual traffic that may be a security attack."
+    },
+    {
+      "id": "POV-U5-139",
+      "question": "Encryption of data at rest helps because:",
+      "options": {
+        "A": "Stolen disks and backups cannot be read without the key",
+        "B": "It deletes backups",
+        "C": "It speeds up migration",
+        "D": "It removes the need for passwords"
+      },
+      "correctAnswer": "A",
+      "explanation": "Encrypted data at rest cannot be read from stolen disks or backups without the key."
+    },
+    {
+      "id": "POV-U5-140",
+      "question": "Why is logging especially useful in dynamic environments?",
+      "options": {
+        "A": "VMs never change",
+        "B": "Logs help to keep track of VMs that move and change often",
+        "C": "Logs stop VM migration",
+        "D": "Logs replace firewalls"
+      },
+      "correctAnswer": "B",
+      "explanation": "Logs help keep track of VMs that move and change often."
+    },
+    {
+      "id": "POV-U5-141",
+      "question": "Which statement about vCenter is correct?",
+      "options": {
+        "A": "It is a hypervisor installed on each VM",
+        "B": "It works only for Hyper-V",
+        "C": "It is a firewall appliance",
+        "D": "It manages many ESXi hosts and enables features such as vMotion, DRS and HA"
+      },
+      "correctAnswer": "D",
+      "explanation": "vCenter manages many ESXi hosts and enables features such as vMotion, DRS and HA."
+    },
+    {
+      "id": "POV-U5-142",
+      "question": "Which statement about Hyper-V versus vSphere is correct?",
+      "options": {
+        "A": "Hyper-V is commercial and vSphere is free",
+        "B": "Hyper-V is included in Windows Server and integrates with Azure",
+        "C": "Hyper-V has the more advanced ecosystem",
+        "D": "Hyper-V uses vCenter"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hyper-V is included in Windows Server and integrates with Azure."
+    },
+    {
+      "id": "POV-U5-143",
+      "question": "KVM is commonly managed with:",
+      "options": {
+        "A": "vCenter and esxtop",
+        "B": "XenCenter and xentop",
+        "C": "virt-manager and Cockpit",
+        "D": "Hyper-V Manager only"
+      },
+      "correctAnswer": "C",
+      "explanation": "KVM is commonly managed with tools such as virt-manager and Cockpit."
+    },
+    {
+      "id": "POV-U5-144",
+      "question": "Which statement about live migration across platforms is correct?",
+      "options": {
+        "A": "Only VMware supports it",
+        "B": "Only Xen supports it",
+        "C": "All four platforms support it, but names and tools differ",
+        "D": "None of the platforms support it"
+      },
+      "correctAnswer": "C",
+      "explanation": "All four platforms support live migration, but the names and tools differ."
+    },
+    {
+      "id": "POV-U5-145",
+      "question": "In the memory trick H-V-I-S-D-D-I (security challenges), what does \"S\" stand for?",
+      "options": {
+        "A": "Sandbox",
+        "B": "Segmentation",
+        "C": "Snapshot",
+        "D": "Shared resources"
+      },
+      "correctAnswer": "D",
+      "explanation": "In H-V-I-S-D-D-I, \"S\" stands for Shared resources."
+    },
+    {
+      "id": "POV-U5-146",
+      "question": "In E-A-P-L-S (best practices), what does \"P\" stand for?",
+      "options": {
+        "A": "Privilege",
+        "B": "Patch management",
+        "C": "Pooling",
+        "D": "Provisioning"
+      },
+      "correctAnswer": "B",
+      "explanation": "In E-A-P-L-S, \"P\" stands for Patch management."
+    },
+    {
+      "id": "POV-U5-147",
+      "question": "In R-S-N-V-P (optimization techniques), what does \"V\" stand for?",
+      "options": {
+        "A": "VM sizing",
+        "B": "VLAN",
+        "C": "vMotion",
+        "D": "Virtualization"
+      },
+      "correctAnswer": "A",
+      "explanation": "In R-S-N-V-P, \"V\" stands for VM sizing (right-sizing of VMs)."
+    },
+    {
+      "id": "POV-U5-148",
+      "question": "In C-M-D-N-H (performance metrics), what does \"H\" stand for?",
+      "options": {
+        "A": "Host name",
+        "B": "Hub",
+        "C": "Hypervisor",
+        "D": "Heat"
+      },
+      "correctAnswer": "C",
+      "explanation": "In C-M-D-N-H, \"H\" stands for Hypervisor."
+    },
+    {
+      "id": "POV-U5-149",
+      "question": "In S-V-F-N (isolation techniques), what does \"F\" stand for?",
+      "options": {
+        "A": "Fabric",
+        "B": "Frame",
+        "C": "Failover",
+        "D": "Firewall"
+      },
+      "correctAnswer": "D",
+      "explanation": "In S-V-F-N, \"F\" stands for Firewall."
+    },
+    {
+      "id": "POV-U5-150",
+      "question": "Which statement about open-source hypervisors (KVM and Xen) is correct?",
+      "options": {
+        "A": "They have a larger ecosystem than VMware and need licences",
+        "B": "They cannot do live migration",
+        "C": "They are available only on Windows",
+        "D": "They have no licence cost but their ecosystem is more limited than VMware's"
+      },
+      "correctAnswer": "D",
+      "explanation": "KVM and Xen have no licence cost, but their ecosystem is more limited than VMware's."
+    }
+  ]
+}
