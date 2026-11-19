@@ -1,5 +1,1806 @@
 {
   "subject": "Artificial Intelligence",
   "unit": "Unit 5",
-  "questions": []
+  "questions": [
+    {
+      "id": "AI-U5-001",
+      "question": "Planning in AI is the process of deciding:",
+      "options": {
+        "A": "How to store labelled data",
+        "B": "How to draw a network diagram",
+        "C": "A sequence of actions to achieve a specific goal",
+        "D": "How to encrypt a message"
+      },
+      "correctAnswer": "C",
+      "explanation": "Planning in AI is deciding a sequence of actions that achieves a specific goal."
+    },
+    {
+      "id": "AI-U5-002",
+      "question": "Planning is called the:",
+      "options": {
+        "A": "Acting side of reasoning",
+        "B": "Memory side of learning",
+        "C": "Sensing side of perceiving",
+        "D": "Reasoning side of acting"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes call planning the reasoning side of acting, because the system thinks about which actions will reach the goal."
+    },
+    {
+      "id": "AI-U5-003",
+      "question": "Which of the following is a requirement of a planning system?",
+      "options": {
+        "A": "Network topology",
+        "B": "Goal description",
+        "C": "Compiler design",
+        "D": "Database index"
+      },
+      "correctAnswer": "B",
+      "explanation": "A planning system needs a domain description, an action specification and a goal description."
+    },
+    {
+      "id": "AI-U5-004",
+      "question": "Every action in a plan has which two important parts?",
+      "options": {
+        "A": "Preconditions and effects",
+        "B": "Source and sink",
+        "C": "Input and loop",
+        "D": "Header and trailer"
+      },
+      "correctAnswer": "A",
+      "explanation": "Each action has preconditions (true before it) and effects (changes after it)."
+    },
+    {
+      "id": "AI-U5-005",
+      "question": "Preconditions of an action are the conditions that:",
+      "options": {
+        "A": "Must be true before the action is performed",
+        "B": "Become true after the action",
+        "C": "Describe the final goal only",
+        "D": "Measure the cost of the action"
+      },
+      "correctAnswer": "A",
+      "explanation": "Preconditions must hold before the action can be performed."
+    },
+    {
+      "id": "AI-U5-006",
+      "question": "Effects of an action are the:",
+      "options": {
+        "A": "Conditions required before the action",
+        "B": "Costs of reaching the goal",
+        "C": "Rules for selecting a goal",
+        "D": "Changes that occur after the action is performed"
+      },
+      "correctAnswer": "D",
+      "explanation": "Effects are the changes that happen after the action, either making a fact true or false."
+    },
+    {
+      "id": "AI-U5-007",
+      "question": "Forward State Space Planning (FSSP) is also called:",
+      "options": {
+        "A": "Regression planning",
+        "B": "Stack planning",
+        "C": "Progression planning",
+        "D": "Fuzzy planning"
+      },
+      "correctAnswer": "C",
+      "explanation": "FSSP is also known as progression planning."
+    },
+    {
+      "id": "AI-U5-008",
+      "question": "Backward State Space Planning (BSSP) is also called:",
+      "options": {
+        "A": "Progression planning",
+        "B": "Regression planning",
+        "C": "Forward chaining",
+        "D": "Reactive planning"
+      },
+      "correctAnswer": "B",
+      "explanation": "BSSP is also known as regression planning."
+    },
+    {
+      "id": "AI-U5-009",
+      "question": "FSSP starts from the:",
+      "options": {
+        "A": "Initial state",
+        "B": "Goal state",
+        "C": "Middle of the plan",
+        "D": "Last action"
+      },
+      "correctAnswer": "A",
+      "explanation": "FSSP starts from the initial state and applies actions until the goal is reached."
+    },
+    {
+      "id": "AI-U5-010",
+      "question": "BSSP starts from the:",
+      "options": {
+        "A": "Initial state",
+        "B": "Goal state",
+        "C": "First action",
+        "D": "Empty stack"
+      },
+      "correctAnswer": "B",
+      "explanation": "BSSP starts from the goal and works backward."
+    },
+    {
+      "id": "AI-U5-011",
+      "question": "Goal Stack Planning is associated with which planning system?",
+      "options": {
+        "A": "PROLOG",
+        "B": "LISP",
+        "C": "STRIPS",
+        "D": "ELIZA"
+      },
+      "correctAnswer": "C",
+      "explanation": "Goal stack planning is associated with STRIPS, the Stanford Research Institute Problem Solver."
+    },
+    {
+      "id": "AI-U5-012",
+      "question": "A stack follows which principle?",
+      "options": {
+        "A": "FIFO (First In, First Out)",
+        "B": "Random access",
+        "C": "Priority order",
+        "D": "LIFO (Last In, First Out)"
+      },
+      "correctAnswer": "D",
+      "explanation": "In a stack, the last item added is the first one removed."
+    },
+    {
+      "id": "AI-U5-013",
+      "question": "Machine Learning enables computers to:",
+      "options": {
+        "A": "Work only with fixed rules",
+        "B": "Store data without processing",
+        "C": "Replace all hardware",
+        "D": "Learn from data without being explicitly programmed for every task"
+      },
+      "correctAnswer": "D",
+      "explanation": "ML lets computers learn from data and improve without explicit programming for each task."
+    },
+    {
+      "id": "AI-U5-014",
+      "question": "Supervised learning learns from:",
+      "options": {
+        "A": "Unlabelled data",
+        "B": "Rewards only",
+        "C": "Labelled data",
+        "D": "No data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Supervised learning uses labelled data in which the correct answers are provided."
+    },
+    {
+      "id": "AI-U5-015",
+      "question": "Unsupervised learning learns from:",
+      "options": {
+        "A": "Unlabelled data",
+        "B": "Labelled data",
+        "C": "Rewards and penalties",
+        "D": "A teacher's answers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Unsupervised learning finds patterns in unlabelled data."
+    },
+    {
+      "id": "AI-U5-016",
+      "question": "Reinforcement learning learns through:",
+      "options": {
+        "A": "Labelled examples only",
+        "B": "Rewards and penalties from interacting with an environment",
+        "C": "Clustering unlabelled data",
+        "D": "Manual feature selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Reinforcement learning uses rewards or penalties received for actions in an environment."
+    },
+    {
+      "id": "AI-U5-017",
+      "question": "Email spam detection is an example of:",
+      "options": {
+        "A": "Unsupervised learning",
+        "B": "Reinforcement learning",
+        "C": "Supervised learning",
+        "D": "Genetic algorithm"
+      },
+      "correctAnswer": "C",
+      "explanation": "Spam detection learns from emails already labelled as spam or not, which is supervised learning."
+    },
+    {
+      "id": "AI-U5-018",
+      "question": "Grouping customers by shopping habits is an example of:",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Reinforcement learning",
+        "C": "Symbolic reasoning",
+        "D": "Unsupervised learning"
+      },
+      "correctAnswer": "D",
+      "explanation": "Customer segmentation finds groups in unlabelled data, which is unsupervised learning."
+    },
+    {
+      "id": "AI-U5-019",
+      "question": "An Artificial Neural Network is inspired by the:",
+      "options": {
+        "A": "Solar system",
+        "B": "Human brain",
+        "C": "Stock market",
+        "D": "Postal network"
+      },
+      "correctAnswer": "B",
+      "explanation": "An ANN is a model inspired by the human brain."
+    },
+    {
+      "id": "AI-U5-020",
+      "question": "Which are the three main types of layers in an ANN?",
+      "options": {
+        "A": "Input, hidden and output",
+        "B": "Source, relay and sink",
+        "C": "Start, middle and goal",
+        "D": "Memory, stack and queue"
+      },
+      "correctAnswer": "A",
+      "explanation": "An ANN has input, hidden and output layers."
+    },
+    {
+      "id": "AI-U5-021",
+      "question": "In a neural network, a weight is a value that:",
+      "options": {
+        "A": "Stores the final answer",
+        "B": "Counts the number of layers",
+        "C": "Decides the importance of an input",
+        "D": "Names the neuron"
+      },
+      "correctAnswer": "C",
+      "explanation": "A weight decides how important an input is."
+    },
+    {
+      "id": "AI-U5-022",
+      "question": "A Genetic Algorithm is inspired by:",
+      "options": {
+        "A": "The human brain",
+        "B": "Darwin's theory of natural selection",
+        "C": "Boolean logic",
+        "D": "Probability axioms"
+      },
+      "correctAnswer": "B",
+      "explanation": "A genetic algorithm is an optimization technique inspired by natural selection."
+    },
+    {
+      "id": "AI-U5-023",
+      "question": "In a genetic algorithm, a population is:",
+      "options": {
+        "A": "A collection of candidate solutions",
+        "B": "A single gene",
+        "C": "The final answer only",
+        "D": "The fitness function"
+      },
+      "correctAnswer": "A",
+      "explanation": "A population is a collection of candidate solutions."
+    },
+    {
+      "id": "AI-U5-024",
+      "question": "In a genetic algorithm, a chromosome is the:",
+      "options": {
+        "A": "Value of a single gene",
+        "B": "Set of all possible solutions",
+        "C": "Score of a solution",
+        "D": "Complete representation of one candidate solution"
+      },
+      "correctAnswer": "D",
+      "explanation": "A chromosome is the complete representation of a candidate solution, made of genes."
+    },
+    {
+      "id": "AI-U5-025",
+      "question": "AI based on the collective behaviour of decentralized, self-organized systems is called:",
+      "options": {
+        "A": "Multi-agent planning",
+        "B": "Fuzzy logic",
+        "C": "Goal stack planning",
+        "D": "Swarm intelligence"
+      },
+      "correctAnswer": "D",
+      "explanation": "The glossary defines swarm intelligence as AI based on the collective behaviour of decentralized, self-organized systems."
+    },
+    {
+      "id": "AI-U5-026",
+      "question": "The mutation operator in a genetic algorithm:",
+      "options": {
+        "A": "Combines two parents",
+        "B": "Randomly changes part of a solution",
+        "C": "Selects the fittest parents",
+        "D": "Counts the population"
+      },
+      "correctAnswer": "B",
+      "explanation": "Mutation randomly changes part of a solution to keep diversity."
+    },
+    {
+      "id": "AI-U5-027",
+      "question": "The crossover operator in a genetic algorithm:",
+      "options": {
+        "A": "Combines parts of two parents to create offspring",
+        "B": "Randomly flips a gene",
+        "C": "Deletes weak solutions",
+        "D": "Defines the search space"
+      },
+      "correctAnswer": "A",
+      "explanation": "Crossover combines parts of two parent solutions to create offspring."
+    },
+    {
+      "id": "AI-U5-028",
+      "question": "A fitness score shows:",
+      "options": {
+        "A": "How many genes a chromosome has",
+        "B": "The size of the population",
+        "C": "How well a candidate solves the problem",
+        "D": "The number of generations"
+      },
+      "correctAnswer": "C",
+      "explanation": "A fitness score is a number showing how well a candidate solves the problem."
+    },
+    {
+      "id": "AI-U5-029",
+      "question": "A knowledge system in AI:",
+      "options": {
+        "A": "Stores knowledge and uses it to solve problems and draw conclusions",
+        "B": "Only stores raw images",
+        "C": "Only prints reports",
+        "D": "Only connects networks"
+      },
+      "correctAnswer": "A",
+      "explanation": "A knowledge system stores knowledge and uses it to solve problems, make decisions and draw conclusions."
+    },
+    {
+      "id": "AI-U5-030",
+      "question": "Which challenge of knowledge systems means that some required information is missing?",
+      "options": {
+        "A": "Inconsistency",
+        "B": "Change",
+        "C": "Redundancy",
+        "D": "Incompleteness"
+      },
+      "correctAnswer": "D",
+      "explanation": "Incompleteness means some required information is missing."
+    },
+    {
+      "id": "AI-U5-031",
+      "question": "Which method of reasoning uses symbols, facts and logical rules?",
+      "options": {
+        "A": "Statistical reasoning",
+        "B": "Symbolic reasoning",
+        "C": "Fuzzy sets",
+        "D": "Reinforcement learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Symbolic reasoning draws conclusions from symbols, facts and logical rules."
+    },
+    {
+      "id": "AI-U5-032",
+      "question": "Statistical reasoning is based on:",
+      "options": {
+        "A": "Only logical rules",
+        "B": "Degrees of membership",
+        "C": "Data and probability",
+        "D": "Stack operations"
+      },
+      "correctAnswer": "C",
+      "explanation": "Statistical reasoning uses data, probability and statistical methods."
+    },
+    {
+      "id": "AI-U5-033",
+      "question": "Fuzzy sets represent information that belongs to a category:",
+      "options": {
+        "A": "Only completely",
+        "B": "To different degrees",
+        "C": "Only never",
+        "D": "Only in pairs"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fuzzy sets allow degrees of membership instead of only true or false."
+    },
+    {
+      "id": "AI-U5-034",
+      "question": "The value of a probability lies between:",
+      "options": {
+        "A": "0 and 1",
+        "B": "-1 and 1",
+        "C": "0 and 100",
+        "D": "1 and 10"
+      },
+      "correctAnswer": "A",
+      "explanation": "Probability ranges from 0 (impossible) to 1 (certain)."
+    },
+    {
+      "id": "AI-U5-035",
+      "question": "P(A) = 0 means the event is:",
+      "options": {
+        "A": "Certain",
+        "B": "Equally likely",
+        "C": "Impossible",
+        "D": "Mutually exclusive"
+      },
+      "correctAnswer": "C",
+      "explanation": "A probability of 0 means the event cannot happen."
+    },
+    {
+      "id": "AI-U5-036",
+      "question": "According to the axioms of probability, the probability of the sample space P(S) is:",
+      "options": {
+        "A": "0",
+        "B": "0.5",
+        "C": "Undefined",
+        "D": "1"
+      },
+      "correctAnswer": "D",
+      "explanation": "Axiom 2 says P(S) = 1, since one of the possible outcomes must occur."
+    },
+    {
+      "id": "AI-U5-037",
+      "question": "Which agent deals with happy and unhappy states?",
+      "options": {
+        "A": "Simple reflex agent",
+        "B": "Model-based agent",
+        "C": "Learning element",
+        "D": "Utility-based agent"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz in the notes gives the utility-based agent as the one dealing with happy and unhappy states."
+    },
+    {
+      "id": "AI-U5-038",
+      "question": "The probability of getting an even number when rolling a fair dice is:",
+      "options": {
+        "A": "0.25",
+        "B": "0.5",
+        "C": "0.33",
+        "D": "1"
+      },
+      "correctAnswer": "B",
+      "explanation": "Favourable outcomes {2, 4, 6} are 3 out of 6, so P = 0.5."
+    },
+    {
+      "id": "AI-U5-039",
+      "question": "The fundamental notion of Bayesian statistics is:",
+      "options": {
+        "A": "Conditional probability",
+        "B": "Mutual exclusion",
+        "C": "Crossover",
+        "D": "Backtracking"
+      },
+      "correctAnswer": "A",
+      "explanation": "Bayesian statistics is built on conditional probability P(H ∣ E)."
+    },
+    {
+      "id": "AI-U5-040",
+      "question": "A Bayesian network is drawn as a:",
+      "options": {
+        "A": "Sorted list",
+        "B": "Binary tree of weights only",
+        "C": "Directed graph",
+        "D": "Truth table"
+      },
+      "correctAnswer": "C",
+      "explanation": "A Bayesian network is a directed graph where nodes are variables and arrows show influence."
+    },
+    {
+      "id": "AI-U5-041",
+      "question": "Dempster-Shafer theory assigns each set of propositions an interval of the form:",
+      "options": {
+        "A": "[Prior, Posterior]",
+        "B": "[Min, Max cost]",
+        "C": "[True, False]",
+        "D": "[Belief, Plausibility]"
+      },
+      "correctAnswer": "D",
+      "explanation": "Dempster-Shafer theory assigns an interval [Belief, Plausibility]."
+    },
+    {
+      "id": "AI-U5-042",
+      "question": "In Dempster-Shafer theory, the frame of discernment is written as:",
+      "options": {
+        "A": "Θ",
+        "B": "Σ",
+        "C": "Δ",
+        "D": "Ω only for cost"
+      },
+      "correctAnswer": "A",
+      "explanation": "The frame of discernment, the universe of mutually exclusive hypotheses, is written Θ."
+    },
+    {
+      "id": "AI-U5-043",
+      "question": "The complement of a fuzzy set A is:",
+      "options": {
+        "A": "max[A(x), 1]",
+        "B": "1 - A(x)",
+        "C": "A(x) + 1",
+        "D": "min[A(x), 0]"
+      },
+      "correctAnswer": "B",
+      "explanation": "The fuzzy complement is A'(x) = 1 - A(x)."
+    },
+    {
+      "id": "AI-U5-044",
+      "question": "The union of two fuzzy sets uses which operation?",
+      "options": {
+        "A": "Minimum",
+        "B": "Sum",
+        "C": "Maximum",
+        "D": "Product"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fuzzy union is max[A(x), B(x)]."
+    },
+    {
+      "id": "AI-U5-045",
+      "question": "The intersection of two fuzzy sets uses which operation?",
+      "options": {
+        "A": "Maximum",
+        "B": "Sum",
+        "C": "Difference",
+        "D": "Minimum"
+      },
+      "correctAnswer": "D",
+      "explanation": "Fuzzy intersection is min[A(x), B(x)]."
+    },
+    {
+      "id": "AI-U5-046",
+      "question": "A problem-solving agent is a kind of:",
+      "options": {
+        "A": "Simple reflex agent",
+        "B": "Goal-based agent",
+        "C": "Random agent",
+        "D": "Passive agent"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes describe the problem-solving agent as a kind of goal-based agent."
+    },
+    {
+      "id": "AI-U5-047",
+      "question": "In the formulate-search-execute design, the first step is to:",
+      "options": {
+        "A": "Formulate the goal and the problem",
+        "B": "Execute the actions",
+        "C": "Search for a solution",
+        "D": "Update the knowledge base"
+      },
+      "correctAnswer": "A",
+      "explanation": "The agent first formulates the goal and the problem, then searches, then executes."
+    },
+    {
+      "id": "AI-U5-048",
+      "question": "Artificial Intelligence is the branch of computer science that builds machines and software to:",
+      "options": {
+        "A": "Store large databases only",
+        "B": "Replace all human workers",
+        "C": "Perform tasks that normally need human intelligence",
+        "D": "Increase network speed"
+      },
+      "correctAnswer": "C",
+      "explanation": "AI builds systems that perform tasks like learning, reasoning, perceiving and decision making."
+    },
+    {
+      "id": "AI-U5-049",
+      "question": "The Turing test was proposed by:",
+      "options": {
+        "A": "Alan Turing",
+        "B": "Tom Mitchell",
+        "C": "Charles Darwin",
+        "D": "Claude Shannon"
+      },
+      "correctAnswer": "A",
+      "explanation": "Alan Turing proposed the test in 1950."
+    },
+    {
+      "id": "AI-U5-050",
+      "question": "Which element of an agent is used for selecting external actions?",
+      "options": {
+        "A": "Sensor",
+        "B": "Memory",
+        "C": "Percept",
+        "D": "Actuator"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz in the notes gives the actuator as the element that carries out external actions."
+    },
+    {
+      "id": "AI-U5-051",
+      "question": "Which three things does a planning system require?",
+      "options": {
+        "A": "Input layer, hidden layer and output layer",
+        "B": "Domain description, action specification and goal description",
+        "C": "Population, fitness and mutation",
+        "D": "Belief, plausibility and frame"
+      },
+      "correctAnswer": "B",
+      "explanation": "A planning system needs a domain description, an action specification and a goal description."
+    },
+    {
+      "id": "AI-U5-052",
+      "question": "In a planning system, \"detect dead ends\" means:",
+      "options": {
+        "A": "Checking whether the goal has been reached",
+        "B": "Choosing the most suitable action",
+        "C": "Finding situations where the current path cannot reach the goal and trying another path",
+        "D": "Finding how close the state is to the goal"
+      },
+      "correctAnswer": "C",
+      "explanation": "Detecting dead ends means recognising a path that cannot reach the goal so another can be tried."
+    },
+    {
+      "id": "AI-U5-053",
+      "question": "In a planning system, \"check near-solutions\" means:",
+      "options": {
+        "A": "Detecting a path that cannot succeed",
+        "B": "Applying the chosen action",
+        "C": "Choosing an action using heuristics",
+        "D": "Finding whether the current state is close to the goal and what remains to be done"
+      },
+      "correctAnswer": "D",
+      "explanation": "Checking near-solutions finds how close the current state is to the goal and what is left."
+    },
+    {
+      "id": "AI-U5-054",
+      "question": "In the planning steps, what comes immediately after \"choose an action\"?",
+      "options": {
+        "A": "Detect dead ends",
+        "B": "Check near-solutions",
+        "C": "Apply the action",
+        "D": "Check the solution"
+      },
+      "correctAnswer": "C",
+      "explanation": "The steps are choose, apply, check solution, detect dead ends and check near-solutions."
+    },
+    {
+      "id": "AI-U5-055",
+      "question": "In the \"opening a door\" example, which is a precondition?",
+      "options": {
+        "A": "The door becomes open",
+        "B": "The robot is near the door and the door is unlocked",
+        "C": "The robot turns left",
+        "D": "The robot leaves the room"
+      },
+      "correctAnswer": "B",
+      "explanation": "Being near the door and the door being unlocked must be true before the action."
+    },
+    {
+      "id": "AI-U5-056",
+      "question": "A negative effect of an action means:",
+      "options": {
+        "A": "A fact becomes false",
+        "B": "A fact becomes true",
+        "C": "The action has no precondition",
+        "D": "The action costs less"
+      },
+      "correctAnswer": "A",
+      "explanation": "Effects may be positive (a fact becomes true) or negative (a fact becomes false)."
+    },
+    {
+      "id": "AI-U5-057",
+      "question": "The advantage of FSSP is that it is:",
+      "options": {
+        "A": "Always the fastest",
+        "B": "Free of unnecessary states",
+        "C": "Independent of the initial state",
+        "D": "Sound, so it does not return an invalid solution"
+      },
+      "correctAnswer": "D",
+      "explanation": "FSSP is sound when actions and transitions are correctly defined."
+    },
+    {
+      "id": "AI-U5-058",
+      "question": "The disadvantage of FSSP is that it:",
+      "options": {
+        "A": "Cannot start from the initial state",
+        "B": "Needs a goal stack",
+        "C": "May explore many unnecessary states",
+        "D": "Only works with fuzzy sets"
+      },
+      "correctAnswer": "C",
+      "explanation": "Many actions can be applied at each step, so FSSP may explore many unnecessary states."
+    },
+    {
+      "id": "AI-U5-059",
+      "question": "In BSSP, the preconditions of the chosen action are treated as:",
+      "options": {
+        "A": "Effects",
+        "B": "Subgoals",
+        "C": "Initial states",
+        "D": "Final goals"
+      },
+      "correctAnswer": "B",
+      "explanation": "BSSP treats the preconditions of an action as subgoals."
+    },
+    {
+      "id": "AI-U5-060",
+      "question": "The disadvantage of BSSP is that it may:",
+      "options": {
+        "A": "Generate inconsistent or unachievable subgoals",
+        "B": "Return only invalid actions",
+        "C": "Start from the initial state",
+        "D": "Ignore the goal"
+      },
+      "correctAnswer": "A",
+      "explanation": "If preconditions are not checked properly, BSSP may produce inconsistent or unachievable subgoals."
+    },
+    {
+      "id": "AI-U5-061",
+      "question": "Which are the three types of state space planning?",
+      "options": {
+        "A": "FSSP, BSSP and Goal Stack Planning",
+        "B": "FSSP, BSSP and Fuzzy Planning",
+        "C": "Goal Stack, Genetic and Neural Planning",
+        "D": "Supervised, Unsupervised and Reinforcement Planning"
+      },
+      "correctAnswer": "A",
+      "explanation": "The three types are Forward, Backward and Goal Stack planning."
+    },
+    {
+      "id": "AI-U5-062",
+      "question": "In goal stack planning, if the top item is an action, the system:",
+      "options": {
+        "A": "Pushes its subgoals",
+        "B": "Removes it, executes it and updates the current state",
+        "C": "Ignores it",
+        "D": "Restarts the stack"
+      },
+      "correctAnswer": "B",
+      "explanation": "An action at the top is removed, executed, and the state is updated by its effects."
+    },
+    {
+      "id": "AI-U5-063",
+      "question": "In goal stack planning, if the top item is an already satisfied goal, the system:",
+      "options": {
+        "A": "Executes it",
+        "B": "Pushes its preconditions",
+        "C": "Removes it from the stack",
+        "D": "Duplicates it"
+      },
+      "correctAnswer": "C",
+      "explanation": "A satisfied goal on top is simply removed."
+    },
+    {
+      "id": "AI-U5-064",
+      "question": "In goal stack planning, for an unsatisfied single goal on top, the system:",
+      "options": {
+        "A": "Removes the goal",
+        "B": "Executes the goal directly",
+        "C": "Empties the stack",
+        "D": "Selects an action that achieves it and pushes that action's preconditions"
+      },
+      "correctAnswer": "D",
+      "explanation": "It picks an action that achieves the goal and pushes the action's preconditions."
+    },
+    {
+      "id": "AI-U5-065",
+      "question": "Goal stack planning is complete when:",
+      "options": {
+        "A": "The stack becomes empty",
+        "B": "The stack is full",
+        "C": "The first action is executed",
+        "D": "Only one goal remains"
+      },
+      "correctAnswer": "A",
+      "explanation": "The process continues until the stack is empty and the plan is complete."
+    },
+    {
+      "id": "AI-U5-066",
+      "question": "In goal stack planning, the knowledge base (current state):",
+      "options": {
+        "A": "Stores only the final goal",
+        "B": "Stores facts about the current situation and is updated when actions are executed",
+        "C": "Stores unused actions",
+        "D": "Is never updated"
+      },
+      "correctAnswer": "B",
+      "explanation": "The knowledge base holds current facts and is updated after actions are executed."
+    },
+    {
+      "id": "AI-U5-067",
+      "question": "A compound goal in goal stack planning is a goal that:",
+      "options": {
+        "A": "Has no conditions",
+        "B": "Is already satisfied",
+        "C": "Has multiple conditions",
+        "D": "Is an action"
+      },
+      "correctAnswer": "C",
+      "explanation": "A compound goal has multiple conditions."
+    },
+    {
+      "id": "AI-U5-068",
+      "question": "Supervised learning is typically used for which types of problems?",
+      "options": {
+        "A": "Clustering and pattern discovery",
+        "B": "Sequential decision-making only",
+        "C": "Dimensionality reduction only",
+        "D": "Classification and regression"
+      },
+      "correctAnswer": "D",
+      "explanation": "Supervised learning handles classification and regression problems."
+    },
+    {
+      "id": "AI-U5-069",
+      "question": "K-Means Clustering is an algorithm of:",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Unsupervised learning",
+        "C": "Reinforcement learning",
+        "D": "Deductive learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "K-Means is listed under unsupervised learning."
+    },
+    {
+      "id": "AI-U5-070",
+      "question": "Q-Learning belongs to:",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Unsupervised learning",
+        "C": "Inductive learning",
+        "D": "Reinforcement learning"
+      },
+      "correctAnswer": "D",
+      "explanation": "Q-Learning, SARSA and DQN are reinforcement learning algorithms."
+    },
+    {
+      "id": "AI-U5-071",
+      "question": "Which group contains only supervised learning algorithms?",
+      "options": {
+        "A": "K-Means, Apriori, PCA",
+        "B": "Q-Learning, SARSA, DQN",
+        "C": "Linear Regression, Decision Trees, SVM, KNN",
+        "D": "K-Means, SARSA, SVM"
+      },
+      "correctAnswer": "C",
+      "explanation": "Linear Regression, Decision Trees, SVM and KNN are supervised algorithms."
+    },
+    {
+      "id": "AI-U5-072",
+      "question": "The approach of reinforcement learning is to:",
+      "options": {
+        "A": "Maximize cumulative rewards",
+        "B": "Predict the correct output from labels",
+        "C": "Discover hidden structures",
+        "D": "Reduce the number of layers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Reinforcement learning maximizes cumulative rewards."
+    },
+    {
+      "id": "AI-U5-073",
+      "question": "The approach of unsupervised learning is to:",
+      "options": {
+        "A": "Maximize rewards",
+        "B": "Predict labelled outputs",
+        "C": "Follow a teacher",
+        "D": "Discover hidden structures"
+      },
+      "correctAnswer": "D",
+      "explanation": "Unsupervised learning discovers hidden structures in unlabelled data."
+    },
+    {
+      "id": "AI-U5-074",
+      "question": "The hidden layer of an ANN:",
+      "options": {
+        "A": "Receives raw input only",
+        "B": "Produces the final result only",
+        "C": "Processes the input and learns patterns using weights and activation functions",
+        "D": "Stores the training labels"
+      },
+      "correctAnswer": "C",
+      "explanation": "The hidden layer processes input and learns patterns with weights and activation functions."
+    },
+    {
+      "id": "AI-U5-075",
+      "question": "A threshold in a neuron model is:",
+      "options": {
+        "A": "A cutoff used to decide activation",
+        "B": "A copy of the input",
+        "C": "The number of layers",
+        "D": "The output label"
+      },
+      "correctAnswer": "A",
+      "explanation": "A threshold is a cutoff used in some neuron models to decide activation."
+    },
+    {
+      "id": "AI-U5-076",
+      "question": "A neural network learns by:",
+      "options": {
+        "A": "Deleting neurons",
+        "B": "Adjusting its weights so outputs match the correct outputs",
+        "C": "Increasing the population",
+        "D": "Applying crossover"
+      },
+      "correctAnswer": "B",
+      "explanation": "Neural net learning adjusts weights to match correct outputs."
+    },
+    {
+      "id": "AI-U5-077",
+      "question": "In a genetic algorithm, which step follows calculating fitness?",
+      "options": {
+        "A": "Mutation",
+        "B": "Termination",
+        "C": "Selection",
+        "D": "Creating the population"
+      },
+      "correctAnswer": "C",
+      "explanation": "The order is population, fitness, selection, crossover, mutation, repeat."
+    },
+    {
+      "id": "AI-U5-078",
+      "question": "Genetic algorithms select individuals with better fitness scores for:",
+      "options": {
+        "A": "Reproduction",
+        "B": "Deletion",
+        "C": "Mutation only",
+        "D": "Labelling"
+      },
+      "correctAnswer": "A",
+      "explanation": "Individuals with better fitness are selected for reproduction."
+    },
+    {
+      "id": "AI-U5-079",
+      "question": "Premature convergence in a genetic algorithm means:",
+      "options": {
+        "A": "The algorithm finds the best solution quickly",
+        "B": "The population becomes too similar too early and settles on a poor solution",
+        "C": "The population becomes too large",
+        "D": "Crossover is never used"
+      },
+      "correctAnswer": "B",
+      "explanation": "Premature convergence is settling on a poor solution because the population becomes too similar too early."
+    },
+    {
+      "id": "AI-U5-080",
+      "question": "Which operator helps reduce premature convergence?",
+      "options": {
+        "A": "Selection",
+        "B": "Fitness scoring",
+        "C": "Termination",
+        "D": "Mutation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Mutation introduces diversity and helps reduce premature convergence."
+    },
+    {
+      "id": "AI-U5-081",
+      "question": "Which of the following is NOT a type of learning?",
+      "options": {
+        "A": "Supervised",
+        "B": "Semi-unsupervised",
+        "C": "Unsupervised",
+        "D": "Reinforcement"
+      },
+      "correctAnswer": "B",
+      "explanation": "The quiz in the notes gives semi-unsupervised as the one that is not a type of learning."
+    },
+    {
+      "id": "AI-U5-082",
+      "question": "Which field uses the computational model of evolutionary processes in designing computer-based systems and problem-solving applications?",
+      "options": {
+        "A": "Symbolic reasoning",
+        "B": "Goal stack planning",
+        "C": "Evolutionary computation",
+        "D": "Fuzzy logic"
+      },
+      "correctAnswer": "C",
+      "explanation": "The glossary names evolutionary computation for this idea."
+    },
+    {
+      "id": "AI-U5-083",
+      "question": "The main purpose of a genetic algorithm is:",
+      "options": {
+        "A": "Optimization",
+        "B": "Learning labelled patterns",
+        "C": "Probability estimation",
+        "D": "Knowledge storage"
+      },
+      "correctAnswer": "A",
+      "explanation": "A GA is mainly used for optimization, finding good solutions to complex problems."
+    },
+    {
+      "id": "AI-U5-084",
+      "question": "A genetic algorithm:",
+      "options": {
+        "A": "Always guarantees the best solution",
+        "B": "Never improves solutions",
+        "C": "Uses only one solution",
+        "D": "Does not always guarantee the best possible solution"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes state that a GA does not always guarantee the best solution."
+    },
+    {
+      "id": "AI-U5-085",
+      "question": "Which are the two ways an AI system can use knowledge?",
+      "options": {
+        "A": "Be told explicitly how to do something, or figure out what it needs to know",
+        "B": "Store it only, or delete it",
+        "C": "Copy it, or print it",
+        "D": "Learn it only, or forget it"
+      },
+      "correctAnswer": "A",
+      "explanation": "An AI system can follow explicit instructions or derive what it needs to know."
+    },
+    {
+      "id": "AI-U5-086",
+      "question": "\"All humans are mortal and Rahul is a human, so Rahul is mortal\" is an example of:",
+      "options": {
+        "A": "Being explicitly told how to do something",
+        "B": "Figuring out what it needs to know from existing knowledge",
+        "C": "Genuine randomness",
+        "D": "Premature convergence"
+      },
+      "correctAnswer": "B",
+      "explanation": "The system derives new information from existing knowledge."
+    },
+    {
+      "id": "AI-U5-087",
+      "question": "Formal reasoning:",
+      "options": {
+        "A": "Compares with a similar known problem",
+        "B": "Reasons about the reasoning process",
+        "C": "Uses logical rules to reach a conclusion",
+        "D": "Ignores unnecessary details"
+      },
+      "correctAnswer": "C",
+      "explanation": "Formal reasoning uses logical rules, for example \"all birds have wings, a parrot is a bird\"."
+    },
+    {
+      "id": "AI-U5-088",
+      "question": "Reasoning by analogy:",
+      "options": {
+        "A": "Uses logical rules only",
+        "B": "Forms a general rule from examples",
+        "C": "Selects the reasoning method",
+        "D": "Solves a new problem by comparing it with a similar known problem"
+      },
+      "correctAnswer": "D",
+      "explanation": "Reasoning by analogy compares a new problem with a known similar one."
+    },
+    {
+      "id": "AI-U5-089",
+      "question": "Generalisation in reasoning:",
+      "options": {
+        "A": "Finds common features among several examples and forms a general rule",
+        "B": "Ignores unnecessary details",
+        "C": "Follows a fixed procedure",
+        "D": "Compares two problems"
+      },
+      "correctAnswer": "A",
+      "explanation": "Generalisation forms a general rule from common features of examples."
+    },
+    {
+      "id": "AI-U5-090",
+      "question": "Abstraction in reasoning means:",
+      "options": {
+        "A": "Forming a general rule",
+        "B": "Focusing on important information and ignoring unnecessary details",
+        "C": "Using a sequence of steps",
+        "D": "Reasoning about reasoning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Abstraction keeps what is important and ignores unnecessary detail."
+    },
+    {
+      "id": "AI-U5-091",
+      "question": "Meta-level reasoning is:",
+      "options": {
+        "A": "Reasoning with logical rules",
+        "B": "Reasoning by comparison",
+        "C": "Reasoning by steps",
+        "D": "Reasoning about the reasoning process itself"
+      },
+      "correctAnswer": "D",
+      "explanation": "Meta-level reasoning decides which method of reasoning to use."
+    },
+    {
+      "id": "AI-U5-092",
+      "question": "Inconsistency in a knowledge system means:",
+      "options": {
+        "A": "Information is missing",
+        "B": "Facts change with time",
+        "C": "The available information has conflicting facts",
+        "D": "The system has no rules"
+      },
+      "correctAnswer": "C",
+      "explanation": "Inconsistency means conflicting facts, such as one source saying a road is open and another closed."
+    },
+    {
+      "id": "AI-U5-093",
+      "question": "Monotonic logic cannot handle:",
+      "options": {
+        "A": "Reasoning by default and belief revision",
+        "B": "Simple deduction",
+        "C": "Logical rules",
+        "D": "Symbols"
+      },
+      "correctAnswer": "A",
+      "explanation": "The quiz states monotonic logic cannot handle reasoning by default and belief revision."
+    },
+    {
+      "id": "AI-U5-094",
+      "question": "A limitation of symbolic reasoning is that it can:",
+      "options": {
+        "A": "Not use any rules",
+        "B": "Struggle when information is uncertain, incomplete or ambiguous",
+        "C": "Handle only probabilities",
+        "D": "Work only with images"
+      },
+      "correctAnswer": "B",
+      "explanation": "Symbolic reasoning struggles with uncertain, incomplete or ambiguous information."
+    },
+    {
+      "id": "AI-U5-095",
+      "question": "Which area deals with planning systems that reason on long-term goals with multiple collaborative agents that want to keep their knowledge private?",
+      "options": {
+        "A": "Goal stack planning",
+        "B": "Forward state space planning",
+        "C": "Fuzzy planning",
+        "D": "Multi-agent planning"
+      },
+      "correctAnswer": "D",
+      "explanation": "The glossary names multi-agent planning for this description."
+    },
+    {
+      "id": "AI-U5-096",
+      "question": "Conditional probability P(H ∣ E) is calculated as:",
+      "options": {
+        "A": "P(H) + P(E)",
+        "B": "P(H) x P(E)",
+        "C": "P(H and E) / P(E)",
+        "D": "P(E) / P(H and E)"
+      },
+      "correctAnswer": "C",
+      "explanation": "P(H ∣ E) = P(H and E) / P(E)."
+    },
+    {
+      "id": "AI-U5-097",
+      "question": "The addition rule P(E1 ∪ E2) = P(E1) + P(E2) applies to:",
+      "options": {
+        "A": "Any two events",
+        "B": "Fuzzy sets only",
+        "C": "Mutually exclusive events",
+        "D": "Dependent events only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Axiom 3 applies when two events cannot occur at the same time."
+    },
+    {
+      "id": "AI-U5-098",
+      "question": "Plausibility in Dempster-Shafer theory is given by:",
+      "options": {
+        "A": "Pl(s) = 1 - Bel(¬s)",
+        "B": "Pl(s) = Bel(s) + 1",
+        "C": "Pl(s) = Bel(¬s)",
+        "D": "Pl(s) = 1 / Bel(s)"
+      },
+      "correctAnswer": "A",
+      "explanation": "Plausibility is Pl(s) = 1 - Bel(¬s)."
+    },
+    {
+      "id": "AI-U5-099",
+      "question": "In the PPT example, the probability of meningitis given a stiff neck, P(m ∣ s), is:",
+      "options": {
+        "A": "0.5",
+        "B": "0.0002",
+        "C": "0.05",
+        "D": "0.02"
+      },
+      "correctAnswer": "B",
+      "explanation": "P(m ∣ s) = (0.5 x 1/50000) / (1/20) = 0.0002."
+    },
+    {
+      "id": "AI-U5-100",
+      "question": "Why is a Bayesian network needed?",
+      "options": {
+        "A": "It removes all uncertainty",
+        "B": "It replaces probability theory",
+        "C": "It stores only certain facts",
+        "D": "A direct joint distribution would need about 2^n entries, and the network reduces this using dependencies"
+      },
+      "correctAnswer": "D",
+      "explanation": "A Bayesian network avoids storing the full 2^n joint table by using direct dependencies."
+    },
+    {
+      "id": "AI-U5-101",
+      "question": "When rolling a fair dice, the probability of getting a 2 or a 5 is:",
+      "options": {
+        "A": "1/6",
+        "B": "1/2",
+        "C": "2/3",
+        "D": "1/3"
+      },
+      "correctAnswer": "D",
+      "explanation": "The events are mutually exclusive, so P = 1/6 + 1/6 = 1/3."
+    },
+    {
+      "id": "AI-U5-102",
+      "question": "If A(x) = 0.7 and B(x) = 0.4, the fuzzy union (A ∪ B)(x) is:",
+      "options": {
+        "A": "0.7",
+        "B": "0.4",
+        "C": "1.1",
+        "D": "0.28"
+      },
+      "correctAnswer": "A",
+      "explanation": "The union is max(0.7, 0.4) = 0.7."
+    },
+    {
+      "id": "AI-U5-103",
+      "question": "If A(x) = 0.7 and B(x) = 0.4, the fuzzy intersection (A ∩ B)(x) is:",
+      "options": {
+        "A": "0.7",
+        "B": "0.4",
+        "C": "0.3",
+        "D": "1.1"
+      },
+      "correctAnswer": "B",
+      "explanation": "The intersection is min(0.7, 0.4) = 0.4."
+    },
+    {
+      "id": "AI-U5-104",
+      "question": "If A(x) = 0.7, the complement A'(x) is:",
+      "options": {
+        "A": "0.7",
+        "B": "1.7",
+        "C": "0.3",
+        "D": "0.49"
+      },
+      "correctAnswer": "C",
+      "explanation": "The complement is 1 - 0.7 = 0.3."
+    },
+    {
+      "id": "AI-U5-105",
+      "question": "If 29°C is \"hot\" with membership 0.7, its \"not hot\" membership is:",
+      "options": {
+        "A": "0.7",
+        "B": "0",
+        "C": "0.3",
+        "D": "1"
+      },
+      "correctAnswer": "C",
+      "explanation": "The complement of 0.7 is 0.3."
+    },
+    {
+      "id": "AI-U5-106",
+      "question": "In the meningitis example, which values are used in Bayes' theorem?",
+      "options": {
+        "A": "P(m ∣ s) = 0.5, P(m) = 1/20, P(s) = 1/50000",
+        "B": "P(s ∣ m) = 0.5, P(m) = 1/50000, P(s) = 1/20",
+        "C": "P(s ∣ m) = 1/20, P(m) = 0.5, P(s) = 1/50000",
+        "D": "P(m) = 0.5 only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The example uses P(s ∣ m) = 0.5, P(m) = 1/50000 and P(s) = 1/20."
+    },
+    {
+      "id": "AI-U5-107",
+      "question": "What does P(m ∣ s) = 0.0002 mean in the example?",
+      "options": {
+        "A": "A stiff neck means the patient certainly has meningitis",
+        "B": "Meningitis causes a stiff neck in 0.02% of cases",
+        "C": "Stiff necks are very rare",
+        "D": "Even with a stiff neck, the chance of meningitis is only 0.02% because meningitis is very rare"
+      },
+      "correctAnswer": "D",
+      "explanation": "The low prior probability of meningitis keeps P(m ∣ s) very small."
+    },
+    {
+      "id": "AI-U5-108",
+      "question": "In Dempster-Shafer theory, if there is certain evidence for ¬s, then:",
+      "options": {
+        "A": "Bel(¬s) = 1, Pl(s) = 0 and Bel(s) = 0",
+        "B": "Bel(s) = 1 and Pl(s) = 1",
+        "C": "Bel(¬s) = 0 and Pl(s) = 1",
+        "D": "Pl(s) = 0.5"
+      },
+      "correctAnswer": "A",
+      "explanation": "Certain evidence for ¬s gives Bel(¬s) = 1, so Pl(s) = 0 and therefore Bel(s) = 0."
+    },
+    {
+      "id": "AI-U5-109",
+      "question": "With no information at all, the Dempster-Shafer interval for a hypothesis is:",
+      "options": {
+        "A": "[0, 0]",
+        "B": "[1, 1]",
+        "C": "[0, 1]",
+        "D": "[0.5, 0.5]"
+      },
+      "correctAnswer": "C",
+      "explanation": "With no information the interval is [0, 1], and it shrinks as evidence accumulates."
+    },
+    {
+      "id": "AI-U5-110",
+      "question": "If the frame of discernment Θ has 4 elements, the number of subsets is:",
+      "options": {
+        "A": "16",
+        "B": "4",
+        "C": "8",
+        "D": "2"
+      },
+      "correctAnswer": "A",
+      "explanation": "A set with n elements has 2^n subsets, so 2^4 = 16."
+    },
+    {
+      "id": "AI-U5-111",
+      "question": "In a pure Bayesian approach with three hypotheses A, B and C, the prior probability is distributed equally as:",
+      "options": {
+        "A": "0.5 each",
+        "B": "0.33 each",
+        "C": "1 each",
+        "D": "0 each"
+      },
+      "correctAnswer": "B",
+      "explanation": "The prior is spread equally, so P(h) = 0.33 for each of the three hypotheses."
+    },
+    {
+      "id": "AI-U5-112",
+      "question": "When evidence points to single hypotheses only, in Dempster-Shafer theory:",
+      "options": {
+        "A": "Belief becomes 0",
+        "B": "Plausibility becomes 0",
+        "C": "The interval becomes [0, 1]",
+        "D": "Belief and Plausibility become equal, giving an ordinary probability"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes say that Belief and Plausibility then become equal."
+    },
+    {
+      "id": "AI-U5-113",
+      "question": "In the diagnosis example, m3({flu, cold}) after combining m1 and m2 is:",
+      "options": {
+        "A": "0.48",
+        "B": "0.60",
+        "C": "0.12",
+        "D": "0.32"
+      },
+      "correctAnswer": "A",
+      "explanation": "{flu, cold, pneu} ∩ {all, flu, cold} = {flu, cold}, so 0.6 x 0.8 = 0.48."
+    },
+    {
+      "id": "AI-U5-114",
+      "question": "In the diagnosis example, m3({all, flu, cold}) is:",
+      "options": {
+        "A": "0.48",
+        "B": "0.32",
+        "C": "0.12",
+        "D": "0.08"
+      },
+      "correctAnswer": "B",
+      "explanation": "Θ ∩ {all, flu, cold} gives 0.4 x 0.8 = 0.32."
+    },
+    {
+      "id": "AI-U5-115",
+      "question": "In the diagnosis example, m3({flu, cold, pneu}) is:",
+      "options": {
+        "A": "0.48",
+        "B": "0.32",
+        "C": "0.08",
+        "D": "0.12"
+      },
+      "correctAnswer": "D",
+      "explanation": "{flu, cold, pneu} ∩ Θ gives 0.6 x 0.2 = 0.12."
+    },
+    {
+      "id": "AI-U5-116",
+      "question": "In the diagnosis example, m3(Θ) is:",
+      "options": {
+        "A": "0.12",
+        "B": "0.2",
+        "C": "0.08",
+        "D": "0.4"
+      },
+      "correctAnswer": "C",
+      "explanation": "Θ ∩ Θ gives 0.4 x 0.2 = 0.08."
+    },
+    {
+      "id": "AI-U5-117",
+      "question": "Why is no scaling needed after combining m1 and m2 in the diagnosis example?",
+      "options": {
+        "A": "No intersection is the empty set",
+        "B": "The values add to more than 1",
+        "C": "The sets are all equal",
+        "D": "m2 has no Θ"
+      },
+      "correctAnswer": "A",
+      "explanation": "No intersection is empty, so the total stays 1 and scaling is unnecessary."
+    },
+    {
+      "id": "AI-U5-118",
+      "question": "When m3 is combined with m4, the total belief assigned to the empty set is:",
+      "options": {
+        "A": "0.46",
+        "B": "0.54",
+        "C": "0.432",
+        "D": "0.108"
+      },
+      "correctAnswer": "B",
+      "explanation": "0.432 + 0.108 = 0.54."
+    },
+    {
+      "id": "AI-U5-119",
+      "question": "In the second combination, the scaling divisor is:",
+      "options": {
+        "A": "0.54",
+        "B": "1.0",
+        "C": "0.46",
+        "D": "0.9"
+      },
+      "correctAnswer": "C",
+      "explanation": "The divisor is 1 - 0.54 = 0.46."
+    },
+    {
+      "id": "AI-U5-120",
+      "question": "The final value m5({all}) in the diagnosis example is:",
+      "options": {
+        "A": "0.360",
+        "B": "0.157",
+        "C": "0.288",
+        "D": "0.783"
+      },
+      "correctAnswer": "D",
+      "explanation": "(0.288 + 0.072) / 0.46 = 0.783."
+    },
+    {
+      "id": "AI-U5-121",
+      "question": "The final value m5({flu, cold}) in the diagnosis example is:",
+      "options": {
+        "A": "0.048",
+        "B": "0.104",
+        "C": "0.48",
+        "D": "0.540"
+      },
+      "correctAnswer": "B",
+      "explanation": "0.048 / 0.46 = 0.104."
+    },
+    {
+      "id": "AI-U5-122",
+      "question": "The final value m5(Θ) in the diagnosis example is:",
+      "options": {
+        "A": "0.017",
+        "B": "0.008",
+        "C": "0.08",
+        "D": "0.1"
+      },
+      "correctAnswer": "A",
+      "explanation": "0.008 / 0.46 = 0.017."
+    },
+    {
+      "id": "AI-U5-123",
+      "question": "The values of m5 in the diagnosis example add up to:",
+      "options": {
+        "A": "0.46",
+        "B": "0.54",
+        "C": "1",
+        "D": "0.783"
+      },
+      "correctAnswer": "C",
+      "explanation": "After scaling, the belief function m5 sums to 1."
+    },
+    {
+      "id": "AI-U5-124",
+      "question": "According to the notes, the correct scaled value of {all, flu, cold} in the diagnosis example is:",
+      "options": {
+        "A": "0.696",
+        "B": "0.157",
+        "C": "0.032",
+        "D": "0.070"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes say 0.070 is correct and that slide 61's 0.696 does not match the calculation."
+    },
+    {
+      "id": "AI-U5-125",
+      "question": "In the six-variable Bayesian network example, which term is conditioned on x2 and x3?",
+      "options": {
+        "A": "P(x5 ∣ x2, x3)",
+        "B": "P(x6 ∣ x5)",
+        "C": "P(x4 ∣ x1, x2)",
+        "D": "P(x3 ∣ x1)"
+      },
+      "correctAnswer": "A",
+      "explanation": "The joint probability includes the factor P(x5 ∣ x2, x3)."
+    },
+    {
+      "id": "AI-U5-126",
+      "question": "In the network Rain → Wet grass ← Sprinkler, the parents of Wet grass are:",
+      "options": {
+        "A": "Only Rain",
+        "B": "Only Sprinkler",
+        "C": "Wet grass itself",
+        "D": "Rain and Sprinkler"
+      },
+      "correctAnswer": "D",
+      "explanation": "Rain and Sprinkler both point to Wet grass, so they are its parents."
+    },
+    {
+      "id": "AI-U5-127",
+      "question": "In goal stack planning, after an action is executed:",
+      "options": {
+        "A": "The stack is refilled",
+        "B": "The current state is updated according to the action's effects",
+        "C": "The goal is deleted from the knowledge base",
+        "D": "The plan restarts"
+      },
+      "correctAnswer": "B",
+      "explanation": "When an action is executed, the current state is updated by its effects."
+    },
+    {
+      "id": "AI-U5-128",
+      "question": "Which statement about BSSP compared with FSSP is correct?",
+      "options": {
+        "A": "BSSP is always sound and FSSP is not",
+        "B": "BSSP starts from the initial state",
+        "C": "BSSP can explore fewer states when the goal limits the relevant actions",
+        "D": "FSSP uses subgoals from preconditions"
+      },
+      "correctAnswer": "C",
+      "explanation": "BSSP may explore fewer states because the goal limits which actions are relevant."
+    },
+    {
+      "id": "AI-U5-129",
+      "question": "Which pair is correct?",
+      "options": {
+        "A": "FSSP - regression - starts from goal state; BSSP - progression - starts from initial state",
+        "B": "Both start from the goal state",
+        "C": "Both are progression planning",
+        "D": "FSSP - progression - starts from initial state; BSSP - regression - starts from goal state"
+      },
+      "correctAnswer": "D",
+      "explanation": "FSSP is progression from the initial state, and BSSP is regression from the goal."
+    },
+    {
+      "id": "AI-U5-130",
+      "question": "In the chess example of a well-posed learning problem, the performance measure P is:",
+      "options": {
+        "A": "Playing chess",
+        "B": "Playing practice games against itself",
+        "C": "Percentage of games won",
+        "D": "The number of chess pieces"
+      },
+      "correctAnswer": "C",
+      "explanation": "T = playing chess, P = percentage of games won, E = practice games against itself."
+    },
+    {
+      "id": "AI-U5-131",
+      "question": "In the chess example, the experience E is:",
+      "options": {
+        "A": "Percentage of games won",
+        "B": "Playing practice games against itself",
+        "C": "Playing chess",
+        "D": "Chess rules book only"
+      },
+      "correctAnswer": "B",
+      "explanation": "E = playing practice games against itself."
+    },
+    {
+      "id": "AI-U5-132",
+      "question": "Inductive learning moves:",
+      "options": {
+        "A": "From specific examples to a general rule, with a probable conclusion that can be wrong",
+        "B": "From general rules to a specific, certain conclusion",
+        "C": "From an observation to the best explanation",
+        "D": "From goals to subgoals"
+      },
+      "correctAnswer": "A",
+      "explanation": "Inductive learning generalises from examples, so its conclusion is only probable."
+    },
+    {
+      "id": "AI-U5-133",
+      "question": "Deductive learning gives conclusions that are:",
+      "options": {
+        "A": "Always wrong",
+        "B": "Only a best guess",
+        "C": "Certain if the premises are true",
+        "D": "Only probable"
+      },
+      "correctAnswer": "C",
+      "explanation": "Deductive reasoning is certain when the premises are true."
+    },
+    {
+      "id": "AI-U5-134",
+      "question": "\"The grass is wet, so it probably rained\" is an example of:",
+      "options": {
+        "A": "Deductive learning",
+        "B": "Abductive learning",
+        "C": "Inductive learning",
+        "D": "Reinforcement learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Abductive learning infers the best possible explanation from an observation."
+    },
+    {
+      "id": "AI-U5-135",
+      "question": "Abductive reasoning is commonly used in AI for:",
+      "options": {
+        "A": "Diagnosis, such as medical diagnosis",
+        "B": "Sorting numbers",
+        "C": "Encrypting data",
+        "D": "Compiling programs"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes list diagnosis, for example medical, as its use."
+    },
+    {
+      "id": "AI-U5-136",
+      "question": "How is deep learning better than machine learning for complex data?",
+      "options": {
+        "A": "Features are chosen manually by humans",
+        "B": "It needs less data",
+        "C": "It runs on any normal computer",
+        "D": "Features are learned automatically from raw data"
+      },
+      "correctAnswer": "D",
+      "explanation": "Deep learning learns features automatically from raw data, unlike usual ML where humans extract them."
+    },
+    {
+      "id": "AI-U5-137",
+      "question": "Deep learning typically needs:",
+      "options": {
+        "A": "Small data and normal computers",
+        "B": "No data",
+        "C": "Large amounts of data and powerful hardware such as GPUs",
+        "D": "No hardware"
+      },
+      "correctAnswer": "C",
+      "explanation": "Deep learning needs large data and powerful hardware such as GPUs."
+    },
+    {
+      "id": "AI-U5-138",
+      "question": "A drawback of deep learning compared with machine learning is that it is:",
+      "options": {
+        "A": "Easier to explain",
+        "B": "Harder to explain (a black box)",
+        "C": "Less accurate on images and speech",
+        "D": "Unable to use neural networks"
+      },
+      "correctAnswer": "B",
+      "explanation": "Deep learning is harder to interpret."
+    },
+    {
+      "id": "AI-U5-139",
+      "question": "In the Turing test, a machine passes when:",
+      "options": {
+        "A": "The interrogator cannot reliably tell the machine from the human",
+        "B": "The machine answers faster than the human",
+        "C": "The human cannot see the machine",
+        "D": "The machine answers every question correctly"
+      },
+      "correctAnswer": "A",
+      "explanation": "A machine passes if the interrogator cannot reliably distinguish it from the human."
+    },
+    {
+      "id": "AI-U5-140",
+      "question": "A limitation of the Turing test is that it:",
+      "options": {
+        "A": "Needs no interrogator",
+        "B": "Tests only physical movement",
+        "C": "Cannot use text",
+        "D": "Tests only behaviour in conversation, not real understanding"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes say it tests only conversational behaviour, not real understanding."
+    },
+    {
+      "id": "AI-U5-141",
+      "question": "Which set lists the abilities a machine needs for the Turing test, according to the notes?",
+      "options": {
+        "A": "Sorting, searching, hashing and encryption",
+        "B": "Planning, crossover, mutation and selection",
+        "C": "Natural language processing, knowledge representation, automated reasoning and machine learning",
+        "D": "Sensing, actuating, wiring and powering"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes list NLP, knowledge representation, automated reasoning and machine learning."
+    },
+    {
+      "id": "AI-U5-142",
+      "question": "Rationality as a characteristic of an intelligent agent means it:",
+      "options": {
+        "A": "Chooses the action expected to give the best result",
+        "B": "Works on its own without control",
+        "C": "Senses its environment",
+        "D": "Responds to changes only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Rationality is choosing the action expected to give the best result."
+    },
+    {
+      "id": "AI-U5-143",
+      "question": "In an agent, the sensor:",
+      "options": {
+        "A": "Performs the action on the environment",
+        "B": "Receives input (percepts) from the environment",
+        "C": "Decides which action to take",
+        "D": "Stores the plan"
+      },
+      "correctAnswer": "B",
+      "explanation": "The sensor receives percepts, the agent program decides, and the actuator acts."
+    },
+    {
+      "id": "AI-U5-144",
+      "question": "Atomic representation of states means:",
+      "options": {
+        "A": "States have many structured parts",
+        "B": "States are described by probabilities",
+        "C": "States are stored as stacks",
+        "D": "States are treated as wholes with no internal structure visible to the algorithms"
+      },
+      "correctAnswer": "D",
+      "explanation": "With atomic representation, states are treated as wholes without visible internal structure."
+    },
+    {
+      "id": "AI-U5-145",
+      "question": "Goal-based agents that use factored or structured representations are called:",
+      "options": {
+        "A": "Planning agents",
+        "B": "Reflex agents",
+        "C": "Atomic agents",
+        "D": "Random agents"
+      },
+      "correctAnswer": "A",
+      "explanation": "Goal-based agents with more advanced factored or structured representations are called planning agents."
+    },
+    {
+      "id": "AI-U5-146",
+      "question": "Uninformed search algorithms are given:",
+      "options": {
+        "A": "Guidance on where to look",
+        "B": "The full solution path",
+        "C": "Heuristic values for every state",
+        "D": "No information about the problem other than its definition"
+      },
+      "correctAnswer": "D",
+      "explanation": "Uninformed algorithms know only the problem definition."
+    },
+    {
+      "id": "AI-U5-147",
+      "question": "Informed search algorithms do better because they are given:",
+      "options": {
+        "A": "No information",
+        "B": "Only the initial state",
+        "C": "Some guidance on where to look for solutions",
+        "D": "Random states"
+      },
+      "correctAnswer": "C",
+      "explanation": "Informed algorithms use guidance to search more efficiently."
+    },
+    {
+      "id": "AI-U5-148",
+      "question": "SUCCESSOR-FN(x) returns:",
+      "options": {
+        "A": "The goal state",
+        "B": "A set of ordered pairs <action, successor>",
+        "C": "The path cost",
+        "D": "The initial state only"
+      },
+      "correctAnswer": "B",
+      "explanation": "SUCCESSOR-FN(x) returns pairs of a legal action and the state it leads to."
+    },
+    {
+      "id": "AI-U5-149",
+      "question": "The initial state and the successor function together define the:",
+      "options": {
+        "A": "Goal test",
+        "B": "Path cost",
+        "C": "State space",
+        "D": "Search algorithm"
+      },
+      "correctAnswer": "C",
+      "explanation": "Together they define the state space, the set of all states reachable from the initial state."
+    },
+    {
+      "id": "AI-U5-150",
+      "question": "State space search considers successive configurations of an instance to find a:",
+      "options": {
+        "A": "Goal state with a desired property",
+        "B": "Random state",
+        "C": "Weight vector",
+        "D": "Fuzzy membership"
+      },
+      "correctAnswer": "A",
+      "explanation": "The glossary says state space search looks for a goal state with a desired property."
+    }
+  ]
 }
