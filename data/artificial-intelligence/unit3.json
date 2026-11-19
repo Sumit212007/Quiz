@@ -1,5 +1,1806 @@
 {
   "subject": "Artificial Intelligence",
   "unit": "Unit 3",
-  "questions": []
+  "questions": [
+    {
+      "id": "AI-U3-001",
+      "question": "Propositional logic is the simplest form of logic in which all statements are represented as:",
+      "options": {
+        "A": "Objects and relations",
+        "B": "Propositions",
+        "C": "Slots and fillers",
+        "D": "Production rules"
+      },
+      "correctAnswer": "B",
+      "explanation": "In propositional logic every statement is represented as a proposition."
+    },
+    {
+      "id": "AI-U3-002",
+      "question": "A proposition is a declarative statement that is:",
+      "options": {
+        "A": "Always True",
+        "B": "A question with any answer",
+        "C": "Either True or False",
+        "D": "A command to be obeyed"
+      },
+      "correctAnswer": "C",
+      "explanation": "A proposition is a declarative statement that is either True or False."
+    },
+    {
+      "id": "AI-U3-003",
+      "question": "Propositional logic is also called:",
+      "options": {
+        "A": "Predicate logic",
+        "B": "Fuzzy logic",
+        "C": "Modal logic",
+        "D": "Boolean logic"
+      },
+      "correctAnswer": "D",
+      "explanation": "PL is called Boolean logic because it works with 0 (False) and 1 (True)."
+    },
+    {
+      "id": "AI-U3-004",
+      "question": "Which of the following is a proposition?",
+      "options": {
+        "A": "5 is a prime number.",
+        "B": "Close the door.",
+        "C": "What is your name?",
+        "D": "Please sit down."
+      },
+      "correctAnswer": "A",
+      "explanation": "Only a declarative statement with a truth value is a proposition, and \"5 is a prime number\" is True."
+    },
+    {
+      "id": "AI-U3-005",
+      "question": "The truth value of \"The Sun rises from the West\" is:",
+      "options": {
+        "A": "True",
+        "B": "Depends on the day",
+        "C": "Cannot be decided",
+        "D": "False"
+      },
+      "correctAnswer": "D",
+      "explanation": "The statement is a proposition and its truth value is False."
+    },
+    {
+      "id": "AI-U3-006",
+      "question": "Which symbol represents negation (NOT)?",
+      "options": {
+        "A": "∧",
+        "B": "¬",
+        "C": "∨",
+        "D": "→"
+      },
+      "correctAnswer": "B",
+      "explanation": "Negation is written ¬ (or ~)."
+    },
+    {
+      "id": "AI-U3-007",
+      "question": "The symbol ∧ represents:",
+      "options": {
+        "A": "OR (disjunction)",
+        "B": "NOT (negation)",
+        "C": "AND (conjunction)",
+        "D": "IF AND ONLY IF"
+      },
+      "correctAnswer": "C",
+      "explanation": "∧ stands for conjunction, which means AND."
+    },
+    {
+      "id": "AI-U3-008",
+      "question": "The symbol ∨ represents:",
+      "options": {
+        "A": "OR (disjunction)",
+        "B": "AND (conjunction)",
+        "C": "IF-THEN",
+        "D": "NOT"
+      },
+      "correctAnswer": "A",
+      "explanation": "∨ stands for disjunction, which means OR."
+    },
+    {
+      "id": "AI-U3-009",
+      "question": "The symbol → represents:",
+      "options": {
+        "A": "Biconditional",
+        "B": "Negation",
+        "C": "Implication (IF-THEN)",
+        "D": "Conjunction"
+      },
+      "correctAnswer": "C",
+      "explanation": "→ stands for implication, read \"if P, then Q\"."
+    },
+    {
+      "id": "AI-U3-010",
+      "question": "The symbol ⇔ (or ↔) represents:",
+      "options": {
+        "A": "Implication",
+        "B": "Biconditional (if and only if)",
+        "C": "Disjunction",
+        "D": "Negation"
+      },
+      "correctAnswer": "B",
+      "explanation": "⇔ stands for the biconditional, read \"if and only if\"."
+    },
+    {
+      "id": "AI-U3-011",
+      "question": "Logical connectives are also called:",
+      "options": {
+        "A": "Logical operators",
+        "B": "Logical variables",
+        "C": "Logical objects",
+        "D": "Logical frames"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes say logical connectives are also called logical operators."
+    },
+    {
+      "id": "AI-U3-012",
+      "question": "How many main logical connectives are described in the notes?",
+      "options": {
+        "A": "Three",
+        "B": "Seven",
+        "C": "Ten",
+        "D": "Five"
+      },
+      "correctAnswer": "D",
+      "explanation": "The five connectives are negation, conjunction, disjunction, implication and biconditional."
+    },
+    {
+      "id": "AI-U3-013",
+      "question": "An atomic proposition is:",
+      "options": {
+        "A": "Two propositions joined by AND",
+        "B": "A simple proposition made of a single proposition symbol",
+        "C": "A statement with a quantifier",
+        "D": "A rule with IF-THEN"
+      },
+      "correctAnswer": "B",
+      "explanation": "An atomic proposition is a single symbol such as P, Q or R."
+    },
+    {
+      "id": "AI-U3-014",
+      "question": "A compound proposition is formed by:",
+      "options": {
+        "A": "Combining two or more atomic propositions using logical connectives",
+        "B": "Using a single symbol",
+        "C": "Using only quantifiers",
+        "D": "Using slots and fillers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Compound propositions join atomic propositions with connectives."
+    },
+    {
+      "id": "AI-U3-015",
+      "question": "If P = \"It is raining\", then ¬P is:",
+      "options": {
+        "A": "It is raining heavily",
+        "B": "The street is wet",
+        "C": "It is not raining",
+        "D": "It will rain"
+      },
+      "correctAnswer": "C",
+      "explanation": "¬P is the negation of P, so it states the opposite."
+    },
+    {
+      "id": "AI-U3-016",
+      "question": "A literal is:",
+      "options": {
+        "A": "Only a compound proposition",
+        "B": "Only a quantifier",
+        "C": "Only a function",
+        "D": "Either a positive literal P or a negative literal ¬P"
+      },
+      "correctAnswer": "D",
+      "explanation": "A literal is a positive literal (P) or a negative literal (¬P)."
+    },
+    {
+      "id": "AI-U3-017",
+      "question": "Two propositions are logically equivalent when:",
+      "options": {
+        "A": "They use the same symbols",
+        "B": "Their truth-table columns are identical for all possible values",
+        "C": "They have the same number of connectives",
+        "D": "They are both atomic"
+      },
+      "correctAnswer": "B",
+      "explanation": "Logical equivalence means identical truth-table columns."
+    },
+    {
+      "id": "AI-U3-018",
+      "question": "Which symbol is used to write logical equivalence?",
+      "options": {
+        "A": "≡",
+        "B": "∀",
+        "C": "∃",
+        "D": "∴"
+      },
+      "correctAnswer": "A",
+      "explanation": "Logical equivalence is written P ≡ Q."
+    },
+    {
+      "id": "AI-U3-019",
+      "question": "In AI, inference is the process of:",
+      "options": {
+        "A": "Storing facts only",
+        "B": "Drawing a truth table",
+        "C": "Naming variables",
+        "D": "Generating new conclusions from existing facts or evidence"
+      },
+      "correctAnswer": "D",
+      "explanation": "Inference derives conclusions from facts or evidence."
+    },
+    {
+      "id": "AI-U3-020",
+      "question": "Inference rules are:",
+      "options": {
+        "A": "Names of variables",
+        "B": "Types of quantifiers",
+        "C": "Templates used to generate valid arguments",
+        "D": "Kinds of semantic links"
+      },
+      "correctAnswer": "C",
+      "explanation": "Inference rules are templates for producing valid arguments and proofs."
+    },
+    {
+      "id": "AI-U3-021",
+      "question": "Which rule says: from P → Q and P, conclude Q?",
+      "options": {
+        "A": "Modus Tollens",
+        "B": "Addition",
+        "C": "Simplification",
+        "D": "Modus Ponens"
+      },
+      "correctAnswer": "D",
+      "explanation": "This is Modus Ponens."
+    },
+    {
+      "id": "AI-U3-022",
+      "question": "Which rule says: from P → Q and ¬Q, conclude ¬P?",
+      "options": {
+        "A": "Modus Ponens",
+        "B": "Modus Tollens",
+        "C": "Hypothetical Syllogism",
+        "D": "Addition"
+      },
+      "correctAnswer": "B",
+      "explanation": "This is Modus Tollens."
+    },
+    {
+      "id": "AI-U3-023",
+      "question": "Which rule says: from P → Q and Q → R, conclude P → R?",
+      "options": {
+        "A": "Disjunctive Syllogism",
+        "B": "Modus Ponens",
+        "C": "Hypothetical Syllogism",
+        "D": "Resolution"
+      },
+      "correctAnswer": "C",
+      "explanation": "This is Hypothetical Syllogism."
+    },
+    {
+      "id": "AI-U3-024",
+      "question": "Which rule says: from P ∨ Q and ¬P, conclude Q?",
+      "options": {
+        "A": "Disjunctive Syllogism",
+        "B": "Hypothetical Syllogism",
+        "C": "Addition",
+        "D": "Modus Tollens"
+      },
+      "correctAnswer": "A",
+      "explanation": "This is Disjunctive Syllogism."
+    },
+    {
+      "id": "AI-U3-025",
+      "question": "Which rule says: from P, conclude P ∨ Q?",
+      "options": {
+        "A": "Addition",
+        "B": "Simplification",
+        "C": "Resolution",
+        "D": "Modus Ponens"
+      },
+      "correctAnswer": "A",
+      "explanation": "This is the Addition rule."
+    },
+    {
+      "id": "AI-U3-026",
+      "question": "Which rule says: from P ∧ Q, conclude P?",
+      "options": {
+        "A": "Addition",
+        "B": "Modus Tollens",
+        "C": "Simplification",
+        "D": "Resolution"
+      },
+      "correctAnswer": "C",
+      "explanation": "This is the Simplification rule."
+    },
+    {
+      "id": "AI-U3-027",
+      "question": "How many inference rules of propositional logic are listed in the notes?",
+      "options": {
+        "A": "Four",
+        "B": "Five",
+        "C": "Ten",
+        "D": "Seven"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes list seven rules from Modus Ponens to Resolution."
+    },
+    {
+      "id": "AI-U3-028",
+      "question": "The converse of P → Q is:",
+      "options": {
+        "A": "¬Q → ¬P",
+        "B": "Q → P",
+        "C": "¬P → ¬Q",
+        "D": "P ∧ Q"
+      },
+      "correctAnswer": "B",
+      "explanation": "The converse swaps the two sides: Q → P."
+    },
+    {
+      "id": "AI-U3-029",
+      "question": "The contrapositive of P → Q is:",
+      "options": {
+        "A": "Q → P",
+        "B": "¬P → ¬Q",
+        "C": "P ∨ Q",
+        "D": "¬Q → ¬P"
+      },
+      "correctAnswer": "D",
+      "explanation": "The contrapositive swaps and negates both parts: ¬Q → ¬P."
+    },
+    {
+      "id": "AI-U3-030",
+      "question": "The inverse of P → Q is:",
+      "options": {
+        "A": "¬Q → ¬P",
+        "B": "¬P → ¬Q",
+        "C": "Q → P",
+        "D": "P ∧ ¬Q"
+      },
+      "correctAnswer": "B",
+      "explanation": "The inverse negates both parts: ¬P → ¬Q."
+    },
+    {
+      "id": "AI-U3-031",
+      "question": "A fallacy is:",
+      "options": {
+        "A": "A valid inference rule",
+        "B": "A type of truth table",
+        "C": "An error in reasoning that makes an argument invalid or unreliable",
+        "D": "A kind of quantifier"
+      },
+      "correctAnswer": "C",
+      "explanation": "A fallacy is an error in reasoning, even if the argument looks convincing."
+    },
+    {
+      "id": "AI-U3-032",
+      "question": "First-Order Logic is also called:",
+      "options": {
+        "A": "Predicate logic",
+        "B": "Boolean logic",
+        "C": "Fuzzy logic",
+        "D": "Production logic"
+      },
+      "correctAnswer": "A",
+      "explanation": "FOL is also called predicate logic or First-Order Predicate Logic (FOPL)."
+    },
+    {
+      "id": "AI-U3-033",
+      "question": "First-Order Logic is an extension of:",
+      "options": {
+        "A": "Prolog",
+        "B": "Propositional logic",
+        "C": "Frames",
+        "D": "Semantic nets"
+      },
+      "correctAnswer": "B",
+      "explanation": "FOL extends propositional logic."
+    },
+    {
+      "id": "AI-U3-034",
+      "question": "A semantic network is a graph in which:",
+      "options": {
+        "A": "Nodes stand for objects or concepts and arcs stand for relations",
+        "B": "Nodes are truth values",
+        "C": "Arcs are clauses",
+        "D": "Nodes are quantifiers"
+      },
+      "correctAnswer": "A",
+      "explanation": "A semantic network represents objects or concepts as nodes and relations as labelled arcs."
+    },
+    {
+      "id": "AI-U3-035",
+      "question": "Which is an example of a unary relation in FOL?",
+      "options": {
+        "A": "Brother of",
+        "B": "Sister of",
+        "C": "Comes between",
+        "D": "Round"
+      },
+      "correctAnswer": "D",
+      "explanation": "A unary relation involves one object, such as red or round."
+    },
+    {
+      "id": "AI-U3-036",
+      "question": "Which of the following is a function symbol in the FOL syntax table of the notes?",
+      "options": {
+        "A": "Brother",
+        "B": ">",
+        "C": "LeftLegOf",
+        "D": "="
+      },
+      "correctAnswer": "C",
+      "explanation": "sqrt and LeftLegOf are the function examples, while Brother and > are predicates."
+    },
+    {
+      "id": "AI-U3-037",
+      "question": "The goal of the Water Jug problem in the notes is to get exactly:",
+      "options": {
+        "A": "4 litres in the 3-litre jug",
+        "B": "1 litre in the 3-litre jug",
+        "C": "2 litres in the 4-litre jug",
+        "D": "3 litres in the 4-litre jug"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes use a 4 L and a 3 L jug with the goal of 2 litres in the 4 L jug."
+    },
+    {
+      "id": "AI-U3-038",
+      "question": "A frame stores knowledge about an object or situation as a set of:",
+      "options": {
+        "A": "Nodes and arcs",
+        "B": "Clauses and literals",
+        "C": "Facts and queries",
+        "D": "Slots and fillers"
+      },
+      "correctAnswer": "D",
+      "explanation": "A frame consists of slots (attributes) and fillers (values)."
+    },
+    {
+      "id": "AI-U3-039",
+      "question": "Variables in FOL represent:",
+      "options": {
+        "A": "Unknown or general objects",
+        "B": "Specific objects only",
+        "C": "Truth values only",
+        "D": "Connectives"
+      },
+      "correctAnswer": "A",
+      "explanation": "Variables such as x, y, z represent unknown or general objects."
+    },
+    {
+      "id": "AI-U3-040",
+      "question": "Predicates in FOL represent:",
+      "options": {
+        "A": "Specific objects",
+        "B": "Properties or relationships",
+        "C": "Connectives",
+        "D": "Equality only"
+      },
+      "correctAnswer": "B",
+      "explanation": "Predicates represent properties or relationships, such as Brother or Father."
+    },
+    {
+      "id": "AI-U3-041",
+      "question": "The quantifier ∀ means:",
+      "options": {
+        "A": "There exists",
+        "B": "If and only if",
+        "C": "Therefore",
+        "D": "For all"
+      },
+      "correctAnswer": "D",
+      "explanation": "∀ is the universal quantifier, \"for all\"."
+    },
+    {
+      "id": "AI-U3-042",
+      "question": "The quantifier ∃ means:",
+      "options": {
+        "A": "For all",
+        "B": "Not",
+        "C": "There exists",
+        "D": "Equal to"
+      },
+      "correctAnswer": "C",
+      "explanation": "∃ is the existential quantifier, \"there exists\"."
+    },
+    {
+      "id": "AI-U3-043",
+      "question": "The general form of an atomic sentence in FOL is:",
+      "options": {
+        "A": "Predicate(term1, term2, ..., termn)",
+        "B": "P ∧ Q ∧ R",
+        "C": "∀x ∃y",
+        "D": "IF condition THEN action"
+      },
+      "correctAnswer": "A",
+      "explanation": "An atomic sentence is a predicate applied to one or more terms."
+    },
+    {
+      "id": "AI-U3-044",
+      "question": "Cat(Chinky) is an example of:",
+      "options": {
+        "A": "A complex sentence",
+        "B": "An atomic sentence",
+        "C": "A quantifier",
+        "D": "A function symbol"
+      },
+      "correctAnswer": "B",
+      "explanation": "It is a predicate with one term, so it is an atomic sentence."
+    },
+    {
+      "id": "AI-U3-045",
+      "question": "Complex sentences in FOL are formed by:",
+      "options": {
+        "A": "Using a single predicate",
+        "B": "Combining atomic sentences with logical connectives",
+        "C": "Using only constants",
+        "D": "Using only variables"
+      },
+      "correctAnswer": "B",
+      "explanation": "Complex sentences combine two or more atomic sentences with connectives."
+    },
+    {
+      "id": "AI-U3-046",
+      "question": "Prolog stands for:",
+      "options": {
+        "A": "PROcedural LOGic",
+        "B": "PROgram LOading",
+        "C": "PROper LOGic",
+        "D": "PROgramming in LOGic"
+      },
+      "correctAnswer": "D",
+      "explanation": "Prolog is short for PROgramming in LOGic."
+    },
+    {
+      "id": "AI-U3-047",
+      "question": "Prolog is a:",
+      "options": {
+        "A": "Declarative programming language",
+        "B": "Markup language",
+        "C": "Machine language",
+        "D": "Spreadsheet language"
+      },
+      "correctAnswer": "A",
+      "explanation": "Prolog is a declarative language based on a subset of first-order logic."
+    },
+    {
+      "id": "AI-U3-048",
+      "question": "A thematic role frame represents the meaning of a sentence as:",
+      "options": {
+        "A": "A truth table",
+        "B": "A set of clauses only",
+        "C": "An event with roles played by participants",
+        "D": "A graph of is-a links"
+      },
+      "correctAnswer": "C",
+      "explanation": "A thematic role frame stores an event and the roles of its participants."
+    },
+    {
+      "id": "AI-U3-049",
+      "question": "A production rule has the form:",
+      "options": {
+        "A": "P ∧ Q",
+        "B": "IF condition THEN action",
+        "C": "∀x P(x)",
+        "D": "Predicate(term)"
+      },
+      "correctAnswer": "B",
+      "explanation": "A production rule is an IF-THEN rule."
+    },
+    {
+      "id": "AI-U3-050",
+      "question": "Logic is best described as:",
+      "options": {
+        "A": "The science of correct reasoning",
+        "B": "A type of database",
+        "C": "A type of network",
+        "D": "A programming error"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes define logic as the science of correct reasoning."
+    },
+    {
+      "id": "AI-U3-051",
+      "question": "According to the notes, the basic elements of propositional logic are:",
+      "options": {
+        "A": "Objects, relations and functions",
+        "B": "Constants and quantifiers",
+        "C": "Slots and fillers",
+        "D": "Propositions and connectives"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes correct slide 19: propositions and connectives are the basic elements of PL."
+    },
+    {
+      "id": "AI-U3-052",
+      "question": "\"It is raining today and the street is wet\" with P = raining and Q = street wet is written:",
+      "options": {
+        "A": "P ∨ Q",
+        "B": "P → Q",
+        "C": "P ∧ Q",
+        "D": "P ⇔ Q"
+      },
+      "correctAnswer": "C",
+      "explanation": "\"And\" is conjunction, so the statement is P ∧ Q."
+    },
+    {
+      "id": "AI-U3-053",
+      "question": "\"Ritika is a doctor or engineer\" is an example of:",
+      "options": {
+        "A": "Conjunction",
+        "B": "Biconditional",
+        "C": "Negation",
+        "D": "Disjunction"
+      },
+      "correctAnswer": "D",
+      "explanation": "The word \"or\" shows disjunction (∨)."
+    },
+    {
+      "id": "AI-U3-054",
+      "question": "\"I am breathing if and only if I am alive\" is an example of:",
+      "options": {
+        "A": "Implication",
+        "B": "Conjunction",
+        "C": "Biconditional",
+        "D": "Disjunction"
+      },
+      "correctAnswer": "C",
+      "explanation": "\"If and only if\" is the biconditional ⇔."
+    },
+    {
+      "id": "AI-U3-055",
+      "question": "Negation may also be written with which symbol?",
+      "options": {
+        "A": "∴",
+        "B": "~",
+        "C": "≡",
+        "D": "∃"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes say negation may be written as ~ (slide 30)."
+    },
+    {
+      "id": "AI-U3-056",
+      "question": "The implication P → Q is False only when:",
+      "options": {
+        "A": "P is True and Q is False",
+        "B": "P is False and Q is True",
+        "C": "Both P and Q are False",
+        "D": "Both P and Q are True"
+      },
+      "correctAnswer": "A",
+      "explanation": "From the truth table, P → Q is False only in the row T, F."
+    },
+    {
+      "id": "AI-U3-057",
+      "question": "The disjunction P ∨ Q is False only when:",
+      "options": {
+        "A": "Both P and Q are False",
+        "B": "P is True",
+        "C": "Q is True",
+        "D": "Exactly one of them is True"
+      },
+      "correctAnswer": "A",
+      "explanation": "An OR is false only when both parts are false."
+    },
+    {
+      "id": "AI-U3-058",
+      "question": "The conjunction P ∧ Q is True only when:",
+      "options": {
+        "A": "At least one of them is True",
+        "B": "Both are False",
+        "C": "P is False and Q is True",
+        "D": "Both P and Q are True"
+      },
+      "correctAnswer": "D",
+      "explanation": "An AND is true only when both parts are true."
+    },
+    {
+      "id": "AI-U3-059",
+      "question": "¬A ∨ B is logically equivalent to:",
+      "options": {
+        "A": "A ∧ B",
+        "B": "B → A",
+        "C": "A → B",
+        "D": "¬A ∧ B"
+      },
+      "correctAnswer": "C",
+      "explanation": "The truth table shows ¬A ∨ B and A → B have identical columns."
+    },
+    {
+      "id": "AI-U3-060",
+      "question": "Which statement shows commutativity?",
+      "options": {
+        "A": "¬(¬P) = P",
+        "B": "P ∧ Q = Q ∧ P",
+        "C": "P ∨ True = True",
+        "D": "¬(P ∧ Q) = ¬P ∨ ¬Q"
+      },
+      "correctAnswer": "B",
+      "explanation": "Commutativity means the order of operands does not matter."
+    },
+    {
+      "id": "AI-U3-061",
+      "question": "De Morgan's law for ¬(P ∧ Q) gives:",
+      "options": {
+        "A": "¬P ∧ ¬Q",
+        "B": "P ∨ Q",
+        "C": "P ∧ ¬Q",
+        "D": "¬P ∨ ¬Q"
+      },
+      "correctAnswer": "D",
+      "explanation": "¬(P ∧ Q) = ¬P ∨ ¬Q."
+    },
+    {
+      "id": "AI-U3-062",
+      "question": "De Morgan's law for ¬(P ∨ Q) gives:",
+      "options": {
+        "A": "¬P ∨ ¬Q",
+        "B": "¬P ∧ ¬Q",
+        "C": "P ∧ Q",
+        "D": "P ∨ ¬Q"
+      },
+      "correctAnswer": "B",
+      "explanation": "¬(P ∨ Q) = ¬P ∧ ¬Q."
+    },
+    {
+      "id": "AI-U3-063",
+      "question": "Double-negation elimination states that:",
+      "options": {
+        "A": "¬(¬P) = ¬P",
+        "B": "¬(¬P) = False",
+        "C": "¬(¬P) = P",
+        "D": "¬(¬P) = True"
+      },
+      "correctAnswer": "C",
+      "explanation": "Negating twice returns the original proposition."
+    },
+    {
+      "id": "AI-U3-064",
+      "question": "Which is the distributive law?",
+      "options": {
+        "A": "P ∧ (Q ∨ R) = (P ∧ Q) ∨ (P ∧ R)",
+        "B": "(P ∧ Q) ∧ R = P ∧ (Q ∧ R)",
+        "C": "P ∨ Q = Q ∨ P",
+        "D": "¬(¬P) = P"
+      },
+      "correctAnswer": "A",
+      "explanation": "The distributive law spreads ∧ over ∨, and ∨ over ∧."
+    },
+    {
+      "id": "AI-U3-065",
+      "question": "The equation P ∨ True = True is usually called the:",
+      "options": {
+        "A": "Identity law",
+        "B": "Associative law",
+        "C": "Domination law",
+        "D": "Commutative law"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes point out that slide 32 calls it the identity element, but it is usually the domination law."
+    },
+    {
+      "id": "AI-U3-066",
+      "question": "The identity law for OR is:",
+      "options": {
+        "A": "P ∨ False = P",
+        "B": "P ∨ True = True",
+        "C": "P ∧ False = P",
+        "D": "P ∨ P = False"
+      },
+      "correctAnswer": "A",
+      "explanation": "The identity law for OR is P ∨ False = P."
+    },
+    {
+      "id": "AI-U3-067",
+      "question": "Which of these can propositional logic NOT represent properly?",
+      "options": {
+        "A": "Simple True/False facts",
+        "B": "Negation",
+        "C": "Conjunction",
+        "D": "ALL, some or none"
+      },
+      "correctAnswer": "D",
+      "explanation": "PL cannot represent ALL, some or none statements."
+    },
+    {
+      "id": "AI-U3-068",
+      "question": "Why is First-Order Logic needed?",
+      "options": {
+        "A": "PL cannot use connectives",
+        "B": "PL has limited expressive power and cannot represent complex statements or detailed relationships",
+        "C": "PL cannot be True or False",
+        "D": "PL has no symbols"
+      },
+      "correctAnswer": "B",
+      "explanation": "PL limits make a more powerful logic necessary."
+    },
+    {
+      "id": "AI-U3-069",
+      "question": "\"Some apples are sweet\" cannot be written properly in PL because PL:",
+      "options": {
+        "A": "Cannot use the word \"apple\"",
+        "B": "Cannot represent \"some\"",
+        "C": "Has no negation",
+        "D": "Has no variables at all"
+      },
+      "correctAnswer": "B",
+      "explanation": "PL has no way to express quantities like all, some or none."
+    },
+    {
+      "id": "AI-U3-070",
+      "question": "The components of a production system are:",
+      "options": {
+        "A": "Slots, fillers and defaults",
+        "B": "Constants, variables and quantifiers",
+        "C": "Agent, theme and instrument",
+        "D": "Production rules, working memory and control strategy"
+      },
+      "correctAnswer": "D",
+      "explanation": "A production system has a rule set, a working memory (global database) and a control strategy."
+    },
+    {
+      "id": "AI-U3-071",
+      "question": "Which pair of forms is logically equivalent?",
+      "options": {
+        "A": "P → Q and Q → P",
+        "B": "P → Q and ¬P → ¬Q",
+        "C": "P → Q and ¬Q → ¬P",
+        "D": "Q → P and ¬Q → ¬P"
+      },
+      "correctAnswer": "C",
+      "explanation": "The implication is equivalent to its contrapositive."
+    },
+    {
+      "id": "AI-U3-072",
+      "question": "The converse Q → P is logically equivalent to:",
+      "options": {
+        "A": "The inverse ¬P → ¬Q",
+        "B": "The implication P → Q",
+        "C": "The contrapositive ¬Q → ¬P",
+        "D": "P ∧ Q"
+      },
+      "correctAnswer": "A",
+      "explanation": "From the truth table, the converse and inverse have identical columns."
+    },
+    {
+      "id": "AI-U3-073",
+      "question": "An implication P → Q is NOT equivalent to:",
+      "options": {
+        "A": "Its contrapositive",
+        "B": "Its converse and its inverse",
+        "C": "¬P ∨ Q",
+        "D": "¬Q → ¬P"
+      },
+      "correctAnswer": "B",
+      "explanation": "The implication is not equivalent to its converse or inverse."
+    },
+    {
+      "id": "AI-U3-074",
+      "question": "Which memory trick describes the contrapositive?",
+      "options": {
+        "A": "Only swap the sides",
+        "B": "Only negate both",
+        "C": "Swap the sides AND negate both",
+        "D": "Replace → with ∧"
+      },
+      "correctAnswer": "C",
+      "explanation": "Contrapositive = swap and negate both, so it is always equivalent to the original."
+    },
+    {
+      "id": "AI-U3-075",
+      "question": "\"If I am sleepy then I go to bed. I am sleepy.\" The conclusion by Modus Ponens is:",
+      "options": {
+        "A": "I go to bed",
+        "B": "I am not sleepy",
+        "C": "I do not go to bed",
+        "D": "I stay awake"
+      },
+      "correctAnswer": "A",
+      "explanation": "Modus Ponens gives Q, so \"I go to bed\"."
+    },
+    {
+      "id": "AI-U3-076",
+      "question": "\"If I am sleepy then I go to bed. I do not go to bed.\" The conclusion by Modus Tollens is:",
+      "options": {
+        "A": "I am sleepy",
+        "B": "I go to bed",
+        "C": "I may be sleepy",
+        "D": "I am not sleepy"
+      },
+      "correctAnswer": "D",
+      "explanation": "Modus Tollens gives ¬P, so \"I am not sleepy\"."
+    },
+    {
+      "id": "AI-U3-077",
+      "question": "\"If you have my home key you can unlock my home. If you can unlock my home you can take my money.\" Hypothetical Syllogism concludes:",
+      "options": {
+        "A": "You have my home key",
+        "B": "You can unlock my home",
+        "C": "If you have my home key then you can take my money",
+        "D": "You cannot take my money"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hypothetical Syllogism gives P → R."
+    },
+    {
+      "id": "AI-U3-078",
+      "question": "\"Today is Sunday or Monday. Today is not Sunday.\" Disjunctive Syllogism concludes:",
+      "options": {
+        "A": "Today is Sunday",
+        "B": "Today is Monday",
+        "C": "Today is Tuesday",
+        "D": "Today is a holiday"
+      },
+      "correctAnswer": "B",
+      "explanation": "From P ∨ Q and ¬P, we get Q."
+    },
+    {
+      "id": "AI-U3-079",
+      "question": "The correct resolution rule is:",
+      "options": {
+        "A": "P ∨ Q, ¬P ∨ R ∴ Q ∨ R",
+        "B": "P ∨ Q, ¬P ∧ R ∴ Q ∨ R",
+        "C": "P ∧ Q, ¬P ∨ R ∴ Q ∧ R",
+        "D": "P → Q, Q → R ∴ P → R"
+      },
+      "correctAnswer": "A",
+      "explanation": "Resolution resolves complementary literals P and ¬P from two clauses."
+    },
+    {
+      "id": "AI-U3-080",
+      "question": "What correction do the notes make to slide 44 on Resolution?",
+      "options": {
+        "A": "The conclusion should be Q ∧ R",
+        "B": "The first premise should be P ∧ Q",
+        "C": "The rule should use ⇔",
+        "D": "The second premise should be ¬P ∨ R, not ¬P ∧ R"
+      },
+      "correctAnswer": "D",
+      "explanation": "The standard rule uses OR in both premises."
+    },
+    {
+      "id": "AI-U3-081",
+      "question": "Common sense reasoning is difficult for AI because:",
+      "options": {
+        "A": "It needs no knowledge",
+        "B": "It never involves exceptions",
+        "C": "It is purely mathematical",
+        "D": "Everyday knowledge is huge, rarely written down and has exceptions"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes list large volume, exceptions (like penguins) and reasoning about time, space and cause."
+    },
+    {
+      "id": "AI-U3-082",
+      "question": "The fallacy \"P → Q, Q therefore P\" is called:",
+      "options": {
+        "A": "Denying the antecedent",
+        "B": "Modus Ponens",
+        "C": "Affirming the consequent",
+        "D": "Hypothetical syllogism"
+      },
+      "correctAnswer": "C",
+      "explanation": "Concluding P from Q in P → Q is affirming the consequent, which is invalid."
+    },
+    {
+      "id": "AI-U3-083",
+      "question": "The fallacy \"P → Q, ¬P therefore ¬Q\" is called:",
+      "options": {
+        "A": "Denying the antecedent",
+        "B": "Affirming the consequent",
+        "C": "Modus Tollens",
+        "D": "Addition"
+      },
+      "correctAnswer": "A",
+      "explanation": "Concluding ¬Q from ¬P is denying the antecedent, which is invalid."
+    },
+    {
+      "id": "AI-U3-084",
+      "question": "An ad hominem fallacy:",
+      "options": {
+        "A": "Draws a conclusion from too few cases",
+        "B": "Attacks the person, not the argument",
+        "C": "Assumes the conclusion in a premise",
+        "D": "Offers only two choices"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ad hominem attacks the person instead of the argument."
+    },
+    {
+      "id": "AI-U3-085",
+      "question": "A hasty generalisation is a conclusion drawn from:",
+      "options": {
+        "A": "A valid inference rule",
+        "B": "Too few cases",
+        "C": "A truth table",
+        "D": "A quantifier"
+      },
+      "correctAnswer": "B",
+      "explanation": "It generalises from too few examples."
+    },
+    {
+      "id": "AI-U3-086",
+      "question": "Circular reasoning is when:",
+      "options": {
+        "A": "Only two choices are shown",
+        "B": "The person is attacked",
+        "C": "The conclusion is already assumed in a premise",
+        "D": "A rule is applied twice"
+      },
+      "correctAnswer": "C",
+      "explanation": "Circular reasoning assumes what it tries to prove."
+    },
+    {
+      "id": "AI-U3-087",
+      "question": "A false dilemma is when:",
+      "options": {
+        "A": "Only two choices are shown although more exist",
+        "B": "A conclusion is based on too few cases",
+        "C": "The conclusion is assumed",
+        "D": "A valid rule is misused"
+      },
+      "correctAnswer": "A",
+      "explanation": "The false dilemma presents only two options."
+    },
+    {
+      "id": "AI-U3-088",
+      "question": "Which list gives the ways of knowledge representation in the notes?",
+      "options": {
+        "A": "Truth table, clause, literal and tableau",
+        "B": "Constants, variables, predicates and functions",
+        "C": "Agent, theme, instrument and source",
+        "D": "Logical representation, semantic network, frames and production rules"
+      },
+      "correctAnswer": "D",
+      "explanation": "The four ways are logical representation, semantic networks, frames and production rules."
+    },
+    {
+      "id": "AI-U3-089",
+      "question": "Who proposed frames, according to the notes?",
+      "options": {
+        "A": "Alan Turing",
+        "B": "Marvin Minsky",
+        "C": "Peter Norvig",
+        "D": "George Luger"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes credit frames to Marvin Minsky."
+    },
+    {
+      "id": "AI-U3-090",
+      "question": "The knowledge engineering process described in the notes has how many stages?",
+      "options": {
+        "A": "Three",
+        "B": "Five",
+        "C": "Nine",
+        "D": "Seven"
+      },
+      "correctAnswer": "D",
+      "explanation": "Knowledge engineering has seven stages (Russell and Norvig)."
+    },
+    {
+      "id": "AI-U3-091",
+      "question": "The first stage of knowledge engineering is:",
+      "options": {
+        "A": "Identify the task",
+        "B": "Debug the knowledge base",
+        "C": "Decide on a vocabulary",
+        "D": "Pose queries"
+      },
+      "correctAnswer": "A",
+      "explanation": "The process begins by identifying the task."
+    },
+    {
+      "id": "AI-U3-092",
+      "question": "The last stage of knowledge engineering is:",
+      "options": {
+        "A": "Identify the task",
+        "B": "Encode general knowledge",
+        "C": "Debug the knowledge base",
+        "D": "Assemble the relevant knowledge"
+      },
+      "correctAnswer": "C",
+      "explanation": "The seventh stage is debugging the knowledge base."
+    },
+    {
+      "id": "AI-U3-093",
+      "question": "Unlike PL, FOL assumes the world contains:",
+      "options": {
+        "A": "Only facts",
+        "B": "Facts, objects, properties and relationships between objects",
+        "C": "Only objects",
+        "D": "Only truth values"
+      },
+      "correctAnswer": "B",
+      "explanation": "FOL assumes objects, properties and relationships in addition to facts."
+    },
+    {
+      "id": "AI-U3-094",
+      "question": "Partitioned semantic nets are used mainly to represent:",
+      "options": {
+        "A": "Only is-a links",
+        "B": "Only numbers",
+        "C": "Only clauses",
+        "D": "Quantified statements, negation and beliefs"
+      },
+      "correctAnswer": "D",
+      "explanation": "Spaces let partitioned nets show ∀, ∃, negation and beliefs."
+    },
+    {
+      "id": "AI-U3-095",
+      "question": "Which FOL element shows that two values or objects are equal?",
+      "options": {
+        "A": "Equality (=)",
+        "B": "Predicate",
+        "C": "Quantifier",
+        "D": "Function"
+      },
+      "correctAnswer": "A",
+      "explanation": "Equality is the element written with =."
+    },
+    {
+      "id": "AI-U3-096",
+      "question": "In the semantic net example, to find out whether Tom has fur you follow:",
+      "options": {
+        "A": "Tom → Animal only",
+        "B": "Tom → Meow only",
+        "C": "Tom → Cat → Mammal and read \"has Fur\"",
+        "D": "The colour link only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Inheritance lets Tom take the properties of Cat, Mammal and Animal."
+    },
+    {
+      "id": "AI-U3-097",
+      "question": "The parallel implementation of semantic nets works by:",
+      "options": {
+        "A": "Sorting all nodes",
+        "B": "Converting nets to clauses",
+        "C": "Marker passing or spreading activation along links in parallel",
+        "D": "Using only one processor"
+      },
+      "correctAnswer": "C",
+      "explanation": "Markers travel along is-a links in parallel, and the answer is yes if they meet."
+    },
+    {
+      "id": "AI-U3-098",
+      "question": "In a thematic role frame, the Agent is:",
+      "options": {
+        "A": "The thing acted upon",
+        "B": "The tool used",
+        "C": "The place of the event",
+        "D": "The doer of the action"
+      },
+      "correctAnswer": "D",
+      "explanation": "The agent is the doer of the action."
+    },
+    {
+      "id": "AI-U3-099",
+      "question": "The usual pattern for the universal quantifier is:",
+      "options": {
+        "A": "∀x (P(x) ∧ Q(x))",
+        "B": "∀x (P(x) ⇒ Q(x))",
+        "C": "∃x (P(x) ⇒ Q(x))",
+        "D": "∃x (P(x) ∧ Q(x))"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes give ∀x (P(x) ⇒ Q(x)) as the usual pattern."
+    },
+    {
+      "id": "AI-U3-100",
+      "question": "The usual pattern for the existential quantifier is:",
+      "options": {
+        "A": "∃x (P(x) ∧ Q(x))",
+        "B": "∃x (P(x) ⇒ Q(x))",
+        "C": "∀x (P(x) ∧ Q(x))",
+        "D": "∀x (P(x) ⇒ Q(x))"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes give ∃x (P(x) ∧ Q(x)) as the usual pattern."
+    },
+    {
+      "id": "AI-U3-101",
+      "question": "When P is False and Q is True, the value of P → Q is:",
+      "options": {
+        "A": "False",
+        "B": "Undefined",
+        "C": "True",
+        "D": "Depends on R"
+      },
+      "correctAnswer": "C",
+      "explanation": "An implication is False only when P is True and Q is False, so here it is True."
+    },
+    {
+      "id": "AI-U3-102",
+      "question": "When P is True and Q is False, the value of P ⇔ Q is:",
+      "options": {
+        "A": "True",
+        "B": "Undefined",
+        "C": "Depends on R",
+        "D": "False"
+      },
+      "correctAnswer": "D",
+      "explanation": "A biconditional is True only when P and Q have the same value."
+    },
+    {
+      "id": "AI-U3-103",
+      "question": "When both P and Q are False, the value of P ⇔ Q is:",
+      "options": {
+        "A": "False",
+        "B": "True",
+        "C": "Undefined",
+        "D": "Same as P ∧ Q"
+      },
+      "correctAnswer": "B",
+      "explanation": "Both values are the same, so the biconditional is True."
+    },
+    {
+      "id": "AI-U3-104",
+      "question": "When P is False and Q is True, the converse Q → P has the value:",
+      "options": {
+        "A": "False",
+        "B": "True",
+        "C": "Undefined",
+        "D": "Same as P → Q"
+      },
+      "correctAnswer": "A",
+      "explanation": "Q is True and P is False, so Q → P is False."
+    },
+    {
+      "id": "AI-U3-105",
+      "question": "When P is True and Q is False, the contrapositive ¬Q → ¬P has the value:",
+      "options": {
+        "A": "False",
+        "B": "True",
+        "C": "Undefined",
+        "D": "Same as Q → P"
+      },
+      "correctAnswer": "A",
+      "explanation": "¬Q is True and ¬P is False, so the contrapositive is False, matching P → Q."
+    },
+    {
+      "id": "AI-U3-106",
+      "question": "When P is False and Q is True, the inverse ¬P → ¬Q has the value:",
+      "options": {
+        "A": "True",
+        "B": "Undefined",
+        "C": "Same as P → Q",
+        "D": "False"
+      },
+      "correctAnswer": "D",
+      "explanation": "¬P is True and ¬Q is False, so the inverse is False."
+    },
+    {
+      "id": "AI-U3-107",
+      "question": "In the sentence \"Sita gave a book to Amit in the library\", the Recipient is:",
+      "options": {
+        "A": "Sita",
+        "B": "The book",
+        "C": "Amit",
+        "D": "The library"
+      },
+      "correctAnswer": "C",
+      "explanation": "Amit receives the book, so he is the Recipient."
+    },
+    {
+      "id": "AI-U3-108",
+      "question": "The true negation of P → Q is:",
+      "options": {
+        "A": "¬P → ¬Q",
+        "B": "P ∧ ¬Q",
+        "C": "¬P ∧ Q",
+        "D": "Q → P"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes say the true negation of P → Q is P ∧ ¬Q."
+    },
+    {
+      "id": "AI-U3-109",
+      "question": "What does the notes' remark on slide 36 say about the contrapositive?",
+      "options": {
+        "A": "It is the negation of P → Q",
+        "B": "It is Q → P",
+        "C": "It is the converse with both parts negated",
+        "D": "It is not equivalent to P → Q"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes explain that the contrapositive is strictly the converse with both parts negated."
+    },
+    {
+      "id": "AI-U3-110",
+      "question": "\"If it rains, the street is wet. The street is not wet.\" The valid conclusion is:",
+      "options": {
+        "A": "It rained",
+        "B": "The street will be wet",
+        "C": "Nothing can be concluded",
+        "D": "It did not rain"
+      },
+      "correctAnswer": "D",
+      "explanation": "Modus Tollens gives ¬P: it did not rain."
+    },
+    {
+      "id": "AI-U3-111",
+      "question": "\"If it rains, the street is wet. The street is wet. So it rained.\" This reasoning is:",
+      "options": {
+        "A": "Modus Ponens",
+        "B": "The fallacy of affirming the consequent",
+        "C": "Modus Tollens",
+        "D": "Hypothetical Syllogism"
+      },
+      "correctAnswer": "B",
+      "explanation": "The street may be wet for another reason, so this is affirming the consequent."
+    },
+    {
+      "id": "AI-U3-112",
+      "question": "\"If it rains, the street is wet. It is not raining. So the street is not wet.\" This reasoning is:",
+      "options": {
+        "A": "The fallacy of denying the antecedent",
+        "B": "Modus Tollens",
+        "C": "Disjunctive Syllogism",
+        "D": "Valid"
+      },
+      "correctAnswer": "A",
+      "explanation": "It treats the inverse as if it were the implication, so it is invalid."
+    },
+    {
+      "id": "AI-U3-113",
+      "question": "\"I have a vanilla ice-cream. So I have vanilla or chocolate ice-cream.\" Which rule is used?",
+      "options": {
+        "A": "Simplification",
+        "B": "Resolution",
+        "C": "Modus Ponens",
+        "D": "Addition"
+      },
+      "correctAnswer": "D",
+      "explanation": "From P we get P ∨ Q, which is the Addition rule."
+    },
+    {
+      "id": "AI-U3-114",
+      "question": "\"Rohan is intelligent and hardworking. So Rohan is intelligent.\" Which rule is used?",
+      "options": {
+        "A": "Simplification",
+        "B": "Addition",
+        "C": "Disjunctive Syllogism",
+        "D": "Modus Tollens"
+      },
+      "correctAnswer": "A",
+      "explanation": "From P ∧ Q we get P, which is Simplification."
+    },
+    {
+      "id": "AI-U3-115",
+      "question": "\"It is Sunday or a holiday. It is not Sunday or I am free. So it is a holiday or I am free.\" Which rule is used?",
+      "options": {
+        "A": "Hypothetical Syllogism",
+        "B": "Addition",
+        "C": "Resolution",
+        "D": "Modus Ponens"
+      },
+      "correctAnswer": "C",
+      "explanation": "P ∨ Q and ¬P ∨ R give Q ∨ R, which is Resolution."
+    },
+    {
+      "id": "AI-U3-116",
+      "question": "Why is affirming the consequent invalid?",
+      "options": {
+        "A": "It uses too many connectives",
+        "B": "It treats the converse Q → P as if it were the implication P → Q",
+        "C": "It uses the contrapositive",
+        "D": "It uses a quantifier"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes explain it confuses the converse with the implication."
+    },
+    {
+      "id": "AI-U3-117",
+      "question": "The contrapositive of \"If it is raining, then the street is wet\" is:",
+      "options": {
+        "A": "If the street is wet, then it is raining",
+        "B": "If it is not raining, then the street is not wet",
+        "C": "If it is raining, then the street is not wet",
+        "D": "If the street is not wet, then it is not raining"
+      },
+      "correctAnswer": "D",
+      "explanation": "The contrapositive is ¬Q → ¬P."
+    },
+    {
+      "id": "AI-U3-118",
+      "question": "The inverse of \"If it is raining, then the street is wet\" is:",
+      "options": {
+        "A": "If the street is not wet, then it is not raining",
+        "B": "If the street is wet, then it is raining",
+        "C": "If it is not raining, then the street is not wet",
+        "D": "If it is raining, then the street is dry"
+      },
+      "correctAnswer": "C",
+      "explanation": "The inverse is ¬P → ¬Q."
+    },
+    {
+      "id": "AI-U3-119",
+      "question": "The converse of \"If it is raining, then the street is wet\" is:",
+      "options": {
+        "A": "If the street is not wet, then it is not raining",
+        "B": "If the street is wet, then it is raining",
+        "C": "If it is not raining, then the street is not wet",
+        "D": "If it is raining, then the street is wet"
+      },
+      "correctAnswer": "B",
+      "explanation": "The converse is Q → P."
+    },
+    {
+      "id": "AI-U3-120",
+      "question": "\"All the girls are intelligent\" is written in FOL as:",
+      "options": {
+        "A": "∀x (Girl(x) ⇒ Intelligent(x))",
+        "B": "∀x (Girl(x) ∧ Intelligent(x))",
+        "C": "∃x (Girl(x) ⇒ Intelligent(x))",
+        "D": "∃x (Girl(x) ∧ Intelligent(x))"
+      },
+      "correctAnswer": "A",
+      "explanation": "The universal quantifier is used with implication."
+    },
+    {
+      "id": "AI-U3-121",
+      "question": "\"Some apples are sweet\" is written in FOL as:",
+      "options": {
+        "A": "∃x (Apple(x) ⇒ Sweet(x))",
+        "B": "∀x (Apple(x) ∧ Sweet(x))",
+        "C": "∃x (Apple(x) ∧ Sweet(x))",
+        "D": "∀x (Apple(x) ⇒ Sweet(x))"
+      },
+      "correctAnswer": "C",
+      "explanation": "The existential quantifier is used with conjunction."
+    },
+    {
+      "id": "AI-U3-122",
+      "question": "\"No apple is sweet\" is written in FOL as:",
+      "options": {
+        "A": "∃x (Apple(x) ∧ ¬Sweet(x))",
+        "B": "∀x (Apple(x) ∧ Sweet(x))",
+        "C": "∃x (Apple(x) ⇒ Sweet(x))",
+        "D": "∀x (Apple(x) ⇒ ¬Sweet(x))"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes write it as ∀x (Apple(x) ⇒ ¬Sweet(x))."
+    },
+    {
+      "id": "AI-U3-123",
+      "question": "In the semantic net example, which link joins Tom to Cat?",
+      "options": {
+        "A": "instance-of",
+        "B": "is-a",
+        "C": "has",
+        "D": "can"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tom is an individual, so he is linked to his class by instance-of, while Cat is linked to Mammal by is-a."
+    },
+    {
+      "id": "AI-U3-124",
+      "question": "¬∀x P(x) is equivalent to:",
+      "options": {
+        "A": "∀x ¬P(x)",
+        "B": "∃x ¬P(x)",
+        "C": "∃x P(x)",
+        "D": "¬∃x P(x)"
+      },
+      "correctAnswer": "B",
+      "explanation": "Not all objects satisfy P means some object does not satisfy P."
+    },
+    {
+      "id": "AI-U3-125",
+      "question": "¬∃x P(x) is equivalent to:",
+      "options": {
+        "A": "∀x ¬P(x)",
+        "B": "∃x ¬P(x)",
+        "C": "∀x P(x)",
+        "D": "¬∀x P(x)"
+      },
+      "correctAnswer": "A",
+      "explanation": "If no object satisfies P, then every object fails P."
+    },
+    {
+      "id": "AI-U3-126",
+      "question": "To prove an argument valid with a semantic tableau, we assume that:",
+      "options": {
+        "A": "The premises are false and the conclusion is true",
+        "B": "The premises are true and the conclusion is false",
+        "C": "Both premises and conclusion are false",
+        "D": "Only the conclusion is true"
+      },
+      "correctAnswer": "B",
+      "explanation": "A tableau is a refutation method, starting from true premises and a false conclusion."
+    },
+    {
+      "id": "AI-U3-127",
+      "question": "In a semantic tableau, the argument is valid when:",
+      "options": {
+        "A": "At least one branch stays open",
+        "B": "The tree has only one branch",
+        "C": "No formula is expanded",
+        "D": "Every branch closes with a contradiction"
+      },
+      "correctAnswer": "D",
+      "explanation": "If every branch contains P and ¬P, the assumption is impossible and the argument is valid."
+    },
+    {
+      "id": "AI-U3-128",
+      "question": "The tableau rule for P ∨ Q is to:",
+      "options": {
+        "A": "Add P and Q on the same branch",
+        "B": "Add ¬P and ¬Q on one branch",
+        "C": "Split into two branches, one with P and one with Q",
+        "D": "Add only P"
+      },
+      "correctAnswer": "C",
+      "explanation": "A disjunction splits the tableau into two branches."
+    },
+    {
+      "id": "AI-U3-129",
+      "question": "The tableau rule for P → Q is to:",
+      "options": {
+        "A": "Add P and Q on the same branch",
+        "B": "Add ¬P and ¬Q on one branch",
+        "C": "Add only Q",
+        "D": "Split into two branches, one with ¬P and one with Q"
+      },
+      "correctAnswer": "D",
+      "explanation": "An implication is treated as ¬P ∨ Q, so it splits into ¬P and Q."
+    },
+    {
+      "id": "AI-U3-130",
+      "question": "The tableau rule for ¬(P ∨ Q) is to:",
+      "options": {
+        "A": "Split into ¬P and ¬Q branches",
+        "B": "Add ¬P and ¬Q on the same branch",
+        "C": "Add P and Q",
+        "D": "Close the branch"
+      },
+      "correctAnswer": "B",
+      "explanation": "By De Morgan, ¬(P ∨ Q) = ¬P ∧ ¬Q, so both are added on the same branch."
+    },
+    {
+      "id": "AI-U3-131",
+      "question": "The first step of resolution in propositional logic is to:",
+      "options": {
+        "A": "Convert all statements to clauses (CNF)",
+        "B": "Derive the empty clause",
+        "C": "Unify two literals",
+        "D": "Skolemise variables"
+      },
+      "correctAnswer": "A",
+      "explanation": "The first step converts all statements into clauses."
+    },
+    {
+      "id": "AI-U3-132",
+      "question": "In resolution, the goal is proved when:",
+      "options": {
+        "A": "A tableau branch stays open",
+        "B": "All clauses are removed",
+        "C": "The empty clause is obtained",
+        "D": "A truth table is drawn"
+      },
+      "correctAnswer": "C",
+      "explanation": "Deriving the empty clause shows a contradiction, so the goal is proved."
+    },
+    {
+      "id": "AI-U3-133",
+      "question": "Resolving the clauses (¬P ∨ Q) and P gives:",
+      "options": {
+        "A": "¬Q",
+        "B": "P ∨ Q",
+        "C": "Q",
+        "D": "¬P"
+      },
+      "correctAnswer": "C",
+      "explanation": "P and ¬P cancel, leaving Q."
+    },
+    {
+      "id": "AI-U3-134",
+      "question": "In FOPL resolution, unification means:",
+      "options": {
+        "A": "Finding a substitution that makes two literals identical",
+        "B": "Removing all quantifiers",
+        "C": "Splitting a branch",
+        "D": "Converting to a truth table"
+      },
+      "correctAnswer": "A",
+      "explanation": "Unification matches variables so that literals can be resolved."
+    },
+    {
+      "id": "AI-U3-135",
+      "question": "Skolemisation replaces:",
+      "options": {
+        "A": "Each ∀ variable by a constant",
+        "B": "Each ∃ variable by a new constant (or a function of the ∀ variables)",
+        "C": "Each connective by a quantifier",
+        "D": "Each clause by a literal"
+      },
+      "correctAnswer": "B",
+      "explanation": "Skolemisation removes existential quantifiers."
+    },
+    {
+      "id": "AI-U3-136",
+      "question": "A FOL tableau may not terminate because:",
+      "options": {
+        "A": "FOL has no quantifiers",
+        "B": "FOL has no connectives",
+        "C": "FOL is the same as PL",
+        "D": "FOL is only semi-decidable"
+      },
+      "correctAnswer": "D",
+      "explanation": "A proof is found if the statement is valid, but the search may run forever if it is not."
+    },
+    {
+      "id": "AI-U3-137",
+      "question": "The rule Grandparent(x, z) ⇔ ∃y (Parent(x, y) ∧ Parent(y, z)) means:",
+      "options": {
+        "A": "x is a grandparent of z if x is a parent of someone who is a parent of z",
+        "B": "x is a parent of z",
+        "C": "z is a parent of x",
+        "D": "x and z are siblings"
+      },
+      "correctAnswer": "A",
+      "explanation": "The rule says a grandparent is a parent of a parent."
+    },
+    {
+      "id": "AI-U3-138",
+      "question": "In Prolog, the symbol :- means:",
+      "options": {
+        "A": "and",
+        "B": "or",
+        "C": "not",
+        "D": "if"
+      },
+      "correctAnswer": "D",
+      "explanation": ":- means \"if\", a comma means AND and a semicolon means OR."
+    },
+    {
+      "id": "AI-U3-139",
+      "question": "In the Student frame example, Ravi gets Course = BCA because:",
+      "options": {
+        "A": "He typed it in",
+        "B": "An instance inherits default slot values from its frame",
+        "C": "It is a procedure",
+        "D": "Frames have no defaults"
+      },
+      "correctAnswer": "B",
+      "explanation": "Instances inherit defaults from the frame."
+    },
+    {
+      "id": "AI-U3-140",
+      "question": "In the Water Jug solution, the first step from (0, 0) using R2 gives:",
+      "options": {
+        "A": "(4, 0)",
+        "B": "(3, 0)",
+        "C": "(0, 3)",
+        "D": "(4, 3)"
+      },
+      "correctAnswer": "C",
+      "explanation": "R2 fills the 3 L jug, so (0, 0) becomes (0, 3)."
+    },
+    {
+      "id": "AI-U3-141",
+      "question": "In the Water Jug solution, from (3, 3) pouring into the 4 L jug until it is full gives:",
+      "options": {
+        "A": "(4, 3)",
+        "B": "(3, 4)",
+        "C": "(4, 2)",
+        "D": "(2, 3)"
+      },
+      "correctAnswer": "C",
+      "explanation": "The 4 L jug needs 1 more litre, so 1 L moves and 2 L remains in the 3 L jug."
+    },
+    {
+      "id": "AI-U3-142",
+      "question": "In the Water Jug solution of the notes, how many moves reach the goal (2, 0)?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "8",
+        "D": "11"
+      },
+      "correctAnswer": "B",
+      "explanation": "The solution goes through six moves ending at (2, 0)."
+    },
+    {
+      "id": "AI-U3-143",
+      "question": "The shortest solution of the Missionaries and Cannibals problem in the notes has how many crossings?",
+      "options": {
+        "A": "5",
+        "B": "7",
+        "C": "15",
+        "D": "11"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes give a solution of 11 crossings."
+    },
+    {
+      "id": "AI-U3-144",
+      "question": "In the Missionaries and Cannibals problem, the safety constraint is that:",
+      "options": {
+        "A": "On a bank that has missionaries, the cannibals must not outnumber them",
+        "B": "The boat must carry exactly three people",
+        "C": "Missionaries must always outnumber cannibals on both banks, even empty ones",
+        "D": "The boat can cross empty"
+      },
+      "correctAnswer": "A",
+      "explanation": "The cannibals must not outnumber missionaries on any bank where missionaries are present."
+    },
+    {
+      "id": "AI-U3-145",
+      "question": "Which placement is a valid solution of the 4-Queen problem (row, column)?",
+      "options": {
+        "A": "(1,2), (2,4), (3,1), (4,3)",
+        "B": "(1,1), (2,2), (3,3), (4,4)",
+        "C": "(1,2), (2,3), (3,4), (4,1)",
+        "D": "(1,1), (2,3), (3,2), (4,4)"
+      },
+      "correctAnswer": "A",
+      "explanation": "Only the first placement has no two queens in the same column or diagonal."
+    },
+    {
+      "id": "AI-U3-146",
+      "question": "For which values of n does the n-Queen problem have no solution, according to the notes?",
+      "options": {
+        "A": "n = 4 and n = 5",
+        "B": "n = 1 and n = 2",
+        "C": "n = 2 and n = 3",
+        "D": "n = 8 only"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes say n = 2 and n = 3 have no solution."
+    },
+    {
+      "id": "AI-U3-147",
+      "question": "What is the correct order of actions in the Monkey and Banana solution?",
+      "options": {
+        "A": "Climb on the box, walk, push, grasp",
+        "B": "Grasp, climb, push, walk",
+        "C": "Push the box, walk, grasp, climb",
+        "D": "Walk to the box, push it under the banana, climb on it, grasp the banana"
+      },
+      "correctAnswer": "D",
+      "explanation": "The monkey walks A to B, pushes the box to C, climbs and then grasps."
+    },
+    {
+      "id": "AI-U3-148",
+      "question": "In the 4-city TSP example, the tour A-B-D-C-A has a total distance of:",
+      "options": {
+        "A": "95",
+        "B": "80",
+        "C": "100",
+        "D": "70"
+      },
+      "correctAnswer": "B",
+      "explanation": "10 + 25 + 30 + 15 = 80."
+    },
+    {
+      "id": "AI-U3-149",
+      "question": "In the 4-city TSP example, the tour A-B-C-D-A has a total distance of:",
+      "options": {
+        "A": "80",
+        "B": "100",
+        "C": "95",
+        "D": "75"
+      },
+      "correctAnswer": "C",
+      "explanation": "10 + 35 + 30 + 20 = 95."
+    },
+    {
+      "id": "AI-U3-150",
+      "question": "For n cities with a fixed starting city, the number of possible TSP tours is:",
+      "options": {
+        "A": "n!",
+        "B": "2n",
+        "C": "n squared",
+        "D": "(n - 1)!"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes give (n - 1)! tours from a fixed start."
+    }
+  ]
 }
