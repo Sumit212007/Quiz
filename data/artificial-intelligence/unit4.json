@@ -1,5 +1,1806 @@
 {
   "subject": "Artificial Intelligence",
   "unit": "Unit 4",
-  "questions": []
+  "questions": [
+    {
+      "id": "AI-U4-001",
+      "question": "Knowledge Representation and Reasoning (KRR) is a branch of AI that studies:",
+      "options": {
+        "A": "How to build faster processors",
+        "B": "How to draw computer graphics",
+        "C": "How an agent stores and represents knowledge and uses reasoning to produce intelligent behaviour",
+        "D": "How to compress files"
+      },
+      "correctAnswer": "C",
+      "explanation": "KRR deals with representing knowledge and reasoning with it to produce intelligent behaviour."
+    },
+    {
+      "id": "AI-U4-002",
+      "question": "KRR converts real-world information into:",
+      "options": {
+        "A": "A printed report",
+        "B": "A hardware circuit",
+        "C": "An audio signal",
+        "D": "A machine-understandable representation"
+      },
+      "correctAnswer": "D",
+      "explanation": "KRR turns real-world information into a form a computer can process and reason with."
+    },
+    {
+      "id": "AI-U4-003",
+      "question": "Object knowledge is information about:",
+      "options": {
+        "A": "Events in the real world",
+        "B": "Objects and their properties",
+        "C": "How to perform a task",
+        "D": "Knowledge about other knowledge"
+      },
+      "correctAnswer": "B",
+      "explanation": "Object knowledge covers objects and their properties, such as a guitar having strings."
+    },
+    {
+      "id": "AI-U4-004",
+      "question": "Event knowledge is information about:",
+      "options": {
+        "A": "Events or actions in the real world",
+        "B": "Properties of objects",
+        "C": "Steps to solve a problem",
+        "D": "The structure of a database"
+      },
+      "correctAnswer": "A",
+      "explanation": "Event knowledge describes events, such as a student submitting an assignment."
+    },
+    {
+      "id": "AI-U4-005",
+      "question": "Performance knowledge is knowledge of:",
+      "options": {
+        "A": "Facts about the world",
+        "B": "How to perform a task or action",
+        "C": "Which rule to apply",
+        "D": "Relations between concepts"
+      },
+      "correctAnswer": "B",
+      "explanation": "Performance knowledge describes how to carry out a task."
+    },
+    {
+      "id": "AI-U4-006",
+      "question": "Meta-knowledge is:",
+      "options": {
+        "A": "Knowledge of facts only",
+        "B": "Knowledge of objects only",
+        "C": "Knowledge of events only",
+        "D": "Knowledge about other knowledge"
+      },
+      "correctAnswer": "D",
+      "explanation": "Meta-knowledge is knowledge about what is known or how it is used."
+    },
+    {
+      "id": "AI-U4-007",
+      "question": "Factual knowledge is information about:",
+      "options": {
+        "A": "How to behave",
+        "B": "Slots and fillers",
+        "C": "Facts or truths about the world",
+        "D": "Rules of thumb"
+      },
+      "correctAnswer": "C",
+      "explanation": "Factual knowledge covers facts, such as the Earth revolving around the Sun."
+    },
+    {
+      "id": "AI-U4-008",
+      "question": "A Knowledge Base (KB) is:",
+      "options": {
+        "A": "A collection of facts and rules in a form an AI system can process",
+        "B": "A set of hardware devices",
+        "C": "A list of users",
+        "D": "A type of network cable"
+      },
+      "correctAnswer": "A",
+      "explanation": "The KB is the organized collection of facts and rules used during reasoning."
+    },
+    {
+      "id": "AI-U4-009",
+      "question": "Declarative knowledge is the knowledge of:",
+      "options": {
+        "A": "Steps and procedures (how to do)",
+        "B": "Rules of thumb",
+        "C": "Knowledge about knowledge",
+        "D": "Facts and information (what to know)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Declarative knowledge is also called descriptive knowledge, such as \"Paris is the capital of France\"."
+    },
+    {
+      "id": "AI-U4-010",
+      "question": "Procedural knowledge is the knowledge of:",
+      "options": {
+        "A": "Facts only",
+        "B": "Steps, methods and procedures (how to do)",
+        "C": "Relationships only",
+        "D": "Rules of thumb"
+      },
+      "correctAnswer": "B",
+      "explanation": "Procedural knowledge, also called imperative knowledge, describes how to do things."
+    },
+    {
+      "id": "AI-U4-011",
+      "question": "Heuristic knowledge consists of:",
+      "options": {
+        "A": "Experience-based rules of thumb",
+        "B": "Certain facts",
+        "C": "Knowledge about knowledge",
+        "D": "Slots and fillers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Heuristic knowledge guides quick problem solving but does not guarantee a correct result."
+    },
+    {
+      "id": "AI-U4-012",
+      "question": "Structural knowledge describes:",
+      "options": {
+        "A": "Steps to solve an equation",
+        "B": "Facts about a country",
+        "C": "Relationships between concepts such as is-a, part-of and has-a",
+        "D": "Rules of thumb"
+      },
+      "correctAnswer": "C",
+      "explanation": "Structural knowledge covers relationships such as \"birds are animals\"."
+    },
+    {
+      "id": "AI-U4-013",
+      "question": "A semantic network represents knowledge as a:",
+      "options": {
+        "A": "Table of numbers",
+        "B": "List of rules",
+        "C": "Graphical network",
+        "D": "Stack of goals"
+      },
+      "correctAnswer": "C",
+      "explanation": "A semantic network is a graph-based knowledge representation technique."
+    },
+    {
+      "id": "AI-U4-014",
+      "question": "In a semantic network, nodes represent:",
+      "options": {
+        "A": "Relationships",
+        "B": "Objects, concepts or entities",
+        "C": "Probabilities",
+        "D": "Rules"
+      },
+      "correctAnswer": "B",
+      "explanation": "Nodes stand for objects, concepts or entities."
+    },
+    {
+      "id": "AI-U4-015",
+      "question": "In a semantic network, arcs or links represent:",
+      "options": {
+        "A": "Objects",
+        "B": "Truth values",
+        "C": "Slots",
+        "D": "Relationships between nodes"
+      },
+      "correctAnswer": "D",
+      "explanation": "Arcs or links represent relationships between nodes."
+    },
+    {
+      "id": "AI-U4-016",
+      "question": "The IS-A relationship in a semantic network shows that:",
+      "options": {
+        "A": "An object or concept belongs to a category and may inherit its properties",
+        "B": "Two objects are unrelated",
+        "C": "An object is destroyed",
+        "D": "A rule has been fired"
+      },
+      "correctAnswer": "A",
+      "explanation": "IS-A expresses category membership and inheritance, such as a sparrow IS-A bird."
+    },
+    {
+      "id": "AI-U4-017",
+      "question": "Semantic nets were originally proposed by:",
+      "options": {
+        "A": "Marvin Minsky",
+        "B": "M. Ross Quillian",
+        "C": "Alan Turing",
+        "D": "John Robinson"
+      },
+      "correctAnswer": "B",
+      "explanation": "The quiz key gives M. Ross Quillian as the proposer of semantic nets."
+    },
+    {
+      "id": "AI-U4-018",
+      "question": "Because nodes are associated with other nodes, semantic nets are also called:",
+      "options": {
+        "A": "Frame nets",
+        "B": "Rule nets",
+        "C": "Logic nets",
+        "D": "Associative nets"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz key gives associative nets as the alternative name."
+    },
+    {
+      "id": "AI-U4-019",
+      "question": "A partitioned semantic network divides a semantic network into:",
+      "options": {
+        "A": "Two equal halves only",
+        "B": "Single nodes",
+        "C": "Separate spaces or groups",
+        "D": "Rules and facts"
+      },
+      "correctAnswer": "C",
+      "explanation": "Partitions group nodes and links, and each can be treated as a single node."
+    },
+    {
+      "id": "AI-U4-020",
+      "question": "In a partitioned semantic network, the symbol ∀ means:",
+      "options": {
+        "A": "For all",
+        "B": "There exists",
+        "C": "If and only if",
+        "D": "Not"
+      },
+      "correctAnswer": "A",
+      "explanation": "∀ is used for the universal quantifier, \"for all\"."
+    },
+    {
+      "id": "AI-U4-021",
+      "question": "In a partitioned semantic network, the symbol ∃ means:",
+      "options": {
+        "A": "For all",
+        "B": "Therefore",
+        "C": "Equal to",
+        "D": "There exists"
+      },
+      "correctAnswer": "D",
+      "explanation": "∃ is used for the existential quantifier, \"there exists\"."
+    },
+    {
+      "id": "AI-U4-022",
+      "question": "In a partitioned semantic network, GS stands for:",
+      "options": {
+        "A": "General Statement",
+        "B": "Global Search",
+        "C": "Graph Structure",
+        "D": "Goal State"
+      },
+      "correctAnswer": "A",
+      "explanation": "The method begins by creating a General Statement (GS) node."
+    },
+    {
+      "id": "AI-U4-023",
+      "question": "A frame is a data structure that represents an object, person or situation using:",
+      "options": {
+        "A": "Nodes and arcs only",
+        "B": "Clauses and literals",
+        "C": "Slots and slot values",
+        "D": "Rules and facts only"
+      },
+      "correctAnswer": "C",
+      "explanation": "A frame organises information into slots (attributes) and slot values."
+    },
+    {
+      "id": "AI-U4-024",
+      "question": "A slot in a frame describes:",
+      "options": {
+        "A": "The value of an attribute",
+        "B": "An attribute or property of the entity",
+        "C": "A constraint only",
+        "D": "A rule"
+      },
+      "correctAnswer": "B",
+      "explanation": "A slot is an attribute or property of the entity."
+    },
+    {
+      "id": "AI-U4-025",
+      "question": "A slot value (filler) in a frame provides:",
+      "options": {
+        "A": "The name of the frame",
+        "B": "The inference engine",
+        "C": "The goal",
+        "D": "The value of an attribute"
+      },
+      "correctAnswer": "D",
+      "explanation": "A filler is the value stored in a slot."
+    },
+    {
+      "id": "AI-U4-026",
+      "question": "A facet in a frame provides:",
+      "options": {
+        "A": "The name of the frame",
+        "B": "The final answer",
+        "C": "Additional information, constraints, default values or procedures for a slot",
+        "D": "The list of users"
+      },
+      "correctAnswer": "C",
+      "explanation": "Facets add extra information or constraints to a slot."
+    },
+    {
+      "id": "AI-U4-027",
+      "question": "Frames are also called:",
+      "options": {
+        "A": "Slot-and-filler knowledge representation",
+        "B": "Node-and-arc representation",
+        "C": "Clause-based representation",
+        "D": "Rule-and-fact representation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Slots describe attributes and fillers provide their values."
+    },
+    {
+      "id": "AI-U4-028",
+      "question": "A Knowledge-Based Agent (KBA) makes decisions using:",
+      "options": {
+        "A": "Random choices",
+        "B": "Stored knowledge and reasoning",
+        "C": "Only sensors",
+        "D": "Only hardware"
+      },
+      "correctAnswer": "B",
+      "explanation": "A KBA uses stored knowledge and reasoning to decide and act."
+    },
+    {
+      "id": "AI-U4-029",
+      "question": "The Knowledge Base in a KBA stores:",
+      "options": {
+        "A": "Facts and rules about the world",
+        "B": "Only sensor readings",
+        "C": "Only program code",
+        "D": "Only user names"
+      },
+      "correctAnswer": "A",
+      "explanation": "The KB holds facts and rules in a knowledge-representation language."
+    },
+    {
+      "id": "AI-U4-030",
+      "question": "The inference engine in a KBA:",
+      "options": {
+        "A": "Stores raw data only",
+        "B": "Draws the interface",
+        "C": "Physically moves the agent",
+        "D": "Uses facts, rules and new inputs to derive information and decide on an action"
+      },
+      "correctAnswer": "D",
+      "explanation": "The inference engine reasons over the KB and inputs."
+    },
+    {
+      "id": "AI-U4-031",
+      "question": "The learning element of a KBA:",
+      "options": {
+        "A": "Moves the actuators",
+        "B": "Learns from experience and updates the knowledge base",
+        "C": "Stores the user interface",
+        "D": "Draws graphs"
+      },
+      "correctAnswer": "B",
+      "explanation": "The learning element improves the KB with experience."
+    },
+    {
+      "id": "AI-U4-032",
+      "question": "In a KBA, the TELL operation:",
+      "options": {
+        "A": "Queries the knowledge base",
+        "B": "Executes an action",
+        "C": "Adds new information to the knowledge base",
+        "D": "Deletes the knowledge base"
+      },
+      "correctAnswer": "C",
+      "explanation": "TELL adds new information from the environment to the KB."
+    },
+    {
+      "id": "AI-U4-033",
+      "question": "In a KBA, the ASK operation:",
+      "options": {
+        "A": "Adds a fact",
+        "B": "Executes an action",
+        "C": "Learns from data",
+        "D": "Queries the knowledge base to find the appropriate action"
+      },
+      "correctAnswer": "D",
+      "explanation": "ASK queries the KB to determine the action."
+    },
+    {
+      "id": "AI-U4-034",
+      "question": "In a KBA, the PERFORM operation:",
+      "options": {
+        "A": "Adds new information",
+        "B": "Queries the KB",
+        "C": "Executes the selected action",
+        "D": "Deletes a fact"
+      },
+      "correctAnswer": "C",
+      "explanation": "PERFORM carries out the action chosen."
+    },
+    {
+      "id": "AI-U4-035",
+      "question": "A knowledge-based agent can be defined using how many levels?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "B",
+      "explanation": "The three levels are knowledge, logical and implementation."
+    },
+    {
+      "id": "AI-U4-036",
+      "question": "Which level of a knowledge-based agent is the most abstract?",
+      "options": {
+        "A": "Knowledge level",
+        "B": "Logical level",
+        "C": "Implementation level",
+        "D": "Hardware level"
+      },
+      "correctAnswer": "A",
+      "explanation": "The knowledge level describes what the agent knows and its goals without implementation details."
+    },
+    {
+      "id": "AI-U4-037",
+      "question": "A rule-based system solves problems using:",
+      "options": {
+        "A": "Random guesses",
+        "B": "Only statistical data",
+        "C": "Only neural networks",
+        "D": "Predefined IF-THEN rules"
+      },
+      "correctAnswer": "D",
+      "explanation": "A rule-based system applies predefined rules of the form IF condition THEN action."
+    },
+    {
+      "id": "AI-U4-038",
+      "question": "A rule-based system is also known as a:",
+      "options": {
+        "A": "Frame system",
+        "B": "Semantic net",
+        "C": "Knowledge-based system",
+        "D": "Utility system"
+      },
+      "correctAnswer": "C",
+      "explanation": "The PPT quiz marks knowledge-based system as its other name."
+    },
+    {
+      "id": "AI-U4-039",
+      "question": "The inference engine has which two reasoning modes?",
+      "options": {
+        "A": "Forward chaining and backward chaining",
+        "B": "Resolution and utility",
+        "C": "Marking and sweeping",
+        "D": "TELL and ASK"
+      },
+      "correctAnswer": "A",
+      "explanation": "The two modes are forward chaining and backward chaining."
+    },
+    {
+      "id": "AI-U4-040",
+      "question": "Forward chaining is:",
+      "options": {
+        "A": "Goal-driven",
+        "B": "Data-driven",
+        "C": "Random",
+        "D": "Utility-driven"
+      },
+      "correctAnswer": "B",
+      "explanation": "Forward chaining starts with known facts, so it is data-driven."
+    },
+    {
+      "id": "AI-U4-041",
+      "question": "Backward chaining is:",
+      "options": {
+        "A": "Data-driven",
+        "B": "Random",
+        "C": "Fact-driven",
+        "D": "Goal-driven"
+      },
+      "correctAnswer": "D",
+      "explanation": "Backward chaining starts with a goal, so it is goal-driven."
+    },
+    {
+      "id": "AI-U4-042",
+      "question": "Which algorithm works backward from the goal to solve a problem?",
+      "options": {
+        "A": "Forward chaining",
+        "B": "Backward chaining",
+        "C": "Incremental forward chaining",
+        "D": "Utility maximisation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Backward chaining begins with the goal and searches for supporting facts."
+    },
+    {
+      "id": "AI-U4-043",
+      "question": "An Expert System is an AI program that:",
+      "options": {
+        "A": "Provides advice or decisions using the knowledge and reasoning of a human expert in a specific domain",
+        "B": "Replaces all human workers",
+        "C": "Stores only images",
+        "D": "Only translates languages"
+      },
+      "correctAnswer": "A",
+      "explanation": "An expert system uses facts, rules and heuristics of an expert in a specific domain."
+    },
+    {
+      "id": "AI-U4-044",
+      "question": "Which are the three basic components of an Expert System?",
+      "options": {
+        "A": "Frame, slot and facet",
+        "B": "Node, arc and partition",
+        "C": "Knowledge base, inference engine and user interface",
+        "D": "State, action and reward"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes list the knowledge base, inference engine and user interface."
+    },
+    {
+      "id": "AI-U4-045",
+      "question": "According to the PPT quiz, which university introduced Expert Systems?",
+      "options": {
+        "A": "Harvard University",
+        "B": "Oxford University",
+        "C": "Stanford University",
+        "D": "Cambridge University"
+      },
+      "correctAnswer": "C",
+      "explanation": "The quiz key marks Stanford University as the answer."
+    },
+    {
+      "id": "AI-U4-046",
+      "question": "In an expert system, the Domain Expert:",
+      "options": {
+        "A": "Provides specialized knowledge about the subject domain",
+        "B": "Converts knowledge into a usable form",
+        "C": "Only uses the system",
+        "D": "Writes the hardware"
+      },
+      "correctAnswer": "A",
+      "explanation": "The domain expert is the source of specialised knowledge."
+    },
+    {
+      "id": "AI-U4-047",
+      "question": "Resolution is a theorem-proving technique that proves a statement by:",
+      "options": {
+        "A": "Guessing",
+        "B": "Contradiction",
+        "C": "Sampling",
+        "D": "Sorting"
+      },
+      "correctAnswer": "B",
+      "explanation": "Resolution adds the negated goal and looks for a contradiction."
+    },
+    {
+      "id": "AI-U4-048",
+      "question": "The introduction of Resolution is attributed in the PPT to:",
+      "options": {
+        "A": "Marvin Minsky in 1975",
+        "B": "M. Ross Quillian in 1968",
+        "C": "Alan Turing in 1950",
+        "D": "John Alan Robinson in 1965"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes attribute resolution to John Alan Robinson in 1965."
+    },
+    {
+      "id": "AI-U4-049",
+      "question": "Probabilistic reasoning uses probability to handle:",
+      "options": {
+        "A": "Hardware faults",
+        "B": "Uncertainty",
+        "C": "Network delays",
+        "D": "Syntax errors"
+      },
+      "correctAnswer": "B",
+      "explanation": "Probabilistic reasoning copes with incomplete information and uncertain outcomes."
+    },
+    {
+      "id": "AI-U4-050",
+      "question": "Utility theory assigns each outcome a numerical value called:",
+      "options": {
+        "A": "Probability",
+        "B": "Frequency",
+        "C": "Utility",
+        "D": "Weight"
+      },
+      "correctAnswer": "C",
+      "explanation": "Utility represents how desirable an outcome is."
+    },
+    {
+      "id": "AI-U4-051",
+      "question": "Which is NOT one of the types of knowledge listed in the notes (object, event, performance, meta, factual)?",
+      "options": {
+        "A": "Emotional knowledge",
+        "B": "Object knowledge",
+        "C": "Event knowledge",
+        "D": "Performance knowledge"
+      },
+      "correctAnswer": "A",
+      "explanation": "Emotional knowledge is not in the notes' list of knowledge types."
+    },
+    {
+      "id": "AI-U4-052",
+      "question": "Which statement about heuristic knowledge is correct?",
+      "options": {
+        "A": "It always gives a correct result",
+        "B": "It is knowledge about knowledge",
+        "C": "It describes only facts",
+        "D": "It guides quick problem solving but does not guarantee a correct result"
+      },
+      "correctAnswer": "D",
+      "explanation": "Heuristics are experience-based rules of thumb without a guarantee."
+    },
+    {
+      "id": "AI-U4-053",
+      "question": "Which is an example of meta-knowledge?",
+      "options": {
+        "A": "Paris is the capital of France",
+        "B": "Steps to solve an equation",
+        "C": "A car has wheels",
+        "D": "Selecting a suitable algorithm"
+      },
+      "correctAnswer": "D",
+      "explanation": "Knowing which method to use is knowledge about knowledge."
+    },
+    {
+      "id": "AI-U4-054",
+      "question": "Which is a drawback of semantic networks?",
+      "options": {
+        "A": "They cannot be drawn",
+        "B": "Quantifiers such as all, some and none are not represented naturally",
+        "C": "They cannot have nodes",
+        "D": "They have no relationships"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes list limited representation of quantifiers as a drawback."
+    },
+    {
+      "id": "AI-U4-055",
+      "question": "Another drawback of semantic networks is that:",
+      "options": {
+        "A": "There is no fixed standard for naming relationships",
+        "B": "They always run out of memory",
+        "C": "They cannot use IS-A",
+        "D": "They need quantum hardware"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes say there are no standard link names."
+    },
+    {
+      "id": "AI-U4-056",
+      "question": "An advantage of semantic networks is that they:",
+      "options": {
+        "A": "Handle quantifiers perfectly",
+        "B": "Never need searching",
+        "C": "Connect concepts in a way similar to human associations",
+        "D": "Need no creator"
+      },
+      "correctAnswer": "C",
+      "explanation": "Semantic networks give a natural representation similar to human associations."
+    },
+    {
+      "id": "AI-U4-057",
+      "question": "In the Jerry example, which labelled links are used?",
+      "options": {
+        "A": "is-a, owned-by and has-colour",
+        "B": "if, then and else",
+        "C": "tell, ask and perform",
+        "D": "slot, filler and facet"
+      },
+      "correctAnswer": "A",
+      "explanation": "Jerry is a cat, owned by Priya and white, so links such as is-a, owned-by and has-colour are used."
+    },
+    {
+      "id": "AI-U4-058",
+      "question": "Partitioned semantic networks can represent:",
+      "options": {
+        "A": "Only numbers",
+        "B": "Quantified statements and distinguish an individual from a group",
+        "C": "Only images",
+        "D": "Only procedures"
+      },
+      "correctAnswer": "B",
+      "explanation": "They represent ∀ and ∃ statements and separate individuals from groups."
+    },
+    {
+      "id": "AI-U4-059",
+      "question": "In the basic representation method for partitioned nets, after creating the General Statement (GS) node you:",
+      "options": {
+        "A": "Delete the GS node",
+        "B": "Draw a probability table",
+        "C": "Add a utility function",
+        "D": "Create an instance node g for the general statement"
+      },
+      "correctAnswer": "D",
+      "explanation": "The steps are GS node, instance node g, required nodes and links, then quantifiers."
+    },
+    {
+      "id": "AI-U4-060",
+      "question": "In \"The dog bites the mail carrier\", the node d (Dog) plays the role of:",
+      "options": {
+        "A": "Victim",
+        "B": "Action",
+        "C": "Assailant (agent)",
+        "D": "Constable"
+      },
+      "correctAnswer": "C",
+      "explanation": "d is the assailant, b the bite action and m the victim."
+    },
+    {
+      "id": "AI-U4-061",
+      "question": "In the same network, the node m (Mail_Carrier) plays the role of:",
+      "options": {
+        "A": "Assailant",
+        "B": "Action",
+        "C": "Victim (recipient)",
+        "D": "Partition"
+      },
+      "correctAnswer": "C",
+      "explanation": "m is the mail carrier who is bitten, the victim."
+    },
+    {
+      "id": "AI-U4-062",
+      "question": "The main difference between \"Every dog has bitten a mail carrier\" and \"The dog bites the mail carrier\" is the:",
+      "options": {
+        "A": "Universal quantifier",
+        "B": "Existential quantifier",
+        "C": "Number of nodes",
+        "D": "Name of the action"
+      },
+      "correctAnswer": "A",
+      "explanation": "\"Every\" adds the universal quantifier, making a statement about every dog."
+    },
+    {
+      "id": "AI-U4-063",
+      "question": "The word \"Every\" in a sentence indicates:",
+      "options": {
+        "A": "The existential quantifier (∃)",
+        "B": "A negation",
+        "C": "An implication only",
+        "D": "The universal quantifier (∀)"
+      },
+      "correctAnswer": "D",
+      "explanation": "\"Every\" signals ∀."
+    },
+    {
+      "id": "AI-U4-064",
+      "question": "For \"Every dog in town has bitten every mail carrier\", quantification is applied to:",
+      "options": {
+        "A": "Only the dog group",
+        "B": "Both the dog group and the mail-carrier group",
+        "C": "Only the mail carrier",
+        "D": "Neither group"
+      },
+      "correctAnswer": "B",
+      "explanation": "\"Every\" appears twice, so both groups are universally quantified."
+    },
+    {
+      "id": "AI-U4-065",
+      "question": "In a Student frame, a constraint that Attendance must be between 0% and 100% is an example of a:",
+      "options": {
+        "A": "Slot value",
+        "B": "Frame name",
+        "C": "Facet",
+        "D": "Partition"
+      },
+      "correctAnswer": "C",
+      "explanation": "A facet gives constraints, defaults or procedures for a slot."
+    },
+    {
+      "id": "AI-U4-066",
+      "question": "A frame slot can hold:",
+      "options": {
+        "A": "Only numbers",
+        "B": "Values, procedures for calculating values or pointers to other frames",
+        "C": "Only text",
+        "D": "Only probabilities"
+      },
+      "correctAnswer": "B",
+      "explanation": "The notes say a frame can contain values, procedures or pointers to other frames."
+    },
+    {
+      "id": "AI-U4-067",
+      "question": "Frames evolved from ideas in:",
+      "options": {
+        "A": "Semantic networks and are related to classes and objects in OOP",
+        "B": "Neural networks and databases",
+        "C": "Genetic algorithms",
+        "D": "Hidden Markov models"
+      },
+      "correctAnswer": "A",
+      "explanation": "Frames grew out of semantic networks and resemble classes and objects."
+    },
+    {
+      "id": "AI-U4-068",
+      "question": "Frame-based systems are used in:",
+      "options": {
+        "A": "Only spreadsheets",
+        "B": "Only compilers",
+        "C": "Only operating systems",
+        "D": "Natural Language Processing and computer vision"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes list NLP and computer vision as applications."
+    },
+    {
+      "id": "AI-U4-069",
+      "question": "A disadvantage of frames is that:",
+      "options": {
+        "A": "Inference and reasoning can be difficult to implement",
+        "B": "They cannot store defaults",
+        "C": "They cannot be extended",
+        "D": "They have no slots"
+      },
+      "correctAnswer": "A",
+      "explanation": "Frames do not always provide a straightforward inference mechanism."
+    },
+    {
+      "id": "AI-U4-070",
+      "question": "An advantage of frames is that they:",
+      "options": {
+        "A": "Need no structure",
+        "B": "Cannot be extended",
+        "C": "Replace all reasoning",
+        "D": "Support default values and help identify missing information"
+      },
+      "correctAnswer": "D",
+      "explanation": "Default values and detection of missing information are listed advantages."
+    },
+    {
+      "id": "AI-U4-071",
+      "question": "The KBA sequence given in the notes is:",
+      "options": {
+        "A": "Act, Reason, Observe, Update, Represent",
+        "B": "Represent, Observe, Update, Reason, Act",
+        "C": "Observe, Act, Represent, Reason, Update",
+        "D": "Update, Represent, Act, Observe, Reason"
+      },
+      "correctAnswer": "B",
+      "explanation": "The memory tip is Represent → Observe → Update → Reason → Act."
+    },
+    {
+      "id": "AI-U4-072",
+      "question": "In the robot example, recording that an obstacle is present is a:",
+      "options": {
+        "A": "ASK operation",
+        "B": "PERFORM operation",
+        "C": "TELL operation",
+        "D": "LEARN operation"
+      },
+      "correctAnswer": "C",
+      "explanation": "Adding new information to the KB is TELL."
+    },
+    {
+      "id": "AI-U4-073",
+      "question": "In the robot example, deciding to take another path is an:",
+      "options": {
+        "A": "TELL operation",
+        "B": "PERFORM operation",
+        "C": "Memory operation",
+        "D": "ASK operation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Querying the KB for the action is ASK, and moving is PERFORM."
+    },
+    {
+      "id": "AI-U4-074",
+      "question": "The knowledge level of a KBA specifies:",
+      "options": {
+        "A": "What the agent knows and its goals",
+        "B": "The logical sentences used",
+        "C": "The program code",
+        "D": "The hardware"
+      },
+      "correctAnswer": "A",
+      "explanation": "The knowledge level states what the agent knows and wants."
+    },
+    {
+      "id": "AI-U4-075",
+      "question": "The logical level of a KBA:",
+      "options": {
+        "A": "Describes goals only",
+        "B": "Is the actual program",
+        "C": "Represents knowledge using logical sentences",
+        "D": "Is the hardware"
+      },
+      "correctAnswer": "C",
+      "explanation": "At the logical level knowledge is encoded in logical sentences."
+    },
+    {
+      "id": "AI-U4-076",
+      "question": "The implementation level of a KBA:",
+      "options": {
+        "A": "Describes goals only",
+        "B": "Implements the knowledge and logic in a program",
+        "C": "Is the most abstract level",
+        "D": "Has no program"
+      },
+      "correctAnswer": "B",
+      "explanation": "In the automated taxi example it is the level that actually drives from A to B."
+    },
+    {
+      "id": "AI-U4-077",
+      "question": "The declarative approach to building a KBA:",
+      "options": {
+        "A": "Writes behaviour directly in program code",
+        "B": "Uses no inference engine",
+        "C": "Adds facts and rules to the knowledge base",
+        "D": "Follows fixed programmed steps only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Declarative means telling the agent what it needs to know."
+    },
+    {
+      "id": "AI-U4-078",
+      "question": "The procedural approach to building a KBA:",
+      "options": {
+        "A": "Writes the desired behaviour directly in program code",
+        "B": "Adds only facts to the KB",
+        "C": "Uses an inference engine to select actions",
+        "D": "Needs no code"
+      },
+      "correctAnswer": "A",
+      "explanation": "Procedural means programming the behaviour directly."
+    },
+    {
+      "id": "AI-U4-079",
+      "question": "The components of a rule-based system are:",
+      "options": {
+        "A": "Slots, fillers and facets",
+        "B": "Nodes, arcs and partitions",
+        "C": "Parent, child and edge",
+        "D": "Rules (knowledge base), database of facts and inference engine"
+      },
+      "correctAnswer": "D",
+      "explanation": "A rule-based system has a rule base, facts and an inference engine."
+    },
+    {
+      "id": "AI-U4-080",
+      "question": "Forward chaining stops when:",
+      "options": {
+        "A": "The first rule is applied",
+        "B": "The goal is reached or no further rule can be applied",
+        "C": "All facts are deleted",
+        "D": "The user logs out"
+      },
+      "correctAnswer": "B",
+      "explanation": "Forward chaining repeats until the goal is achieved or no more inference is possible."
+    },
+    {
+      "id": "AI-U4-081",
+      "question": "Forward chaining is a:",
+      "options": {
+        "A": "Top-down approach",
+        "B": "Random approach",
+        "C": "Bottom-up approach",
+        "D": "Utility-based approach"
+      },
+      "correctAnswer": "C",
+      "explanation": "Forward chaining moves from facts upward to a conclusion."
+    },
+    {
+      "id": "AI-U4-082",
+      "question": "Backward chaining is a:",
+      "options": {
+        "A": "Bottom-up approach that starts from facts",
+        "B": "Top-down approach that breaks the main goal into sub-goals",
+        "C": "Random approach",
+        "D": "Frame-based approach"
+      },
+      "correctAnswer": "B",
+      "explanation": "Backward chaining moves from the goal down to sub-goals and supporting facts."
+    },
+    {
+      "id": "AI-U4-083",
+      "question": "Backward chaining commonly uses which search strategy?",
+      "options": {
+        "A": "Depth-first search",
+        "B": "Breadth-first search only",
+        "C": "Random search",
+        "D": "Hill climbing only"
+      },
+      "correctAnswer": "A",
+      "explanation": "It explores one reasoning chain before backtracking, like depth-first search."
+    },
+    {
+      "id": "AI-U4-084",
+      "question": "Which algorithm is most similar to backward chaining, according to the quiz?",
+      "options": {
+        "A": "Breadth-first search",
+        "B": "Uniform cost search",
+        "C": "Hill climbing",
+        "D": "Depth-first search"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz key marks depth-first search."
+    },
+    {
+      "id": "AI-U4-085",
+      "question": "Which problems can frequently occur in backward chaining, according to the quiz?",
+      "options": {
+        "A": "Only repeated states",
+        "B": "Both repeated states and incompleteness",
+        "C": "Only incompleteness",
+        "D": "Neither of them"
+      },
+      "correctAnswer": "B",
+      "explanation": "The PPT marks both repeated states and incompleteness."
+    },
+    {
+      "id": "AI-U4-086",
+      "question": "How can redundant rule-matching attempts in forward chaining be eliminated?",
+      "options": {
+        "A": "Backward chaining",
+        "B": "Resolution",
+        "C": "Incremental forward chaining",
+        "D": "Utility maximisation"
+      },
+      "correctAnswer": "C",
+      "explanation": "The PPT identifies incremental forward chaining as the answer."
+    },
+    {
+      "id": "AI-U4-087",
+      "question": "Which condition is used to cease the growth of forward chaining?",
+      "options": {
+        "A": "No further inference",
+        "B": "Too many facts",
+        "C": "A new rule",
+        "D": "A new user"
+      },
+      "correctAnswer": "A",
+      "explanation": "Growth stops when no new fact can be inferred."
+    },
+    {
+      "id": "AI-U4-088",
+      "question": "In an expert system, the working memory:",
+      "options": {
+        "A": "Stores the permanent expert knowledge only",
+        "B": "Draws the interface",
+        "C": "Acquires knowledge from experts",
+        "D": "Stores facts about the current problem and intermediate results"
+      },
+      "correctAnswer": "D",
+      "explanation": "Working memory holds current-problem facts and intermediate results."
+    },
+    {
+      "id": "AI-U4-089",
+      "question": "In an expert system, the explanation system:",
+      "options": {
+        "A": "Collects knowledge from experts",
+        "B": "Explains how or why the system reached a conclusion",
+        "C": "Stores the rules",
+        "D": "Draws the screen"
+      },
+      "correctAnswer": "B",
+      "explanation": "The explanation system justifies the system's conclusions."
+    },
+    {
+      "id": "AI-U4-090",
+      "question": "In an expert system, the Knowledge Engineer:",
+      "options": {
+        "A": "Converts expert knowledge into a form the system can use",
+        "B": "Only uses the system",
+        "C": "Provides the domain facts",
+        "D": "Pays for the system"
+      },
+      "correctAnswer": "A",
+      "explanation": "The knowledge engineer encodes the expert's knowledge."
+    },
+    {
+      "id": "AI-U4-091",
+      "question": "A probabilistic inference engine differs from a deterministic one because it:",
+      "options": {
+        "A": "Treats all conclusions as certain",
+        "B": "Uses no rules",
+        "C": "Uses no facts",
+        "D": "Uses probabilities when information or conclusions are uncertain"
+      },
+      "correctAnswer": "D",
+      "explanation": "A probabilistic engine reasons with probabilities under uncertainty."
+    },
+    {
+      "id": "AI-U4-092",
+      "question": "Which is an advantage of expert systems?",
+      "options": {
+        "A": "They never need updating",
+        "B": "They have human-like creativity",
+        "C": "They can operate in risky environments where human presence is dangerous",
+        "D": "They are free to build"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes list operation in risky environments as an advantage."
+    },
+    {
+      "id": "AI-U4-093",
+      "question": "Which is a disadvantage of expert systems?",
+      "options": {
+        "A": "Incorrect knowledge can produce incorrect results",
+        "B": "They are tired after work",
+        "C": "They have emotions",
+        "D": "They never store knowledge"
+      },
+      "correctAnswer": "A",
+      "explanation": "Their accuracy depends on the correctness of their knowledge."
+    },
+    {
+      "id": "AI-U4-094",
+      "question": "Which of the following is NOT a capability of expert systems, according to the quiz?",
+      "options": {
+        "A": "Advising",
+        "B": "Expanding",
+        "C": "Demonstrating",
+        "D": "Explaining"
+      },
+      "correctAnswer": "B",
+      "explanation": "The slide lists advising, demonstrating and explaining; expanding is the odd one out."
+    },
+    {
+      "id": "AI-U4-095",
+      "question": "An application of expert systems in finance is:",
+      "options": {
+        "A": "Suggesting diseases from symptoms",
+        "B": "Organizing tasks",
+        "C": "Designing products",
+        "D": "Detecting fraud and assisting loan decisions"
+      },
+      "correctAnswer": "D",
+      "explanation": "Finance uses expert systems for fraud detection and loan decisions."
+    },
+    {
+      "id": "AI-U4-096",
+      "question": "In resolution, a literal is:",
+      "options": {
+        "A": "A disjunction of clauses",
+        "B": "A conjunction of clauses",
+        "C": "An atomic statement or its negation",
+        "D": "A substitution"
+      },
+      "correctAnswer": "C",
+      "explanation": "A literal is P or ¬P."
+    },
+    {
+      "id": "AI-U4-097",
+      "question": "In resolution, a clause is:",
+      "options": {
+        "A": "A conjunction of clauses",
+        "B": "A single constant",
+        "C": "A disjunction (OR) of literals",
+        "D": "A substitution"
+      },
+      "correctAnswer": "C",
+      "explanation": "A clause is an OR of literals, such as P ∨ Q."
+    },
+    {
+      "id": "AI-U4-098",
+      "question": "Conjunctive Normal Form (CNF) is:",
+      "options": {
+        "A": "A conjunction (AND) of clauses",
+        "B": "A disjunction of literals",
+        "C": "A single literal",
+        "D": "A single quantifier"
+      },
+      "correctAnswer": "A",
+      "explanation": "CNF is an AND of clauses."
+    },
+    {
+      "id": "AI-U4-099",
+      "question": "Unification in resolution means:",
+      "options": {
+        "A": "Removing all clauses",
+        "B": "Finding substitutions that make logical expressions match",
+        "C": "Negating the goal",
+        "D": "Counting literals"
+      },
+      "correctAnswer": "B",
+      "explanation": "Unification matches expressions, such as P(x) with P(A) by x = A."
+    },
+    {
+      "id": "AI-U4-100",
+      "question": "A utility function depends on:",
+      "options": {
+        "A": "Only monetary value",
+        "B": "Only probabilities",
+        "C": "Only the number of outcomes",
+        "D": "The agent's preferences, not only on monetary value"
+      },
+      "correctAnswer": "D",
+      "explanation": "Utility reflects the agent's preferences."
+    },
+    {
+      "id": "AI-U4-101",
+      "question": "In forward chaining for the Robert example, the fact Weapon(T1) is derived from:",
+      "options": {
+        "A": "Enemy(A, America)",
+        "B": "Missile(T1)",
+        "C": "American(Robert)",
+        "D": "Hostile(A)"
+      },
+      "correctAnswer": "B",
+      "explanation": "The rule Missile(T1) → Weapon(T1) produces Weapon(T1)."
+    },
+    {
+      "id": "AI-U4-102",
+      "question": "In the Robert example, the fact Hostile(A) is derived from:",
+      "options": {
+        "A": "Missile(T1)",
+        "B": "Owns(A, T1)",
+        "C": "Enemy(A, America)",
+        "D": "American(Robert)"
+      },
+      "correctAnswer": "C",
+      "explanation": "The rule Enemy(A, America) → Hostile(A) produces Hostile(A)."
+    },
+    {
+      "id": "AI-U4-103",
+      "question": "In the Robert example, Criminal(Robert) is concluded from:",
+      "options": {
+        "A": "American(Robert), Weapon(T1), Sells(Robert, T1, A) and Hostile(A)",
+        "B": "Only American(Robert)",
+        "C": "Only Missile(T1)",
+        "D": "Only Hostile(A)"
+      },
+      "correctAnswer": "A",
+      "explanation": "The final rule needs an American, a weapon, a sale and a hostile nation."
+    },
+    {
+      "id": "AI-U4-104",
+      "question": "In backward chaining for Criminal(Robert), which are the sub-goals?",
+      "options": {
+        "A": "Missile(T1) only",
+        "B": "Owns(A, T1) only",
+        "C": "Enemy(A, America) only",
+        "D": "American(Robert), Weapon(q), Sells(Robert, q, r) and Hostile(r)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Substituting Robert in the Criminal rule gives these four sub-goals."
+    },
+    {
+      "id": "AI-U4-105",
+      "question": "Which are the initial facts in the forward chaining Robert example?",
+      "options": {
+        "A": "Criminal(Robert) and Hostile(A)",
+        "B": "American(Robert), Enemy(A, America), Owns(A, T1) and Missile(T1)",
+        "C": "Weapon(T1) and Sells(Robert, T1, A)",
+        "D": "Hostile(A) only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The proof starts from the four given facts."
+    },
+    {
+      "id": "AI-U4-106",
+      "question": "Which statement about the implication Enemy(x, America) → Hostile(x) is correct?",
+      "options": {
+        "A": "From Hostile(A) we can prove Enemy(A, America)",
+        "B": "It works in both directions",
+        "C": "It proves nothing",
+        "D": "From Enemy(A, America) we can prove Hostile(A), but not the reverse"
+      },
+      "correctAnswer": "D",
+      "explanation": "The notes correct slide 66: the implication cannot be reversed."
+    },
+    {
+      "id": "AI-U4-107",
+      "question": "Which is the correct order of resolution steps?",
+      "options": {
+        "A": "Negate the goal → CNF → FOL → resolve",
+        "B": "Resolve → FOL → CNF → negate the goal",
+        "C": "FOL → CNF → negate the goal → resolve → empty clause",
+        "D": "CNF → empty clause → FOL"
+      },
+      "correctAnswer": "C",
+      "explanation": "The steps are convert to FOL, to CNF, negate and add the goal, resolve, and look for □."
+    },
+    {
+      "id": "AI-U4-108",
+      "question": "In resolution, a contradiction is shown when:",
+      "options": {
+        "A": "The empty clause is derived",
+        "B": "A new literal is created",
+        "C": "The goal is added",
+        "D": "CNF is built"
+      },
+      "correctAnswer": "A",
+      "explanation": "Deriving the empty clause proves the original goal."
+    },
+    {
+      "id": "AI-U4-109",
+      "question": "Matching P(x) with P(A) by x = A is an example of:",
+      "options": {
+        "A": "Skolemisation",
+        "B": "Marginalisation",
+        "C": "Normalisation",
+        "D": "Unification"
+      },
+      "correctAnswer": "D",
+      "explanation": "Substituting x = A makes the two expressions identical, which is unification."
+    },
+    {
+      "id": "AI-U4-110",
+      "question": "(P ∨ Q) ∧ (¬P ∨ R) is an example of:",
+      "options": {
+        "A": "Conjunctive Normal Form",
+        "B": "A single literal",
+        "C": "A frame",
+        "D": "A utility function"
+      },
+      "correctAnswer": "A",
+      "explanation": "It is an AND of clauses, so it is in CNF."
+    },
+    {
+      "id": "AI-U4-111",
+      "question": "Win ₹1,000 with probability 0.5 and ₹0 with probability 0.5. If utility equals money, the expected utility is:",
+      "options": {
+        "A": "₹1,000",
+        "B": "₹500",
+        "C": "₹250",
+        "D": "₹0"
+      },
+      "correctAnswer": "B",
+      "explanation": "EU = 0.5 × 1000 + 0.5 × 0 = 500."
+    },
+    {
+      "id": "AI-U4-112",
+      "question": "For two outcomes A and B, expected utility is:",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "U(A) + U(B)",
+        "C": "P(A) × U(A) + P(B) × U(B)",
+        "D": "P(A) × P(B)"
+      },
+      "correctAnswer": "C",
+      "explanation": "Expected utility multiplies each utility by its probability and adds the results."
+    },
+    {
+      "id": "AI-U4-113",
+      "question": "A rational agent chooses the action that:",
+      "options": {
+        "A": "Has the highest probability only",
+        "B": "Has the lowest cost only",
+        "C": "Is chosen first",
+        "D": "Maximizes expected utility"
+      },
+      "correctAnswer": "D",
+      "explanation": "A rational agent picks the action with the highest expected utility."
+    },
+    {
+      "id": "AI-U4-114",
+      "question": "Equal utility for two outcomes means the agent is:",
+      "options": {
+        "A": "Prefers the first",
+        "B": "Indifferent between them",
+        "C": "Prefers the second",
+        "D": "Unable to compare"
+      },
+      "correctAnswer": "B",
+      "explanation": "Equal utility means no preference."
+    },
+    {
+      "id": "AI-U4-115",
+      "question": "The orderability axiom says an agent can:",
+      "options": {
+        "A": "Compare any two outcomes and prefer one or consider them equal",
+        "B": "Only compare equal outcomes",
+        "C": "Never prefer an outcome",
+        "D": "Compare only lotteries"
+      },
+      "correctAnswer": "A",
+      "explanation": "Orderability means any two outcomes can be compared."
+    },
+    {
+      "id": "AI-U4-116",
+      "question": "The transitivity axiom says that if A is preferred to B and B is preferred to C, then:",
+      "options": {
+        "A": "C is preferred to A",
+        "B": "B is preferred to A",
+        "C": "A is preferred to C",
+        "D": "A and C are equal"
+      },
+      "correctAnswer": "C",
+      "explanation": "Transitivity requires consistent preferences."
+    },
+    {
+      "id": "AI-U4-117",
+      "question": "The continuity axiom says that:",
+      "options": {
+        "A": "Outcomes cannot be compared",
+        "B": "Lotteries cannot be used",
+        "C": "Preferences change randomly",
+        "D": "A preference can be matched by a suitable lottery between better and worse outcomes"
+      },
+      "correctAnswer": "D",
+      "explanation": "Continuity links a sure outcome to a lottery of better and worse outcomes."
+    },
+    {
+      "id": "AI-U4-118",
+      "question": "The substitutability axiom says that:",
+      "options": {
+        "A": "Any outcome can replace any other",
+        "B": "Lotteries cannot be changed",
+        "C": "Equally preferred outcomes can replace each other in a lottery without changing the preference",
+        "D": "Outcomes can never be equal"
+      },
+      "correctAnswer": "C",
+      "explanation": "Equally preferred outcomes are interchangeable in a lottery."
+    },
+    {
+      "id": "AI-U4-119",
+      "question": "The monotonicity axiom says that:",
+      "options": {
+        "A": "A lottery giving a preferred outcome a higher probability is preferred",
+        "B": "A lower probability is preferred",
+        "C": "Probability does not matter",
+        "D": "All lotteries are equal"
+      },
+      "correctAnswer": "A",
+      "explanation": "With the same alternatives, a higher chance of the better outcome is preferred."
+    },
+    {
+      "id": "AI-U4-120",
+      "question": "The decomposability axiom says that:",
+      "options": {
+        "A": "Lotteries cannot be combined",
+        "B": "A compound lottery can be reduced to a single lottery using probability rules",
+        "C": "A lottery has only one outcome",
+        "D": "Probabilities must be equal"
+      },
+      "correctAnswer": "B",
+      "explanation": "Two-stage lotteries reduce to overall outcome probabilities."
+    },
+    {
+      "id": "AI-U4-121",
+      "question": "For a typical person, utility is a function of money that shows:",
+      "options": {
+        "A": "Increasing marginal utility (convex)",
+        "B": "Diminishing marginal utility (concave)",
+        "C": "A constant value",
+        "D": "A random value"
+      },
+      "correctAnswer": "B",
+      "explanation": "The extra satisfaction from more money becomes smaller as money increases."
+    },
+    {
+      "id": "AI-U4-122",
+      "question": "The lottery L = [0.5: ₹500, 0.5: ₹1,000] has an expected monetary value of:",
+      "options": {
+        "A": "₹750",
+        "B": "₹500",
+        "C": "₹1,000",
+        "D": "₹1,500"
+      },
+      "correctAnswer": "A",
+      "explanation": "0.5 × 500 + 0.5 × 1000 = 750."
+    },
+    {
+      "id": "AI-U4-123",
+      "question": "Risk aversion means:",
+      "options": {
+        "A": "Preferring a risky lottery to a sure outcome",
+        "B": "Ignoring money",
+        "C": "Preferring a sure outcome to a risky lottery with the same expected monetary value",
+        "D": "Preferring losses"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes define risk aversion as preferring the sure outcome."
+    },
+    {
+      "id": "AI-U4-124",
+      "question": "For the risk-averse case in the notes, which relation holds?",
+      "options": {
+        "A": "EU(L) > U(750)",
+        "B": "EU(L) = 0",
+        "C": "U(750) = 0",
+        "D": "EU(L) < U(750)"
+      },
+      "correctAnswer": "D",
+      "explanation": "The expected utility of the lottery is less than the utility of the sure ₹750."
+    },
+    {
+      "id": "AI-U4-125",
+      "question": "The Markov Property says that the next state depends:",
+      "options": {
+        "A": "On all previous states",
+        "B": "On the initial state only",
+        "C": "On no state",
+        "D": "Only on the current state"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Markov Property states that the next state depends only on the current state."
+    },
+    {
+      "id": "AI-U4-126",
+      "question": "In a Markov model, the transition probability a_ij is:",
+      "options": {
+        "A": "P(S_j ∣ S_i)",
+        "B": "P(S_i)",
+        "C": "P(S_i, S_j) only",
+        "D": "P(S_i ∣ S_j) always"
+      },
+      "correctAnswer": "A",
+      "explanation": "a_ij is the probability of moving from state i to state j."
+    },
+    {
+      "id": "AI-U4-127",
+      "question": "In a Markov model, the initial probability π_i is:",
+      "options": {
+        "A": "P(S_j ∣ S_i)",
+        "B": "P(S_i)",
+        "C": "The emission probability",
+        "D": "The sum of all transitions"
+      },
+      "correctAnswer": "B",
+      "explanation": "π_i is the probability of starting in state S_i."
+    },
+    {
+      "id": "AI-U4-128",
+      "question": "In the Rain/Dry model, the probability of the sequence Dry, Dry, Rain, Rain is:",
+      "options": {
+        "A": "0.0384",
+        "B": "0.288",
+        "C": "0.0288",
+        "D": "0.0576"
+      },
+      "correctAnswer": "C",
+      "explanation": "0.6 × 0.8 × 0.2 × 0.3 = 0.0288."
+    },
+    {
+      "id": "AI-U4-129",
+      "question": "In the Rain/Dry model, which probability is used for the transition from Dry to Rain?",
+      "options": {
+        "A": "0.7",
+        "B": "0.2",
+        "C": "0.8",
+        "D": "0.3"
+      },
+      "correctAnswer": "B",
+      "explanation": "P(Rain ∣ Dry) = 0.2."
+    },
+    {
+      "id": "AI-U4-130",
+      "question": "In the Rain/Dry model, the probability of the sequence Dry, Dry is:",
+      "options": {
+        "A": "0.8",
+        "B": "0.6",
+        "C": "0.48",
+        "D": "0.12"
+      },
+      "correctAnswer": "C",
+      "explanation": "P(Dry) × P(Dry ∣ Dry) = 0.6 × 0.8 = 0.48."
+    },
+    {
+      "id": "AI-U4-131",
+      "question": "In the Rain/Dry model, the probability of the sequence Rain, Rain is:",
+      "options": {
+        "A": "0.12",
+        "B": "0.3",
+        "C": "0.4",
+        "D": "0.7"
+      },
+      "correctAnswer": "A",
+      "explanation": "P(Rain) × P(Rain ∣ Rain) = 0.4 × 0.3 = 0.12."
+    },
+    {
+      "id": "AI-U4-132",
+      "question": "In the HMM notation M = (A, B, π), B represents:",
+      "options": {
+        "A": "Transition probabilities",
+        "B": "Initial probabilities",
+        "C": "The number of states",
+        "D": "Emission probabilities"
+      },
+      "correctAnswer": "D",
+      "explanation": "A is transition, B is emission and π is initial probabilities."
+    },
+    {
+      "id": "AI-U4-133",
+      "question": "In an HMM, the hidden states are:",
+      "options": {
+        "A": "States that are always visible",
+        "B": "The outputs only",
+        "C": "States that cannot be observed directly",
+        "D": "The training data"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hidden states are inferred from the observable outputs."
+    },
+    {
+      "id": "AI-U4-134",
+      "question": "The HMM evaluation problem asks for:",
+      "options": {
+        "A": "The most likely hidden state sequence",
+        "B": "The probability that the HMM generated a given observation sequence",
+        "C": "The best parameters for the training data",
+        "D": "The number of states"
+      },
+      "correctAnswer": "B",
+      "explanation": "Evaluation computes the probability of an observation sequence under the model."
+    },
+    {
+      "id": "AI-U4-135",
+      "question": "The HMM decoding problem asks for:",
+      "options": {
+        "A": "The probability of the observations",
+        "B": "The best model parameters",
+        "C": "The number of observations",
+        "D": "The most likely sequence of hidden states that produced the observations"
+      },
+      "correctAnswer": "D",
+      "explanation": "Decoding finds the most likely hidden state sequence."
+    },
+    {
+      "id": "AI-U4-136",
+      "question": "The HMM learning problem asks for:",
+      "options": {
+        "A": "The parameters that best fit the training data",
+        "B": "The most likely hidden states",
+        "C": "The probability of one sequence",
+        "D": "The number of hidden states"
+      },
+      "correctAnswer": "A",
+      "explanation": "Learning estimates the HMM parameters from training data."
+    },
+    {
+      "id": "AI-U4-137",
+      "question": "What does the notes' accuracy check say about slide 105, titled \"Drawbacks of Hidden Markov Model\"?",
+      "options": {
+        "A": "Its content lists the standard HMM problems (evaluation, decoding, learning), not drawbacks",
+        "B": "It lists only drawbacks",
+        "C": "It lists applications",
+        "D": "It lists utility axioms"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes present them as the three HMM problems."
+    },
+    {
+      "id": "AI-U4-138",
+      "question": "A Bayesian Belief Network uses which kind of graph?",
+      "options": {
+        "A": "Undirected cyclic graph",
+        "B": "A table only",
+        "C": "A tree of rules",
+        "D": "Directed Acyclic Graph (DAG)"
+      },
+      "correctAnswer": "D",
+      "explanation": "A BBN shows variables and dependencies as a DAG."
+    },
+    {
+      "id": "AI-U4-139",
+      "question": "In a Bayesian Belief Network, a conditional probability represents:",
+      "options": {
+        "A": "The probability of all variables together only",
+        "B": "The probability of a parent only",
+        "C": "The probability of a variable given its parent variables",
+        "D": "The number of edges"
+      },
+      "correctAnswer": "C",
+      "explanation": "Each node stores its probability given its parents."
+    },
+    {
+      "id": "AI-U4-140",
+      "question": "Which statement about a DAG in a Bayesian network is correct?",
+      "options": {
+        "A": "It must contain a cycle",
+        "B": "It contains no directed cycles",
+        "C": "It has no arrows",
+        "D": "It has no nodes"
+      },
+      "correctAnswer": "B",
+      "explanation": "A DAG is acyclic, so it has no directed cycles."
+    },
+    {
+      "id": "AI-U4-141",
+      "question": "In a Bayesian network, the absence of a direct arrow between two nodes:",
+      "options": {
+        "A": "Always means they are independent",
+        "B": "Means they are the same node",
+        "C": "Does not always mean they are independent",
+        "D": "Means the network is invalid"
+      },
+      "correctAnswer": "C",
+      "explanation": "The notes say independence depends on the whole network structure."
+    },
+    {
+      "id": "AI-U4-142",
+      "question": "What does Morphological Segmentation do, according to the quiz?",
+      "options": {
+        "A": "Draws semantic networks",
+        "B": "Builds knowledge bases",
+        "C": "Computes utilities",
+        "D": "Separates words into individual morphemes and identifies their class"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz key gives this definition."
+    },
+    {
+      "id": "AI-U4-143",
+      "question": "Which are the undesirable properties of knowledge, according to the quiz?",
+      "options": {
+        "A": "Small, simple and fixed",
+        "B": "Voluminous, difficult to characterize and variable",
+        "C": "Precise, complete and constant",
+        "D": "Cheap, fast and short"
+      },
+      "correctAnswer": "B",
+      "explanation": "The slide lists voluminous, difficult to characterize and variability."
+    },
+    {
+      "id": "AI-U4-144",
+      "question": "Knowledge and reasoning play a crucial role in dealing with which kind of environment?",
+      "options": {
+        "A": "Partially observable",
+        "B": "Fully observable",
+        "C": "Static only",
+        "D": "Deterministic only"
+      },
+      "correctAnswer": "A",
+      "explanation": "They help an agent infer hidden aspects when the state cannot be fully observed."
+    },
+    {
+      "id": "AI-U4-145",
+      "question": "A knowledge-based agent can combine general knowledge with current percepts to infer hidden aspects of the state before selecting actions. This statement is:",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "True only for robots",
+        "D": "True only for expert systems"
+      },
+      "correctAnswer": "A",
+      "explanation": "A KBA uses its knowledge together with percepts to reason about the state."
+    },
+    {
+      "id": "AI-U4-146",
+      "question": "Which is mainly used for automated reasoning, according to the quiz?",
+      "options": {
+        "A": "Data entry",
+        "B": "Logic programming",
+        "C": "Image editing",
+        "D": "Word processing"
+      },
+      "correctAnswer": "B",
+      "explanation": "The quiz key marks logic programming."
+    },
+    {
+      "id": "AI-U4-147",
+      "question": "Bayes' Rule is used in probabilistic reasoning to:",
+      "options": {
+        "A": "Remove all uncertainty",
+        "B": "Draw a DAG",
+        "C": "Update the probability of an event when new evidence becomes available",
+        "D": "Choose a frame"
+      },
+      "correctAnswer": "C",
+      "explanation": "Bayes' Rule updates probabilities in light of new evidence."
+    },
+    {
+      "id": "AI-U4-148",
+      "question": "Forward-chaining systems are ____ whereas backward-chaining systems are ____.",
+      "options": {
+        "A": "Goal-driven; data-driven",
+        "B": "Fact-less; rule-less",
+        "C": "Rule-driven; fact-driven",
+        "D": "Data-driven; goal-driven"
+      },
+      "correctAnswer": "D",
+      "explanation": "The quiz key marks data-driven, goal-driven."
+    },
+    {
+      "id": "AI-U4-149",
+      "question": "In the Person/Student frame idea, a frame system consists of:",
+      "options": {
+        "A": "Multiple connected frames",
+        "B": "A single table",
+        "C": "Only one slot",
+        "D": "A list of clauses"
+      },
+      "correctAnswer": "A",
+      "explanation": "A frame system is made of multiple connected frames."
+    },
+    {
+      "id": "AI-U4-150",
+      "question": "Which memory tip matches forward and backward chaining?",
+      "options": {
+        "A": "Forward = goal to facts; Backward = facts to goal",
+        "B": "Forward = facts to goal; Backward = goal to facts",
+        "C": "Both start from the goal",
+        "D": "Both start from facts"
+      },
+      "correctAnswer": "B",
+      "explanation": "The memory tip is Forward = FACTS → GOAL; Backward = GOAL → FACTS."
+    }
+  ]
 }
