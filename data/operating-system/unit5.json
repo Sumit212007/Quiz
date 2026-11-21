@@ -1,5 +1,1806 @@
 {
-  "subject": "Operating System",
+  "subject": "Operating Systems",
   "unit": "Unit 5",
-  "questions": []
+  "questions": [
+    {
+      "id": "OS-U5-001",
+      "question": "A file is:",
+      "options": {
+        "A": "A type of CPU register",
+        "B": "A network cable",
+        "C": "A part of main memory only",
+        "D": "A named collection of related information stored on secondary storage"
+      },
+      "correctAnswer": "D",
+      "explanation": "A file is a named collection of related information stored on secondary storage."
+    },
+    {
+      "id": "OS-U5-002",
+      "question": "Metadata means:",
+      "options": {
+        "A": "Big data",
+        "B": "Data about data",
+        "C": "Encrypted data",
+        "D": "Deleted data"
+      },
+      "correctAnswer": "B",
+      "explanation": "Metadata means data about data, such as a file's size, owner and timestamps."
+    },
+    {
+      "id": "OS-U5-003",
+      "question": "Which file attribute is a unique internal tag used by the file system?",
+      "options": {
+        "A": "Identifier",
+        "B": "Name",
+        "C": "Size",
+        "D": "Type"
+      },
+      "correctAnswer": "A",
+      "explanation": "The identifier is the unique internal tag the file system uses for a file."
+    },
+    {
+      "id": "OS-U5-004",
+      "question": "An inode number is an example of a file:",
+      "options": {
+        "A": "Name",
+        "B": "Type",
+        "C": "Identifier",
+        "D": "Location"
+      },
+      "correctAnswer": "C",
+      "explanation": "An inode number is an example of a file identifier."
+    },
+    {
+      "id": "OS-U5-005",
+      "question": "The three kinds of data files are:",
+      "options": {
+        "A": "Source, object and executable",
+        "B": "Numeric, character and binary",
+        "C": "Read, write and execute",
+        "D": "Text, video and audio only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The three kinds of data files are numeric, character and binary."
+    },
+    {
+      "id": "OS-U5-006",
+      "question": "A file with the extension .exe is a:",
+      "options": {
+        "A": "Text file",
+        "B": "Image file",
+        "C": "Source-code file",
+        "D": "Executable program file"
+      },
+      "correctAnswer": "D",
+      "explanation": "A .exe extension marks an executable program file."
+    },
+    {
+      "id": "OS-U5-007",
+      "question": "A file named program.c is a:",
+      "options": {
+        "A": "C source-code file",
+        "B": "Image file",
+        "C": "Audio file",
+        "D": "Video file"
+      },
+      "correctAnswer": "A",
+      "explanation": "A file named program.c is a C source-code file."
+    },
+    {
+      "id": "OS-U5-008",
+      "question": "Which access method reads records one after another in order?",
+      "options": {
+        "A": "Direct access",
+        "B": "Indexed access",
+        "C": "Sequential access",
+        "D": "Random access only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Sequential access reads records one after another in order."
+    },
+    {
+      "id": "OS-U5-009",
+      "question": "Direct access allows a program to:",
+      "options": {
+        "A": "Read only the first record",
+        "B": "Read only in reverse",
+        "C": "Delete the file",
+        "D": "Go straight to a specific record without reading earlier ones"
+      },
+      "correctAnswer": "D",
+      "explanation": "Direct access lets a program go straight to a specific record without reading earlier ones."
+    },
+    {
+      "id": "OS-U5-010",
+      "question": "Indexed access uses:",
+      "options": {
+        "A": "An index of keys and pointers",
+        "B": "Only a stack",
+        "C": "Only a queue",
+        "D": "A bitmap"
+      },
+      "correctAnswer": "A",
+      "explanation": "Indexed access uses an index of keys and pointers to locate records."
+    },
+    {
+      "id": "OS-U5-011",
+      "question": "The memory trick for the seven file attributes is:",
+      "options": {
+        "A": "R-W-X",
+        "B": "N-I-T-L-S-P-T",
+        "C": "C-L-I",
+        "D": "B-L-G-C"
+      },
+      "correctAnswer": "B",
+      "explanation": "The memory trick for the seven file attributes is N-I-T-L-S-P-T."
+    },
+    {
+      "id": "OS-U5-012",
+      "question": "Which operation establishes a new file?",
+      "options": {
+        "A": "Open",
+        "B": "Close",
+        "C": "Create",
+        "D": "Seek"
+      },
+      "correctAnswer": "C",
+      "explanation": "The create operation establishes a new file."
+    },
+    {
+      "id": "OS-U5-013",
+      "question": "The open() system call returns a:",
+      "options": {
+        "A": "File descriptor",
+        "B": "File name",
+        "C": "Directory",
+        "D": "Block number only"
+      },
+      "correctAnswer": "A",
+      "explanation": "The open() system call returns a file descriptor."
+    },
+    {
+      "id": "OS-U5-014",
+      "question": "File descriptor 0 stands for:",
+      "options": {
+        "A": "Standard output",
+        "B": "Standard error",
+        "C": "A disk file",
+        "D": "Standard input"
+      },
+      "correctAnswer": "D",
+      "explanation": "File descriptor 0 is standard input."
+    },
+    {
+      "id": "OS-U5-015",
+      "question": "File descriptor 1 stands for:",
+      "options": {
+        "A": "Standard input",
+        "B": "Standard output",
+        "C": "Standard error",
+        "D": "A printer"
+      },
+      "correctAnswer": "B",
+      "explanation": "File descriptor 1 is standard output."
+    },
+    {
+      "id": "OS-U5-016",
+      "question": "File descriptor 2 stands for:",
+      "options": {
+        "A": "Standard input",
+        "B": "Standard output",
+        "C": "Standard error",
+        "D": "A keyboard"
+      },
+      "correctAnswer": "C",
+      "explanation": "File descriptor 2 is standard error."
+    },
+    {
+      "id": "OS-U5-017",
+      "question": "The fseek() function:",
+      "options": {
+        "A": "Deletes a file",
+        "B": "Opens a file",
+        "C": "Renames a file",
+        "D": "Moves the file pointer"
+      },
+      "correctAnswer": "D",
+      "explanation": "fseek() moves the file pointer."
+    },
+    {
+      "id": "OS-U5-018",
+      "question": "The fclose() function:",
+      "options": {
+        "A": "Closes an opened file",
+        "B": "Opens a file",
+        "C": "Creates a file",
+        "D": "Deletes a file"
+      },
+      "correctAnswer": "A",
+      "explanation": "fclose() closes an opened file."
+    },
+    {
+      "id": "OS-U5-019",
+      "question": "Truncate:",
+      "options": {
+        "A": "Deletes the file completely",
+        "B": "Removes the contents but keeps the file",
+        "C": "Renames the file",
+        "D": "Moves the file"
+      },
+      "correctAnswer": "B",
+      "explanation": "Truncate removes the contents of a file but keeps the file."
+    },
+    {
+      "id": "OS-U5-020",
+      "question": "The append operation adds data:",
+      "options": {
+        "A": "At the beginning of a file",
+        "B": "In the middle of a file",
+        "C": "At the end of a file",
+        "D": "Only in another file"
+      },
+      "correctAnswer": "C",
+      "explanation": "The append operation adds data at the end of a file."
+    },
+    {
+      "id": "OS-U5-021",
+      "question": "The rename operation changes the:",
+      "options": {
+        "A": "File name",
+        "B": "File contents",
+        "C": "File size",
+        "D": "File type"
+      },
+      "correctAnswer": "A",
+      "explanation": "The rename operation changes the file name."
+    },
+    {
+      "id": "OS-U5-022",
+      "question": "A directory is:",
+      "options": {
+        "A": "A type of RAM",
+        "B": "A network device",
+        "C": "A virus",
+        "D": "A special structure that stores information about files and subdirectories"
+      },
+      "correctAnswer": "D",
+      "explanation": "A directory is a special structure that stores information about files and subdirectories."
+    },
+    {
+      "id": "OS-U5-023",
+      "question": "In a single-level directory:",
+      "options": {
+        "A": "Every user has a separate directory",
+        "B": "There is a tree of directories",
+        "C": "All files of all users are in one directory",
+        "D": "Cycles are allowed"
+      },
+      "correctAnswer": "C",
+      "explanation": "In a single-level directory, all files of all users are in one directory."
+    },
+    {
+      "id": "OS-U5-024",
+      "question": "MFD stands for:",
+      "options": {
+        "A": "Main File Device",
+        "B": "Master File Directory",
+        "C": "Multiple File Data",
+        "D": "Memory File Descriptor"
+      },
+      "correctAnswer": "B",
+      "explanation": "MFD stands for Master File Directory."
+    },
+    {
+      "id": "OS-U5-025",
+      "question": "UFD stands for:",
+      "options": {
+        "A": "User File Directory",
+        "B": "Universal File Descriptor",
+        "C": "Unified File Data",
+        "D": "User Format Disk"
+      },
+      "correctAnswer": "A",
+      "explanation": "UFD stands for User File Directory."
+    },
+    {
+      "id": "OS-U5-026",
+      "question": "In a tree-structured directory, the topmost directory is the:",
+      "options": {
+        "A": "Leaf directory",
+        "B": "Child directory",
+        "C": "Link directory",
+        "D": "Root directory"
+      },
+      "correctAnswer": "D",
+      "explanation": "The topmost directory in a tree structure is the root directory."
+    },
+    {
+      "id": "OS-U5-027",
+      "question": "An acyclic-graph directory allows:",
+      "options": {
+        "A": "Cycles",
+        "B": "Sharing of files without cycles",
+        "C": "Only one user",
+        "D": "No sharing"
+      },
+      "correctAnswer": "B",
+      "explanation": "An acyclic-graph directory allows sharing of files without cycles."
+    },
+    {
+      "id": "OS-U5-028",
+      "question": "A general-graph directory:",
+      "options": {
+        "A": "Forbids sharing",
+        "B": "Forbids links",
+        "C": "Permits cycles",
+        "D": "Has only one level"
+      },
+      "correctAnswer": "C",
+      "explanation": "A general-graph directory permits cycles."
+    },
+    {
+      "id": "OS-U5-029",
+      "question": "Reference counting means keeping a:",
+      "options": {
+        "A": "Count of references to a shared file",
+        "B": "Count of CPU cycles",
+        "C": "Count of users only",
+        "D": "Count of directories only"
+      },
+      "correctAnswer": "A",
+      "explanation": "Reference counting keeps a count of references to a shared file."
+    },
+    {
+      "id": "OS-U5-030",
+      "question": "An absolute path starts from the:",
+      "options": {
+        "A": "Current directory",
+        "B": "Root directory",
+        "C": "Parent directory",
+        "D": "Home directory only"
+      },
+      "correctAnswer": "B",
+      "explanation": "An absolute path starts from the root directory."
+    },
+    {
+      "id": "OS-U5-031",
+      "question": "In path names, \".\" means the:",
+      "options": {
+        "A": "Root directory",
+        "B": "Parent directory",
+        "C": "Home directory",
+        "D": "Current directory"
+      },
+      "correctAnswer": "D",
+      "explanation": "In path names, \".\" means the current directory."
+    },
+    {
+      "id": "OS-U5-032",
+      "question": "In path names, \"..\" means the:",
+      "options": {
+        "A": "Root directory",
+        "B": "Current directory",
+        "C": "Parent directory",
+        "D": "Child directory"
+      },
+      "correctAnswer": "C",
+      "explanation": "In path names, \"..\" means the parent directory."
+    },
+    {
+      "id": "OS-U5-033",
+      "question": "A hard link refers to the:",
+      "options": {
+        "A": "Same inode as the original",
+        "B": "Path of the original",
+        "C": "A copy of the data",
+        "D": "A new inode always"
+      },
+      "correctAnswer": "A",
+      "explanation": "A hard link refers to the same inode as the original."
+    },
+    {
+      "id": "OS-U5-034",
+      "question": "A symbolic link stores the:",
+      "options": {
+        "A": "Same inode",
+        "B": "Path of the target",
+        "C": "Copy of the data",
+        "D": "Index block"
+      },
+      "correctAnswer": "B",
+      "explanation": "A symbolic link stores the path of the target."
+    },
+    {
+      "id": "OS-U5-035",
+      "question": "The Boot Control Block holds the information needed to:",
+      "options": {
+        "A": "Delete files",
+        "B": "Create directories",
+        "C": "Encrypt files",
+        "D": "Boot an OS from a volume"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Boot Control Block holds the information needed to boot an OS from a volume."
+    },
+    {
+      "id": "OS-U5-036",
+      "question": "The Volume Control Block is also called the:",
+      "options": {
+        "A": "Boot block",
+        "B": "FAT",
+        "C": "Superblock",
+        "D": "Inode"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Volume Control Block is also called the superblock."
+    },
+    {
+      "id": "OS-U5-037",
+      "question": "FCB stands for:",
+      "options": {
+        "A": "File Copy Block",
+        "B": "File Control Block",
+        "C": "Fast Cache Buffer",
+        "D": "Free Chain Block"
+      },
+      "correctAnswer": "B",
+      "explanation": "FCB stands for File Control Block."
+    },
+    {
+      "id": "OS-U5-038",
+      "question": "The mount table is an:",
+      "options": {
+        "A": "In-memory structure",
+        "B": "On-disk structure only",
+        "C": "Allocation method",
+        "D": "Protection method"
+      },
+      "correctAnswer": "A",
+      "explanation": "The mount table is an in-memory structure."
+    },
+    {
+      "id": "OS-U5-039",
+      "question": "Which are the three file allocation methods?",
+      "options": {
+        "A": "Bitmap, grouping, counting",
+        "B": "ACL, capability, matrix",
+        "C": "Single, two-level, tree",
+        "D": "Contiguous, linked, indexed"
+      },
+      "correctAnswer": "D",
+      "explanation": "The three file allocation methods are contiguous, linked and indexed."
+    },
+    {
+      "id": "OS-U5-040",
+      "question": "In contiguous allocation, the blocks of a file are:",
+      "options": {
+        "A": "Scattered randomly",
+        "B": "Consecutive",
+        "C": "Linked by pointers",
+        "D": "Stored in an index"
+      },
+      "correctAnswer": "B",
+      "explanation": "In contiguous allocation the blocks of a file are consecutive."
+    },
+    {
+      "id": "OS-U5-041",
+      "question": "In linked allocation, each block contains:",
+      "options": {
+        "A": "The whole index",
+        "B": "A bitmap",
+        "C": "A pointer to the next block",
+        "D": "A password"
+      },
+      "correctAnswer": "C",
+      "explanation": "In linked allocation each block contains a pointer to the next block."
+    },
+    {
+      "id": "OS-U5-042",
+      "question": "FAT stands for:",
+      "options": {
+        "A": "File Allocation Table",
+        "B": "Fast Access Table",
+        "C": "File Access Tree",
+        "D": "Free Allocation Track"
+      },
+      "correctAnswer": "A",
+      "explanation": "FAT stands for File Allocation Table."
+    },
+    {
+      "id": "OS-U5-043",
+      "question": "Indexed allocation uses an:",
+      "options": {
+        "A": "Bitmap",
+        "B": "Index block",
+        "C": "Mount table",
+        "D": "ACL"
+      },
+      "correctAnswer": "B",
+      "explanation": "Indexed allocation uses an index block."
+    },
+    {
+      "id": "OS-U5-044",
+      "question": "The main problem of contiguous allocation is:",
+      "options": {
+        "A": "Pointer overhead",
+        "B": "Slow sequential access",
+        "C": "Index overhead",
+        "D": "External fragmentation"
+      },
+      "correctAnswer": "D",
+      "explanation": "The main problem of contiguous allocation is external fragmentation."
+    },
+    {
+      "id": "OS-U5-045",
+      "question": "Which are the four free-space management methods?",
+      "options": {
+        "A": "Contiguous, linked, indexed, FAT",
+        "B": "Read, write, execute, append",
+        "C": "Bit vector, linked list, grouping, counting",
+        "D": "ACL, matrix, domain, capability"
+      },
+      "correctAnswer": "C",
+      "explanation": "The four free-space management methods are bit vector, linked list, grouping and counting."
+    },
+    {
+      "id": "OS-U5-046",
+      "question": "In the bit vector method each block is represented by:",
+      "options": {
+        "A": "One bit",
+        "B": "One byte",
+        "C": "One word",
+        "D": "One pointer"
+      },
+      "correctAnswer": "A",
+      "explanation": "In the bit vector method each block is represented by one bit."
+    },
+    {
+      "id": "OS-U5-047",
+      "question": "The counting method stores:",
+      "options": {
+        "A": "One bit per block",
+        "B": "Every free block address",
+        "C": "A password",
+        "D": "The starting block and the number of consecutive free blocks"
+      },
+      "correctAnswer": "D",
+      "explanation": "The counting method stores the starting block and the number of consecutive free blocks."
+    },
+    {
+      "id": "OS-U5-048",
+      "question": "In the linked-list free-space method, the file system keeps a pointer to the:",
+      "options": {
+        "A": "Last free block",
+        "B": "First free block (head)",
+        "C": "Middle block",
+        "D": "Boot block"
+      },
+      "correctAnswer": "B",
+      "explanation": "In the linked-list method the file system keeps a pointer to the first free block (head)."
+    },
+    {
+      "id": "OS-U5-049",
+      "question": "File protection is used to:",
+      "options": {
+        "A": "Speed up the CPU",
+        "B": "Increase disk size",
+        "C": "Control access to files and directories",
+        "D": "Compress files"
+      },
+      "correctAnswer": "C",
+      "explanation": "File protection controls access to files and directories."
+    },
+    {
+      "id": "OS-U5-050",
+      "question": "In Linux numeric permissions, read (r) has the value:",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "1",
+        "D": "7"
+      },
+      "correctAnswer": "A",
+      "explanation": "In Linux numeric permissions, read (r) has the value 4."
+    },
+    {
+      "id": "OS-U5-051",
+      "question": "The logical view of a file means that:",
+      "options": {
+        "A": "Blocks are always physically consecutive",
+        "B": "The user sees one logical sequence although physical blocks may be scattered",
+        "C": "The file is always in RAM",
+        "D": "The file has no name"
+      },
+      "correctAnswer": "B",
+      "explanation": "The logical view means the user sees one logical sequence even if physical blocks are scattered."
+    },
+    {
+      "id": "OS-U5-052",
+      "question": "A file has 3 fixed-length records of 20 bytes each. Its total size is:",
+      "options": {
+        "A": "20 bytes",
+        "B": "40 bytes",
+        "C": "23 bytes",
+        "D": "60 bytes"
+      },
+      "correctAnswer": "D",
+      "explanation": "3 records x 20 bytes = 60 bytes."
+    },
+    {
+      "id": "OS-U5-053",
+      "question": "Variable-length records of 15, 20 and 17 bytes give a total size of:",
+      "options": {
+        "A": "50 bytes",
+        "B": "60 bytes",
+        "C": "52 bytes",
+        "D": "45 bytes"
+      },
+      "correctAnswer": "C",
+      "explanation": "15 + 20 + 17 = 52 bytes."
+    },
+    {
+      "id": "OS-U5-054",
+      "question": "A file has 500 records of 40 bytes each. Its size is:",
+      "options": {
+        "A": "20,000 bytes",
+        "B": "2,000 bytes",
+        "C": "540 bytes",
+        "D": "200,000 bytes"
+      },
+      "correctAnswer": "A",
+      "explanation": "500 x 40 = 20,000 bytes."
+    },
+    {
+      "id": "OS-U5-055",
+      "question": "Why is a file extension not always reliable proof of file type?",
+      "options": {
+        "A": "Extensions are never used",
+        "B": "The actual content may differ from the extension",
+        "C": "Extensions are encrypted",
+        "D": "Extensions change the size"
+      },
+      "correctAnswer": "B",
+      "explanation": "An extension is not reliable proof of type because the actual content may differ from it."
+    },
+    {
+      "id": "OS-U5-056",
+      "question": "What is the difference between a file name and an identifier?",
+      "options": {
+        "A": "Both are human-readable",
+        "B": "Both are internal tags",
+        "C": "The name is human-readable; the identifier is the internal tag used by the file system",
+        "D": "The name is internal; the identifier is typed by the user"
+      },
+      "correctAnswer": "C",
+      "explanation": "The name is human-readable, while the identifier is the internal tag used by the file system."
+    },
+    {
+      "id": "OS-U5-057",
+      "question": "How do indexed access and indexed allocation differ?",
+      "options": {
+        "A": "They are identical",
+        "B": "Both organise disk blocks",
+        "C": "Both locate records only",
+        "D": "Indexed access locates information in a file; indexed allocation organises the disk blocks of a file"
+      },
+      "correctAnswer": "D",
+      "explanation": "Indexed access locates information within a file, whereas indexed allocation organises a file's disk blocks."
+    },
+    {
+      "id": "OS-U5-058",
+      "question": "A file contains ABCDEFGHIJ. After fseek(fp, 4, SEEK_SET), the next character read is:",
+      "options": {
+        "A": "E",
+        "B": "D",
+        "C": "F",
+        "D": "A"
+      },
+      "correctAnswer": "A",
+      "explanation": "fseek(fp, 4, SEEK_SET) moves to position 4, which holds E."
+    },
+    {
+      "id": "OS-U5-059",
+      "question": "In C, opening an existing file in mode \"w\":",
+      "options": {
+        "A": "Appends data",
+        "B": "Opens read-only",
+        "C": "Creates it if absent or truncates it if present",
+        "D": "Deletes the directory"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mode \"w\" creates the file if absent or truncates it if present."
+    },
+    {
+      "id": "OS-U5-060",
+      "question": "In C, mode \"a\" is used for:",
+      "options": {
+        "A": "Truncating",
+        "B": "Appending",
+        "C": "Reading only",
+        "D": "Deleting"
+      },
+      "correctAnswer": "B",
+      "explanation": "Mode \"a\" is used for appending."
+    },
+    {
+      "id": "OS-U5-061",
+      "question": "Which statement about delete and truncate is correct?",
+      "options": {
+        "A": "Delete removes the directory entry; truncate keeps the file but removes its contents",
+        "B": "Both remove the directory entry",
+        "C": "Truncate removes the directory entry",
+        "D": "Both keep the file and contents"
+      },
+      "correctAnswer": "A",
+      "explanation": "Delete removes the directory entry, while truncate keeps the file but removes its contents."
+    },
+    {
+      "id": "OS-U5-062",
+      "question": "Which of these is a POSIX system call?",
+      "options": {
+        "A": "fopen()",
+        "B": "fread()",
+        "C": "fclose()",
+        "D": "read()"
+      },
+      "correctAnswer": "D",
+      "explanation": "read() is a POSIX system call, while fopen, fread and fclose are C library functions."
+    },
+    {
+      "id": "OS-U5-063",
+      "question": "The system call lseek() corresponds to the C library function:",
+      "options": {
+        "A": "fopen()",
+        "B": "fseek()",
+        "C": "fclose()",
+        "D": "remove()"
+      },
+      "correctAnswer": "B",
+      "explanation": "The system call lseek() corresponds to the C function fseek()."
+    },
+    {
+      "id": "OS-U5-064",
+      "question": "The C function remove() corresponds to the POSIX system call:",
+      "options": {
+        "A": "open()",
+        "B": "read()",
+        "C": "unlink()",
+        "D": "lseek()"
+      },
+      "correctAnswer": "C",
+      "explanation": "The C function remove() corresponds to the POSIX system call unlink()."
+    },
+    {
+      "id": "OS-U5-065",
+      "question": "The two-level directory solves which problem of the single-level directory?",
+      "options": {
+        "A": "Naming conflict between users",
+        "B": "Cycle detection",
+        "C": "Garbage collection",
+        "D": "Inode shortage"
+      },
+      "correctAnswer": "A",
+      "explanation": "The two-level directory solves the naming conflict between users."
+    },
+    {
+      "id": "OS-U5-066",
+      "question": "A disadvantage of the two-level directory is that:",
+      "options": {
+        "A": "It has no user separation",
+        "B": "It has cycles",
+        "C": "It has too many levels",
+        "D": "File sharing between users is difficult"
+      },
+      "correctAnswer": "D",
+      "explanation": "A disadvantage of the two-level directory is that sharing files between users is difficult."
+    },
+    {
+      "id": "OS-U5-067",
+      "question": "In a tree-structured directory, each directory normally has:",
+      "options": {
+        "A": "Many parents",
+        "B": "No parent at all",
+        "C": "One parent",
+        "D": "A cycle"
+      },
+      "correctAnswer": "C",
+      "explanation": "In a tree-structured directory each directory normally has one parent."
+    },
+    {
+      "id": "OS-U5-068",
+      "question": "A disadvantage of the acyclic-graph directory is:",
+      "options": {
+        "A": "No sharing",
+        "B": "Deletion complexity and possible dangling references",
+        "C": "Only one user",
+        "D": "No subdirectories"
+      },
+      "correctAnswer": "B",
+      "explanation": "A disadvantage of the acyclic-graph directory is deletion complexity and possible dangling references."
+    },
+    {
+      "id": "OS-U5-069",
+      "question": "The steps of garbage collection are:",
+      "options": {
+        "A": "Searching, sorting, deleting",
+        "B": "Opening, reading, closing",
+        "C": "Allocating, linking, indexing",
+        "D": "Marking, identification and reclamation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Garbage collection has marking, identification and reclamation steps."
+    },
+    {
+      "id": "OS-U5-070",
+      "question": "Simple reference counting fails in a general graph because:",
+      "options": {
+        "A": "Objects in a cycle keep non-zero counts though unreachable",
+        "B": "Counts are always zero",
+        "C": "Files cannot be shared",
+        "D": "There are no links"
+      },
+      "correctAnswer": "A",
+      "explanation": "Objects in a cycle keep non-zero reference counts even though they are unreachable."
+    },
+    {
+      "id": "OS-U5-071",
+      "question": "If the current directory is /home/student/BCA, the relative path OS/notes.pdf means:",
+      "options": {
+        "A": "/OS/notes.pdf",
+        "B": "/home/OS/notes.pdf",
+        "C": "/home/student/BCA/OS/notes.pdf",
+        "D": "/home/student/notes.pdf"
+      },
+      "correctAnswer": "C",
+      "explanation": "The relative path OS/notes.pdf from /home/student/BCA is /home/student/BCA/OS/notes.pdf."
+    },
+    {
+      "id": "OS-U5-072",
+      "question": "If the current directory is /home/student/BCA, the path ../notes.txt means:",
+      "options": {
+        "A": "/home/student/BCA/notes.txt",
+        "B": "/home/student/notes.txt",
+        "C": "/notes.txt",
+        "D": "/home/notes.txt"
+      },
+      "correctAnswer": "B",
+      "explanation": "\"..\" moves up to /home/student, so ../notes.txt is /home/student/notes.txt."
+    },
+    {
+      "id": "OS-U5-073",
+      "question": "Hard links to directories are generally restricted because they:",
+      "options": {
+        "A": "Can create cycles",
+        "B": "Use too much RAM",
+        "C": "Change the inode size",
+        "D": "Delete files"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hard links to directories could create cycles, so they are generally restricted."
+    },
+    {
+      "id": "OS-U5-074",
+      "question": "A symbolic link becomes dangling when:",
+      "options": {
+        "A": "It is created",
+        "B": "It is listed",
+        "C": "The inode is shared",
+        "D": "Its target is deleted or moved"
+      },
+      "correctAnswer": "D",
+      "explanation": "A symbolic link is dangling when its target is deleted or moved."
+    },
+    {
+      "id": "OS-U5-075",
+      "question": "Which are on-disk structures?",
+      "options": {
+        "A": "Mount table and open-file tables",
+        "B": "Boot control block, volume control block, directory structure and per-file FCB",
+        "C": "Only the directory cache",
+        "D": "Only the system-wide open-file table"
+      },
+      "correctAnswer": "B",
+      "explanation": "The boot control block, volume control block, directory structure and per-file FCB are on disk."
+    },
+    {
+      "id": "OS-U5-076",
+      "question": "Which are in-memory structures?",
+      "options": {
+        "A": "Boot control block and superblock",
+        "B": "Per-file FCB only",
+        "C": "Mount table, directory-structure cache, system-wide and per-process open-file tables",
+        "D": "Only the FAT"
+      },
+      "correctAnswer": "C",
+      "explanation": "The mount table, directory-structure cache and open-file tables are in memory."
+    },
+    {
+      "id": "OS-U5-077",
+      "question": "When a file is opened, the OS first uses the:",
+      "options": {
+        "A": "Directory structure to locate the file",
+        "B": "Bitmap",
+        "C": "Capability list",
+        "D": "Mount table only"
+      },
+      "correctAnswer": "A",
+      "explanation": "When opening a file, the OS first uses the directory structure to locate it."
+    },
+    {
+      "id": "OS-U5-078",
+      "question": "Per-process open-file table entries refer to entries in the:",
+      "options": {
+        "A": "Boot block",
+        "B": "Bitmap",
+        "C": "Index block",
+        "D": "System-wide open-file table"
+      },
+      "correctAnswer": "D",
+      "explanation": "Per-process open-file table entries refer to the system-wide open-file table."
+    },
+    {
+      "id": "OS-U5-079",
+      "question": "In contiguous allocation, the directory entry stores:",
+      "options": {
+        "A": "The index block address",
+        "B": "The starting block and length",
+        "C": "Only the file name",
+        "D": "A pointer in every block"
+      },
+      "correctAnswer": "B",
+      "explanation": "In contiguous allocation the directory entry stores the starting block and length."
+    },
+    {
+      "id": "OS-U5-080",
+      "question": "A file starts at block 20 and has 10 blocks. The address of its 6th logical block is:",
+      "options": {
+        "A": "24",
+        "B": "26",
+        "C": "25",
+        "D": "30"
+      },
+      "correctAnswer": "C",
+      "explanation": "The 6th logical block of a file starting at 20 is at 20 + 5 = 25."
+    },
+    {
+      "id": "OS-U5-081",
+      "question": "A file starts at block 40 and occupies 12 blocks. Its last block is:",
+      "options": {
+        "A": "50",
+        "B": "52",
+        "C": "40",
+        "D": "51"
+      },
+      "correctAnswer": "D",
+      "explanation": "A file starting at 40 with 12 blocks ends at 40 + 11 = 51."
+    },
+    {
+      "id": "OS-U5-082",
+      "question": "A drawback of linked allocation is:",
+      "options": {
+        "A": "Slow direct access",
+        "B": "External fragmentation",
+        "C": "Fixed file size",
+        "D": "No sequential access"
+      },
+      "correctAnswer": "A",
+      "explanation": "A drawback of linked allocation is slow direct access, since earlier blocks must be traversed."
+    },
+    {
+      "id": "OS-U5-083",
+      "question": "In FAT, the pointers are stored:",
+      "options": {
+        "A": "Inside each data block",
+        "B": "In the index block",
+        "C": "In a separate table",
+        "D": "In the directory only"
+      },
+      "correctAnswer": "C",
+      "explanation": "In FAT, the pointers are stored in a separate table."
+    },
+    {
+      "id": "OS-U5-084",
+      "question": "An index block is [8, 14, 21, 35, 42, 50]. The 4th logical block is at:",
+      "options": {
+        "A": "21",
+        "B": "35",
+        "C": "42",
+        "D": "14"
+      },
+      "correctAnswer": "B",
+      "explanation": "The 4th entry of the index block is 35."
+    },
+    {
+      "id": "OS-U5-085",
+      "question": "An index block of 4 KB with 4-byte pointers has how many entries?",
+      "options": {
+        "A": "1024",
+        "B": "512",
+        "C": "4096",
+        "D": "256"
+      },
+      "correctAnswer": "A",
+      "explanation": "A 4 KB index block with 4-byte pointers has 4096 / 4 = 1024 entries."
+    },
+    {
+      "id": "OS-U5-086",
+      "question": "With a 4 KB index block, 4-byte pointers and 4 KB data blocks, the maximum file size is:",
+      "options": {
+        "A": "1 MB",
+        "B": "2 MB",
+        "C": "8 MB",
+        "D": "4 MB"
+      },
+      "correctAnswer": "D",
+      "explanation": "1024 entries x 4 KB data blocks = 4 MB."
+    },
+    {
+      "id": "OS-U5-087",
+      "question": "An index block of 1024 bytes with 8-byte pointers and 2 KB data blocks gives a maximum file size of:",
+      "options": {
+        "A": "128 KB",
+        "B": "256 KB",
+        "C": "512 KB",
+        "D": "1 MB"
+      },
+      "correctAnswer": "B",
+      "explanation": "1024 / 8 = 128 entries x 2 KB = 256 KB."
+    },
+    {
+      "id": "OS-U5-088",
+      "question": "The bitmap size for a disk with 8192 blocks is:",
+      "options": {
+        "A": "8 KB",
+        "B": "512 bytes",
+        "C": "1 KB",
+        "D": "8192 KB"
+      },
+      "correctAnswer": "C",
+      "explanation": "8192 blocks need 8192 bits = 1024 bytes = 1 KB."
+    },
+    {
+      "id": "OS-U5-089",
+      "question": "The bitmap 10110010 (1 = free) shows how many free blocks?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "5",
+        "D": "8"
+      },
+      "correctAnswer": "A",
+      "explanation": "The bitmap 10110010 has four 1s, so there are 4 free blocks."
+    },
+    {
+      "id": "OS-U5-090",
+      "question": "In the counting method, the entry (40, 12) means blocks:",
+      "options": {
+        "A": "40 to 52",
+        "B": "40 to 50",
+        "C": "41 to 52",
+        "D": "40 to 51"
+      },
+      "correctAnswer": "D",
+      "explanation": "The entry (40, 12) covers blocks 40 to 51."
+    },
+    {
+      "id": "OS-U5-091",
+      "question": "Counting entries (100, 20), (200, 15) and (300, 25) give a total of how many free blocks?",
+      "options": {
+        "A": "45",
+        "B": "50",
+        "C": "60",
+        "D": "75"
+      },
+      "correctAnswer": "C",
+      "explanation": "20 + 15 + 25 = 60 free blocks."
+    },
+    {
+      "id": "OS-U5-092",
+      "question": "In grouping, a group block holds 50 addresses and one of them points to the next group. How many actual free-block addresses does it give?",
+      "options": {
+        "A": "50",
+        "B": "49",
+        "C": "48",
+        "D": "51"
+      },
+      "correctAnswer": "B",
+      "explanation": "A group block with 50 addresses, one pointing to the next group, gives 49 free-block addresses."
+    },
+    {
+      "id": "OS-U5-093",
+      "question": "The free list is 5 → 9 → 13 → 18. After block 5 is allocated, the head is:",
+      "options": {
+        "A": "5",
+        "B": "13",
+        "C": "18",
+        "D": "9"
+      },
+      "correctAnswer": "D",
+      "explanation": "After block 5 is allocated, the head moves to the next free block, 9."
+    },
+    {
+      "id": "OS-U5-094",
+      "question": "How do free-space management and file allocation differ?",
+      "options": {
+        "A": "Free-space management tracks available blocks; file allocation assigns blocks to files",
+        "B": "They are identical",
+        "C": "File allocation tracks free blocks",
+        "D": "Free-space management assigns blocks to files"
+      },
+      "correctAnswer": "A",
+      "explanation": "Free-space management tracks available blocks, while file allocation assigns blocks to files."
+    },
+    {
+      "id": "OS-U5-095",
+      "question": "In an access matrix, rows and columns represent:",
+      "options": {
+        "A": "Columns: domains; rows: objects",
+        "B": "Rows: domains; columns: objects",
+        "C": "Both are users",
+        "D": "Both are files"
+      },
+      "correctAnswer": "B",
+      "explanation": "In an access matrix, rows are domains and columns are objects."
+    },
+    {
+      "id": "OS-U5-096",
+      "question": "An Access Control List is organised:",
+      "options": {
+        "A": "Domain-wise",
+        "B": "Process-wise",
+        "C": "Object-wise",
+        "D": "Disk-wise"
+      },
+      "correctAnswer": "C",
+      "explanation": "An Access Control List is organised object-wise."
+    },
+    {
+      "id": "OS-U5-097",
+      "question": "A capability list is organised:",
+      "options": {
+        "A": "Domain-wise",
+        "B": "Object-wise",
+        "C": "Block-wise",
+        "D": "Disk-wise"
+      },
+      "correctAnswer": "A",
+      "explanation": "A capability list is organised domain-wise."
+    },
+    {
+      "id": "OS-U5-098",
+      "question": "The permission string rw-r----- corresponds to the number:",
+      "options": {
+        "A": "754",
+        "B": "750",
+        "C": "644",
+        "D": "640"
+      },
+      "correctAnswer": "D",
+      "explanation": "rw-r----- is 6 (rw-), 4 (r--), 0 (---), so 640."
+    },
+    {
+      "id": "OS-U5-099",
+      "question": "Execute (x) permission on a directory allows:",
+      "options": {
+        "A": "Running it as a program",
+        "B": "Traversing or searching the directory",
+        "C": "Deleting it",
+        "D": "Encrypting it"
+      },
+      "correctAnswer": "B",
+      "explanation": "Execute permission on a directory allows traversing or searching it."
+    },
+    {
+      "id": "OS-U5-100",
+      "question": "Which statement about authentication and authorization is correct?",
+      "options": {
+        "A": "Authorization verifies identity",
+        "B": "Both mean the same",
+        "C": "Authentication verifies identity; authorization decides permitted operations",
+        "D": "Authentication decides permissions"
+      },
+      "correctAnswer": "C",
+      "explanation": "Authentication verifies identity, while authorization decides the permitted operations."
+    },
+    {
+      "id": "OS-U5-101",
+      "question": "Which statement about the logical and physical view of a file is correct?",
+      "options": {
+        "A": "Logical continuity does not mean the physical blocks are continuous on the disk",
+        "B": "Logical continuity always means physical continuity",
+        "C": "Physical blocks are always in RAM",
+        "D": "The user always sees the physical blocks"
+      },
+      "correctAnswer": "A",
+      "explanation": "Logical continuity does not mean the physical blocks are continuous on the disk."
+    },
+    {
+      "id": "OS-U5-102",
+      "question": "Classifying files as data files and program files describes their:",
+      "options": {
+        "A": "Size",
+        "B": "Location",
+        "C": "Purpose",
+        "D": "Owner"
+      },
+      "correctAnswer": "C",
+      "explanation": "Data files and program files are classified by their purpose."
+    },
+    {
+      "id": "OS-U5-103",
+      "question": "Why is direct access convenient for fixed-length records?",
+      "options": {
+        "A": "They need no storage",
+        "B": "They have no fields",
+        "C": "They cannot be read sequentially",
+        "D": "The position of a record can be calculated easily"
+      },
+      "correctAnswer": "D",
+      "explanation": "With fixed-length records, the position of a record can be calculated easily."
+    },
+    {
+      "id": "OS-U5-104",
+      "question": "Variable-length records of 18, 22, 30 and 10 bytes give a total size of:",
+      "options": {
+        "A": "70 bytes",
+        "B": "80 bytes",
+        "C": "90 bytes",
+        "D": "100 bytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "18 + 22 + 30 + 10 = 80 bytes."
+    },
+    {
+      "id": "OS-U5-105",
+      "question": "In ABCDEFGHIJ (positions 0 to 9), if the file pointer is at position 5, the next read returns:",
+      "options": {
+        "A": "E",
+        "B": "G",
+        "C": "F",
+        "D": "A"
+      },
+      "correctAnswer": "C",
+      "explanation": "Position 5 holds F, so the next read returns F."
+    },
+    {
+      "id": "OS-U5-106",
+      "question": "Which C file mode truncates an existing file's previous contents?",
+      "options": {
+        "A": "w",
+        "B": "a",
+        "C": "r",
+        "D": "None of these"
+      },
+      "correctAnswer": "A",
+      "explanation": "Mode \"w\" truncates an existing file's previous contents."
+    },
+    {
+      "id": "OS-U5-107",
+      "question": "Which statement about open() is correct?",
+      "options": {
+        "A": "It deletes the file",
+        "B": "It only renames the file",
+        "C": "It skips permission checks",
+        "D": "It checks permissions, creates open-file entries and returns a descriptor"
+      },
+      "correctAnswer": "D",
+      "explanation": "open() checks permissions, creates open-file entries and returns a descriptor."
+    },
+    {
+      "id": "OS-U5-108",
+      "question": "Deleting a file does not always mean that:",
+      "options": {
+        "A": "The directory entry is removed",
+        "B": "Its data is immediately and securely erased from the device",
+        "C": "The name disappears",
+        "D": "Blocks may be reused"
+      },
+      "correctAnswer": "B",
+      "explanation": "Deleting a file does not always mean its data is immediately and securely erased."
+    },
+    {
+      "id": "OS-U5-109",
+      "question": "Why is closing a file important?",
+      "options": {
+        "A": "It flushes buffered data and releases system resources",
+        "B": "It deletes the file",
+        "C": "It renames the file",
+        "D": "It increases the file size"
+      },
+      "correctAnswer": "A",
+      "explanation": "Closing a file flushes buffered data and releases system resources."
+    },
+    {
+      "id": "OS-U5-110",
+      "question": "Which pairing of C function and POSIX system call is correct?",
+      "options": {
+        "A": "fopen() – read()",
+        "B": "fseek() – close()",
+        "C": "fclose() – close()",
+        "D": "fwrite() – open()"
+      },
+      "correctAnswer": "C",
+      "explanation": "fclose() corresponds to the close() system call."
+    },
+    {
+      "id": "OS-U5-111",
+      "question": "Which of these is NOT a directory operation listed in the notes?",
+      "options": {
+        "A": "Search",
+        "B": "Format",
+        "C": "Traverse",
+        "D": "Rename"
+      },
+      "correctAnswer": "B",
+      "explanation": "Format is not a directory operation in the notes; search, traverse and rename are."
+    },
+    {
+      "id": "OS-U5-112",
+      "question": "Why does rmdir on a directory fail in the notes' example?",
+      "options": {
+        "A": "The user has no name",
+        "B": "The directory is a file",
+        "C": "The path is relative",
+        "D": "The directory is not empty"
+      },
+      "correctAnswer": "D",
+      "explanation": "rmdir fails when the directory is not empty."
+    },
+    {
+      "id": "OS-U5-113",
+      "question": "In a single-level directory, two students both create assignment.docx. What happens?",
+      "options": {
+        "A": "A naming conflict occurs",
+        "B": "Both files are stored automatically",
+        "C": "A new directory is created",
+        "D": "The OS renames both"
+      },
+      "correctAnswer": "A",
+      "explanation": "In a single-level directory, two files with the same name cause a naming conflict."
+    },
+    {
+      "id": "OS-U5-114",
+      "question": "In a two-level directory, User1 and User2 can both have a file named notes because:",
+      "options": {
+        "A": "The OS merges them",
+        "B": "Names are ignored",
+        "C": "They are in different User File Directories",
+        "D": "Only one is stored"
+      },
+      "correctAnswer": "C",
+      "explanation": "User1 and User2 can both have \"notes\" because they are in different User File Directories."
+    },
+    {
+      "id": "OS-U5-115",
+      "question": "Sharing between different branches is not directly supported in a pure:",
+      "options": {
+        "A": "Acyclic graph",
+        "B": "Tree-structured directory",
+        "C": "General graph",
+        "D": "Link directory"
+      },
+      "correctAnswer": "B",
+      "explanation": "A pure tree-structured directory does not directly support sharing between branches."
+    },
+    {
+      "id": "OS-U5-116",
+      "question": "For A → B → C → A in a general-graph directory, what is needed to avoid infinite loops in searching?",
+      "options": {
+        "A": "More users",
+        "B": "A larger disk",
+        "C": "A shorter path",
+        "D": "Cycle detection or a record of visited directories"
+      },
+      "correctAnswer": "D",
+      "explanation": "Cycle detection or a record of visited directories prevents infinite loops in a general graph."
+    },
+    {
+      "id": "OS-U5-117",
+      "question": "Garbage collection in a general-graph directory starts by marking objects reachable from the:",
+      "options": {
+        "A": "Root directory",
+        "B": "Last file",
+        "C": "Largest file",
+        "D": "Current process"
+      },
+      "correctAnswer": "A",
+      "explanation": "Garbage collection starts by marking objects reachable from the root directory."
+    },
+    {
+      "id": "OS-U5-118",
+      "question": "Which statement about sharing and copying is correct?",
+      "options": {
+        "A": "Copying makes changes visible everywhere",
+        "B": "With sharing, changes are visible through all references because only one physical file exists",
+        "C": "Sharing needs more storage than copying",
+        "D": "Sharing creates separate files"
+      },
+      "correctAnswer": "B",
+      "explanation": "With sharing only one physical file exists, so changes are visible through all references."
+    },
+    {
+      "id": "OS-U5-119",
+      "question": "Removing one hard link:",
+      "options": {
+        "A": "Always deletes the data",
+        "B": "Always deletes all names",
+        "C": "Does not remove the data while other hard links exist",
+        "D": "Changes the inode number"
+      },
+      "correctAnswer": "C",
+      "explanation": "Removing one hard link does not remove the data while other hard links exist."
+    },
+    {
+      "id": "OS-U5-120",
+      "question": "Which statement about symbolic links is correct?",
+      "options": {
+        "A": "They cannot point to directories",
+        "B": "They always share the inode",
+        "C": "They cannot cross file systems",
+        "D": "They can cross file-system boundaries"
+      },
+      "correctAnswer": "D",
+      "explanation": "Symbolic links can cross file-system boundaries."
+    },
+    {
+      "id": "OS-U5-121",
+      "question": "If the current directory is /home/student/BCA/OS, the symbol \"..\" refers to:",
+      "options": {
+        "A": "/home/student/BCA/OS",
+        "B": "/home/student/BCA",
+        "C": "/home/student",
+        "D": "/"
+      },
+      "correctAnswer": "B",
+      "explanation": "From /home/student/BCA/OS, \"..\" is /home/student/BCA."
+    },
+    {
+      "id": "OS-U5-122",
+      "question": "Which information does an FCB contain?",
+      "options": {
+        "A": "Name or identifier, size, type, permissions, block locations, ownership and timestamps",
+        "B": "Only the file's contents",
+        "C": "Only the mount point",
+        "D": "Only a password"
+      },
+      "correctAnswer": "A",
+      "explanation": "An FCB holds the name or identifier, size, type, permissions, block locations, ownership and timestamps."
+    },
+    {
+      "id": "OS-U5-123",
+      "question": "Which of these is an in-memory structure rather than an on-disk structure?",
+      "options": {
+        "A": "Volume control block",
+        "B": "Per-file FCB",
+        "C": "System-wide open-file table",
+        "D": "Boot control block"
+      },
+      "correctAnswer": "C",
+      "explanation": "The system-wide open-file table is an in-memory structure."
+    },
+    {
+      "id": "OS-U5-124",
+      "question": "Why is a directory-structure cache useful?",
+      "options": {
+        "A": "It encrypts directories",
+        "B": "It deletes old directories",
+        "C": "It increases disk size",
+        "D": "It avoids repeated searches on the storage device"
+      },
+      "correctAnswer": "D",
+      "explanation": "A directory-structure cache avoids repeated searches on the storage device."
+    },
+    {
+      "id": "OS-U5-125",
+      "question": "A file starts at block 15 in contiguous allocation. Its 5th logical block is at:",
+      "options": {
+        "A": "19",
+        "B": "20",
+        "C": "18",
+        "D": "21"
+      },
+      "correctAnswer": "A",
+      "explanation": "The 5th logical block of a file starting at 15 is at 15 + 4 = 19."
+    },
+    {
+      "id": "OS-U5-126",
+      "question": "Free runs of 3, 2 and 4 consecutive blocks exist, and a file needs 6 consecutive blocks. What happens in contiguous allocation?",
+      "options": {
+        "A": "It is allocated in the 4-block run",
+        "B": "It cannot be allocated although 9 blocks are free",
+        "C": "It is allocated after merging by the OS automatically",
+        "D": "It needs 9 blocks"
+      },
+      "correctAnswer": "B",
+      "explanation": "The longest free run is 4 blocks, so a 6-block contiguous file cannot be allocated although 9 blocks are free."
+    },
+    {
+      "id": "OS-U5-127",
+      "question": "A file's chain in linked allocation is 7 → 12 → 19 → 25. The third block is:",
+      "options": {
+        "A": "12",
+        "B": "25",
+        "C": "19",
+        "D": "7"
+      },
+      "correctAnswer": "C",
+      "explanation": "The third block in the chain 7 → 12 → 19 → 25 is 19."
+    },
+    {
+      "id": "OS-U5-128",
+      "question": "Why is linked allocation poor for direct access?",
+      "options": {
+        "A": "It has no pointers",
+        "B": "It has external fragmentation",
+        "C": "It stores no start block",
+        "D": "Earlier blocks must be traversed to reach a later block"
+      },
+      "correctAnswer": "D",
+      "explanation": "Linked allocation is poor for direct access because earlier blocks must be traversed."
+    },
+    {
+      "id": "OS-U5-129",
+      "question": "Why can FAT be faster than plain linked allocation?",
+      "options": {
+        "A": "It has no table",
+        "B": "The pointers are in a separate table that can be cached in memory",
+        "C": "It stores pointers in data blocks",
+        "D": "It uses contiguous blocks"
+      },
+      "correctAnswer": "B",
+      "explanation": "FAT keeps the pointers in a separate table that can be cached in memory."
+    },
+    {
+      "id": "OS-U5-130",
+      "question": "An index block of 2048 bytes with 4-byte pointers and 8 KB data blocks addresses a maximum file size of:",
+      "options": {
+        "A": "4096 KB",
+        "B": "2048 KB",
+        "C": "1024 KB",
+        "D": "512 KB"
+      },
+      "correctAnswer": "A",
+      "explanation": "2048 / 4 = 512 entries x 8 KB = 4096 KB."
+    },
+    {
+      "id": "OS-U5-131",
+      "question": "A disadvantage of indexed allocation for very small files is:",
+      "options": {
+        "A": "Slow sequential access",
+        "B": "External fragmentation",
+        "C": "An entire index block may be used for a tiny file",
+        "D": "No direct access"
+      },
+      "correctAnswer": "C",
+      "explanation": "For a very small file, an entire index block may be used, which wastes space."
+    },
+    {
+      "id": "OS-U5-132",
+      "question": "Which allocation methods avoid external fragmentation of file data blocks?",
+      "options": {
+        "A": "Contiguous only",
+        "B": "Contiguous and linked",
+        "C": "Contiguous and indexed",
+        "D": "Linked and indexed"
+      },
+      "correctAnswer": "D",
+      "explanation": "Linked and indexed allocation avoid external fragmentation of file data blocks."
+    },
+    {
+      "id": "OS-U5-133",
+      "question": "The bitmap size for 1,048,576 blocks is:",
+      "options": {
+        "A": "128 KB",
+        "B": "64 KB",
+        "C": "256 KB",
+        "D": "1 MB"
+      },
+      "correctAnswer": "A",
+      "explanation": "1,048,576 blocks need that many bits = 131,072 bytes = 128 KB."
+    },
+    {
+      "id": "OS-U5-134",
+      "question": "The bitmap size for 32,768 blocks is:",
+      "options": {
+        "A": "2048 bytes",
+        "B": "4096 bytes",
+        "C": "8192 bytes",
+        "D": "32,768 bytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "32,768 bits = 4096 bytes."
+    },
+    {
+      "id": "OS-U5-135",
+      "question": "In the counting method, the entry (100, 40) has its first 12 blocks allocated. The free blocks are:",
+      "options": {
+        "A": "100 to 139",
+        "B": "112 to 140",
+        "C": "112 to 139",
+        "D": "100 to 111"
+      },
+      "correctAnswer": "C",
+      "explanation": "The entry (100, 40) covers 100 to 139; with the first 12 allocated, blocks 112 to 139 are free."
+    },
+    {
+      "id": "OS-U5-136",
+      "question": "Free runs of 8, 12 and 5 blocks give a total of:",
+      "options": {
+        "A": "20 blocks",
+        "B": "23 blocks",
+        "C": "30 blocks",
+        "D": "25 blocks"
+      },
+      "correctAnswer": "D",
+      "explanation": "8 + 12 + 5 = 25 blocks."
+    },
+    {
+      "id": "OS-U5-137",
+      "question": "The counting method is less effective when:",
+      "options": {
+        "A": "Free blocks are consecutive",
+        "B": "Free blocks are scattered",
+        "C": "The disk is empty",
+        "D": "The disk has one big run"
+      },
+      "correctAnswer": "B",
+      "explanation": "The counting method is less effective when free blocks are scattered."
+    },
+    {
+      "id": "OS-U5-138",
+      "question": "In the linked-list free-space method, after a block is released:",
+      "options": {
+        "A": "It is inserted at the beginning and the head changes",
+        "B": "It is deleted",
+        "C": "The list is erased",
+        "D": "It becomes allocated"
+      },
+      "correctAnswer": "A",
+      "explanation": "A released block is inserted at the beginning of the list, so the head changes."
+    },
+    {
+      "id": "OS-U5-139",
+      "question": "How does grouping differ from a simple linked list?",
+      "options": {
+        "A": "Grouping stores no addresses",
+        "B": "A linked list stores many addresses in one block",
+        "C": "Grouping stores many free-block addresses in one block",
+        "D": "Both are identical"
+      },
+      "correctAnswer": "C",
+      "explanation": "Grouping stores many free-block addresses in one block."
+    },
+    {
+      "id": "OS-U5-140",
+      "question": "Regarding the bit vector convention:",
+      "options": {
+        "A": "1 must always mean allocated",
+        "B": "0 must always mean free",
+        "C": "Only one convention exists",
+        "D": "1 is commonly free, but either convention is valid if used consistently"
+      },
+      "correctAnswer": "D",
+      "explanation": "1 is commonly used for free, but either convention is valid if used consistently."
+    },
+    {
+      "id": "OS-U5-141",
+      "question": "A process in domain D1 has File A: Read, File B: Read and Write, File C: none. Which statement is correct?",
+      "options": {
+        "A": "It can read File A but cannot access File C",
+        "B": "It can write File A",
+        "C": "It can read File C",
+        "D": "It cannot access File B"
+      },
+      "correctAnswer": "A",
+      "explanation": "The process can read File A but has no access to File C."
+    },
+    {
+      "id": "OS-U5-142",
+      "question": "A limitation of the access matrix is that it:",
+      "options": {
+        "A": "Cannot show permissions",
+        "B": "Can be very large with mostly empty entries",
+        "C": "Supports only one user",
+        "D": "Has no objects"
+      },
+      "correctAnswer": "B",
+      "explanation": "The access matrix can be very large with mostly empty entries."
+    },
+    {
+      "id": "OS-U5-143",
+      "question": "Which question is best answered by an ACL?",
+      "options": {
+        "A": "Which objects can this process access?",
+        "B": "What is the file size?",
+        "C": "Where is the boot block?",
+        "D": "Who can access this object?"
+      },
+      "correctAnswer": "D",
+      "explanation": "An ACL is organised object-wise, so it answers \"who can access this object?\"."
+    },
+    {
+      "id": "OS-U5-144",
+      "question": "chmod 754 file.txt gives:",
+      "options": {
+        "A": "Owner r--, group r-x, others rwx",
+        "B": "Owner rwx, group rwx, others r--",
+        "C": "Owner rwx, group r-x, others r--",
+        "D": "Owner r-x, group rwx, others r--"
+      },
+      "correctAnswer": "C",
+      "explanation": "chmod 754 gives owner rwx, group r-x and others r--."
+    },
+    {
+      "id": "OS-U5-145",
+      "question": "The permission string rw-r----- in numeric form is:",
+      "options": {
+        "A": "640",
+        "B": "604",
+        "C": "460",
+        "D": "740"
+      },
+      "correctAnswer": "A",
+      "explanation": "rw-r----- is 6, 4, 0, which is 640."
+    },
+    {
+      "id": "OS-U5-146",
+      "question": "chmod 700 file.txt gives permissions to:",
+      "options": {
+        "A": "Everyone",
+        "B": "The owner only",
+        "C": "The group only",
+        "D": "Others only"
+      },
+      "correctAnswer": "B",
+      "explanation": "chmod 700 gives permissions to the owner only."
+    },
+    {
+      "id": "OS-U5-147",
+      "question": "Write permission on a directory allows:",
+      "options": {
+        "A": "Only reading file contents",
+        "B": "Only executing programs",
+        "C": "Creating, deleting or renaming entries (subject to other restrictions)",
+        "D": "Only listing"
+      },
+      "correctAnswer": "C",
+      "explanation": "Write permission on a directory allows creating, deleting or renaming entries."
+    },
+    {
+      "id": "OS-U5-148",
+      "question": "In symmetric encryption:",
+      "options": {
+        "A": "A public and private key pair is used",
+        "B": "No key is used",
+        "C": "Different keys are used for each direction",
+        "D": "The same secret key encrypts and decrypts"
+      },
+      "correctAnswer": "D",
+      "explanation": "Symmetric encryption uses the same secret key to encrypt and decrypt."
+    },
+    {
+      "id": "OS-U5-149",
+      "question": "Which is an example of authentication?",
+      "options": {
+        "A": "A login password",
+        "B": "Read permission on a file",
+        "C": "Write permission on a file",
+        "D": "An ACL entry"
+      },
+      "correctAnswer": "A",
+      "explanation": "A login password is an example of authentication."
+    },
+    {
+      "id": "OS-U5-150",
+      "question": "How are file protection and file security related?",
+      "options": {
+        "A": "They are unrelated",
+        "B": "File protection is an important part of overall file security",
+        "C": "File security is only a part of file protection",
+        "D": "File protection means encryption only"
+      },
+      "correctAnswer": "B",
+      "explanation": "File protection is an important part of overall file security."
+    }
+  ]
 }
