@@ -1,5 +1,1806 @@
 {
-  "subject": "Operating System",
+  "subject": "Operating Systems",
   "unit": "Unit 4",
-  "questions": []
+  "questions": [
+    {
+      "id": "OS-U4-001",
+      "question": "Memory hierarchy is the arrangement of different memory types according to:",
+      "options": {
+        "A": "Colour and size",
+        "B": "Speed, capacity and cost",
+        "C": "Brand and weight",
+        "D": "Voltage only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The memory hierarchy arranges memory types by speed, capacity and cost."
+    },
+    {
+      "id": "OS-U4-002",
+      "question": "Which is the fastest memory in the hierarchy?",
+      "options": {
+        "A": "Main memory",
+        "B": "Magnetic tape",
+        "C": "Optical disk",
+        "D": "CPU registers"
+      },
+      "correctAnswer": "D",
+      "explanation": "CPU registers sit inside the processor and are the fastest memory."
+    },
+    {
+      "id": "OS-U4-003",
+      "question": "Cache memory is commonly built using:",
+      "options": {
+        "A": "SRAM",
+        "B": "DRAM",
+        "C": "Magnetic tape",
+        "D": "Optical disk"
+      },
+      "correctAnswer": "A",
+      "explanation": "Cache memory is built with SRAM, which is fast."
+    },
+    {
+      "id": "OS-U4-004",
+      "question": "Main memory is commonly built using:",
+      "options": {
+        "A": "SRAM",
+        "B": "Flip-flops only",
+        "C": "DRAM",
+        "D": "Magnetic tape"
+      },
+      "correctAnswer": "C",
+      "explanation": "Main memory is commonly built with DRAM."
+    },
+    {
+      "id": "OS-U4-005",
+      "question": "The two types of locality of reference are:",
+      "options": {
+        "A": "Fast and slow",
+        "B": "Temporal and spatial",
+        "C": "Static and dynamic",
+        "D": "Internal and external"
+      },
+      "correctAnswer": "B",
+      "explanation": "The two types of locality of reference are temporal and spatial."
+    },
+    {
+      "id": "OS-U4-006",
+      "question": "Temporal locality means that:",
+      "options": {
+        "A": "Nearby data will be accessed",
+        "B": "Data is never reused",
+        "C": "Data is accessed only once",
+        "D": "Recently accessed data is likely to be accessed again soon"
+      },
+      "correctAnswer": "D",
+      "explanation": "Temporal locality means recently accessed data is likely to be accessed again soon."
+    },
+    {
+      "id": "OS-U4-007",
+      "question": "Spatial locality means that:",
+      "options": {
+        "A": "Nearby memory locations are likely to be accessed soon",
+        "B": "Old data is deleted",
+        "C": "Data is never reused",
+        "D": "Only registers are used"
+      },
+      "correctAnswer": "A",
+      "explanation": "Spatial locality means nearby memory locations are likely to be accessed soon."
+    },
+    {
+      "id": "OS-U4-008",
+      "question": "RAM is generally:",
+      "options": {
+        "A": "Non-volatile",
+        "B": "Read-only",
+        "C": "Volatile",
+        "D": "Permanent"
+      },
+      "correctAnswer": "C",
+      "explanation": "RAM loses its contents when power is off, so it is volatile."
+    },
+    {
+      "id": "OS-U4-009",
+      "question": "SRAM stores each bit using:",
+      "options": {
+        "A": "Capacitors",
+        "B": "Magnetic regions",
+        "C": "Optical pits",
+        "D": "Flip-flops"
+      },
+      "correctAnswer": "D",
+      "explanation": "SRAM stores each bit using flip-flops."
+    },
+    {
+      "id": "OS-U4-010",
+      "question": "DRAM requires:",
+      "options": {
+        "A": "No power",
+        "B": "Periodic refreshing",
+        "C": "No capacitors",
+        "D": "A tape drive"
+      },
+      "correctAnswer": "B",
+      "explanation": "DRAM stores bits in capacitors that leak charge, so it needs periodic refreshing."
+    },
+    {
+      "id": "OS-U4-011",
+      "question": "Compared with SRAM, DRAM is:",
+      "options": {
+        "A": "Cheaper per bit",
+        "B": "Faster",
+        "C": "Always larger in cost",
+        "D": "Used only in registers"
+      },
+      "correctAnswer": "A",
+      "explanation": "DRAM is cheaper per bit than SRAM, though it is slower."
+    },
+    {
+      "id": "OS-U4-012",
+      "question": "Magnetic tape is mainly used for:",
+      "options": {
+        "A": "Cache storage",
+        "B": "Register storage",
+        "C": "Backup and archival storage",
+        "D": "CPU scheduling"
+      },
+      "correctAnswer": "C",
+      "explanation": "Magnetic tape is mainly used for backup and archival storage."
+    },
+    {
+      "id": "OS-U4-013",
+      "question": "As we move down the memory hierarchy, capacity generally:",
+      "options": {
+        "A": "Becomes zero",
+        "B": "Decreases",
+        "C": "Stays the same",
+        "D": "Increases"
+      },
+      "correctAnswer": "D",
+      "explanation": "Moving down the hierarchy, capacity generally increases."
+    },
+    {
+      "id": "OS-U4-014",
+      "question": "As we move down the memory hierarchy, cost per bit generally:",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Stays the same",
+        "D": "Doubles"
+      },
+      "correctAnswer": "B",
+      "explanation": "Moving down the hierarchy, cost per bit generally decreases."
+    },
+    {
+      "id": "OS-U4-015",
+      "question": "Memory allocation means:",
+      "options": {
+        "A": "Assigning available main memory space to processes",
+        "B": "Deleting memory",
+        "C": "Increasing disk capacity",
+        "D": "Scheduling the CPU"
+      },
+      "correctAnswer": "A",
+      "explanation": "Memory allocation assigns available main memory space to processes."
+    },
+    {
+      "id": "OS-U4-016",
+      "question": "Memory allocation schemes are broadly classified into:",
+      "options": {
+        "A": "Fast and slow",
+        "B": "Static and dynamic only",
+        "C": "Contiguous and non-contiguous",
+        "D": "Internal and external only"
+      },
+      "correctAnswer": "C",
+      "explanation": "Memory allocation schemes are classified as contiguous and non-contiguous."
+    },
+    {
+      "id": "OS-U4-017",
+      "question": "In contiguous allocation, a process occupies:",
+      "options": {
+        "A": "Many scattered blocks",
+        "B": "A single continuous block of memory",
+        "C": "Only cache",
+        "D": "Only disk"
+      },
+      "correctAnswer": "B",
+      "explanation": "In contiguous allocation a process occupies a single continuous block of memory."
+    },
+    {
+      "id": "OS-U4-018",
+      "question": "Examples of non-contiguous allocation are:",
+      "options": {
+        "A": "Fixed and variable partitioning",
+        "B": "First fit and best fit",
+        "C": "FIFO and LRU",
+        "D": "Paging and segmentation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Paging and segmentation are examples of non-contiguous allocation."
+    },
+    {
+      "id": "OS-U4-019",
+      "question": "Internal fragmentation is:",
+      "options": {
+        "A": "Unused space inside an allocated partition",
+        "B": "Free space between partitions",
+        "C": "A type of paging",
+        "D": "A kind of cache"
+      },
+      "correctAnswer": "A",
+      "explanation": "Internal fragmentation is unused space inside an allocated partition."
+    },
+    {
+      "id": "OS-U4-020",
+      "question": "External fragmentation occurs when:",
+      "options": {
+        "A": "A partition is exactly filled",
+        "B": "A process is terminated normally",
+        "C": "Free memory is split into small non-contiguous holes",
+        "D": "The CPU is idle"
+      },
+      "correctAnswer": "C",
+      "explanation": "External fragmentation occurs when free memory is split into small non-contiguous holes."
+    },
+    {
+      "id": "OS-U4-021",
+      "question": "Compaction is used to:",
+      "options": {
+        "A": "Create more RAM",
+        "B": "Increase page size",
+        "C": "Delete processes",
+        "D": "Combine scattered free holes into one large block"
+      },
+      "correctAnswer": "D",
+      "explanation": "Compaction combines scattered free holes into one large block."
+    },
+    {
+      "id": "OS-U4-022",
+      "question": "Fixed partitioning is also called:",
+      "options": {
+        "A": "Dynamic partitioning",
+        "B": "Static partitioning",
+        "C": "Virtual partitioning",
+        "D": "Paged partitioning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fixed partitioning is also called static partitioning."
+    },
+    {
+      "id": "OS-U4-023",
+      "question": "Variable partitioning is also called:",
+      "options": {
+        "A": "Dynamic partitioning",
+        "B": "Static partitioning",
+        "C": "Fixed paging",
+        "D": "Cache partitioning"
+      },
+      "correctAnswer": "A",
+      "explanation": "Variable partitioning is also called dynamic partitioning."
+    },
+    {
+      "id": "OS-U4-024",
+      "question": "The formula for internal fragmentation in a fixed partition is:",
+      "options": {
+        "A": "Process Size × Partition Size",
+        "B": "Process Size + Partition Size",
+        "C": "Partition Size − Process Size",
+        "D": "Partition Size ÷ Process Size"
+      },
+      "correctAnswer": "C",
+      "explanation": "Internal fragmentation equals partition size minus process size."
+    },
+    {
+      "id": "OS-U4-025",
+      "question": "Which fragmentation is common in fixed partitioning?",
+      "options": {
+        "A": "External fragmentation",
+        "B": "Internal fragmentation",
+        "C": "No fragmentation",
+        "D": "Disk fragmentation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Internal fragmentation is common in fixed partitioning."
+    },
+    {
+      "id": "OS-U4-026",
+      "question": "Which fragmentation is common in variable partitioning?",
+      "options": {
+        "A": "Internal fragmentation only",
+        "B": "No fragmentation",
+        "C": "Cache fragmentation",
+        "D": "External fragmentation"
+      },
+      "correctAnswer": "D",
+      "explanation": "External fragmentation is common in variable partitioning."
+    },
+    {
+      "id": "OS-U4-027",
+      "question": "First Fit allocates:",
+      "options": {
+        "A": "The smallest hole",
+        "B": "The largest hole",
+        "C": "The first hole that is large enough",
+        "D": "A random hole"
+      },
+      "correctAnswer": "C",
+      "explanation": "First Fit allocates the first hole that is large enough."
+    },
+    {
+      "id": "OS-U4-028",
+      "question": "Best Fit allocates:",
+      "options": {
+        "A": "The smallest hole that is large enough",
+        "B": "The first hole",
+        "C": "The largest hole",
+        "D": "The last hole"
+      },
+      "correctAnswer": "A",
+      "explanation": "Best Fit allocates the smallest hole that is large enough."
+    },
+    {
+      "id": "OS-U4-029",
+      "question": "Worst Fit allocates:",
+      "options": {
+        "A": "The smallest hole",
+        "B": "The first hole",
+        "C": "A random hole",
+        "D": "The largest available hole"
+      },
+      "correctAnswer": "D",
+      "explanation": "Worst Fit allocates the largest available hole."
+    },
+    {
+      "id": "OS-U4-030",
+      "question": "Next Fit starts the search from:",
+      "options": {
+        "A": "The beginning of memory",
+        "B": "The position of the previous allocation",
+        "C": "The end of memory",
+        "D": "The largest hole"
+      },
+      "correctAnswer": "B",
+      "explanation": "Next Fit starts searching from the position of the previous allocation."
+    },
+    {
+      "id": "OS-U4-031",
+      "question": "In paging, a process is divided into fixed-size blocks called:",
+      "options": {
+        "A": "Frames",
+        "B": "Segments",
+        "C": "Pages",
+        "D": "Partitions"
+      },
+      "correctAnswer": "C",
+      "explanation": "In paging, a process is divided into fixed-size blocks called pages."
+    },
+    {
+      "id": "OS-U4-032",
+      "question": "In paging, physical memory is divided into blocks called:",
+      "options": {
+        "A": "Frames",
+        "B": "Pages",
+        "C": "Segments",
+        "D": "Tracks"
+      },
+      "correctAnswer": "A",
+      "explanation": "In paging, physical memory is divided into blocks called frames."
+    },
+    {
+      "id": "OS-U4-033",
+      "question": "In basic paging, page size is:",
+      "options": {
+        "A": "Larger than frame size",
+        "B": "Equal to frame size",
+        "C": "Smaller than frame size",
+        "D": "Unrelated to frame size"
+      },
+      "correctAnswer": "B",
+      "explanation": "In basic paging, the page size equals the frame size."
+    },
+    {
+      "id": "OS-U4-034",
+      "question": "The data structure that maps pages to frames is the:",
+      "options": {
+        "A": "Stack",
+        "B": "Queue",
+        "C": "File table",
+        "D": "Page table"
+      },
+      "correctAnswer": "D",
+      "explanation": "The page table maps pages to frames."
+    },
+    {
+      "id": "OS-U4-035",
+      "question": "The MMU is responsible for:",
+      "options": {
+        "A": "Translating logical addresses into physical addresses",
+        "B": "Scheduling processes",
+        "C": "Compiling programs",
+        "D": "Printing documents"
+      },
+      "correctAnswer": "A",
+      "explanation": "The MMU translates logical addresses into physical addresses."
+    },
+    {
+      "id": "OS-U4-036",
+      "question": "The TLB is:",
+      "options": {
+        "A": "A type of disk",
+        "B": "A CPU register only",
+        "C": "A small, fast memory that stores recently used page table entries",
+        "D": "A type of tape"
+      },
+      "correctAnswer": "C",
+      "explanation": "The TLB is a small, fast memory that stores recently used page table entries."
+    },
+    {
+      "id": "OS-U4-037",
+      "question": "A TLB hit occurs when:",
+      "options": {
+        "A": "The page is on disk",
+        "B": "The page table entry is found in the TLB",
+        "C": "The page table is deleted",
+        "D": "The CPU stops"
+      },
+      "correctAnswer": "B",
+      "explanation": "A TLB hit occurs when the page table entry is found in the TLB."
+    },
+    {
+      "id": "OS-U4-038",
+      "question": "Basic paging eliminates:",
+      "options": {
+        "A": "Internal fragmentation",
+        "B": "All fragmentation",
+        "C": "Page tables",
+        "D": "External fragmentation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Basic paging eliminates external fragmentation, although the last page may waste space."
+    },
+    {
+      "id": "OS-U4-039",
+      "question": "A logical address in paging consists of:",
+      "options": {
+        "A": "Page number and offset",
+        "B": "Frame number and tag",
+        "C": "Segment and track",
+        "D": "Block and sector only"
+      },
+      "correctAnswer": "A",
+      "explanation": "A logical address in paging consists of a page number and an offset."
+    },
+    {
+      "id": "OS-U4-040",
+      "question": "Virtual memory allows a process to:",
+      "options": {
+        "A": "Use only cache",
+        "B": "Run only when fully in RAM",
+        "C": "Execute without its entire program being in RAM",
+        "D": "Run without a CPU"
+      },
+      "correctAnswer": "C",
+      "explanation": "Virtual memory lets a process execute without its entire program being in RAM."
+    },
+    {
+      "id": "OS-U4-041",
+      "question": "A page fault occurs when:",
+      "options": {
+        "A": "The page is present in memory",
+        "B": "The required page is not present in physical memory",
+        "C": "The CPU is idle",
+        "D": "The disk is full"
+      },
+      "correctAnswer": "B",
+      "explanation": "A page fault occurs when the required page is not present in physical memory."
+    },
+    {
+      "id": "OS-U4-042",
+      "question": "Page replacement means:",
+      "options": {
+        "A": "Deleting a process",
+        "B": "Adding RAM",
+        "C": "Changing page size",
+        "D": "Removing an existing page to load another page"
+      },
+      "correctAnswer": "D",
+      "explanation": "Page replacement removes an existing page to load another page."
+    },
+    {
+      "id": "OS-U4-043",
+      "question": "FIFO replaces:",
+      "options": {
+        "A": "The least recently used page",
+        "B": "The most recently used page",
+        "C": "The oldest loaded page",
+        "D": "The largest page"
+      },
+      "correctAnswer": "C",
+      "explanation": "FIFO replaces the page that was loaded earliest."
+    },
+    {
+      "id": "OS-U4-044",
+      "question": "A page hit means that the required page is:",
+      "options": {
+        "A": "Already present in a frame",
+        "B": "Not present in memory",
+        "C": "On tape",
+        "D": "Corrupted"
+      },
+      "correctAnswer": "A",
+      "explanation": "A page hit means the required page is already present in a frame."
+    },
+    {
+      "id": "OS-U4-045",
+      "question": "Belady's Anomaly is a situation where:",
+      "options": {
+        "A": "More frames always reduce page faults",
+        "B": "Increasing frames increases page faults",
+        "C": "Page size becomes zero",
+        "D": "FIFO stops working"
+      },
+      "correctAnswer": "B",
+      "explanation": "Belady's Anomaly is when increasing the number of frames increases page faults."
+    },
+    {
+      "id": "OS-U4-046",
+      "question": "Which algorithm is known for Belady's Anomaly?",
+      "options": {
+        "A": "Optimal",
+        "B": "LRU",
+        "C": "Segmentation",
+        "D": "FIFO"
+      },
+      "correctAnswer": "D",
+      "explanation": "FIFO is the algorithm known for Belady's Anomaly."
+    },
+    {
+      "id": "OS-U4-047",
+      "question": "The Logical Address Space is given by:",
+      "options": {
+        "A": "2^LA bytes",
+        "B": "2 × LA bytes",
+        "C": "LA² bytes",
+        "D": "LA / 2 bytes"
+      },
+      "correctAnswer": "A",
+      "explanation": "The Logical Address Space is 2^LA bytes for an LA-bit address."
+    },
+    {
+      "id": "OS-U4-048",
+      "question": "The number of pages N is given by:",
+      "options": {
+        "A": "PS / LAS",
+        "B": "LAS × PS",
+        "C": "LAS / PS",
+        "D": "LAS + PS"
+      },
+      "correctAnswer": "C",
+      "explanation": "The number of pages is the logical address space divided by the page size, N = LAS / PS."
+    },
+    {
+      "id": "OS-U4-049",
+      "question": "The number of offset bits d is given by:",
+      "options": {
+        "A": "PS × 2",
+        "B": "log2(PS)",
+        "C": "PS / 2",
+        "D": "PS²"
+      },
+      "correctAnswer": "B",
+      "explanation": "The number of offset bits is d = log2(PS)."
+    },
+    {
+      "id": "OS-U4-050",
+      "question": "In a page table entry, the dirty bit indicates that the page:",
+      "options": {
+        "A": "Is invalid",
+        "B": "Is read-only",
+        "C": "Is very old",
+        "D": "Has been modified"
+      },
+      "correctAnswer": "D",
+      "explanation": "The dirty bit shows that the page has been modified."
+    },
+    {
+      "id": "OS-U4-051",
+      "question": "Memory hierarchy works effectively mainly because of:",
+      "options": {
+        "A": "Larger cables",
+        "B": "Faster monitors",
+        "C": "Locality of reference",
+        "D": "More processes"
+      },
+      "correctAnswer": "C",
+      "explanation": "The hierarchy works well mainly because of locality of reference."
+    },
+    {
+      "id": "OS-U4-052",
+      "question": "Which is the correct order from fastest to slowest?",
+      "options": {
+        "A": "Registers, cache, RAM, SSD/HDD, tape",
+        "B": "Tape, RAM, cache, registers",
+        "C": "RAM, registers, tape, cache",
+        "D": "Cache, tape, registers, RAM"
+      },
+      "correctAnswer": "A",
+      "explanation": "From fastest to slowest the order is registers, cache, RAM, SSD/HDD, tape."
+    },
+    {
+      "id": "OS-U4-053",
+      "question": "Which statement about SRAM and DRAM is correct?",
+      "options": {
+        "A": "DRAM is faster and costlier than SRAM",
+        "B": "SRAM needs periodic refresh",
+        "C": "DRAM is used for registers",
+        "D": "SRAM is faster and costlier, and needs no refresh"
+      },
+      "correctAnswer": "D",
+      "explanation": "SRAM is faster and costlier than DRAM and needs no refresh."
+    },
+    {
+      "id": "OS-U4-054",
+      "question": "Which of these is NOT secondary storage?",
+      "options": {
+        "A": "SSD",
+        "B": "Main memory (RAM)",
+        "C": "HDD",
+        "D": "Magnetic tape"
+      },
+      "correctAnswer": "B",
+      "explanation": "Main memory (RAM) is primary memory, not secondary storage."
+    },
+    {
+      "id": "OS-U4-055",
+      "question": "On a cache miss, the system generally:",
+      "options": {
+        "A": "Accesses RAM",
+        "B": "Shuts down",
+        "C": "Accesses registers only",
+        "D": "Deletes the cache"
+      },
+      "correctAnswer": "A",
+      "explanation": "On a cache miss the system generally accesses RAM."
+    },
+    {
+      "id": "OS-U4-056",
+      "question": "Under virtual memory, when a required page is not in RAM, the system accesses:",
+      "options": {
+        "A": "Registers",
+        "B": "Cache",
+        "C": "Secondary storage",
+        "D": "The CPU only"
+      },
+      "correctAnswer": "C",
+      "explanation": "When a page is not in RAM, the system accesses secondary storage."
+    },
+    {
+      "id": "OS-U4-057",
+      "question": "Sequentially accessing array elements A[0], A[1], A[2] shows:",
+      "options": {
+        "A": "Temporal locality",
+        "B": "Spatial locality",
+        "C": "No locality",
+        "D": "Random locality"
+      },
+      "correctAnswer": "B",
+      "explanation": "Accessing A[0], A[1], A[2] in order shows spatial locality."
+    },
+    {
+      "id": "OS-U4-058",
+      "question": "The repeatedly used variable \"sum\" in a loop shows:",
+      "options": {
+        "A": "Spatial locality",
+        "B": "External fragmentation",
+        "C": "Paging",
+        "D": "Temporal locality"
+      },
+      "correctAnswer": "D",
+      "explanation": "Repeated use of the variable \"sum\" in a loop shows temporal locality."
+    },
+    {
+      "id": "OS-U4-059",
+      "question": "A process needs 80 KB but is given a 100 KB partition. The internal fragmentation is:",
+      "options": {
+        "A": "20 KB",
+        "B": "80 KB",
+        "C": "100 KB",
+        "D": "0 KB"
+      },
+      "correctAnswer": "A",
+      "explanation": "Internal fragmentation is 100 KB - 80 KB = 20 KB."
+    },
+    {
+      "id": "OS-U4-060",
+      "question": "A process of 70 KB is placed in a 100 KB fixed partition. The wasted space is:",
+      "options": {
+        "A": "70 KB",
+        "B": "100 KB",
+        "C": "30 KB",
+        "D": "170 KB"
+      },
+      "correctAnswer": "C",
+      "explanation": "The wasted space is 100 KB - 70 KB = 30 KB."
+    },
+    {
+      "id": "OS-U4-061",
+      "question": "Free holes of 10 KB, 20 KB and 30 KB exist, and a process needs 50 KB contiguous memory. What happens?",
+      "options": {
+        "A": "It is allocated successfully",
+        "B": "It cannot be allocated because of external fragmentation",
+        "C": "It creates internal fragmentation of 10 KB",
+        "D": "It needs paging only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The holes total 60 KB, but no single hole is 50 KB or more, so external fragmentation prevents allocation."
+    },
+    {
+      "id": "OS-U4-062",
+      "question": "A limitation of compaction is that:",
+      "options": {
+        "A": "It increases RAM",
+        "B": "It removes processes",
+        "C": "It creates holes",
+        "D": "Moving processes takes time and may need address relocation"
+      },
+      "correctAnswer": "D",
+      "explanation": "Compaction takes time because processes must be moved, and addresses may need relocation."
+    },
+    {
+      "id": "OS-U4-063",
+      "question": "An advantage of unequal-sized fixed partitions over equal-sized ones is that they:",
+      "options": {
+        "A": "Can accommodate different process sizes more suitably",
+        "B": "Remove all fragmentation",
+        "C": "Need no OS",
+        "D": "Create partitions dynamically"
+      },
+      "correctAnswer": "A",
+      "explanation": "Unequal-sized partitions can fit different process sizes more suitably."
+    },
+    {
+      "id": "OS-U4-064",
+      "question": "In fixed partitioning, the maximum number of resident processes is limited by:",
+      "options": {
+        "A": "The CPU speed",
+        "B": "The disk size",
+        "C": "The number of partitions",
+        "D": "The cache size"
+      },
+      "correctAnswer": "C",
+      "explanation": "The number of resident processes is limited by the number of partitions."
+    },
+    {
+      "id": "OS-U4-065",
+      "question": "A process larger than the largest fixed partition:",
+      "options": {
+        "A": "Uses two partitions together",
+        "B": "Cannot be loaded",
+        "C": "Is loaded in cache",
+        "D": "Is split automatically"
+      },
+      "correctAnswer": "B",
+      "explanation": "A process larger than the largest fixed partition cannot be loaded."
+    },
+    {
+      "id": "OS-U4-066",
+      "question": "In variable partitioning, a partition is:",
+      "options": {
+        "A": "Created before any process arrives",
+        "B": "Always of equal size",
+        "C": "Never released",
+        "D": "Created dynamically according to the process's requirement"
+      },
+      "correctAnswer": "D",
+      "explanation": "In variable partitioning a partition is created dynamically for the process's requirement."
+    },
+    {
+      "id": "OS-U4-067",
+      "question": "Free holes are 100 KB, 500 KB, 200 KB and 300 KB. A process of 180 KB arrives. Best Fit selects:",
+      "options": {
+        "A": "100 KB",
+        "B": "500 KB",
+        "C": "200 KB",
+        "D": "300 KB"
+      },
+      "correctAnswer": "C",
+      "explanation": "Best Fit picks the smallest hole that is at least 180 KB, which is 200 KB."
+    },
+    {
+      "id": "OS-U4-068",
+      "question": "In the same case (holes 100, 500, 200, 300 KB; process 180 KB), First Fit selects:",
+      "options": {
+        "A": "500 KB",
+        "B": "200 KB",
+        "C": "300 KB",
+        "D": "100 KB"
+      },
+      "correctAnswer": "A",
+      "explanation": "First Fit picks the first hole big enough; 100 KB is too small, so the 500 KB hole is chosen."
+    },
+    {
+      "id": "OS-U4-069",
+      "question": "In the same case, Worst Fit selects:",
+      "options": {
+        "A": "200 KB",
+        "B": "500 KB",
+        "C": "300 KB",
+        "D": "100 KB"
+      },
+      "correctAnswer": "B",
+      "explanation": "Worst Fit picks the largest hole, 500 KB."
+    },
+    {
+      "id": "OS-U4-070",
+      "question": "Why can a process fail to load although the total free memory is large enough?",
+      "options": {
+        "A": "The CPU is busy",
+        "B": "RAM is volatile",
+        "C": "The cache is full",
+        "D": "No single contiguous hole may be large enough"
+      },
+      "correctAnswer": "D",
+      "explanation": "A process can fail to load because no single contiguous hole may be large enough."
+    },
+    {
+      "id": "OS-U4-071",
+      "question": "In non-contiguous allocation using paging, the pages of a process are:",
+      "options": {
+        "A": "Stored in any available frames",
+        "B": "Always stored consecutively",
+        "C": "Stored only in cache",
+        "D": "Stored only on tape"
+      },
+      "correctAnswer": "A",
+      "explanation": "With paging, the pages of a process can be stored in any available frames."
+    },
+    {
+      "id": "OS-U4-072",
+      "question": "A logical address of 4 bits gives a Logical Address Space of:",
+      "options": {
+        "A": "4 bytes",
+        "B": "8 bytes",
+        "C": "16 bytes",
+        "D": "64 bytes"
+      },
+      "correctAnswer": "C",
+      "explanation": "A 4-bit address gives 2^4 = 16 bytes."
+    },
+    {
+      "id": "OS-U4-073",
+      "question": "A physical address of 5 bits gives a Physical Address Space of:",
+      "options": {
+        "A": "5 bytes",
+        "B": "10 bytes",
+        "C": "16 bytes",
+        "D": "32 bytes"
+      },
+      "correctAnswer": "D",
+      "explanation": "A 5-bit address gives 2^5 = 32 bytes."
+    },
+    {
+      "id": "OS-U4-074",
+      "question": "LAS = 64 KB and PS = 4 KB. The number of pages is:",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "32",
+        "D": "64"
+      },
+      "correctAnswer": "B",
+      "explanation": "The number of pages is 64 KB / 4 KB = 16."
+    },
+    {
+      "id": "OS-U4-075",
+      "question": "For 16 pages, the number of page-number bits is:",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "16",
+        "D": "2"
+      },
+      "correctAnswer": "A",
+      "explanation": "16 pages need log2(16) = 4 bits."
+    },
+    {
+      "id": "OS-U4-076",
+      "question": "PAS = 64 KB and FS = 4 KB. The number of frames is:",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "32",
+        "D": "64"
+      },
+      "correctAnswer": "B",
+      "explanation": "The number of frames is 64 KB / 4 KB = 16."
+    },
+    {
+      "id": "OS-U4-077",
+      "question": "A page size of 4 KB needs how many offset bits?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "13"
+      },
+      "correctAnswer": "C",
+      "explanation": "A 4 KB page is 2^12 bytes, so 12 offset bits are needed."
+    },
+    {
+      "id": "OS-U4-078",
+      "question": "A logical address has 16 bits and the offset is 10 bits. The number of page-number bits is:",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "8",
+        "D": "6"
+      },
+      "correctAnswer": "D",
+      "explanation": "The page-number bits are 16 - 10 = 6."
+    },
+    {
+      "id": "OS-U4-079",
+      "question": "A physical address has 15 bits and the offset is 10 bits. The number of frame-number bits is:",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "6",
+        "D": "10"
+      },
+      "correctAnswer": "A",
+      "explanation": "The frame-number bits are 15 - 10 = 5."
+    },
+    {
+      "id": "OS-U4-080",
+      "question": "A page table has 16 entries and each entry is 4 bytes. The page table size is:",
+      "options": {
+        "A": "16 bytes",
+        "B": "32 bytes",
+        "C": "64 bytes",
+        "D": "128 bytes"
+      },
+      "correctAnswer": "C",
+      "explanation": "The page table size is 16 x 4 = 64 bytes."
+    },
+    {
+      "id": "OS-U4-081",
+      "question": "A page table has 32 entries of 16 bits each. The size in bytes is:",
+      "options": {
+        "A": "32 bytes",
+        "B": "64 bytes",
+        "C": "128 bytes",
+        "D": "512 bytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "32 entries x 2 bytes (16 bits) = 64 bytes."
+    },
+    {
+      "id": "OS-U4-082",
+      "question": "For logical address 20 and page size 8 bytes, the page number and offset are:",
+      "options": {
+        "A": "1 and 4",
+        "B": "3 and 2",
+        "C": "2 and 6",
+        "D": "2 and 4"
+      },
+      "correctAnswer": "D",
+      "explanation": "20 = 2 x 8 + 4, so the page number is 2 and the offset is 4."
+    },
+    {
+      "id": "OS-U4-083",
+      "question": "Page 2 is in Frame 5, frame size is 8 bytes and the offset is 4. The physical address is:",
+      "options": {
+        "A": "44",
+        "B": "40",
+        "C": "24",
+        "D": "20"
+      },
+      "correctAnswer": "A",
+      "explanation": "Physical address = 5 x 8 + 4 = 44."
+    },
+    {
+      "id": "OS-U4-084",
+      "question": "A process of 10 KB with 4 KB pages has internal fragmentation of:",
+      "options": {
+        "A": "1 KB",
+        "B": "2 KB",
+        "C": "3 KB",
+        "D": "4 KB"
+      },
+      "correctAnswer": "B",
+      "explanation": "10 KB needs 3 pages of 4 KB (12 KB), so 2 KB is wasted."
+    },
+    {
+      "id": "OS-U4-085",
+      "question": "The maximum internal fragmentation of one process in paging is:",
+      "options": {
+        "A": "Exactly one page",
+        "B": "Exactly half a page",
+        "C": "Less than one page size",
+        "D": "Equal to the process size"
+      },
+      "correctAnswer": "C",
+      "explanation": "The last page can waste at most less than one page size."
+    },
+    {
+      "id": "OS-U4-086",
+      "question": "A TLB miss:",
+      "options": {
+        "A": "Does not necessarily cause a page fault",
+        "B": "Always causes a page fault",
+        "C": "Terminates the process",
+        "D": "Deletes the page table"
+      },
+      "correctAnswer": "A",
+      "explanation": "A TLB miss only means the entry is not in the TLB; the page may still be in memory."
+    },
+    {
+      "id": "OS-U4-087",
+      "question": "In the EMAT model, the access time on a TLB hit is:",
+      "options": {
+        "A": "T + 2M",
+        "B": "2T + M",
+        "C": "M − T",
+        "D": "T + M"
+      },
+      "correctAnswer": "D",
+      "explanation": "On a TLB hit the time is T + M."
+    },
+    {
+      "id": "OS-U4-088",
+      "question": "In the EMAT model, the access time on a TLB miss is:",
+      "options": {
+        "A": "T + M",
+        "B": "T + 2M",
+        "C": "2T + M",
+        "D": "2M − T"
+      },
+      "correctAnswer": "B",
+      "explanation": "On a TLB miss the time is T + 2M, with an extra access to the page table."
+    },
+    {
+      "id": "OS-U4-089",
+      "question": "T = 10 ns, M = 100 ns and H = 0.8. The EMAT is:",
+      "options": {
+        "A": "110 ns",
+        "B": "120 ns",
+        "C": "130 ns",
+        "D": "150 ns"
+      },
+      "correctAnswer": "C",
+      "explanation": "EMAT = 0.8 x 110 + 0.2 x 210 = 130 ns."
+    },
+    {
+      "id": "OS-U4-090",
+      "question": "T = 5 ns, M = 80 ns and H = 0.9. The EMAT is:",
+      "options": {
+        "A": "85 ns",
+        "B": "90 ns",
+        "C": "95 ns",
+        "D": "93 ns"
+      },
+      "correctAnswer": "D",
+      "explanation": "EMAT = 0.9 x 85 + 0.1 x 165 = 93 ns."
+    },
+    {
+      "id": "OS-U4-091",
+      "question": "T = 10 ns, M = 100 ns and EMAT = 120 ns. The hit ratio is:",
+      "options": {
+        "A": "0.9",
+        "B": "0.8",
+        "C": "0.7",
+        "D": "0.95"
+      },
+      "correctAnswer": "A",
+      "explanation": "120 = H x 110 + (1 - H) x 210 gives H = 0.9."
+    },
+    {
+      "id": "OS-U4-092",
+      "question": "T = 5 ns, M = 50 ns and H = 0.7. The EMAT is:",
+      "options": {
+        "A": "55 ns",
+        "B": "65 ns",
+        "C": "70 ns",
+        "D": "75 ns"
+      },
+      "correctAnswer": "C",
+      "explanation": "EMAT = 0.7 x 55 + 0.3 x 105 = 70 ns."
+    },
+    {
+      "id": "OS-U4-093",
+      "question": "System A (T = 10, M = 100, H = 80%) and System B (T = 5, M = 100, H = 90%). Which is faster?",
+      "options": {
+        "A": "System A (115 ns)",
+        "B": "System B (115 ns versus 130 ns)",
+        "C": "Both are equal",
+        "D": "Cannot be determined"
+      },
+      "correctAnswer": "B",
+      "explanation": "System A has EMAT 130 ns and System B has 115 ns, so B is faster."
+    },
+    {
+      "id": "OS-U4-094",
+      "question": "The virtual address space can be:",
+      "options": {
+        "A": "Only smaller than the physical address space",
+        "B": "Only equal to the physical address space",
+        "C": "Only larger than the physical address space",
+        "D": "Smaller than, equal to or larger than the physical address space"
+      },
+      "correctAnswer": "D",
+      "explanation": "The virtual address space can be smaller than, equal to or larger than the physical address space."
+    },
+    {
+      "id": "OS-U4-095",
+      "question": "For 3 frames and the reference string 1, 2, 3, 1, 4, 2, 5, 1, 2, 3, FIFO gives how many page faults?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "correctAnswer": "C",
+      "explanation": "With 3 frames FIFO gives faults on 1, 2, 3, 4, 5, 1, 2, 3, which is 8 faults."
+    },
+    {
+      "id": "OS-U4-096",
+      "question": "For the same string with 3 frames, how many page hits occur under FIFO?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "A",
+      "explanation": "The two hits are the second reference to 1 and the second reference to 2."
+    },
+    {
+      "id": "OS-U4-097",
+      "question": "The page fault ratio for that example (8 faults in 10 references) is:",
+      "options": {
+        "A": "0.2",
+        "B": "0.8",
+        "C": "0.5",
+        "D": "1.0"
+      },
+      "correctAnswer": "B",
+      "explanation": "The page fault ratio is 8 / 10 = 0.8."
+    },
+    {
+      "id": "OS-U4-098",
+      "question": "In the Belady's anomaly example string, FIFO gives:",
+      "options": {
+        "A": "3 frames → 10 faults and 4 frames → 9 faults",
+        "B": "3 frames → 9 faults and 4 frames → 9 faults",
+        "C": "3 frames → 8 faults and 4 frames → 8 faults",
+        "D": "3 frames → 9 faults and 4 frames → 10 faults"
+      },
+      "correctAnswer": "D",
+      "explanation": "For the standard Belady string, FIFO gives 9 faults with 3 frames and 10 faults with 4 frames."
+    },
+    {
+      "id": "OS-U4-099",
+      "question": "In a string with 12 references, 9 faults and 3 hits, the hit ratio is:",
+      "options": {
+        "A": "25%",
+        "B": "50%",
+        "C": "75%",
+        "D": "80%"
+      },
+      "correctAnswer": "A",
+      "explanation": "The hit ratio is 3 / 12 = 25%."
+    },
+    {
+      "id": "OS-U4-100",
+      "question": "Three frames contain pages 4, 5, 6, loaded in that order. FIFO replaces:",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "4",
+        "D": "Any page"
+      },
+      "correctAnswer": "C",
+      "explanation": "FIFO replaces the oldest loaded page, which is 4."
+    },
+    {
+      "id": "OS-U4-101",
+      "question": "Which statement about moving UP the memory hierarchy is correct?",
+      "options": {
+        "A": "Capacity increases and cost per bit decreases",
+        "B": "Capacity decreases, access time decreases and cost per bit increases",
+        "C": "Capacity increases and access time decreases",
+        "D": "Speed decreases and cost per bit increases"
+      },
+      "correctAnswer": "B",
+      "explanation": "Moving up the hierarchy, capacity decreases, access time decreases and cost per bit increases."
+    },
+    {
+      "id": "OS-U4-102",
+      "question": "Which pairing is WRONG?",
+      "options": {
+        "A": "Registers – fastest and smallest",
+        "B": "Cache – uses locality of reference",
+        "C": "Magnetic tape – backup and archival",
+        "D": "Registers – largest capacity"
+      },
+      "correctAnswer": "D",
+      "explanation": "Registers have the smallest capacity, not the largest."
+    },
+    {
+      "id": "OS-U4-103",
+      "question": "Which statement correctly compares variable and fixed partitioning?",
+      "options": {
+        "A": "Variable partitioning creates partitions per process, reducing internal fragmentation but allowing external fragmentation",
+        "B": "Variable partitioning has fixed partitions and internal fragmentation",
+        "C": "Fixed partitioning never wastes memory",
+        "D": "Both have no fragmentation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Variable partitioning creates partitions per process, reducing internal fragmentation but allowing external fragmentation."
+    },
+    {
+      "id": "OS-U4-104",
+      "question": "Free memory is 120 KB in gaps of 40 KB, 30 KB and 50 KB. A process needs 90 KB contiguous memory. What happens?",
+      "options": {
+        "A": "It is allocated in the 50 KB gap",
+        "B": "It is allocated after compaction automatically",
+        "C": "Allocation fails because of external fragmentation",
+        "D": "It is allocated using internal fragmentation"
+      },
+      "correctAnswer": "C",
+      "explanation": "The largest gap is 50 KB, which is less than the 90 KB needed, so allocation fails."
+    },
+    {
+      "id": "OS-U4-105",
+      "question": "There is 200 KB of free memory in separate holes. Whether a 150 KB contiguous request succeeds depends on:",
+      "options": {
+        "A": "Total free memory only",
+        "B": "The size of the largest hole",
+        "C": "The CPU speed",
+        "D": "The number of processes"
+      },
+      "correctAnswer": "B",
+      "explanation": "A contiguous request succeeds only if the largest single hole is big enough."
+    },
+    {
+      "id": "OS-U4-106",
+      "question": "Which statement about non-contiguous allocation is FALSE?",
+      "options": {
+        "A": "The pages of a process must occupy consecutive frames",
+        "B": "Pages can be placed in different frames",
+        "C": "A mapping structure is used for translation",
+        "D": "Paging is an example"
+      },
+      "correctAnswer": "A",
+      "explanation": "The statement is false because pages need not occupy consecutive frames."
+    },
+    {
+      "id": "OS-U4-107",
+      "question": "Fixed partitions are 100 KB, 200 KB and 300 KB, all free. A 280 KB process arrives. It goes to the:",
+      "options": {
+        "A": "100 KB partition",
+        "B": "200 KB partition",
+        "C": "All three together",
+        "D": "300 KB partition"
+      },
+      "correctAnswer": "D",
+      "explanation": "Only the 300 KB partition can hold a 280 KB process."
+    },
+    {
+      "id": "OS-U4-108",
+      "question": "Fixed partitions are 100 KB, 200 KB and 300 KB; the 100 KB and 300 KB partitions are free. A 150 KB process arrives. What happens?",
+      "options": {
+        "A": "It uses both free partitions together",
+        "B": "It goes to the 100 KB partition",
+        "C": "It goes to the 300 KB partition",
+        "D": "It is rejected permanently"
+      },
+      "correctAnswer": "C",
+      "explanation": "The 200 KB partition is occupied, so the 150 KB process goes to the free 300 KB partition."
+    },
+    {
+      "id": "OS-U4-109",
+      "question": "A system has four fixed partitions, all occupied, and six processes arrive. How many can reside in the partitions at once?",
+      "options": {
+        "A": "Four",
+        "B": "Six",
+        "C": "Two",
+        "D": "Unlimited"
+      },
+      "correctAnswer": "A",
+      "explanation": "Only four processes can reside at a time, one per partition."
+    },
+    {
+      "id": "OS-U4-110",
+      "question": "A 400 KB free hole is split to allocate a 120 KB process. The remaining 280 KB:",
+      "options": {
+        "A": "Is internal fragmentation",
+        "B": "Becomes a free hole",
+        "C": "Is lost permanently",
+        "D": "Is given to the next process automatically"
+      },
+      "correctAnswer": "B",
+      "explanation": "The remaining 280 KB becomes a new free hole."
+    },
+    {
+      "id": "OS-U4-111",
+      "question": "Holes are 80 KB, 160 KB and 240 KB, and a 150 KB process arrives. Which strategy chooses the 160 KB hole?",
+      "options": {
+        "A": "First Fit (starting from 240 KB)",
+        "B": "Worst Fit",
+        "C": "Next Fit always",
+        "D": "Best Fit"
+      },
+      "correctAnswer": "D",
+      "explanation": "Best Fit chooses the smallest hole that is large enough, the 160 KB hole."
+    },
+    {
+      "id": "OS-U4-112",
+      "question": "For the same holes (80, 160, 240 KB) and a 150 KB process, Worst Fit selects:",
+      "options": {
+        "A": "80 KB",
+        "B": "160 KB",
+        "C": "240 KB",
+        "D": "None"
+      },
+      "correctAnswer": "C",
+      "explanation": "Worst Fit chooses the largest hole, 240 KB."
+    },
+    {
+      "id": "OS-U4-113",
+      "question": "Which statement about compaction is INCORRECT?",
+      "options": {
+        "A": "It increases the total amount of free memory",
+        "B": "It can combine scattered holes",
+        "C": "It may require relocating processes",
+        "D": "It can add overhead"
+      },
+      "correctAnswer": "A",
+      "explanation": "Compaction does not increase total free memory; it only gathers it into one block."
+    },
+    {
+      "id": "OS-U4-114",
+      "question": "Before compaction: P1 (100 KB), Free 20 KB, P2 (150 KB), Free 30 KB, P3 (100 KB), Free 50 KB. After compaction the combined free space is:",
+      "options": {
+        "A": "50 KB",
+        "B": "100 KB",
+        "C": "150 KB",
+        "D": "20 KB"
+      },
+      "correctAnswer": "B",
+      "explanation": "After compaction the free space is 20 + 30 + 50 = 100 KB."
+    },
+    {
+      "id": "OS-U4-115",
+      "question": "If LAS = 32 KB and PS = 2 KB, the number of pages is:",
+      "options": {
+        "A": "8",
+        "B": "12",
+        "C": "16",
+        "D": "32"
+      },
+      "correctAnswer": "C",
+      "explanation": "The number of pages is 32 KB / 2 KB = 16."
+    },
+    {
+      "id": "OS-U4-116",
+      "question": "A system has a 20-bit logical address and a 4 KB page size. The number of pages is:",
+      "options": {
+        "A": "64",
+        "B": "128",
+        "C": "512",
+        "D": "256"
+      },
+      "correctAnswer": "D",
+      "explanation": "With a 4 KB page (12 offset bits), a 20-bit address has 8 page bits, so 2^8 = 256 pages."
+    },
+    {
+      "id": "OS-U4-117",
+      "question": "For a page size of 8 KB in a byte-addressable system, the number of offset bits is:",
+      "options": {
+        "A": "13",
+        "B": "10",
+        "C": "12",
+        "D": "8"
+      },
+      "correctAnswer": "A",
+      "explanation": "An 8 KB page is 2^13 bytes, so 13 offset bits are needed."
+    },
+    {
+      "id": "OS-U4-118",
+      "question": "Physical memory has 128 frames. The frame number needs:",
+      "options": {
+        "A": "5 bits",
+        "B": "6 bits",
+        "C": "7 bits",
+        "D": "8 bits"
+      },
+      "correctAnswer": "C",
+      "explanation": "128 frames need log2(128) = 7 bits."
+    },
+    {
+      "id": "OS-U4-119",
+      "question": "A page table has 256 entries of 4 bytes each. Its size is:",
+      "options": {
+        "A": "256 bytes",
+        "B": "1 KB",
+        "C": "512 bytes",
+        "D": "4 KB"
+      },
+      "correctAnswer": "B",
+      "explanation": "256 x 4 bytes = 1024 bytes = 1 KB."
+    },
+    {
+      "id": "OS-U4-120",
+      "question": "For logical address 29 and page size 8 bytes, the page number and offset are:",
+      "options": {
+        "A": "4 and 5",
+        "B": "2 and 5",
+        "C": "3 and 4",
+        "D": "3 and 5"
+      },
+      "correctAnswer": "D",
+      "explanation": "29 = 3 x 8 + 5, so the page number is 3 and the offset is 5."
+    },
+    {
+      "id": "OS-U4-121",
+      "question": "Page 3 maps to Frame 6, the frame size is 16 bytes and the offset is 4. The physical address is:",
+      "options": {
+        "A": "100",
+        "B": "96",
+        "C": "102",
+        "D": "104"
+      },
+      "correctAnswer": "A",
+      "explanation": "Physical address = 6 x 16 + 4 = 100."
+    },
+    {
+      "id": "OS-U4-122",
+      "question": "LA = 16 bits, PS = 1 KB and PTE = 2 bytes. The page table size is:",
+      "options": {
+        "A": "64 bytes",
+        "B": "128 bytes",
+        "C": "256 bytes",
+        "D": "2048 bytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "There are 2^(16-10) = 64 pages, so the table size is 64 x 2 = 128 bytes."
+    },
+    {
+      "id": "OS-U4-123",
+      "question": "LA = 32 bits, PS = 4 KB and PTE = 4 bytes. The single-level page table size is:",
+      "options": {
+        "A": "1 MB",
+        "B": "2 MB",
+        "C": "4 MB",
+        "D": "8 MB"
+      },
+      "correctAnswer": "C",
+      "explanation": "There are 2^20 pages, so the table size is 2^20 x 4 bytes = 4 MB."
+    },
+    {
+      "id": "OS-U4-124",
+      "question": "A process of 17 KB with a 4 KB page size has internal fragmentation of:",
+      "options": {
+        "A": "1 KB",
+        "B": "2 KB",
+        "C": "4 KB",
+        "D": "3 KB"
+      },
+      "correctAnswer": "D",
+      "explanation": "17 KB needs 5 pages of 4 KB (20 KB), so 3 KB is wasted."
+    },
+    {
+      "id": "OS-U4-125",
+      "question": "A page is present in RAM but its translation is not in the TLB. This is a:",
+      "options": {
+        "A": "TLB miss",
+        "B": "Page fault",
+        "C": "Segmentation fault",
+        "D": "TLB hit"
+      },
+      "correctAnswer": "A",
+      "explanation": "If the page is in RAM but its entry is not in the TLB, it is a TLB miss, not a page fault."
+    },
+    {
+      "id": "OS-U4-126",
+      "question": "If the TLB hit ratio is 100% and the TLB access time is negligible, EMAT is approximately:",
+      "options": {
+        "A": "0",
+        "B": "2M",
+        "C": "M",
+        "D": "T + 2M"
+      },
+      "correctAnswer": "C",
+      "explanation": "With a 100% hit ratio and negligible T, EMAT is about T + M, approximately M."
+    },
+    {
+      "id": "OS-U4-127",
+      "question": "T = 20 ns, M = 100 ns and H = 0.75. The EMAT is:",
+      "options": {
+        "A": "140 ns",
+        "B": "145 ns",
+        "C": "150 ns",
+        "D": "155 ns"
+      },
+      "correctAnswer": "B",
+      "explanation": "EMAT = 0.75 x 120 + 0.25 x 220 = 145 ns."
+    },
+    {
+      "id": "OS-U4-128",
+      "question": "With T = 10 ns and M = 100 ns, what hit ratio gives EMAT = 130 ns?",
+      "options": {
+        "A": "0.6",
+        "B": "0.7",
+        "C": "0.9",
+        "D": "0.8"
+      },
+      "correctAnswer": "D",
+      "explanation": "130 = H x 110 + (1 - H) x 210 gives H = 0.8."
+    },
+    {
+      "id": "OS-U4-129",
+      "question": "If the hit ratio increases while T and M stay constant, EMAT:",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Becomes zero",
+        "D": "Stays constant"
+      },
+      "correctAnswer": "B",
+      "explanation": "A higher hit ratio means fewer slow miss accesses, so EMAT decreases."
+    },
+    {
+      "id": "OS-U4-130",
+      "question": "The TLB miss time is greater than the hit time because:",
+      "options": {
+        "A": "An extra page table access in memory is needed",
+        "B": "The CPU slows down",
+        "C": "RAM shrinks",
+        "D": "The process ends"
+      },
+      "correctAnswer": "A",
+      "explanation": "A TLB miss needs an extra memory access to read the page table."
+    },
+    {
+      "id": "OS-U4-131",
+      "question": "For 3 frames and reference string 7, 0, 1, 2, 0, 3, 0, 4, FIFO gives how many page faults?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correctAnswer": "C",
+      "explanation": "FIFO with 3 frames faults on 7, 0, 1, 2, 3, 0 and 4, which is 7 faults."
+    },
+    {
+      "id": "OS-U4-132",
+      "question": "For the same string (7, 0, 1, 2, 0, 3, 0, 4) with 3 frames, the number of FIFO hits is:",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "0",
+        "D": "1"
+      },
+      "correctAnswer": "D",
+      "explanation": "The only hit is the second reference to page 0, so there is 1 hit."
+    },
+    {
+      "id": "OS-U4-133",
+      "question": "A FIFO queue holds pages 2, 7, 4 (2 entered first). A hit occurs on page 7. The next replacement is:",
+      "options": {
+        "A": "2",
+        "B": "7",
+        "C": "4",
+        "D": "The new page"
+      },
+      "correctAnswer": "A",
+      "explanation": "FIFO ignores hits, so the oldest page, 2, is replaced next."
+    },
+    {
+      "id": "OS-U4-134",
+      "question": "With 4 frames loaded with pages 1, 2, 3, 4 in order, page 5 arrives. FIFO replaces:",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "3",
+        "D": "2"
+      },
+      "correctAnswer": "B",
+      "explanation": "FIFO replaces the oldest loaded page, which is 1."
+    },
+    {
+      "id": "OS-U4-135",
+      "question": "If there are 50 references and the hit ratio is 60%, the number of page faults is:",
+      "options": {
+        "A": "10",
+        "B": "30",
+        "C": "20",
+        "D": "40"
+      },
+      "correctAnswer": "C",
+      "explanation": "With a 60% hit ratio, 40% of 50 references are faults, which is 20."
+    },
+    {
+      "id": "OS-U4-136",
+      "question": "If 80 references give 64 hits, the page fault percentage is:",
+      "options": {
+        "A": "10%",
+        "B": "40%",
+        "C": "80%",
+        "D": "20%"
+      },
+      "correctAnswer": "D",
+      "explanation": "The faults are 80 - 64 = 16, which is 20% of 80."
+    },
+    {
+      "id": "OS-U4-137",
+      "question": "Which property distinguishes FIFO from LRU?",
+      "options": {
+        "A": "FIFO uses frequency; LRU uses page size",
+        "B": "FIFO uses arrival time; LRU uses recent usage",
+        "C": "Both always replace the same page",
+        "D": "FIFO needs no frames"
+      },
+      "correctAnswer": "B",
+      "explanation": "FIFO uses arrival time, while LRU uses recent usage."
+    },
+    {
+      "id": "OS-U4-138",
+      "question": "Which statement about Belady's Anomaly is correct?",
+      "options": {
+        "A": "It is associated with FIFO but does not occur for every reference string",
+        "B": "It occurs for every string",
+        "C": "It occurs only in LRU",
+        "D": "It means fewer frames always cause fewer faults"
+      },
+      "correctAnswer": "A",
+      "explanation": "Belady's Anomaly is associated with FIFO but does not occur for every reference string."
+    },
+    {
+      "id": "OS-U4-139",
+      "question": "In the FIFO pseudocode, on a page fault the algorithm:",
+      "options": {
+        "A": "Ignores the page",
+        "B": "Terminates",
+        "C": "Replaces the page at the FIFO pointer and moves the pointer to the next frame",
+        "D": "Doubles the frames"
+      },
+      "correctAnswer": "C",
+      "explanation": "On a fault, FIFO replaces the page at the FIFO pointer and moves the pointer to the next frame."
+    },
+    {
+      "id": "OS-U4-140",
+      "question": "A disadvantage of FIFO is that it:",
+      "options": {
+        "A": "Needs frequency counters",
+        "B": "Is too complex",
+        "C": "Needs a stack",
+        "D": "May remove a frequently used page"
+      },
+      "correctAnswer": "D",
+      "explanation": "A disadvantage of FIFO is that it may remove a frequently used page."
+    },
+    {
+      "id": "OS-U4-141",
+      "question": "Which items are stored in a page table entry (PTE)?",
+      "options": {
+        "A": "Frame number, valid bit, protection bits, reference bit and dirty bit",
+        "B": "Only the process name",
+        "C": "Only the page size",
+        "D": "Only the disk address"
+      },
+      "correctAnswer": "A",
+      "explanation": "A PTE holds the frame number plus valid, protection, reference and dirty bits."
+    },
+    {
+      "id": "OS-U4-142",
+      "question": "The dirty bit is used to know whether:",
+      "options": {
+        "A": "The page is valid",
+        "B": "The page has been modified",
+        "C": "The page is read-only",
+        "D": "The page is in the TLB"
+      },
+      "correctAnswer": "B",
+      "explanation": "The dirty bit shows whether the page has been modified."
+    },
+    {
+      "id": "OS-U4-143",
+      "question": "Which statement correctly compares paging and segmentation?",
+      "options": {
+        "A": "Paging uses variable-size units",
+        "B": "Segmentation uses fixed-size units",
+        "C": "Both use equal-size units",
+        "D": "Paging uses fixed-size pages; segmentation uses variable-size segments"
+      },
+      "correctAnswer": "D",
+      "explanation": "Paging uses fixed-size pages, whereas segmentation uses variable-size segments."
+    },
+    {
+      "id": "OS-U4-144",
+      "question": "Which fragmentation pairing is correct?",
+      "options": {
+        "A": "Paging – external; segmentation – internal",
+        "B": "Both – only internal",
+        "C": "Paging – internal (last page); segmentation – external",
+        "D": "Both – no fragmentation"
+      },
+      "correctAnswer": "C",
+      "explanation": "Paging has internal fragmentation (in the last page), while segmentation has external fragmentation."
+    },
+    {
+      "id": "OS-U4-145",
+      "question": "A key advantage of virtual memory is that:",
+      "options": {
+        "A": "Programs larger than the available RAM can execute",
+        "B": "RAM becomes unlimited physically",
+        "C": "Page tables are not needed",
+        "D": "Disk becomes faster than RAM"
+      },
+      "correctAnswer": "A",
+      "explanation": "Virtual memory lets programs larger than the available RAM execute."
+    },
+    {
+      "id": "OS-U4-146",
+      "question": "A disadvantage of virtual memory is that:",
+      "options": {
+        "A": "It needs no hardware support",
+        "B": "Accessing pages from secondary storage is much slower than RAM and page tables use extra memory",
+        "C": "It removes multiprogramming",
+        "D": "It removes protection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Accessing pages from secondary storage is much slower than RAM, and page tables use extra memory."
+    },
+    {
+      "id": "OS-U4-147",
+      "question": "A system records 720 TLB hits out of 900 memory references. The hit ratio is:",
+      "options": {
+        "A": "0.6",
+        "B": "0.7",
+        "C": "0.8",
+        "D": "0.9"
+      },
+      "correctAnswer": "C",
+      "explanation": "The hit ratio is 720 / 900 = 0.8."
+    },
+    {
+      "id": "OS-U4-148",
+      "question": "A system has 8 GB RAM and a process with a 16 GB virtual address space. Which is true?",
+      "options": {
+        "A": "The process cannot run",
+        "B": "The process must occupy 16 GB RAM",
+        "C": "RAM becomes 16 GB automatically",
+        "D": "The virtual address space can be larger than physical RAM"
+      },
+      "correctAnswer": "D",
+      "explanation": "A virtual address space can be larger than physical RAM, so the process can run."
+    },
+    {
+      "id": "OS-U4-149",
+      "question": "Which is NOT an objective of memory allocation?",
+      "options": {
+        "A": "Memory protection",
+        "B": "Increasing page faults",
+        "C": "Process isolation",
+        "D": "Efficient memory utilization"
+      },
+      "correctAnswer": "B",
+      "explanation": "Increasing page faults is not an objective of memory allocation."
+    },
+    {
+      "id": "OS-U4-150",
+      "question": "Memory allocation supports multiprogramming by:",
+      "options": {
+        "A": "Letting multiple processes reside in RAM at the same time",
+        "B": "Allowing only one process in RAM",
+        "C": "Removing the need for RAM",
+        "D": "Running only after a process ends"
+      },
+      "correctAnswer": "A",
+      "explanation": "Memory allocation supports multiprogramming by letting multiple processes reside in RAM at the same time."
+    }
+  ]
 }
