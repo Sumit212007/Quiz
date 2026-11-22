@@ -1,66 +1,1806 @@
 {
-  "subject": "Operating System",
+  "subject": "Operating Systems",
   "unit": "Unit 3",
   "questions": [
     {
       "id": "OS-U3-001",
-      "question": "Which CPU scheduling algorithm selects the process with the smallest next CPU burst?",
+      "question": "A program is:",
       "options": {
-        "A": "First Come First Served (FCFS)",
-        "B": "Round Robin",
-        "C": "Shortest Job First (SJF)",
-        "D": "Priority scheduling with aging"
+        "A": "A running instance of software",
+        "B": "A part of the CPU",
+        "C": "A collection of instructions normally stored in secondary storage",
+        "D": "A type of memory"
       },
       "correctAnswer": "C",
-      "explanation": "SJF always picks the ready process with the shortest next CPU burst, which minimises average waiting time."
+      "explanation": "A program is a collection of instructions normally stored in secondary storage."
     },
     {
       "id": "OS-U3-002",
-      "question": "A situation in which two or more processes wait indefinitely for resources held by each other is called:",
+      "question": "A process is:",
       "options": {
-        "A": "Starvation",
-        "B": "Deadlock",
-        "C": "Thrashing",
-        "D": "Context switching"
+        "A": "A program in execution",
+        "B": "A file on disk",
+        "C": "A type of register",
+        "D": "A storage device"
       },
-      "correctAnswer": "B",
-      "explanation": "In a deadlock every process in the set is waiting for a resource that another process in the set holds."
+      "correctAnswer": "A",
+      "explanation": "A process is a program in execution."
     },
     {
       "id": "OS-U3-003",
-      "question": "Which of the following is NOT one of the four necessary conditions for deadlock?",
+      "question": "A program is a:",
       "options": {
-        "A": "Mutual exclusion",
-        "B": "Hold and wait",
-        "C": "Resources can be preempted",
-        "D": "Circular wait"
+        "A": "Dynamic entity",
+        "B": "Running entity",
+        "C": "Active entity",
+        "D": "Passive entity"
       },
-      "correctAnswer": "C",
-      "explanation": "Deadlock requires mutual exclusion, hold and wait, no preemption and circular wait. Being able to preempt resources would break the no-preemption condition."
+      "correctAnswer": "D",
+      "explanation": "A program is a passive entity because it just sits on disk."
     },
     {
       "id": "OS-U3-004",
-      "question": "What is the main purpose of virtual memory?",
+      "question": "A process is an:",
       "options": {
-        "A": "To make the CPU run faster",
-        "B": "To let programs use more memory than is physically installed by using disk as an extension",
-        "C": "To encrypt data stored in RAM",
-        "D": "To increase the size of the CPU cache"
+        "A": "Passive entity",
+        "B": "Active entity",
+        "C": "Unused entity",
+        "D": "Permanent file"
       },
       "correctAnswer": "B",
-      "explanation": "Virtual memory gives each process a large address space and keeps only the needed pages in RAM, swapping the rest to disk."
+      "explanation": "A process is an active entity because it is executing."
     },
     {
       "id": "OS-U3-005",
-      "question": "Which page replacement algorithm replaces the page that has not been used for the longest period of time?",
+      "question": "A Process Control Block (PCB) belongs to a:",
       "options": {
-        "A": "FIFO",
-        "B": "Optimal",
-        "C": "Random",
-        "D": "LRU (Least Recently Used)"
+        "A": "Program",
+        "B": "Disk",
+        "C": "Process",
+        "D": "Printer"
+      },
+      "correctAnswer": "C",
+      "explanation": "A PCB is created and kept by the OS for each process."
+    },
+    {
+      "id": "OS-U3-006",
+      "question": "The five states of a process are:",
+      "options": {
+        "A": "New, Ready, Running, Waiting, Terminated",
+        "B": "Start, Stop, Pause, Play, End",
+        "C": "Read, Write, Open, Close, Delete",
+        "D": "Idle, Busy, Slow, Fast, Off"
+      },
+      "correctAnswer": "A",
+      "explanation": "The five process states are New, Ready, Running, Waiting and Terminated."
+    },
+    {
+      "id": "OS-U3-007",
+      "question": "A process that is waiting for the CPU is in the:",
+      "options": {
+        "A": "New state",
+        "B": "Running state",
+        "C": "Terminated state",
+        "D": "Ready state"
       },
       "correctAnswer": "D",
-      "explanation": "LRU evicts the page whose last use is furthest in the past, assuming recent history predicts near-future use."
+      "explanation": "A process waiting for the CPU is in the Ready state."
+    },
+    {
+      "id": "OS-U3-008",
+      "question": "A process whose instructions are being executed by the CPU is in the:",
+      "options": {
+        "A": "Ready state",
+        "B": "Running state",
+        "C": "New state",
+        "D": "Blocked state"
+      },
+      "correctAnswer": "B",
+      "explanation": "A process being executed by the CPU is in the Running state."
+    },
+    {
+      "id": "OS-U3-009",
+      "question": "A process waiting for an I/O operation to complete is in the:",
+      "options": {
+        "A": "Blocked/Waiting state",
+        "B": "Running state",
+        "C": "Ready state",
+        "D": "New state"
+      },
+      "correctAnswer": "A",
+      "explanation": "A process waiting for I/O is in the Blocked/Waiting state."
+    },
+    {
+      "id": "OS-U3-010",
+      "question": "A process that has finished execution is in the:",
+      "options": {
+        "A": "New state",
+        "B": "Ready state",
+        "C": "Terminated state",
+        "D": "Running state"
+      },
+      "correctAnswer": "C",
+      "explanation": "A process that has finished execution is in the Terminated state."
+    },
+    {
+      "id": "OS-U3-011",
+      "question": "The two states of the Two-State model are:",
+      "options": {
+        "A": "New and Ready",
+        "B": "Ready and Blocked",
+        "C": "Blocked and Terminated",
+        "D": "Running and Not Running"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Two-State model has only Running and Not Running."
+    },
+    {
+      "id": "OS-U3-012",
+      "question": "The Seven-State model adds which two states to the five-state model?",
+      "options": {
+        "A": "New and Exit",
+        "B": "Suspend Ready and Suspend Blocked",
+        "C": "Idle and Busy",
+        "D": "Hold and Release"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Seven-State model adds Suspend Ready and Suspend Blocked."
+    },
+    {
+      "id": "OS-U3-013",
+      "question": "The transition Running → Ready is called:",
+      "options": {
+        "A": "Preemption",
+        "B": "Termination",
+        "C": "Creation",
+        "D": "Blocking"
+      },
+      "correctAnswer": "A",
+      "explanation": "Running → Ready, when the process is removed from the CPU, is preemption."
+    },
+    {
+      "id": "OS-U3-014",
+      "question": "The long-term scheduler is also called the:",
+      "options": {
+        "A": "CPU scheduler",
+        "B": "Swapper",
+        "C": "Job scheduler",
+        "D": "Dispatcher"
+      },
+      "correctAnswer": "C",
+      "explanation": "The long-term scheduler is also called the job scheduler."
+    },
+    {
+      "id": "OS-U3-015",
+      "question": "The short-term scheduler is also called the:",
+      "options": {
+        "A": "Job scheduler",
+        "B": "Swapper",
+        "C": "Loader",
+        "D": "CPU scheduler"
+      },
+      "correctAnswer": "D",
+      "explanation": "The short-term scheduler is also called the CPU scheduler."
+    },
+    {
+      "id": "OS-U3-016",
+      "question": "The medium-term scheduler mainly handles:",
+      "options": {
+        "A": "CPU allocation",
+        "B": "Swapping",
+        "C": "Job admission",
+        "D": "Printing"
+      },
+      "correctAnswer": "B",
+      "explanation": "The medium-term scheduler handles swapping processes out of and into memory."
+    },
+    {
+      "id": "OS-U3-017",
+      "question": "The degree of multiprogramming is the:",
+      "options": {
+        "A": "Number of processes in the system for execution at a time",
+        "B": "Number of CPU registers",
+        "C": "Number of files",
+        "D": "Number of users"
+      },
+      "correctAnswer": "A",
+      "explanation": "The degree of multiprogramming is the number of processes in the system for execution at a time."
+    },
+    {
+      "id": "OS-U3-018",
+      "question": "A process that spends most of its time doing calculations is:",
+      "options": {
+        "A": "I/O-bound",
+        "B": "Blocked",
+        "C": "CPU-bound",
+        "D": "Suspended"
+      },
+      "correctAnswer": "C",
+      "explanation": "A CPU-bound process spends most of its time doing calculations."
+    },
+    {
+      "id": "OS-U3-019",
+      "question": "A process that spends much time waiting for I/O is:",
+      "options": {
+        "A": "CPU-bound",
+        "B": "I/O-bound",
+        "C": "Terminated",
+        "D": "New"
+      },
+      "correctAnswer": "B",
+      "explanation": "An I/O-bound process spends much of its time waiting for I/O."
+    },
+    {
+      "id": "OS-U3-020",
+      "question": "IPC stands for:",
+      "options": {
+        "A": "Internal Program Control",
+        "B": "Input Process Cache",
+        "C": "Instruction Pipeline Cycle",
+        "D": "Inter-Process Communication"
+      },
+      "correctAnswer": "D",
+      "explanation": "IPC stands for Inter-Process Communication."
+    },
+    {
+      "id": "OS-U3-021",
+      "question": "The two major IPC approaches are:",
+      "options": {
+        "A": "Shared memory and message passing",
+        "B": "Paging and segmentation",
+        "C": "FCFS and SJF",
+        "D": "Read and write"
+      },
+      "correctAnswer": "A",
+      "explanation": "The two major IPC approaches are shared memory and message passing."
+    },
+    {
+      "id": "OS-U3-022",
+      "question": "Message passing commonly uses:",
+      "options": {
+        "A": "Only registers",
+        "B": "Only cache",
+        "C": "Pipes, message queues and sockets",
+        "D": "Only tape"
+      },
+      "correctAnswer": "C",
+      "explanation": "Message passing commonly uses pipes, message queues and sockets."
+    },
+    {
+      "id": "OS-U3-023",
+      "question": "Shared memory access is controlled using:",
+      "options": {
+        "A": "Page tables only",
+        "B": "Semaphores, mutexes and locks",
+        "C": "Printers",
+        "D": "Compilers"
+      },
+      "correctAnswer": "B",
+      "explanation": "Shared memory access is controlled with semaphores, mutexes and locks."
+    },
+    {
+      "id": "OS-U3-024",
+      "question": "A race condition occurs when the final result depends on the:",
+      "options": {
+        "A": "Size of RAM",
+        "B": "Speed of the disk",
+        "C": "Colour of the screen",
+        "D": "Order in which processes access shared data"
+      },
+      "correctAnswer": "D",
+      "explanation": "A race condition occurs when the result depends on the order in which processes access shared data."
+    },
+    {
+      "id": "OS-U3-025",
+      "question": "Deadlock means that processes:",
+      "options": {
+        "A": "Wait indefinitely for resources held by one another",
+        "B": "Finish quickly",
+        "C": "Share the CPU equally",
+        "D": "Run in parallel"
+      },
+      "correctAnswer": "A",
+      "explanation": "Deadlock means processes wait indefinitely for resources held by one another."
+    },
+    {
+      "id": "OS-U3-026",
+      "question": "Starvation means a process:",
+      "options": {
+        "A": "Finishes too early",
+        "B": "Keeps waiting for resources or a chance to execute",
+        "C": "Uses all memory",
+        "D": "Is terminated"
+      },
+      "correctAnswer": "B",
+      "explanation": "Starvation means a process keeps waiting for resources or a chance to execute."
+    },
+    {
+      "id": "OS-U3-027",
+      "question": "How many philosophers are in the Dining Philosophers problem?",
+      "options": {
+        "A": "Three",
+        "B": "Four",
+        "C": "Five",
+        "D": "Seven"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Dining Philosophers problem has five philosophers."
+    },
+    {
+      "id": "OS-U3-028",
+      "question": "In the Producer–Consumer problem, the processes share a:",
+      "options": {
+        "A": "Printer",
+        "B": "Disk",
+        "C": "Keyboard",
+        "D": "Buffer"
+      },
+      "correctAnswer": "D",
+      "explanation": "Producers and consumers share a buffer."
+    },
+    {
+      "id": "OS-U3-029",
+      "question": "In the Readers–Writers problem, a writer needs:",
+      "options": {
+        "A": "Exclusive access",
+        "B": "Shared access with writers",
+        "C": "No access",
+        "D": "Only read access"
+      },
+      "correctAnswer": "A",
+      "explanation": "A writer needs exclusive access to the shared data."
+    },
+    {
+      "id": "OS-U3-030",
+      "question": "The Sleeping Barber problem has:",
+      "options": {
+        "A": "Five barbers",
+        "B": "No barber",
+        "C": "One barber",
+        "D": "Ten barbers"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Sleeping Barber problem has one barber."
+    },
+    {
+      "id": "OS-U3-031",
+      "question": "PID stands for:",
+      "options": {
+        "A": "Program Instruction Data",
+        "B": "Process Identifier (unique number of a process)",
+        "C": "Page Index Directory",
+        "D": "Priority Input Device"
+      },
+      "correctAnswer": "B",
+      "explanation": "PID stands for Process Identifier, the unique number of a process."
+    },
+    {
+      "id": "OS-U3-032",
+      "question": "The Program Counter (PC) holds the:",
+      "options": {
+        "A": "Data to be written",
+        "B": "Size of the process",
+        "C": "Name of the file",
+        "D": "Address of the next instruction"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Program Counter holds the address of the next instruction."
+    },
+    {
+      "id": "OS-U3-033",
+      "question": "The Memory Address Register (MAR) holds a memory:",
+      "options": {
+        "A": "Address",
+        "B": "Data value",
+        "C": "Instruction",
+        "D": "Flag"
+      },
+      "correctAnswer": "A",
+      "explanation": "The MAR holds a memory address."
+    },
+    {
+      "id": "OS-U3-034",
+      "question": "The Memory Data Register (MDR) holds:",
+      "options": {
+        "A": "An address",
+        "B": "Data being transferred between CPU and memory",
+        "C": "The stack top",
+        "D": "A priority"
+      },
+      "correctAnswer": "B",
+      "explanation": "The MDR holds data being transferred between the CPU and memory."
+    },
+    {
+      "id": "OS-U3-035",
+      "question": "The Instruction Register (IR) holds the:",
+      "options": {
+        "A": "Next address",
+        "B": "Data only",
+        "C": "Current fetched instruction",
+        "D": "Flag bits only"
+      },
+      "correctAnswer": "C",
+      "explanation": "The IR holds the current fetched instruction."
+    },
+    {
+      "id": "OS-U3-036",
+      "question": "The Stack Pointer (SP) points to the:",
+      "options": {
+        "A": "First instruction",
+        "B": "Bottom of RAM",
+        "C": "Disk head",
+        "D": "Current top of the stack"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Stack Pointer points to the current top of the stack."
+    },
+    {
+      "id": "OS-U3-037",
+      "question": "The fastest storage among the following is:",
+      "options": {
+        "A": "RAM",
+        "B": "CPU registers",
+        "C": "Hard disk",
+        "D": "Cache memory"
+      },
+      "correctAnswer": "B",
+      "explanation": "CPU registers are the fastest storage of the options given."
+    },
+    {
+      "id": "OS-U3-038",
+      "question": "The process table contains:",
+      "options": {
+        "A": "One entry for each process",
+        "B": "Only user files",
+        "C": "Only the kernel code",
+        "D": "Only I/O devices"
+      },
+      "correctAnswer": "A",
+      "explanation": "The process table has one entry for each process."
+    },
+    {
+      "id": "OS-U3-039",
+      "question": "Context switching means:",
+      "options": {
+        "A": "Deleting a process",
+        "B": "Creating a file",
+        "C": "Saving the state of one process and loading the saved state of another",
+        "D": "Increasing RAM"
+      },
+      "correctAnswer": "C",
+      "explanation": "Context switching saves the state of one process and loads the saved state of another."
+    },
+    {
+      "id": "OS-U3-040",
+      "question": "Context-switch overhead is the:",
+      "options": {
+        "A": "Size of a process",
+        "B": "Speed of RAM",
+        "C": "Number of registers",
+        "D": "Time spent on switching-related work"
+      },
+      "correctAnswer": "D",
+      "explanation": "Context-switch overhead is the time spent on switching-related work."
+    },
+    {
+      "id": "OS-U3-041",
+      "question": "A mode switch changes the:",
+      "options": {
+        "A": "Running program name",
+        "B": "CPU privilege or execution mode, such as user to kernel",
+        "C": "Disk",
+        "D": "File system"
+      },
+      "correctAnswer": "B",
+      "explanation": "A mode switch changes the CPU privilege or execution mode, such as user to kernel."
+    },
+    {
+      "id": "OS-U3-042",
+      "question": "The scheduler:",
+      "options": {
+        "A": "Selects which process should run",
+        "B": "Hands over the CPU physically only",
+        "C": "Allocates printers",
+        "D": "Compiles programs"
+      },
+      "correctAnswer": "A",
+      "explanation": "The scheduler selects which process should run."
+    },
+    {
+      "id": "OS-U3-043",
+      "question": "The dispatcher:",
+      "options": {
+        "A": "Selects the best process",
+        "B": "Creates the PCB",
+        "C": "Gives CPU control to the process selected by the scheduler",
+        "D": "Deletes processes"
+      },
+      "correctAnswer": "C",
+      "explanation": "The dispatcher gives CPU control to the process selected by the scheduler."
+    },
+    {
+      "id": "OS-U3-044",
+      "question": "CPU utilisation is the:",
+      "options": {
+        "A": "Number of processes completed",
+        "B": "Time a process waits",
+        "C": "Size of memory",
+        "D": "Percentage of time the CPU is busy doing useful work"
+      },
+      "correctAnswer": "D",
+      "explanation": "CPU utilisation is the percentage of time the CPU is busy doing useful work."
+    },
+    {
+      "id": "OS-U3-045",
+      "question": "Throughput is the:",
+      "options": {
+        "A": "Number of processes completed per unit time",
+        "B": "Time to first response",
+        "C": "Time in the ready queue",
+        "D": "CPU busy time"
+      },
+      "correctAnswer": "A",
+      "explanation": "Throughput is the number of processes completed per unit time."
+    },
+    {
+      "id": "OS-U3-046",
+      "question": "Turnaround time is calculated as:",
+      "options": {
+        "A": "Burst time − arrival time",
+        "B": "Completion time − arrival time",
+        "C": "Arrival time − completion time",
+        "D": "Waiting time + arrival time"
+      },
+      "correctAnswer": "B",
+      "explanation": "Turnaround time = completion time − arrival time."
+    },
+    {
+      "id": "OS-U3-047",
+      "question": "Waiting time is calculated as:",
+      "options": {
+        "A": "Completion time − burst time",
+        "B": "Burst time − arrival time",
+        "C": "Turnaround time + burst time",
+        "D": "Turnaround time − burst time"
+      },
+      "correctAnswer": "D",
+      "explanation": "Waiting time = turnaround time − burst time."
+    },
+    {
+      "id": "OS-U3-048",
+      "question": "Response time is calculated as:",
+      "options": {
+        "A": "Completion time − arrival time",
+        "B": "Burst time − waiting time",
+        "C": "First CPU time − arrival time",
+        "D": "Arrival time − burst time"
+      },
+      "correctAnswer": "C",
+      "explanation": "Response time = first CPU time − arrival time."
+    },
+    {
+      "id": "OS-U3-049",
+      "question": "FCFS is a:",
+      "options": {
+        "A": "Non-preemptive scheduling algorithm",
+        "B": "Preemptive scheduling algorithm",
+        "C": "Memory algorithm",
+        "D": "Disk algorithm"
+      },
+      "correctAnswer": "A",
+      "explanation": "FCFS is a non-preemptive scheduling algorithm."
+    },
+    {
+      "id": "OS-U3-050",
+      "question": "Round Robin is a:",
+      "options": {
+        "A": "Non-preemptive algorithm",
+        "B": "Preemptive algorithm",
+        "C": "File-system method",
+        "D": "Paging method"
+      },
+      "correctAnswer": "B",
+      "explanation": "Round Robin is a preemptive algorithm because of its time slice."
+    },
+    {
+      "id": "OS-U3-051",
+      "question": "Why does a program have no PCB?",
+      "options": {
+        "A": "It is too large",
+        "B": "The OS creates the PCB only when the program is executed as a process",
+        "C": "It is stored in RAM",
+        "D": "PCBs are only for files"
+      },
+      "correctAnswer": "B",
+      "explanation": "The OS creates a PCB only when a program is executed as a process, so a program has none."
+    },
+    {
+      "id": "OS-U3-052",
+      "question": "Which example shows that one program can have multiple processes?",
+      "options": {
+        "A": "A text file",
+        "B": "A calculator on disk",
+        "C": "A deleted file",
+        "D": "A web browser using different processes for different tabs"
+      },
+      "correctAnswer": "D",
+      "explanation": "A web browser using separate processes for tabs shows one program with multiple processes."
+    },
+    {
+      "id": "OS-U3-053",
+      "question": "Which resources are needed by a process?",
+      "options": {
+        "A": "CPU time, memory, I/O resources and files",
+        "B": "Only disk space",
+        "C": "Only a keyboard",
+        "D": "Only a printer"
+      },
+      "correctAnswer": "A",
+      "explanation": "A process needs CPU time, memory, I/O resources and files."
+    },
+    {
+      "id": "OS-U3-054",
+      "question": "The transition when a process's time slice expires is:",
+      "options": {
+        "A": "Ready → Running",
+        "B": "Running → Blocked",
+        "C": "Running → Ready",
+        "D": "Blocked → Terminated"
+      },
+      "correctAnswer": "C",
+      "explanation": "When the time slice expires, the process moves from Running to Ready."
+    },
+    {
+      "id": "OS-U3-055",
+      "question": "When an awaited I/O operation completes, the process moves from:",
+      "options": {
+        "A": "Running to Ready",
+        "B": "Blocked to Ready",
+        "C": "Ready to Running",
+        "D": "New to Running"
+      },
+      "correctAnswer": "B",
+      "explanation": "When the awaited I/O completes, the process moves from Blocked to Ready."
+    },
+    {
+      "id": "OS-U3-056",
+      "question": "Which state normally occurs only once in a process's lifetime?",
+      "options": {
+        "A": "Ready",
+        "B": "Running",
+        "C": "Blocked",
+        "D": "New"
+      },
+      "correctAnswer": "D",
+      "explanation": "The New state occurs only once, when the process is created."
+    },
+    {
+      "id": "OS-U3-057",
+      "question": "A process in the Suspend Ready state is:",
+      "options": {
+        "A": "Running on the CPU",
+        "B": "Waiting for I/O in memory",
+        "C": "Ready to execute but temporarily moved out of main memory",
+        "D": "Terminated"
+      },
+      "correctAnswer": "C",
+      "explanation": "Suspend Ready means ready to execute but temporarily moved out of main memory."
+    },
+    {
+      "id": "OS-U3-058",
+      "question": "A process in the Suspend Blocked state is:",
+      "options": {
+        "A": "Waiting for an event and also swapped out of main memory",
+        "B": "Running",
+        "C": "Ready in main memory",
+        "D": "New"
+      },
+      "correctAnswer": "A",
+      "explanation": "Suspend Blocked means waiting for an event and also swapped out of main memory."
+    },
+    {
+      "id": "OS-U3-059",
+      "question": "Which scheduler controls the degree of multiprogramming?",
+      "options": {
+        "A": "Short-term scheduler",
+        "B": "Long-term scheduler",
+        "C": "Dispatcher",
+        "D": "Disk scheduler"
+      },
+      "correctAnswer": "B",
+      "explanation": "The long-term scheduler controls the degree of multiprogramming."
+    },
+    {
+      "id": "OS-U3-060",
+      "question": "Which scheduler executes most frequently?",
+      "options": {
+        "A": "Long-term scheduler",
+        "B": "Medium-term scheduler",
+        "C": "Job scheduler",
+        "D": "Short-term scheduler"
+      },
+      "correctAnswer": "D",
+      "explanation": "The short-term scheduler runs most frequently, at every CPU allocation."
+    },
+    {
+      "id": "OS-U3-061",
+      "question": "What does preemptive execution mean?",
+      "options": {
+        "A": "The OS can forcibly remove a running process from the CPU",
+        "B": "A process can never be interrupted",
+        "C": "A process runs forever",
+        "D": "A process never uses the CPU"
+      },
+      "correctAnswer": "A",
+      "explanation": "Preemptive execution means the OS can forcibly remove a running process from the CPU."
+    },
+    {
+      "id": "OS-U3-062",
+      "question": "On a single-processor system, the number of processes in the Running state at one instant is:",
+      "options": {
+        "A": "0 or more than 1",
+        "B": "2",
+        "C": "1",
+        "D": "Unlimited"
+      },
+      "correctAnswer": "C",
+      "explanation": "A single-processor system has exactly one process in the Running state at an instant."
+    },
+    {
+      "id": "OS-U3-063",
+      "question": "Shared memory IPC is generally fast because:",
+      "options": {
+        "A": "It uses the network",
+        "B": "Processes access memory directly after it is set up",
+        "C": "It uses tape",
+        "D": "It needs no OS"
+      },
+      "correctAnswer": "B",
+      "explanation": "After setup, processes access shared memory directly, which makes it fast."
+    },
+    {
+      "id": "OS-U3-064",
+      "question": "Synchronization is needed in shared memory because:",
+      "options": {
+        "A": "Simultaneous access to the same data can cause inconsistent results",
+        "B": "Memory is slow",
+        "C": "Messages get lost",
+        "D": "Processes have no PID"
+      },
+      "correctAnswer": "A",
+      "explanation": "Simultaneous access to the same data can cause inconsistent results, so synchronization is needed."
+    },
+    {
+      "id": "OS-U3-065",
+      "question": "A disadvantage of message passing is:",
+      "options": {
+        "A": "It cannot send data",
+        "B": "It needs no OS",
+        "C": "It works only on one process",
+        "D": "It may involve more overhead such as copying and kernel involvement"
+      },
+      "correctAnswer": "D",
+      "explanation": "Message passing may involve more overhead such as copying and kernel involvement."
+    },
+    {
+      "id": "OS-U3-066",
+      "question": "In the Dining Philosophers problem, if every philosopher picks up one fork and waits for the other, the result is:",
+      "options": {
+        "A": "Starvation only",
+        "B": "A race condition",
+        "C": "Deadlock",
+        "D": "A fast solution"
+      },
+      "correctAnswer": "C",
+      "explanation": "If every philosopher holds one fork and waits for the other, the result is deadlock."
+    },
+    {
+      "id": "OS-U3-067",
+      "question": "In the Producer–Consumer problem, the producer must wait when the buffer is:",
+      "options": {
+        "A": "Empty",
+        "B": "Full",
+        "C": "Half empty",
+        "D": "Unused"
+      },
+      "correctAnswer": "B",
+      "explanation": "The producer must wait when the buffer is full."
+    },
+    {
+      "id": "OS-U3-068",
+      "question": "In the Producer–Consumer problem, the consumer must wait when the buffer is:",
+      "options": {
+        "A": "Empty",
+        "B": "Full",
+        "C": "Complete",
+        "D": "Locked forever"
+      },
+      "correctAnswer": "A",
+      "explanation": "The consumer must wait when the buffer is empty."
+    },
+    {
+      "id": "OS-U3-069",
+      "question": "In the Readers–Writers problem:",
+      "options": {
+        "A": "Only one reader can read",
+        "B": "Writers can write with readers",
+        "C": "No process can read",
+        "D": "Multiple readers can generally read at the same time"
+      },
+      "correctAnswer": "D",
+      "explanation": "In Readers–Writers, multiple readers can generally read at the same time."
+    },
+    {
+      "id": "OS-U3-070",
+      "question": "In the Sleeping Barber problem, if all waiting chairs are occupied, a new customer:",
+      "options": {
+        "A": "Wakes the barber",
+        "B": "Waits on the floor",
+        "C": "Leaves",
+        "D": "Becomes the barber"
+      },
+      "correctAnswer": "C",
+      "explanation": "If all waiting chairs are occupied, a new customer leaves."
+    },
+    {
+      "id": "OS-U3-071",
+      "question": "The PCB is stored in:",
+      "options": {
+        "A": "Protected kernel memory",
+        "B": "User-accessible memory",
+        "C": "Cache only",
+        "D": "The keyboard buffer"
+      },
+      "correctAnswer": "A",
+      "explanation": "The PCB is stored in protected kernel memory."
+    },
+    {
+      "id": "OS-U3-072",
+      "question": "The PCB is saved and restored during:",
+      "options": {
+        "A": "Compilation",
+        "B": "Context switching",
+        "C": "File deletion",
+        "D": "Printing"
+      },
+      "correctAnswer": "B",
+      "explanation": "The PCB is saved and restored during context switching."
+    },
+    {
+      "id": "OS-U3-073",
+      "question": "Which item is NOT stored in a PCB?",
+      "options": {
+        "A": "Process ID",
+        "B": "Program counter",
+        "C": "List of open files",
+        "D": "The contents of the user's video file"
+      },
+      "correctAnswer": "D",
+      "explanation": "A PCB stores process details such as PID, PC and open files, not the contents of user files."
+    },
+    {
+      "id": "OS-U3-074",
+      "question": "The process table is:",
+      "options": {
+        "A": "A list of file names",
+        "B": "A table of RAM sizes",
+        "C": "A collection of entries, each holding a process's PCB information",
+        "D": "A table of printers"
+      },
+      "correctAnswer": "C",
+      "explanation": "The process table is a collection of entries, each holding a process's PCB information."
+    },
+    {
+      "id": "OS-U3-075",
+      "question": "The accumulator is used to store:",
+      "options": {
+        "A": "Intermediate results of arithmetic and logical operations",
+        "B": "The next instruction address",
+        "C": "The stack top",
+        "D": "The file name"
+      },
+      "correctAnswer": "A",
+      "explanation": "The accumulator stores intermediate results of arithmetic and logical operations."
+    },
+    {
+      "id": "OS-U3-076",
+      "question": "In 10 − 10 = 0, which flag is set?",
+      "options": {
+        "A": "Carry flag",
+        "B": "Zero flag",
+        "C": "Overflow flag",
+        "D": "Parity flag"
+      },
+      "correctAnswer": "B",
+      "explanation": "10 − 10 = 0, so the Zero flag is set."
+    },
+    {
+      "id": "OS-U3-077",
+      "question": "During a memory read, data flows:",
+      "options": {
+        "A": "CPU → MDR → Memory",
+        "B": "Memory → PC → CPU",
+        "C": "Memory → MDR → CPU",
+        "D": "CPU → MAR → Data"
+      },
+      "correctAnswer": "C",
+      "explanation": "In a memory read, data flows Memory → MDR → CPU."
+    },
+    {
+      "id": "OS-U3-078",
+      "question": "The correct instruction cycle flow is:",
+      "options": {
+        "A": "IR → PC → execute",
+        "B": "Execute → fetch → PC",
+        "C": "MAR → PC → IR",
+        "D": "PC → fetch → IR → decode → execute"
+      },
+      "correctAnswer": "D",
+      "explanation": "The instruction cycle is PC → fetch → IR → decode → execute."
+    },
+    {
+      "id": "OS-U3-079",
+      "question": "The correct speed order (fastest to slowest) is:",
+      "options": {
+        "A": "Registers, cache, RAM, secondary storage",
+        "B": "Cache, registers, RAM, secondary storage",
+        "C": "RAM, cache, registers, secondary storage",
+        "D": "Secondary storage, RAM, cache, registers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Fastest to slowest: registers, cache, RAM, secondary storage."
+    },
+    {
+      "id": "OS-U3-080",
+      "question": "Is the PC always incremented by 4 on a 32-bit system?",
+      "options": {
+        "A": "Yes, always",
+        "B": "No, it depends on the architecture and instruction size",
+        "C": "Yes, only on Linux",
+        "D": "No, it never changes"
+      },
+      "correctAnswer": "B",
+      "explanation": "The PC increment depends on the architecture and instruction size, so it is not always 4."
+    },
+    {
+      "id": "OS-U3-081",
+      "question": "Which event can cause a context switch?",
+      "options": {
+        "A": "Pressing no key",
+        "B": "Closing a monitor",
+        "C": "A cable colour change",
+        "D": "A timer interrupt in preemptive multitasking"
+      },
+      "correctAnswer": "D",
+      "explanation": "A timer interrupt in preemptive multitasking can cause a context switch."
+    },
+    {
+      "id": "OS-U3-082",
+      "question": "Does every interrupt cause a context switch?",
+      "options": {
+        "A": "Yes, always",
+        "B": "Yes, in user mode only",
+        "C": "No, the OS may handle it and continue the same process",
+        "D": "No interrupt ever does"
+      },
+      "correctAnswer": "C",
+      "explanation": "Not every interrupt causes a context switch, because the OS may handle it and continue the same process."
+    },
+    {
+      "id": "OS-U3-083",
+      "question": "During a context switch from P0 to P1, the OS:",
+      "options": {
+        "A": "Saves P0's context in PCB0 and restores P1's context from PCB1",
+        "B": "Deletes PCB0",
+        "C": "Restores P0's context from PCB1",
+        "D": "Saves P1 into PCB0"
+      },
+      "correctAnswer": "A",
+      "explanation": "On a switch from P0 to P1, the OS saves P0's context in PCB0 and restores P1's from PCB1."
+    },
+    {
+      "id": "OS-U3-084",
+      "question": "A system call causes:",
+      "options": {
+        "A": "Always a context switch",
+        "B": "A mode switch, not necessarily a context switch",
+        "C": "Process termination",
+        "D": "A disk format"
+      },
+      "correctAnswer": "B",
+      "explanation": "A system call causes a mode switch, not necessarily a context switch."
+    },
+    {
+      "id": "OS-U3-085",
+      "question": "Which hardware feature can speed up context switching?",
+      "options": {
+        "A": "A larger monitor",
+        "B": "A faster printer",
+        "C": "Multiple register sets",
+        "D": "A bigger keyboard"
+      },
+      "correctAnswer": "C",
+      "explanation": "Multiple register sets can speed up context switching."
+    },
+    {
+      "id": "OS-U3-086",
+      "question": "Too many context switches reduce:",
+      "options": {
+        "A": "The number of processes",
+        "B": "The RAM size",
+        "C": "The disk size",
+        "D": "The CPU time available for useful application work"
+      },
+      "correctAnswer": "D",
+      "explanation": "Too many context switches reduce the CPU time available for useful application work."
+    },
+    {
+      "id": "OS-U3-087",
+      "question": "How do the scheduler and dispatcher differ?",
+      "options": {
+        "A": "The dispatcher selects; the scheduler gives CPU control",
+        "B": "The scheduler selects the process; the dispatcher transfers CPU control to it",
+        "C": "Both only select processes",
+        "D": "Both only transfer control"
+      },
+      "correctAnswer": "B",
+      "explanation": "The scheduler selects the process; the dispatcher transfers CPU control to it."
+    },
+    {
+      "id": "OS-U3-088",
+      "question": "How many types of schedulers are described in the notes?",
+      "options": {
+        "A": "Three",
+        "B": "Two",
+        "C": "Four",
+        "D": "Five"
+      },
+      "correctAnswer": "A",
+      "explanation": "The notes describe three types of schedulers: long-term, short-term and medium-term."
+    },
+    {
+      "id": "OS-U3-089",
+      "question": "Which is a dispatcher function?",
+      "options": {
+        "A": "Choosing the best process",
+        "B": "Admitting new jobs",
+        "C": "Restoring the selected process's context and transferring control to it",
+        "D": "Swapping processes out of memory"
+      },
+      "correctAnswer": "C",
+      "explanation": "The dispatcher restores the selected process's context and transfers control to it."
+    },
+    {
+      "id": "OS-U3-090",
+      "question": "The CPU is busy for 80 s in a 100 s interval. CPU utilisation is:",
+      "options": {
+        "A": "20%",
+        "B": "8%",
+        "C": "125%",
+        "D": "80%"
+      },
+      "correctAnswer": "D",
+      "explanation": "Utilisation = 80 / 100 = 80%."
+    },
+    {
+      "id": "OS-U3-091",
+      "question": "20 processes complete in 10 seconds. The throughput is:",
+      "options": {
+        "A": "2 processes per second",
+        "B": "20 processes per second",
+        "C": "10 processes per second",
+        "D": "0.5 processes per second"
+      },
+      "correctAnswer": "A",
+      "explanation": "Throughput = 20 / 10 = 2 processes per second."
+    },
+    {
+      "id": "OS-U3-092",
+      "question": "A process arrives at time 2 and completes at time 12. Its turnaround time is:",
+      "options": {
+        "A": "14",
+        "B": "10",
+        "C": "12",
+        "D": "2"
+      },
+      "correctAnswer": "B",
+      "explanation": "Turnaround time = 12 − 2 = 10."
+    },
+    {
+      "id": "OS-U3-093",
+      "question": "Turnaround time is 15 ms and burst time is 8 ms. The waiting time is:",
+      "options": {
+        "A": "23 ms",
+        "B": "8 ms",
+        "C": "7 ms",
+        "D": "15 ms"
+      },
+      "correctAnswer": "C",
+      "explanation": "Waiting time = 15 − 8 = 7 ms."
+    },
+    {
+      "id": "OS-U3-094",
+      "question": "A process arrives at 4 and first gets the CPU at 7. The response time is:",
+      "options": {
+        "A": "7",
+        "B": "11",
+        "C": "4",
+        "D": "3"
+      },
+      "correctAnswer": "D",
+      "explanation": "Response time = 7 − 4 = 3."
+    },
+    {
+      "id": "OS-U3-095",
+      "question": "Which type of system needs quick response?",
+      "options": {
+        "A": "Batch systems",
+        "B": "Interactive systems",
+        "C": "Offline systems",
+        "D": "Archival systems"
+      },
+      "correctAnswer": "B",
+      "explanation": "Interactive systems need quick response."
+    },
+    {
+      "id": "OS-U3-096",
+      "question": "Which type of system focuses on throughput and turnaround time?",
+      "options": {
+        "A": "Batch systems",
+        "B": "Interactive systems",
+        "C": "Gaming-only systems",
+        "D": "None"
+      },
+      "correctAnswer": "A",
+      "explanation": "Batch systems focus on throughput and turnaround time."
+    },
+    {
+      "id": "OS-U3-097",
+      "question": "Real-time systems mainly need:",
+      "options": {
+        "A": "Maximum memory",
+        "B": "Maximum disk space",
+        "C": "Predictable and timely execution",
+        "D": "Random scheduling"
+      },
+      "correctAnswer": "C",
+      "explanation": "Real-time systems need predictable and timely execution."
+    },
+    {
+      "id": "OS-U3-098",
+      "question": "Which of these is a preemptive algorithm?",
+      "options": {
+        "A": "FCFS",
+        "B": "SJF",
+        "C": "LJF",
+        "D": "SRTF"
+      },
+      "correctAnswer": "D",
+      "explanation": "SRTF is preemptive, while FCFS, SJF and LJF are non-preemptive."
+    },
+    {
+      "id": "OS-U3-099",
+      "question": "Which of these is a non-preemptive algorithm?",
+      "options": {
+        "A": "SJF",
+        "B": "Round Robin",
+        "C": "SRTF",
+        "D": "Multilevel feedback queue"
+      },
+      "correctAnswer": "A",
+      "explanation": "SJF is non-preemptive, while Round Robin, SRTF and MLFQ are preemptive."
+    },
+    {
+      "id": "OS-U3-100",
+      "question": "A risk in priority scheduling is:",
+      "options": {
+        "A": "Too many CPU registers",
+        "B": "Starvation of low-priority processes",
+        "C": "Loss of PCBs",
+        "D": "Disk failure"
+      },
+      "correctAnswer": "B",
+      "explanation": "A risk in priority scheduling is starvation of low-priority processes."
+    },
+    {
+      "id": "OS-U3-101",
+      "question": "Which statement about a program and a process is correct?",
+      "options": {
+        "A": "A program is dynamic and a process is static",
+        "B": "Both are always the same",
+        "C": "A process is dynamic, a program is static, and processes of one program can have different data and states",
+        "D": "A program needs CPU time but a process does not"
+      },
+      "correctAnswer": "C",
+      "explanation": "A process is dynamic, a program is static, and processes of one program can have different data and states."
+    },
+    {
+      "id": "OS-U3-102",
+      "question": "Which is NOT a feature of a program?",
+      "options": {
+        "A": "It has a Process Control Block",
+        "B": "It is a passive entity",
+        "C": "It is stored in secondary storage",
+        "D": "One program can have many processes"
+      },
+      "correctAnswer": "A",
+      "explanation": "A program does not have a PCB; the PCB belongs to a process."
+    },
+    {
+      "id": "OS-U3-103",
+      "question": "Which is a valid life cycle of a process?",
+      "options": {
+        "A": "Ready → New → Running → Terminated",
+        "B": "Running → New → Blocked → Ready",
+        "C": "Terminated → Ready → Running",
+        "D": "New → Ready → Running → Blocked → Ready → Running → Terminated"
+      },
+      "correctAnswer": "D",
+      "explanation": "The valid life cycle is New → Ready → Running → Blocked → Ready → Running → Terminated."
+    },
+    {
+      "id": "OS-U3-104",
+      "question": "Which transition is NOT described in the process-state notes?",
+      "options": {
+        "A": "Blocked → Ready",
+        "B": "Blocked → Running (directly)",
+        "C": "Running → Ready",
+        "D": "Running → Terminated"
+      },
+      "correctAnswer": "B",
+      "explanation": "A blocked process goes to Ready first, so Blocked → Running directly is not described."
+    },
+    {
+      "id": "OS-U3-105",
+      "question": "CPU-bound and I/O-bound describe a process's:",
+      "options": {
+        "A": "Behaviour, not a state",
+        "B": "State in the five-state model",
+        "C": "Priority level",
+        "D": "PCB field"
+      },
+      "correctAnswer": "A",
+      "explanation": "CPU-bound and I/O-bound describe a process's behaviour, not a state."
+    },
+    {
+      "id": "OS-U3-106",
+      "question": "A process in Suspend Ready returns to Ready after it is:",
+      "options": {
+        "A": "Terminated",
+        "B": "Blocked",
+        "C": "Brought back into main memory",
+        "D": "Deleted from the PCB"
+      },
+      "correctAnswer": "C",
+      "explanation": "A Suspend Ready process returns to Ready after it is brought back into main memory."
+    },
+    {
+      "id": "OS-U3-107",
+      "question": "What is the difference between the long-term and medium-term schedulers?",
+      "options": {
+        "A": "Long-term swaps processes; medium-term admits new jobs",
+        "B": "Long-term admits new processes; medium-term swaps processes in and out of memory",
+        "C": "Both select the CPU process",
+        "D": "Both are dispatchers"
+      },
+      "correctAnswer": "B",
+      "explanation": "The long-term scheduler admits new processes; the medium-term scheduler swaps processes in and out of memory."
+    },
+    {
+      "id": "OS-U3-108",
+      "question": "Which pairing is WRONG?",
+      "options": {
+        "A": "Long-term scheduler – job scheduler",
+        "B": "Medium-term scheduler – swapping",
+        "C": "Dispatcher – hands control to the selected process",
+        "D": "Short-term scheduler – job scheduler"
+      },
+      "correctAnswer": "D",
+      "explanation": "The short-term scheduler is the CPU scheduler, not the job scheduler."
+    },
+    {
+      "id": "OS-U3-109",
+      "question": "If the degree of multiprogramming becomes too high:",
+      "options": {
+        "A": "System overhead increases",
+        "B": "CPU utilisation always becomes 100%",
+        "C": "The number of schedulers increases",
+        "D": "Memory becomes unlimited"
+      },
+      "correctAnswer": "A",
+      "explanation": "A very high degree of multiprogramming increases system overhead."
+    },
+    {
+      "id": "OS-U3-110",
+      "question": "Why can shared memory without synchronization give wrong results?",
+      "options": {
+        "A": "It uses no memory",
+        "B": "It uses pipes",
+        "C": "Simultaneous access can leave data inconsistent",
+        "D": "It has no processes"
+      },
+      "correctAnswer": "C",
+      "explanation": "Simultaneous access can leave shared data inconsistent."
+    },
+    {
+      "id": "OS-U3-111",
+      "question": "Message passing is especially useful when processes are:",
+      "options": {
+        "A": "Sharing the same register",
+        "B": "Isolated from one another",
+        "C": "Terminated",
+        "D": "Not created"
+      },
+      "correctAnswer": "B",
+      "explanation": "Message passing is especially useful when processes are isolated from one another."
+    },
+    {
+      "id": "OS-U3-112",
+      "question": "Which is NOT an IPC problem listed in the notes?",
+      "options": {
+        "A": "Race condition",
+        "B": "Deadlock",
+        "C": "Starvation",
+        "D": "Increased disk capacity"
+      },
+      "correctAnswer": "D",
+      "explanation": "Increased disk capacity is not an IPC problem; race condition, deadlock and starvation are."
+    },
+    {
+      "id": "OS-U3-113",
+      "question": "A solution for the Dining Philosophers problem is to:",
+      "options": {
+        "A": "Limit how many philosophers try to eat at once or impose a resource ordering",
+        "B": "Remove all forks",
+        "C": "Let everyone pick up one fork and wait",
+        "D": "Add more philosophers"
+      },
+      "correctAnswer": "A",
+      "explanation": "Limiting how many philosophers eat at once, or ordering resources, avoids deadlock."
+    },
+    {
+      "id": "OS-U3-114",
+      "question": "A standard solution to the Producer–Consumer problem uses:",
+      "options": {
+        "A": "Only a printer",
+        "B": "A mutex and counting semaphores",
+        "C": "Only paging",
+        "D": "Only the disk"
+      },
+      "correctAnswer": "B",
+      "explanation": "The standard solution uses a mutex and counting semaphores."
+    },
+    {
+      "id": "OS-U3-115",
+      "question": "A common solution for Readers–Writers is to use:",
+      "options": {
+        "A": "Only registers",
+        "B": "Only a stack",
+        "C": "Reader–writer locks or semaphores",
+        "D": "A compiler"
+      },
+      "correctAnswer": "C",
+      "explanation": "Readers–Writers is commonly solved with reader–writer locks or semaphores."
+    },
+    {
+      "id": "OS-U3-116",
+      "question": "The Sleeping Barber problem is solved by using:",
+      "options": {
+        "A": "The BIOS",
+        "B": "Paging",
+        "C": "A bigger shop",
+        "D": "Semaphores"
+      },
+      "correctAnswer": "D",
+      "explanation": "The Sleeping Barber problem is solved using semaphores."
+    },
+    {
+      "id": "OS-U3-117",
+      "question": "Which statement about PCB storage is correct?",
+      "options": {
+        "A": "The exact place depends on the OS; it is not correct to say every OS stores the whole PCB at the beginning of the kernel stack",
+        "B": "Every OS stores the PCB at the top of user memory",
+        "C": "The PCB is stored in the CPU cache only",
+        "D": "The PCB is stored on the keyboard"
+      },
+      "correctAnswer": "A",
+      "explanation": "The place where the PCB is stored depends on the OS, so no single location can be claimed for every OS."
+    },
+    {
+      "id": "OS-U3-118",
+      "question": "The program counter is saved in the PCB so that the process can:",
+      "options": {
+        "A": "Change its PID",
+        "B": "Delete its registers",
+        "C": "Resume from the correct instruction",
+        "D": "Change its priority automatically"
+      },
+      "correctAnswer": "C",
+      "explanation": "The saved program counter lets the process resume from the correct instruction."
+    },
+    {
+      "id": "OS-U3-119",
+      "question": "The stack pointer in the PCB helps to preserve:",
+      "options": {
+        "A": "The file names",
+        "B": "The function-call context, local variables and return addresses",
+        "C": "The disk blocks",
+        "D": "The network address"
+      },
+      "correctAnswer": "B",
+      "explanation": "The saved stack pointer preserves function-call context, local variables and return addresses."
+    },
+    {
+      "id": "OS-U3-120",
+      "question": "MAR contains 8000 during a read. What does the MDR hold?",
+      "options": {
+        "A": "The address 8000",
+        "B": "The next instruction address",
+        "C": "The stack top",
+        "D": "The data read from address 8000"
+      },
+      "correctAnswer": "D",
+      "explanation": "The MDR holds the data read from the address in the MAR (8000)."
+    },
+    {
+      "id": "OS-U3-121",
+      "question": "Which register holds the instruction currently being decoded or executed?",
+      "options": {
+        "A": "IR",
+        "B": "PC",
+        "C": "MAR",
+        "D": "SP"
+      },
+      "correctAnswer": "A",
+      "explanation": "The IR holds the instruction currently being decoded or executed."
+    },
+    {
+      "id": "OS-U3-122",
+      "question": "Which flag indicates an arithmetic overflow?",
+      "options": {
+        "A": "Zero flag",
+        "B": "Overflow flag",
+        "C": "Parity flag",
+        "D": "Carry flag only"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Overflow flag indicates arithmetic overflow."
+    },
+    {
+      "id": "OS-U3-123",
+      "question": "Which items are saved during a context switch?",
+      "options": {
+        "A": "The user's documents",
+        "B": "The disk contents",
+        "C": "PC, CPU registers, stack pointer and processor status",
+        "D": "The monitor settings"
+      },
+      "correctAnswer": "C",
+      "explanation": "A context switch saves the PC, CPU registers, stack pointer and processor status."
+    },
+    {
+      "id": "OS-U3-124",
+      "question": "Which is an example of a mode switch?",
+      "options": {
+        "A": "P0 replaced by P1",
+        "B": "Process P2 terminated",
+        "C": "A file renamed",
+        "D": "User mode changing to kernel mode on a system call"
+      },
+      "correctAnswer": "D",
+      "explanation": "User mode changing to kernel mode on a system call is a mode switch."
+    },
+    {
+      "id": "OS-U3-125",
+      "question": "Why is context-switch time called pure overhead?",
+      "options": {
+        "A": "It makes the CPU faster",
+        "B": "The CPU does OS work instead of useful application instructions",
+        "C": "It increases memory",
+        "D": "It deletes processes"
+      },
+      "correctAnswer": "B",
+      "explanation": "Context-switch time is pure overhead because the CPU does OS work instead of useful application instructions."
+    },
+    {
+      "id": "OS-U3-126",
+      "question": "Which factor affects context-switch time?",
+      "options": {
+        "A": "Processor architecture and hardware support",
+        "B": "The colour of the screen",
+        "C": "The user's name",
+        "D": "The file extension"
+      },
+      "correctAnswer": "A",
+      "explanation": "Context-switch time depends on processor architecture and hardware support."
+    },
+    {
+      "id": "OS-U3-127",
+      "question": "Which statement about the dispatcher is correct?",
+      "options": {
+        "A": "It selects the process using scheduling algorithms",
+        "B": "It decides priorities",
+        "C": "It acts on the scheduler's selection and does not choose the process",
+        "D": "It admits jobs from the job pool"
+      },
+      "correctAnswer": "C",
+      "explanation": "The dispatcher acts on the scheduler's selection and does not choose the process."
+    },
+    {
+      "id": "OS-U3-128",
+      "question": "Which is a common mistake mentioned in the notes?",
+      "options": {
+        "A": "Believing the dispatcher selects processes",
+        "B": "Believing the PCB has a PID",
+        "C": "Believing the CPU has registers",
+        "D": "Believing the scheduler itself does everything needed to start the selected process"
+      },
+      "correctAnswer": "D",
+      "explanation": "A common mistake is believing the scheduler alone does everything needed to start the selected process."
+    },
+    {
+      "id": "OS-U3-129",
+      "question": "A process arrives at 0, completes at 20 and has a burst time of 12. Its waiting time is:",
+      "options": {
+        "A": "8",
+        "B": "12",
+        "C": "20",
+        "D": "32"
+      },
+      "correctAnswer": "A",
+      "explanation": "Turnaround = 20 − 0 = 20, so waiting = 20 − 12 = 8."
+    },
+    {
+      "id": "OS-U3-130",
+      "question": "A process arrives at 3, completes at 15 and has a burst time of 7. Its waiting time is:",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "correctAnswer": "B",
+      "explanation": "Turnaround = 15 − 3 = 12, so waiting = 12 − 7 = 5."
+    },
+    {
+      "id": "OS-U3-131",
+      "question": "Response time differs from turnaround time because a process may:",
+      "options": {
+        "A": "Never get the CPU",
+        "B": "Finish before it starts",
+        "C": "Respond early and continue running afterwards",
+        "D": "Have no arrival time"
+      },
+      "correctAnswer": "C",
+      "explanation": "Response time differs from turnaround time because a process may respond early and continue running afterwards."
+    },
+    {
+      "id": "OS-U3-132",
+      "question": "Waiting time does NOT include the process's:",
+      "options": {
+        "A": "Execution time",
+        "B": "Time in the ready queue",
+        "C": "Time before first CPU",
+        "D": "Time between slices"
+      },
+      "correctAnswer": "A",
+      "explanation": "Waiting time does not include execution time."
+    },
+    {
+      "id": "OS-U3-133",
+      "question": "The CPU is busy for 45 s in a 60 s interval. Utilisation is:",
+      "options": {
+        "A": "45%",
+        "B": "60%",
+        "C": "80%",
+        "D": "75%"
+      },
+      "correctAnswer": "D",
+      "explanation": "Utilisation = 45 / 60 = 75%."
+    },
+    {
+      "id": "OS-U3-134",
+      "question": "30 processes complete in 6 seconds. Throughput is:",
+      "options": {
+        "A": "4 per second",
+        "B": "5 per second",
+        "C": "6 per second",
+        "D": "30 per second"
+      },
+      "correctAnswer": "B",
+      "explanation": "Throughput = 30 / 6 = 5 per second."
+    },
+    {
+      "id": "OS-U3-135",
+      "question": "A process arrives at 5 and first gets the CPU at 9. The response time is:",
+      "options": {
+        "A": "9",
+        "B": "14",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "C",
+      "explanation": "Response time = 9 − 5 = 4."
+    },
+    {
+      "id": "OS-U3-136",
+      "question": "Throughput depends on the workload because:",
+      "options": {
+        "A": "Short and long processes need different amounts of CPU time",
+        "B": "All processes are identical",
+        "C": "Throughput has no unit",
+        "D": "CPU speed is always zero"
+      },
+      "correctAnswer": "A",
+      "explanation": "Throughput depends on the workload because short and long processes need different CPU time."
+    },
+    {
+      "id": "OS-U3-137",
+      "question": "Predictability as a criterion means:",
+      "options": {
+        "A": "The algorithm never finishes",
+        "B": "The algorithm gives random results",
+        "C": "The algorithm uses no CPU",
+        "D": "The algorithm gives consistent performance for similar workloads"
+      },
+      "correctAnswer": "D",
+      "explanation": "Predictability means consistent performance for similar workloads."
+    },
+    {
+      "id": "OS-U3-138",
+      "question": "Which algorithm gives each process a fixed time slice?",
+      "options": {
+        "A": "FCFS",
+        "B": "Round Robin",
+        "C": "SJF",
+        "D": "LJF"
+      },
+      "correctAnswer": "B",
+      "explanation": "Round Robin gives each process a fixed time slice."
+    },
+    {
+      "id": "OS-U3-139",
+      "question": "SJF selects the process with:",
+      "options": {
+        "A": "The longest burst",
+        "B": "The earliest arrival only",
+        "C": "The shortest CPU burst",
+        "D": "The highest memory"
+      },
+      "correctAnswer": "C",
+      "explanation": "SJF selects the process with the shortest CPU burst."
+    },
+    {
+      "id": "OS-U3-140",
+      "question": "Which list contains only non-preemptive algorithms?",
+      "options": {
+        "A": "FCFS, SJF, LJF",
+        "B": "RR, SRTF, FCFS",
+        "C": "SRTF, LRTF, RR",
+        "D": "RR, multilevel queue, SJF"
+      },
+      "correctAnswer": "A",
+      "explanation": "FCFS, SJF and LJF are all non-preemptive."
+    },
+    {
+      "id": "OS-U3-141",
+      "question": "Which list contains only preemptive algorithms?",
+      "options": {
+        "A": "FCFS, SJF, LJF",
+        "B": "FCFS, RR, SRTF",
+        "C": "SJF, SRTF, RR",
+        "D": "RR, SRTF, preemptive priority"
+      },
+      "correctAnswer": "D",
+      "explanation": "RR, SRTF and preemptive priority are all preemptive."
+    },
+    {
+      "id": "OS-U3-142",
+      "question": "Multilevel Feedback Queue scheduling is classified as:",
+      "options": {
+        "A": "Non-preemptive",
+        "B": "Preemptive",
+        "C": "A memory method",
+        "D": "A disk method"
+      },
+      "correctAnswer": "B",
+      "explanation": "Multilevel Feedback Queue scheduling is preemptive."
+    },
+    {
+      "id": "OS-U3-143",
+      "question": "In priority scheduling, low-priority processes may suffer:",
+      "options": {
+        "A": "Starvation",
+        "B": "Faster execution",
+        "C": "Zero waiting",
+        "D": "Higher priority automatically"
+      },
+      "correctAnswer": "A",
+      "explanation": "In priority scheduling, low-priority processes may suffer starvation."
+    },
+    {
+      "id": "OS-U3-144",
+      "question": "Which factors affect the choice of a scheduling algorithm?",
+      "options": {
+        "A": "Only screen size",
+        "B": "Only disk brand",
+        "C": "Number of processes, CPU burst time, urgency and system requirements",
+        "D": "Only user name"
+      },
+      "correctAnswer": "C",
+      "explanation": "The choice depends on the number of processes, CPU burst time, urgency and system requirements."
+    },
+    {
+      "id": "OS-U3-145",
+      "question": "Which algorithm is common in time-sharing and interactive systems?",
+      "options": {
+        "A": "FCFS",
+        "B": "LJF",
+        "C": "SJF only",
+        "D": "Round Robin"
+      },
+      "correctAnswer": "D",
+      "explanation": "Round Robin is common in time-sharing and interactive systems."
+    },
+    {
+      "id": "OS-U3-146",
+      "question": "The PCB lets the OS:",
+      "options": {
+        "A": "Delete the CPU",
+        "B": "Keep track of a process even when it is not executing",
+        "C": "Increase RAM",
+        "D": "Format the disk"
+      },
+      "correctAnswer": "B",
+      "explanation": "The PCB lets the OS keep track of a process even when it is not executing."
+    },
+    {
+      "id": "OS-U3-147",
+      "question": "The analogy used for shared memory is:",
+      "options": {
+        "A": "A group chat",
+        "B": "A letter",
+        "C": "Many users working on one shared online document",
+        "D": "A telephone call"
+      },
+      "correctAnswer": "C",
+      "explanation": "Shared memory is compared to many users working on one shared online document."
+    },
+    {
+      "id": "OS-U3-148",
+      "question": "The analogy used for message passing is:",
+      "options": {
+        "A": "A group chat",
+        "B": "A shared whiteboard",
+        "C": "A shared document",
+        "D": "A library"
+      },
+      "correctAnswer": "A",
+      "explanation": "Message passing is compared to a group chat."
+    },
+    {
+      "id": "OS-U3-149",
+      "question": "In the ATM example, IPC is needed because:",
+      "options": {
+        "A": "The ATM has no processes",
+        "B": "Only one process exists",
+        "C": "Cards need no verification",
+        "D": "Separate processes for card/PIN, account verification and withdrawal must exchange information and coordinate"
+      },
+      "correctAnswer": "D",
+      "explanation": "The separate ATM processes must exchange information and coordinate, so IPC is needed."
+    },
+    {
+      "id": "OS-U3-150",
+      "question": "Which statement is NOT true?",
+      "options": {
+        "A": "A process in Suspend Blocked is waiting for an event",
+        "B": "A suspended process can execute while outside main memory",
+        "C": "A process in Ready is waiting for the CPU",
+        "D": "A Blocked process waits for an event such as I/O"
+      },
+      "correctAnswer": "B",
+      "explanation": "A suspended process cannot execute while outside main memory, so the statement is false."
     }
   ]
 }
